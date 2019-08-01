@@ -78,27 +78,27 @@ input::-webkit-inner-spin-button {
   font-size: 1.17rem; }
 
 .input-inverted {
-  background: black;
-  color: #d9d9d0; }
+  background: #26262F;
+  color: #E6E4E4; }
   .input-inverted::-webkit-input-placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted::-moz-placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted:-ms-input-placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted::-ms-input-placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted::placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted::-webkit-input-placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted::-moz-placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted::-ms-input-placeholder {
-    color: rgba(217, 217, 208, 0.3); }
+    color: rgba(230, 228, 228, 0.5); }
   .input-inverted:focus:not([tabindex='-1']) {
-    border-color: #d9d9d0;
-    background: black; }
+    border-color: #FFFFFF;
+    background: #26262F; }
 
 .input-center {
   text-align: center; }

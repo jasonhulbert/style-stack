@@ -71,10 +71,10 @@
   background-color: #000000; }
 
 .color-light {
-  color: #F2F0F0; }
+  color: #E6E4E4; }
 
 .color-light-bg {
-  background-color: #F2F0F0; }
+  background-color: #E6E4E4; }
 
 .color-dark {
   color: #26262F; }
@@ -297,5 +297,329 @@
 
 .color-purple-tint-30-bg {
   background-color: #b6a1c0; }
+
+.color-grey1-shade-10 {
+  color: #c6c6dd; }
+
+.color-grey1-shade-10-bg {
+  background-color: #c6c6dd; }
+
+.color-grey1-shade-20 {
+  color: #a6a6ca; }
+
+.color-grey1-shade-20-bg {
+  background-color: #a6a6ca; }
+
+.color-grey1-shade-30 {
+  color: #8686b7; }
+
+.color-grey1-shade-30-bg {
+  background-color: #8686b7; }
+
+.color-grey1-tint-10 {
+  color: white; }
+
+.color-grey1-tint-10-bg {
+  background-color: white; }
+
+.color-grey1-tint-20 {
+  color: white; }
+
+.color-grey1-tint-20-bg {
+  background-color: white; }
+
+.color-grey1-tint-30 {
+  color: white; }
+
+.color-grey1-tint-30-bg {
+  background-color: white; }
+
+.color-grey2-shade-10 {
+  color: #b7b7c4; }
+
+.color-grey2-shade-10-bg {
+  background-color: #b7b7c4; }
+
+.color-grey2-shade-20 {
+  color: #9b9bad; }
+
+.color-grey2-shade-20-bg {
+  background-color: #9b9bad; }
+
+.color-grey2-shade-30 {
+  color: #7f7f96; }
+
+.color-grey2-shade-30-bg {
+  background-color: #7f7f96; }
+
+.color-grey2-tint-10 {
+  color: #efeff2; }
+
+.color-grey2-tint-10-bg {
+  background-color: #efeff2; }
+
+.color-grey2-tint-20 {
+  color: white; }
+
+.color-grey2-tint-20-bg {
+  background-color: white; }
+
+.color-grey2-tint-30 {
+  color: white; }
+
+.color-grey2-tint-30-bg {
+  background-color: white; }
+
+.color-grey3-shade-10 {
+  color: #a4a4af; }
+
+.color-grey3-shade-10-bg {
+  background-color: #a4a4af; }
+
+.color-grey3-shade-20 {
+  color: #898997; }
+
+.color-grey3-shade-20-bg {
+  background-color: #898997; }
+
+.color-grey3-shade-30 {
+  color: #6f6f7e; }
+
+.color-grey3-shade-30-bg {
+  background-color: #6f6f7e; }
+
+.color-grey3-tint-10 {
+  color: #dadadf; }
+
+.color-grey3-tint-10-bg {
+  background-color: #dadadf; }
+
+.color-grey3-tint-20 {
+  color: #f5f5f7; }
+
+.color-grey3-tint-20-bg {
+  background-color: #f5f5f7; }
+
+.color-grey3-tint-30 {
+  color: white; }
+
+.color-grey3-tint-30-bg {
+  background-color: white; }
+
+.color-grey4-shade-10 {
+  color: #83838a; }
+
+.color-grey4-shade-10-bg {
+  background-color: #83838a; }
+
+.color-grey4-shade-20 {
+  color: #6a6a70; }
+
+.color-grey4-shade-20-bg {
+  background-color: #6a6a70; }
+
+.color-grey4-shade-30 {
+  color: #515156; }
+
+.color-grey4-shade-30-bg {
+  background-color: #515156; }
+
+.color-grey4-tint-10 {
+  color: #b7b7bc; }
+
+.color-grey4-tint-10-bg {
+  background-color: #b7b7bc; }
+
+.color-grey4-tint-20 {
+  color: #d2d2d4; }
+
+.color-grey4-tint-20-bg {
+  background-color: #d2d2d4; }
+
+.color-grey4-tint-30 {
+  color: #ececed; }
+
+.color-grey4-tint-30-bg {
+  background-color: #ececed; }
+
+.color-grey5-shade-10 {
+  color: #3f3f42; }
+
+.color-grey5-shade-10-bg {
+  background-color: #3f3f42; }
+
+.color-grey5-shade-20 {
+  color: #262628; }
+
+.color-grey5-shade-20-bg {
+  background-color: #262628; }
+
+.color-grey5-shade-30 {
+  color: #0d0d0e; }
+
+.color-grey5-shade-30-bg {
+  background-color: #0d0d0e; }
+
+.color-grey5-tint-10 {
+  color: #717176; }
+
+.color-grey5-tint-10-bg {
+  background-color: #717176; }
+
+.color-grey5-tint-20 {
+  color: #8a8a90; }
+
+.color-grey5-tint-20-bg {
+  background-color: #8a8a90; }
+
+.color-grey5-tint-30 {
+  color: #a5a5a8; }
+
+.color-grey5-tint-30-bg {
+  background-color: #a5a5a8; }
+
+.color-white-shade-10 {
+  color: #e6e6e6; }
+
+.color-white-shade-10-bg {
+  background-color: #e6e6e6; }
+
+.color-white-shade-20 {
+  color: #cccccc; }
+
+.color-white-shade-20-bg {
+  background-color: #cccccc; }
+
+.color-white-shade-30 {
+  color: #b3b3b3; }
+
+.color-white-shade-30-bg {
+  background-color: #b3b3b3; }
+
+.color-white-tint-10 {
+  color: white; }
+
+.color-white-tint-10-bg {
+  background-color: white; }
+
+.color-white-tint-20 {
+  color: white; }
+
+.color-white-tint-20-bg {
+  background-color: white; }
+
+.color-white-tint-30 {
+  color: white; }
+
+.color-white-tint-30-bg {
+  background-color: white; }
+
+.color-black-shade-10 {
+  color: black; }
+
+.color-black-shade-10-bg {
+  background-color: black; }
+
+.color-black-shade-20 {
+  color: black; }
+
+.color-black-shade-20-bg {
+  background-color: black; }
+
+.color-black-shade-30 {
+  color: black; }
+
+.color-black-shade-30-bg {
+  background-color: black; }
+
+.color-black-tint-10 {
+  color: #1a1a1a; }
+
+.color-black-tint-10-bg {
+  background-color: #1a1a1a; }
+
+.color-black-tint-20 {
+  color: #333333; }
+
+.color-black-tint-20-bg {
+  background-color: #333333; }
+
+.color-black-tint-30 {
+  color: #4d4d4d; }
+
+.color-black-tint-30-bg {
+  background-color: #4d4d4d; }
+
+.color-light-shade-10 {
+  color: #cdcaca; }
+
+.color-light-shade-10-bg {
+  background-color: #cdcaca; }
+
+.color-light-shade-20 {
+  color: #b5afaf; }
+
+.color-light-shade-20-bg {
+  background-color: #b5afaf; }
+
+.color-light-shade-30 {
+  color: #9c9595; }
+
+.color-light-shade-30-bg {
+  background-color: #9c9595; }
+
+.color-light-tint-10 {
+  color: #fffefe; }
+
+.color-light-tint-10-bg {
+  background-color: #fffefe; }
+
+.color-light-tint-20 {
+  color: white; }
+
+.color-light-tint-20-bg {
+  background-color: white; }
+
+.color-light-tint-30 {
+  color: white; }
+
+.color-light-tint-30-bg {
+  background-color: white; }
+
+.color-dark-shade-10 {
+  color: #0f0f13; }
+
+.color-dark-shade-10-bg {
+  background-color: #0f0f13; }
+
+.color-dark-shade-20 {
+  color: black; }
+
+.color-dark-shade-20-bg {
+  background-color: black; }
+
+.color-dark-shade-30 {
+  color: black; }
+
+.color-dark-shade-30-bg {
+  background-color: black; }
+
+.color-dark-tint-10 {
+  color: #3d3d4b; }
+
+.color-dark-tint-10-bg {
+  background-color: #3d3d4b; }
+
+.color-dark-tint-20 {
+  color: #545467; }
+
+.color-dark-tint-20-bg {
+  background-color: #545467; }
+
+.color-dark-tint-30 {
+  color: #6a6a84; }
+
+.color-dark-tint-30-bg {
+  background-color: #6a6a84; }
 
 /*# sourceMappingURL=color.css.map */
