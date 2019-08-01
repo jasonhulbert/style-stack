@@ -1,0 +1,47 @@
+$font-family-map: (
+    'primary': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'),
+    'secondary': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol')
+) !default;
+$font-weights: (
+    'primary': (300, 400, 700),
+    'secondary': (300, 400, 700)
+) !default;
+$font-body: 'primary' !default;
+$font-body-weight-default: 400 !default;
+$font-header: 'secondary' !default;
+$font-header-weight-default: 300 !default;
+
+@mixin font-family($font-key) {
+    font-family: map-get($font-family-map, $font-key);
+}
+
+@mixin font-weight($font-key, $weight) {
+    $weights: map-get($font-weights, $font-key);
+    
+    @if index($weights, $weight) != null {
+        font-weight: $weight;
+    } @else {
+        @warn 'Font "#{$font-key}" does not have weight "#{$weight}"';
+    }
+}
+
+@mixin font() {
+    body {
+        @include font-family($font-body);
+        @include font-weight($font-body, $font-body-weight-default);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include font-family($font-header);
+        @include font-weight($font-header, $font-header-weight-default);
+    }
+
+    @if mixin-exists('font-hook') {
+        @include font-hook();
+    }
+}

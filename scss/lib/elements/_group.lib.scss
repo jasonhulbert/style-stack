@@ -1,0 +1,194 @@
+@import '../../core/query.core';
+@import '../../core/selector.core';
+
+$group-divisor: 24 !default;
+$group-width-default: $group-divisor !default;
+
+@function group-width($width: auto, $divisor: $group-divisor) {
+    $group-width: auto;
+
+    @if (type-of($width) == number and unitless($width) == false) or type-of($width) == string {
+        $group-width: $width
+    } @else if type-of($width) == number and unitless($width) == true {
+        $group-width: percentage($width / $divisor);
+    }
+
+    @return $group-width;
+}
+
+@mixin group-base() {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@mixin group-item($width: auto, $grow: 0, $shrink: 0, $max-width: none, $min-width: 0) {
+    position: relative;
+    flex-basis: group-width($width);
+    flex-grow: $grow;
+    flex-shrink: $shrink;
+
+    @if $max-width == none or unit($max-width) {
+        max-width: $max-width;
+    } @else if unitless($max-width) {
+        max-width: group-width($max-width);
+    }
+
+    @if $min-width == none or unit($min-width) {
+        min-width: $min-width;
+    } @else if unitless($min-width) {
+        min-width: group-width($min-width);
+    }
+}
+
+@mixin group-item-push($width) {
+    margin-left: group-width($width);
+}
+
+@mixin group-item-pull($width) {
+    margin-left: -(group-width($width));
+}
+
+@mixin group($name: 'group') {
+    $name: selector-prefix($name);
+
+    .#{$name} {
+        @include group-base();
+    }
+
+    .#{$name}-item {
+        @include group-item();
+    }
+
+    .#{$name}-item-sized-auto {
+        @include group-item('auto');
+    }
+
+    // Sets default width of all children using a parent modifier.
+    // Does not affect children with a size modifier.
+    .#{$name}-sized-auto > :not([class*='sized-']) {
+        @include group-item(auto);
+    }
+
+    @for $i from 1 through $group-divisor {
+        // Sets default width of all group children.
+        // Does not affect children with a size modifier.
+        .#{$name}-sized-#{$i} > :not([class*='sized-']) {
+            @include group-item($i);
+        }
+
+        .#{$name}-item-sized-#{$i} {
+            @include group-item($i);
+        }
+
+        .#{$name}-item-pushed-#{$i} {
+            @include group-item-push($i);
+        }
+
+        .#{$name}-item-pulled-#{$i} {
+            @include group-item-pull($i);
+        }
+    }
+
+    .#{$name}-wrapped {
+        flex-wrap: wrap;
+    }
+
+    .#{$name}-justified-around {
+        justify-content: space-around;
+    }
+
+    .#{$name}-justified-between {
+        justify-content: space-between;
+    }
+
+    .#{$name}-justified-center {
+        justify-content: center;
+    }
+
+    .#{$name}-justified-end {
+        justify-content: flex-end;
+    }
+
+    .#{$name}-aligned-center {
+        align-items: center;
+    }
+
+    .#{$name}-aligned-start {
+        align-items: flex-start;
+    }
+
+    .#{$name}-aligned-end {
+        align-items: flex-end;
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @include query($query-key) {
+            .#{$name}-item-sized-auto\@#{$query-key} {
+                @include group-item(auto);
+            }
+
+            // Sets default width of all group children.
+            // Does not affect children with a size modifier.
+            .#{$name}-sized-auto\@#{$query-key} > :not([class*='sized-']) {
+                @include group-item(auto);
+            }
+        
+            @for $i from 1 through $group-divisor {
+                // Sets default width of all group children.
+                // Does not affect children with a size modifier.
+                .#{$name}-sized-#{$i}\@#{$query-key} > :not([class*='sized-']) {
+                    @include group-item($i);
+                }
+
+                .#{$name}-item-sized-#{$i}\@#{$query-key} {
+                    @include group-item($i);
+                }
+        
+                .#{$name}-item-pushed-#{$i}\@#{$query-key} {
+                    @include group-item-push($i);
+                }
+        
+                .#{$name}-item-pulled-#{$i}\@#{$query-key} {
+                    @include group-item-pull($i);
+                }
+            }
+
+            .#{$name}-not-wrapped\@#{$query-key} {
+                flex-wrap: nowrap;
+            }
+        
+            .#{$name}-justified-around\@#{$query-key} {
+                justify-content: space-around;
+            }
+        
+            .#{$name}-justified-between\@#{$query-key} {
+                justify-content: space-between;
+            }
+        
+            .#{$name}-justified-center\@#{$query-key} {
+                justify-content: center;
+            }
+        
+            .#{$name}-justified-end\@#{$query-key} {
+                justify-content: flex-end;
+            }
+        
+            .#{$name}-aligned-center\@#{$query-key} {
+                align-items: center;
+            }
+        
+            .#{$name}-aligned-start\@#{$query-key} {
+                align-items: flex-start;
+            }
+        
+            .#{$name}-aligned-end\@#{$query-key} {
+                align-items: flex-end;
+            }
+        }
+    }
+
+    @if mixin-exists('group-hook') {
+        @include group-hook($name);
+    }
+}

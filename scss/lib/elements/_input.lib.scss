@@ -1,0 +1,206 @@
+@import '../../core/query.core';
+@import '../../core/selector.core';
+@import '../modifiers/color.lib';
+@import '../modifiers/font.lib';
+@import '../modifiers/gap.lib';
+
+$input-height: gap-value(12) !default;
+$input-padding: gap-value(4) !default;
+$input-font-size: 0.9rem !default;
+$input-line-height: 1.5 !default;
+$input-font-family: 'primary' !default;
+$input-font-weight: $font-body-weight-default !default;
+$input-color: color-value('dark');
+$input-border-width: 0.1rem !default;
+$input-border-radius: 0.2rem !default;
+$input-border-color: color-value('grey4') !default;
+$input-bg: color-value('white') !default;
+$input-focus-border-color: color-value('dark') !default;
+$input-focus-bg: color-value('white') !default;
+$input-focus-outline-style: solid !default;
+$input-focus-outline-color: color-value('focus', $alpha: 0.5) !default;
+$input-focus-outline-offset: gap-value(0.5) !default;
+$input-focus-outline-width: gap-value(0.5) !default;
+$input-placeholder-color: color-value('dark', $alpha: 0.3) !default;
+$input-transition: border-color 200ms ease, background 200ms ease !default;
+$input-scale-map: (
+    'sm': 0.85,
+    'md': 1,
+    'lg': 1.15,
+    'xl': 1.3
+) !default;
+
+@mixin input-base() {
+    @include font-family($input-font-family);
+    width: 100%;
+    height: $input-height;
+    font-size: $input-font-size;
+    padding: 0 $input-padding;
+    color: $input-color;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
+    background: $input-bg;
+    transition: $input-transition;
+    vertical-align: middle;
+
+    &::before,
+    &::after {
+        outline: none;
+    }
+}
+
+@mixin input-resets() {
+    ::-ms-clear {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    ::-ms-reveal {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+@mixin input-placeholder() {
+    ::placeholder {
+        color: $input-placeholder-color;
+    }
+
+    ::-webkit-input-placeholder {
+        color: $input-placeholder-color;
+    }
+
+    ::-moz-placeholder {
+        color: $input-placeholder-color;
+    }
+
+    ::-ms-input-placeholder {
+        color: $input-placeholder-color;
+    }
+}
+
+@mixin input-focus() {
+    border-color: $input-focus-border-color;
+    background: $input-focus-bg;
+    outline-style: $input-focus-outline-style;
+    outline-color: $input-focus-outline-color;
+    outline-offset: $input-focus-outline-offset;
+    outline-width: $input-focus-outline-width;
+}
+
+@mixin input-scale($scale-key) {
+    $scale-value: 1;
+
+    @if map-has-key($input-scale-map, $scale-key) {
+        $scale-value: map-get($input-scale-map, $scale-key);
+    }
+
+    height: $input-height * $scale-value;
+    font-size: $input-font-size * $scale-value;
+}
+
+@mixin input-theme($theme-key) {
+    border-color: color-value($theme-key);
+    background: color-lighten-until(color-value($theme-key), 95%);
+}
+
+@mixin input-focus-theme($theme-key) {
+    border-color: color-value($theme-key);
+    outline-color: color-value($theme-key, $alpha: 0.3);
+}
+
+@mixin input-dark() {
+    background: color-value('dark');
+    color: color-value('light');
+
+    &::placeholder {
+        color: color-value('light', $alpha: 0.5);
+    }
+
+    &::-webkit-input-placeholder {
+        color: color-value('light', $alpha: 0.5);
+    }
+
+    &::-moz-placeholder {
+        color: color-value('light', $alpha: 0.5);
+    }
+
+    &::-ms-input-placeholder {
+        color: color-value('light', $alpha: 0.5);
+    }
+}
+
+@mixin input-focus-dark() {
+    border-color: color-value('white');
+    background: color-value('dark');
+}
+
+@mixin input-center() {
+    text-align: center;
+}
+
+@mixin input($name: 'input') {
+    $name: selector-prefix($name);
+
+    @include input-resets();
+    @include input-placeholder();
+
+    .#{$name} {
+        @include input-base();
+
+        &:focus:not([tabindex='-1']) {
+            @include input-focus();
+        }
+    }
+
+    @each $scale-key in map-keys($input-scale-map) {
+        .#{$name}-scaled-#{$scale-key} {
+            @include input-scale($scale-key);
+        }
+    }
+
+    .#{$name}-inverted {
+        @include input-dark();
+
+        &:focus:not([tabindex='-1']) {
+            @include input-focus-dark();
+        }
+    }
+
+    .#{$name}-center {
+        @include input-center();
+    }
+
+    @each $theme-key in map-keys($color-theme-map) {
+        .#{$name}-themed-#{$theme-key} {
+            @include input-theme($theme-key);
+
+            &:focus:not([tabindex='-1']) {
+                @include input-focus-theme($theme-key);
+            }
+        }
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @each $scale-key in map-keys($input-scale-map) {
+            .#{$name}-scaled-#{$scale-key}\@#{$query-key} {
+                @include input-scale($scale-key);
+            }
+        }
+    }
+
+    @if mixin-exists('input-hook') {
+        @include input-hook($name);
+    }
+}

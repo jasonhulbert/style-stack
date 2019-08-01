@@ -1,0 +1,6 @@
+@import '../core/output.core';
+@import '../lib/elements/header.lib';
+
+@include output('element.header') {
+    @include header();
+}

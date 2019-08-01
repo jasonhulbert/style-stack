@@ -1,0 +1,41 @@
+@import '../../core/selector.core';
+
+@mixin util($name: 'util') {
+    $name: selector-prefix($name);
+
+    .#{$name}-display-block {
+        display: block;
+    }
+
+    .#{$name}-display-flex {
+        display: flex;
+    }
+
+    .#{$name}-display-inline-block {
+        display: inline-block;
+    }
+
+    .#{$name}-display-inline {
+        display: inline;
+    }
+
+    .#{$name}-display-none {
+        display: none;
+    }
+
+    .#{$name}-align-right {
+        text-align: right
+    }
+
+    .#{$name}-align-left {
+        text-align: left
+    }
+
+    .#{$name}-align-center {
+        text-align: center
+    }
+
+    @if mixin-exists('util-hook') {
+        @include util-hook();
+    }
+}

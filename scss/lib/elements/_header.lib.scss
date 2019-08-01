@@ -1,0 +1,74 @@
+@import '../../core/query.core';
+@import '../../core/selector.core';
+@import '../modifiers/font.lib';
+@import '../modifiers/global.lib';
+
+$header-family: 'secondary' !default;
+$header-scales: (
+    '1': 1,
+    '2': 1.25,
+    '3': 1.5,
+    '4': 2.25,
+    '5': 2.75
+) !default;
+$header-margin: 0 0 gap-value(6) !default;
+$header-line-height: 1.1 !default;
+
+@mixin header-base() {
+    @include font-family($header-family);
+    margin: $header-margin;
+    line-height: $header-line-height;
+}
+
+@mixin header-scale($scale-key) {
+    $scale-value: 1;
+
+    @if map-has-key($header-scales, $scale-key) {
+        $scale-value: map-get($header-scales, $scale-key);
+    } @else {
+        @warn 'header scale "#{$scale-key}" does not exist in "$header-scales"';
+    }
+
+    font-size: $global-body-font-size * $scale-value;
+}
+
+@mixin header-no-margin() {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin header($name: 'header') {
+    $name: selector-prefix($name);
+
+    .#{$name} {
+        @include header-base();
+    }
+
+    .#{$name}-marginless {
+        @include header-no-margin();
+    }
+
+    @each $scale-key in map-keys($header-scales) {
+        .#{$name}-scaled-#{$scale-key} {
+            @include header-scale($scale-key);
+        }
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @include query($query-key) {
+            .#{$name}-marginless\@#{$query-key} {
+                @include header-no-margin();
+            }
+
+            @each $scale-key in map-keys($header-scales) {
+                .#{$name}-scaled-#{$scale-key}\@#{$query-key} {
+                    @include header-scale($scale-key);
+                }
+            }
+        }
+    }
+
+    @if mixin-exists('header-hook') {
+        @include header-hook($name);
+    }
+}

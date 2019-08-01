@@ -1,0 +1,26 @@
+$query-map: (
+    'sm': (min-width: 425px),
+    'md': (min-width: 768px),
+    'lg': (min-width: 992px),
+    'xl': (min-width: 1200px),
+    'xxl': (min-width: 1600px)
+) !default;
+$query-media-type-default: 'only screen' !default;
+
+@mixin query($query-key: 'w1024', $media-type: $query-media-type-default, $custom: '') {
+    $media-query: '';
+
+    @if $media-type != '' and type-of($media-type) == string {
+        $media-query: '#{$media-type} and ';
+    }
+
+    @if map-has-key($query-map, $query-key) {
+        $media-query: '#{$media-query}#{map-get($query-map, $query-key)}';
+    } @else if ($custom != '') {
+        $media-query: '#{$media-query}#{$custom}';
+    }
+
+    @media #{$media-query} {
+        @content;
+    }
+}

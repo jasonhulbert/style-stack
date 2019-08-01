@@ -1,0 +1,48 @@
+@import '../../core/query.core';
+@import './color.lib';
+
+$global-html-font-size: 100% !default;
+$global-body-font-size: 1rem !default;
+$global-html-font-scales: (
+    'sm': 1,
+    'md': 1.2,
+    'lg': 1.25,
+    'xl': 1.3,
+    'xxl': 1.4
+) !default;
+$global-body-line-height: 1.5 !default;
+$global-box-sizing: border-box !default;
+$global-background: color-value('light') !default;
+$global-foreground: color-value('dark') !default;
+
+@mixin global() {
+    *,
+    *::before,
+    *::after {
+        box-sizing: $global-box-sizing;
+    }
+
+    html {
+        font-size: $global-html-font-size;
+        color: $global-foreground;
+        background-color: $global-background;
+    }
+    
+    body {
+        margin: 0;
+        line-height: $global-body-line-height;
+        font-size: $global-body-font-size;
+    }
+
+    @each $query-key, $scale in $global-html-font-scales {
+        @include query($query-key) {
+            html {
+                font-size: $scale * $global-html-font-size;
+            }
+        }
+    }
+
+    @if mixin-exists('global-hook') {
+        @include global-hook();
+    }
+}

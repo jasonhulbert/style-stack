@@ -1,0 +1,114 @@
+@import '../../core/query.core';
+@import '../../core/selector.core';
+
+$gap-base-value: 0.2rem !default;
+$gap-multiplier-max: 12 !default;
+$gap-multiplier-default: 4 !default;
+$gap-sides-map: (
+    't': top,
+    'r': right,
+    'b': bottom,
+    'l': left,
+    'tb': (top bottom),
+    'rl': (left right),
+    'trbl': (top right bottom left)
+) !default;
+$gap-sides-default: 'rl' !default;
+
+@function gap-value($multiplier) {
+    @return $multiplier * $gap-base-value;
+}
+
+@mixin gap-property($property, $multiplier: $gap-multiplier-default, $sides: $gap-sides-default) {
+    $sides-list: ();
+
+    @if map-has-key($gap-sides-map, $sides) {
+        $sides-list: map-get($gap-sides-map, $sides);
+    } @else if type-of($sides) == string {
+        $sides-list: $sides;
+    }
+
+    @if length($sides-list) == 4 {
+        #{$property}: gap-value($multiplier);
+    } @else {
+        @each $side in $sides-list {
+            #{$property}-#{$side}: gap-value($multiplier);
+        }
+    }
+}
+
+@mixin gap-paddingding($multiplier: $gap-multiplier-default, $sides: $gap-sides-default) {
+    @include gap-property('padding', $multiplier, $sides);
+}
+
+@mixin gap-margin($multiplier: $gap-multiplier-default, $sides: $gap-sides-default) {
+    @include gap-property('margin', $multiplier, $sides);
+}
+
+@mixin gap($name: 'gap') {
+    $name: selector-prefix($name);
+
+    .#{$name}-margin {
+        @include gap-margin();
+    }
+
+    .#{$name}-padding {
+        @include gap-paddingding();
+    }
+
+    @each $sides-key, $sides-list in $gap-sides-map {
+        .#{$name}-margin-#{$sides-key} {
+            @include gap-margin($sides: $sides-key);
+        }
+    
+        .#{$name}-padding-#{$sides-key} {
+            @include gap-paddingding($sides: $sides-key);
+        }
+
+        @for $i from 1 through $gap-multiplier-max {
+            .#{$name}-margin-#{$i}-#{$sides-key} {
+                @include gap-margin($i, $sides-key);
+            }
+
+            .#{$name}-padding-#{$i}-#{$sides-key} {
+                @include gap-paddingding($i, $sides-key);
+            }
+        }
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @include query($query-key) {
+            .#{$name}-margin\@#{$query-key} {
+                @include gap-margin();
+            }
+
+            .#{$name}-padding\@#{$query-key} {
+                @include gap-paddingding();
+            }
+
+            @each $sides-key, $sides-list in $gap-sides-map {
+                .#{$name}-margin-#{$sides-key}\@#{$query-key} {
+                    @include gap-margin($sides: $sides-key);
+                }
+            
+                .#{$name}-padding-#{$sides-key}\@#{$query-key} {
+                    @include gap-paddingding($sides: $sides-key);
+                }
+
+                @for $i from 1 through $gap-multiplier-max {
+                    .#{$name}-margin-#{$i}-#{$sides-key}\@#{$query-key} {
+                        @include gap-margin($i, $sides-key);
+                    }
+        
+                    .#{$name}-padding-#{$i}-#{$sides-key}\@#{$query-key} {
+                        @include gap-paddingding($i, $sides-key);
+                    }
+                }
+            }
+        }
+    }
+
+    @if mixin-exists('gap-hook') {
+        @include gap-hook($name);
+    }
+}

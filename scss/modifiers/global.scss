@@ -1,0 +1,6 @@
+@import '../core/output.core';
+@import '../lib/modifiers/global.lib';
+
+@include output('modifier.global') {
+    @include global();
+}

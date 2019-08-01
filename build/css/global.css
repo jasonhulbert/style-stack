@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  color: #26262F;
+  background-color: #F2F0F0; }
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1rem; }
+
+@media only screen and (min-width: 425px) {
+  html {
+    font-size: 100%; } }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 120%; } }
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 125%; } }
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 130%; } }
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 140%; } }
+
+/*# sourceMappingURL=global.css.map */

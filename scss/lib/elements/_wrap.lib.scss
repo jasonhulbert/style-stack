@@ -1,0 +1,14 @@
+@import '../../core/selector.core';
+
+@mixin wrap($name: 'wrap') {
+    $name: selector-prefix($name);
+
+    .wrap {
+        width: 100%;
+        position: relative;
+    }
+
+    @if mixin-exists('wrap-hook') {
+        @include wrap-hook();
+    }
+}

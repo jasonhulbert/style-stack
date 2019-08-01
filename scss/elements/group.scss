@@ -1,0 +1,6 @@
+@import '../core/output.core';
+@import '../lib/elements/group.lib';
+
+@include output('element.group') {
+    @include group();
+}

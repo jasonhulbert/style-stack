@@ -1,0 +1,124 @@
+@import '../../core/map.core';
+@import '../../core/selector.core';
+
+$color-theme-map: (
+    'blue': #317FA3,
+    'sky': #6DC8CF,
+    'pink': #D3729C,
+    'orange': #FF8F99,
+    'purple': #6B5078
+) !default;
+$color-neutral-map: (
+    'grey1': #E6E6F0,
+    'grey2': #D3D3DB,
+    'grey3': #BFBFC7,
+    'grey4': #9D9DA3,
+    'grey5': #58585C,
+    'white': #FFFFFF,
+    'black': #000000,
+    'light': #E6E4E4,
+    'dark': #26262F
+) !default;
+$color-util-map: (
+    'affirm': #6EAB70,
+    'warn': #E4815C,
+    'deny': #C24E4F,
+    'notify': #66A6EE,
+    'select': #66A6EE,
+    'focus': #66A6EE
+) !default;
+$color-all-map: map-multi-merge($color-theme-map, $color-neutral-map, $color-util-map) !default;
+$color-variant-map: map-multi-merge($color-theme-map, $color-neutral-map) !default;
+$color-shades: 10, 20, 30 !default;
+$color-tints: 10, 20, 30 !default;
+
+@function color-value($color-key, $tint: 0, $shade: 0, $alpha: 1) {
+    $color-value: map-get($color-all-map, $color-key);
+
+    @if $tint != 0 {
+        $color-value: lighten($color-value, $tint);
+    }
+
+    @if $shade != 0 {
+        $color-value: darken($color-value, $shade);
+    }
+
+    @if $alpha != 1 {
+        $color-value: rgba($color-value, $alpha);
+    }
+
+    @return $color-value;
+}
+
+@function color-lighten-until($color, $until) {
+    $color: $color;
+    $lightness: lightness($color);
+
+    @if $lightness >= $until {
+        @return $color;
+    }
+
+    @while $lightness < $until {
+        $color: lighten($color, 1);
+        $lightness: lightness($color);
+    }
+
+    @return $color;
+}
+
+@function color-darken-until($color, $until) {
+    $color: $color;
+    $lightness: lightness($color);
+
+    @if $lightness <= $until {
+        @return $color;
+    }
+
+    @while $lightness > $until {
+        $color: darken($color, 1);
+        $lightness: lightness($color);
+    }
+
+    @return $color;
+}
+
+@mixin color($name: 'color') {
+    $name: selector-prefix($name);
+
+    @each $color-key, $color-value in $color-all-map {
+        .#{$name}-#{$color-key} {
+            color: color-value($color-key);
+        }
+
+        .#{$name}-#{$color-key}-bg {
+            background-color: color-value($color-key);
+        }
+    }
+
+    @each $color-key, $color-value in $color-variant-map {
+        // Adds tints and shades for 'variant' colors only.
+        @each $shade in $color-shades {
+            .#{$name}-#{$color-key}-shade-#{$shade} {
+                color: color-value($color-key, $shade: $shade);
+            }
+
+            .#{$name}-#{$color-key}-shade-#{$shade}-bg {
+                background-color: color-value($color-key, $shade: $shade);
+            }
+        }
+
+        @each $tint in $color-tints {
+            .#{$name}-#{$color-key}-tint-#{$tint} {
+                color: color-value($color-key, $tint: $tint);
+            }
+
+            .#{$name}-#{$color-key}-tint-#{$tint}-bg {
+                background-color: color-value($color-key, $tint: $tint);
+            }
+        }
+    }
+
+    @if mixin-exists('color-hook') {
+        @include color-hook($name);
+    }
+}

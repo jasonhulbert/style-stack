@@ -1,0 +1,45 @@
+{
+  "name": "sass-plate",
+  "version": "0.0.1",
+  "description": "A configurable sass/css library and boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm run clean && npm run lint",
+    "build": "npm run sass && npm run css",
+    "lint": "stylelint './scss/**/*.scss' --syntax scss --fix",
+    "clean": "rimraf ./build && mkdir ./build",
+    "sass": "npm run sass:bundle && npm run sass:elements && npm run sass:modifiers",
+    "sass:bundle": "npm run sass:compile -- ./scss/plate.scss",
+    "sass:elements": "npm run sass:compile -- ./scss/elements",
+    "sass:modifiers": "npm run sass:compile -- ./scss/modifiers",
+    "sass:compile": "node-sass --source-map-embded -o ./build/css",
+    "css": "npm run css:autoprefix && npm run css:cssnano",
+    "css:autoprefix": "postcss ./build/css/**/*.css --dir ./build/css --use autoprefixer --map",
+    "css:cssnano": "postcss ./build/css/**/*.css --dir ./build/css --use cssnano --map --ext .min.css"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "Jason Hulbert <hulbert.jason@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "husky": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.3",
+    "rimraf": "^2.6.3",
+    "stylelint": "^10.1.0",
+    "stylelint-scss": "^3.9.2"
+  },
+  "dependencies": {
+    "feather-icons": "^4.22.1"
+  }
+}

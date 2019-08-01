@@ -1,0 +1,49 @@
+@import '../../core/query.core';
+@import '../../core/selector.core';
+
+$container-max-width-map: (
+    'sm': 90vw,
+    'md': 90vw,
+    'lg': 95vw,
+    'xl': 95vw,
+    'xxl': 95vw
+) !default;
+$container-base-max-width: 90vw !default;
+
+@mixin container-base() {
+    display: block;
+    width: 100%;
+    max-width: $container-base-max-width;
+    margin: 0 auto;
+}
+
+@mixin container-max-width($query-key) {
+    $max-width: $container-base-max-width;
+
+    @if map-has-key($container-max-width-map, $query-key) {
+        $max-width: map-get($container-max-width-map, $query-key);
+    }
+
+    max-width: $max-width;
+}
+
+@mixin container($name: 'container') {
+    $name: selector-prefix($name);
+
+    .#{$name} {
+        @include container-base();
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @include query($query-key) {
+            .#{$name}-inset {
+                @include container-max-width($query-key);
+            }
+        }
+    }
+
+    @if mixin-exists('container-hook') {
+        @include container-hook($name);
+    }
+}
+
