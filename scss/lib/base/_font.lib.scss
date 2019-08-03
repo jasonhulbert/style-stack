@@ -6,9 +6,9 @@ $font-weights: (
     'primary': (300, 400, 700),
     'secondary': (300, 400, 700)
 ) !default;
-$font-body: 'primary' !default;
+$font-body-family: 'primary' !default;
 $font-body-weight-default: 400 !default;
-$font-header: 'secondary' !default;
+$font-header-family: 'secondary' !default;
 $font-header-weight-default: 300 !default;
 
 @mixin font-family($font-key) {
@@ -27,8 +27,8 @@ $font-header-weight-default: 300 !default;
 
 @mixin font() {
     body {
-        @include font-family($font-body);
-        @include font-weight($font-body, $font-body-weight-default);
+        @include font-family($font-body-family);
+        @include font-weight($font-body-family, $font-body-weight-default);
     }
 
     h1,
@@ -37,8 +37,8 @@ $font-header-weight-default: 300 !default;
     h4,
     h5,
     h6 {
-        @include font-family($font-header);
-        @include font-weight($font-header, $font-header-weight-default);
+        @include font-family($font-header-family);
+        @include font-weight($font-header-family, $font-header-weight-default);
     }
 
     @if mixin-exists('font-hook') {
