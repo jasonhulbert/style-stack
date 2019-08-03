@@ -15,7 +15,7 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none; }
 
-.input {
+.ss-input {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   width: 100%;
   height: 2.7rem;
@@ -27,260 +27,260 @@ input::-webkit-inner-spin-button {
   background: #FFFFFF;
   transition: border-color 200ms ease, background 200ms ease;
   vertical-align: middle; }
-  .input::before, .input::after {
+  .ss-input::before, .ss-input::after {
     outline: none; }
-  .input::-webkit-input-placeholder {
+  .ss-input::-webkit-input-placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input::-moz-placeholder {
+  .ss-input::-moz-placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input:-ms-input-placeholder {
+  .ss-input:-ms-input-placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input::-ms-input-placeholder {
+  .ss-input::-ms-input-placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input::placeholder {
+  .ss-input::placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input::-webkit-input-placeholder {
+  .ss-input::-webkit-input-placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input::-moz-placeholder {
+  .ss-input::-moz-placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input::-ms-input-placeholder {
+  .ss-input::-ms-input-placeholder {
     color: rgba(38, 38, 47, 0.3); }
-  .input:focus:not([tabindex='-1']) {
+  .ss-input:focus:not([tabindex='-1']) {
     border-color: #26262F;
     background: #FFFFFF;
     outline-offset: 0.15rem;
     outline: rgba(102, 166, 238, 0.5) solid 0.15rem; }
 
-.input-scale-sm {
+.ss-input-scale-sm {
   height: 2.295rem;
   font-size: 0.765rem; }
 
-.input-scale-md {
+.ss-input-scale-md {
   height: 2.7rem;
   font-size: 0.9rem; }
 
-.input-scale-lg {
+.ss-input-scale-lg {
   height: 3.105rem;
   font-size: 1.035rem; }
 
-.input-scale-xl {
+.ss-input-scale-xl {
   height: 3.51rem;
   font-size: 1.17rem; }
 
-.input-dark {
+.ss-input-dark {
   background: #26262F;
   color: #F0ECEC;
   border-color: #58585C; }
-  .input-dark::-webkit-input-placeholder {
+  .ss-input-dark::-webkit-input-placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark::-moz-placeholder {
+  .ss-input-dark::-moz-placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark:-ms-input-placeholder {
+  .ss-input-dark:-ms-input-placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark::-ms-input-placeholder {
+  .ss-input-dark::-ms-input-placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark::placeholder {
+  .ss-input-dark::placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark::-webkit-input-placeholder {
+  .ss-input-dark::-webkit-input-placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark::-moz-placeholder {
+  .ss-input-dark::-moz-placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark::-ms-input-placeholder {
+  .ss-input-dark::-ms-input-placeholder {
     color: rgba(240, 236, 236, 0.5); }
-  .input-dark:focus:not([tabindex='-1']) {
+  .ss-input-dark:focus:not([tabindex='-1']) {
     border-color: #F0ECEC;
     background: #26262F; }
 
-.input-center {
+.ss-input-center {
   text-align: center; }
 
-.input-theme-blue {
+.ss-input-theme-blue {
   border-color: #317FA3; }
-  .input-theme-blue::-webkit-input-placeholder {
+  .ss-input-theme-blue::-webkit-input-placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue::-moz-placeholder {
+  .ss-input-theme-blue::-moz-placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue:-ms-input-placeholder {
+  .ss-input-theme-blue:-ms-input-placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue::-ms-input-placeholder {
+  .ss-input-theme-blue::-ms-input-placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue::placeholder {
+  .ss-input-theme-blue::placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue::-webkit-input-placeholder {
+  .ss-input-theme-blue::-webkit-input-placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue::-moz-placeholder {
+  .ss-input-theme-blue::-moz-placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue::-ms-input-placeholder {
+  .ss-input-theme-blue::-ms-input-placeholder {
     color: rgba(49, 127, 163, 0.5); }
-  .input-theme-blue:focus:not([tabindex='-1']) {
+  .ss-input-theme-blue:focus:not([tabindex='-1']) {
     border-color: #235a74;
     outline-color: rgba(49, 127, 163, 0.3); }
 
-.input-theme-sky {
+.ss-input-theme-sky {
   border-color: #6DC8CF; }
-  .input-theme-sky::-webkit-input-placeholder {
+  .ss-input-theme-sky::-webkit-input-placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky::-moz-placeholder {
+  .ss-input-theme-sky::-moz-placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky:-ms-input-placeholder {
+  .ss-input-theme-sky:-ms-input-placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky::-ms-input-placeholder {
+  .ss-input-theme-sky::-ms-input-placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky::placeholder {
+  .ss-input-theme-sky::placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky::-webkit-input-placeholder {
+  .ss-input-theme-sky::-webkit-input-placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky::-moz-placeholder {
+  .ss-input-theme-sky::-moz-placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky::-ms-input-placeholder {
+  .ss-input-theme-sky::-ms-input-placeholder {
     color: rgba(109, 200, 207, 0.5); }
-  .input-theme-sky:focus:not([tabindex='-1']) {
+  .ss-input-theme-sky:focus:not([tabindex='-1']) {
     border-color: #266d73;
     outline-color: rgba(109, 200, 207, 0.3); }
 
-.input-theme-pink {
+.ss-input-theme-pink {
   border-color: #D3729C; }
-  .input-theme-pink::-webkit-input-placeholder {
+  .ss-input-theme-pink::-webkit-input-placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink::-moz-placeholder {
+  .ss-input-theme-pink::-moz-placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink:-ms-input-placeholder {
+  .ss-input-theme-pink:-ms-input-placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink::-ms-input-placeholder {
+  .ss-input-theme-pink::-ms-input-placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink::placeholder {
+  .ss-input-theme-pink::placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink::-webkit-input-placeholder {
+  .ss-input-theme-pink::-webkit-input-placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink::-moz-placeholder {
+  .ss-input-theme-pink::-moz-placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink::-ms-input-placeholder {
+  .ss-input-theme-pink::-ms-input-placeholder {
     color: rgba(211, 114, 156, 0.5); }
-  .input-theme-pink:focus:not([tabindex='-1']) {
+  .ss-input-theme-pink:focus:not([tabindex='-1']) {
     border-color: #742446;
     outline-color: rgba(211, 114, 156, 0.3); }
 
-.input-theme-orange {
+.ss-input-theme-orange {
   border-color: #FF8F99; }
-  .input-theme-orange::-webkit-input-placeholder {
+  .ss-input-theme-orange::-webkit-input-placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange::-moz-placeholder {
+  .ss-input-theme-orange::-moz-placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange:-ms-input-placeholder {
+  .ss-input-theme-orange:-ms-input-placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange::-ms-input-placeholder {
+  .ss-input-theme-orange::-ms-input-placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange::placeholder {
+  .ss-input-theme-orange::placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange::-webkit-input-placeholder {
+  .ss-input-theme-orange::-webkit-input-placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange::-moz-placeholder {
+  .ss-input-theme-orange::-moz-placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange::-ms-input-placeholder {
+  .ss-input-theme-orange::-ms-input-placeholder {
     color: rgba(255, 143, 153, 0.5); }
-  .input-theme-orange:focus:not([tabindex='-1']) {
+  .ss-input-theme-orange:focus:not([tabindex='-1']) {
     border-color: #94000d;
     outline-color: rgba(255, 143, 153, 0.3); }
 
-.input-theme-purple {
+.ss-input-theme-purple {
   border-color: #6B5078; }
-  .input-theme-purple::-webkit-input-placeholder {
+  .ss-input-theme-purple::-webkit-input-placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple::-moz-placeholder {
+  .ss-input-theme-purple::-moz-placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple:-ms-input-placeholder {
+  .ss-input-theme-purple:-ms-input-placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple::-ms-input-placeholder {
+  .ss-input-theme-purple::-ms-input-placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple::placeholder {
+  .ss-input-theme-purple::placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple::-webkit-input-placeholder {
+  .ss-input-theme-purple::-webkit-input-placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple::-moz-placeholder {
+  .ss-input-theme-purple::-moz-placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple::-ms-input-placeholder {
+  .ss-input-theme-purple::-ms-input-placeholder {
     color: rgba(107, 80, 120, 0.5); }
-  .input-theme-purple:focus:not([tabindex='-1']) {
+  .ss-input-theme-purple:focus:not([tabindex='-1']) {
     border-color: #503c59;
     outline-color: rgba(107, 80, 120, 0.3); }
 
-.input-scale-sm\@sm {
+.ss-input-scale-sm\@sm {
   height: 2.295rem;
   font-size: 0.765rem; }
 
-.input-scale-md\@sm {
+.ss-input-scale-md\@sm {
   height: 2.7rem;
   font-size: 0.9rem; }
 
-.input-scale-lg\@sm {
+.ss-input-scale-lg\@sm {
   height: 3.105rem;
   font-size: 1.035rem; }
 
-.input-scale-xl\@sm {
+.ss-input-scale-xl\@sm {
   height: 3.51rem;
   font-size: 1.17rem; }
 
-.input-scale-sm\@md {
+.ss-input-scale-sm\@md {
   height: 2.295rem;
   font-size: 0.765rem; }
 
-.input-scale-md\@md {
+.ss-input-scale-md\@md {
   height: 2.7rem;
   font-size: 0.9rem; }
 
-.input-scale-lg\@md {
+.ss-input-scale-lg\@md {
   height: 3.105rem;
   font-size: 1.035rem; }
 
-.input-scale-xl\@md {
+.ss-input-scale-xl\@md {
   height: 3.51rem;
   font-size: 1.17rem; }
 
-.input-scale-sm\@lg {
+.ss-input-scale-sm\@lg {
   height: 2.295rem;
   font-size: 0.765rem; }
 
-.input-scale-md\@lg {
+.ss-input-scale-md\@lg {
   height: 2.7rem;
   font-size: 0.9rem; }
 
-.input-scale-lg\@lg {
+.ss-input-scale-lg\@lg {
   height: 3.105rem;
   font-size: 1.035rem; }
 
-.input-scale-xl\@lg {
+.ss-input-scale-xl\@lg {
   height: 3.51rem;
   font-size: 1.17rem; }
 
-.input-scale-sm\@xl {
+.ss-input-scale-sm\@xl {
   height: 2.295rem;
   font-size: 0.765rem; }
 
-.input-scale-md\@xl {
+.ss-input-scale-md\@xl {
   height: 2.7rem;
   font-size: 0.9rem; }
 
-.input-scale-lg\@xl {
+.ss-input-scale-lg\@xl {
   height: 3.105rem;
   font-size: 1.035rem; }
 
-.input-scale-xl\@xl {
+.ss-input-scale-xl\@xl {
   height: 3.51rem;
   font-size: 1.17rem; }
 
-.input-scale-sm\@xxl {
+.ss-input-scale-sm\@xxl {
   height: 2.295rem;
   font-size: 0.765rem; }
 
-.input-scale-md\@xxl {
+.ss-input-scale-md\@xxl {
   height: 2.7rem;
   font-size: 0.9rem; }
 
-.input-scale-lg\@xxl {
+.ss-input-scale-lg\@xxl {
   height: 3.105rem;
   font-size: 1.035rem; }
 
-.input-scale-xl\@xxl {
+.ss-input-scale-xl\@xxl {
   height: 3.51rem;
   font-size: 1.17rem; }
 

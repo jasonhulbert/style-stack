@@ -1,4 +1,4 @@
-$selector-prefix: '' !default;
+$selector-prefix: 'ss-' !default;
 $selector-scope: '' !default;
 
 @function selector-prefix($selector) {

@@ -1,9 +1,9 @@
-.group {
+.ss-group {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; }
 
-.group-item {
+.ss-group-item {
   position: relative;
   flex-basis: 100%;
   flex-grow: 0;
@@ -11,7 +11,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-auto {
+.ss-group-item-size-auto {
   position: relative;
   flex-basis: auto;
   flex-grow: 0;
@@ -19,7 +19,31 @@
   max-width: none;
   min-width: 0; }
 
-.group-size-auto > :not([class*='item-size-']) {
+.ss-group-row-break {
+  flex-basis: 100%;
+  width: unset;
+  height: 0;
+  display: unset;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+.ss-group-column-break {
+  flex-basis: 100%;
+  width: 0;
+  height: unset;
+  display: unset;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+[class*='ss-group-row-break@'] {
+  display: none; }
+
+[class*='ss-group-column-break@'] {
+  display: none; }
+
+.ss-group-size-auto > :not([class*='item-size-']) {
   position: relative;
   flex-basis: auto;
   flex-grow: 0;
@@ -27,7 +51,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-size-1 > :not([class*='item-size-']) {
+.ss-group-size-1 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 4.16667%;
   flex-grow: 0;
@@ -35,7 +59,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-1 {
+.ss-group-item-size-1 {
   position: relative;
   flex-basis: 4.16667%;
   flex-grow: 0;
@@ -43,13 +67,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-1 {
+.ss-group-item-push-1 {
   margin-left: 4.16667%; }
 
-.group-item-pull-1 {
+.ss-group-item-pull-1 {
   margin-left: -4.16667%; }
 
-.group-size-2 > :not([class*='item-size-']) {
+.ss-group-size-2 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 8.33333%;
   flex-grow: 0;
@@ -57,7 +81,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-2 {
+.ss-group-item-size-2 {
   position: relative;
   flex-basis: 8.33333%;
   flex-grow: 0;
@@ -65,13 +89,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-2 {
+.ss-group-item-push-2 {
   margin-left: 8.33333%; }
 
-.group-item-pull-2 {
+.ss-group-item-pull-2 {
   margin-left: -8.33333%; }
 
-.group-size-3 > :not([class*='item-size-']) {
+.ss-group-size-3 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 12.5%;
   flex-grow: 0;
@@ -79,7 +103,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-3 {
+.ss-group-item-size-3 {
   position: relative;
   flex-basis: 12.5%;
   flex-grow: 0;
@@ -87,13 +111,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-3 {
+.ss-group-item-push-3 {
   margin-left: 12.5%; }
 
-.group-item-pull-3 {
+.ss-group-item-pull-3 {
   margin-left: -12.5%; }
 
-.group-size-4 > :not([class*='item-size-']) {
+.ss-group-size-4 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 16.66667%;
   flex-grow: 0;
@@ -101,7 +125,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-4 {
+.ss-group-item-size-4 {
   position: relative;
   flex-basis: 16.66667%;
   flex-grow: 0;
@@ -109,13 +133,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-4 {
+.ss-group-item-push-4 {
   margin-left: 16.66667%; }
 
-.group-item-pull-4 {
+.ss-group-item-pull-4 {
   margin-left: -16.66667%; }
 
-.group-size-5 > :not([class*='item-size-']) {
+.ss-group-size-5 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 20.83333%;
   flex-grow: 0;
@@ -123,7 +147,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-5 {
+.ss-group-item-size-5 {
   position: relative;
   flex-basis: 20.83333%;
   flex-grow: 0;
@@ -131,13 +155,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-5 {
+.ss-group-item-push-5 {
   margin-left: 20.83333%; }
 
-.group-item-pull-5 {
+.ss-group-item-pull-5 {
   margin-left: -20.83333%; }
 
-.group-size-6 > :not([class*='item-size-']) {
+.ss-group-size-6 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 25%;
   flex-grow: 0;
@@ -145,7 +169,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-6 {
+.ss-group-item-size-6 {
   position: relative;
   flex-basis: 25%;
   flex-grow: 0;
@@ -153,13 +177,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-6 {
+.ss-group-item-push-6 {
   margin-left: 25%; }
 
-.group-item-pull-6 {
+.ss-group-item-pull-6 {
   margin-left: -25%; }
 
-.group-size-7 > :not([class*='item-size-']) {
+.ss-group-size-7 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 29.16667%;
   flex-grow: 0;
@@ -167,7 +191,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-7 {
+.ss-group-item-size-7 {
   position: relative;
   flex-basis: 29.16667%;
   flex-grow: 0;
@@ -175,13 +199,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-7 {
+.ss-group-item-push-7 {
   margin-left: 29.16667%; }
 
-.group-item-pull-7 {
+.ss-group-item-pull-7 {
   margin-left: -29.16667%; }
 
-.group-size-8 > :not([class*='item-size-']) {
+.ss-group-size-8 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 33.33333%;
   flex-grow: 0;
@@ -189,7 +213,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-8 {
+.ss-group-item-size-8 {
   position: relative;
   flex-basis: 33.33333%;
   flex-grow: 0;
@@ -197,13 +221,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-8 {
+.ss-group-item-push-8 {
   margin-left: 33.33333%; }
 
-.group-item-pull-8 {
+.ss-group-item-pull-8 {
   margin-left: -33.33333%; }
 
-.group-size-9 > :not([class*='item-size-']) {
+.ss-group-size-9 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 37.5%;
   flex-grow: 0;
@@ -211,7 +235,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-9 {
+.ss-group-item-size-9 {
   position: relative;
   flex-basis: 37.5%;
   flex-grow: 0;
@@ -219,13 +243,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-9 {
+.ss-group-item-push-9 {
   margin-left: 37.5%; }
 
-.group-item-pull-9 {
+.ss-group-item-pull-9 {
   margin-left: -37.5%; }
 
-.group-size-10 > :not([class*='item-size-']) {
+.ss-group-size-10 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 41.66667%;
   flex-grow: 0;
@@ -233,7 +257,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-10 {
+.ss-group-item-size-10 {
   position: relative;
   flex-basis: 41.66667%;
   flex-grow: 0;
@@ -241,13 +265,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-10 {
+.ss-group-item-push-10 {
   margin-left: 41.66667%; }
 
-.group-item-pull-10 {
+.ss-group-item-pull-10 {
   margin-left: -41.66667%; }
 
-.group-size-11 > :not([class*='item-size-']) {
+.ss-group-size-11 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 45.83333%;
   flex-grow: 0;
@@ -255,7 +279,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-11 {
+.ss-group-item-size-11 {
   position: relative;
   flex-basis: 45.83333%;
   flex-grow: 0;
@@ -263,13 +287,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-11 {
+.ss-group-item-push-11 {
   margin-left: 45.83333%; }
 
-.group-item-pull-11 {
+.ss-group-item-pull-11 {
   margin-left: -45.83333%; }
 
-.group-size-12 > :not([class*='item-size-']) {
+.ss-group-size-12 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 50%;
   flex-grow: 0;
@@ -277,7 +301,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-12 {
+.ss-group-item-size-12 {
   position: relative;
   flex-basis: 50%;
   flex-grow: 0;
@@ -285,13 +309,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-12 {
+.ss-group-item-push-12 {
   margin-left: 50%; }
 
-.group-item-pull-12 {
+.ss-group-item-pull-12 {
   margin-left: -50%; }
 
-.group-size-13 > :not([class*='item-size-']) {
+.ss-group-size-13 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 54.16667%;
   flex-grow: 0;
@@ -299,7 +323,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-13 {
+.ss-group-item-size-13 {
   position: relative;
   flex-basis: 54.16667%;
   flex-grow: 0;
@@ -307,13 +331,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-13 {
+.ss-group-item-push-13 {
   margin-left: 54.16667%; }
 
-.group-item-pull-13 {
+.ss-group-item-pull-13 {
   margin-left: -54.16667%; }
 
-.group-size-14 > :not([class*='item-size-']) {
+.ss-group-size-14 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 58.33333%;
   flex-grow: 0;
@@ -321,7 +345,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-14 {
+.ss-group-item-size-14 {
   position: relative;
   flex-basis: 58.33333%;
   flex-grow: 0;
@@ -329,13 +353,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-14 {
+.ss-group-item-push-14 {
   margin-left: 58.33333%; }
 
-.group-item-pull-14 {
+.ss-group-item-pull-14 {
   margin-left: -58.33333%; }
 
-.group-size-15 > :not([class*='item-size-']) {
+.ss-group-size-15 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 62.5%;
   flex-grow: 0;
@@ -343,7 +367,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-15 {
+.ss-group-item-size-15 {
   position: relative;
   flex-basis: 62.5%;
   flex-grow: 0;
@@ -351,13 +375,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-15 {
+.ss-group-item-push-15 {
   margin-left: 62.5%; }
 
-.group-item-pull-15 {
+.ss-group-item-pull-15 {
   margin-left: -62.5%; }
 
-.group-size-16 > :not([class*='item-size-']) {
+.ss-group-size-16 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 66.66667%;
   flex-grow: 0;
@@ -365,7 +389,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-16 {
+.ss-group-item-size-16 {
   position: relative;
   flex-basis: 66.66667%;
   flex-grow: 0;
@@ -373,13 +397,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-16 {
+.ss-group-item-push-16 {
   margin-left: 66.66667%; }
 
-.group-item-pull-16 {
+.ss-group-item-pull-16 {
   margin-left: -66.66667%; }
 
-.group-size-17 > :not([class*='item-size-']) {
+.ss-group-size-17 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 70.83333%;
   flex-grow: 0;
@@ -387,7 +411,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-17 {
+.ss-group-item-size-17 {
   position: relative;
   flex-basis: 70.83333%;
   flex-grow: 0;
@@ -395,13 +419,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-17 {
+.ss-group-item-push-17 {
   margin-left: 70.83333%; }
 
-.group-item-pull-17 {
+.ss-group-item-pull-17 {
   margin-left: -70.83333%; }
 
-.group-size-18 > :not([class*='item-size-']) {
+.ss-group-size-18 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 75%;
   flex-grow: 0;
@@ -409,7 +433,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-18 {
+.ss-group-item-size-18 {
   position: relative;
   flex-basis: 75%;
   flex-grow: 0;
@@ -417,13 +441,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-18 {
+.ss-group-item-push-18 {
   margin-left: 75%; }
 
-.group-item-pull-18 {
+.ss-group-item-pull-18 {
   margin-left: -75%; }
 
-.group-size-19 > :not([class*='item-size-']) {
+.ss-group-size-19 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 79.16667%;
   flex-grow: 0;
@@ -431,7 +455,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-19 {
+.ss-group-item-size-19 {
   position: relative;
   flex-basis: 79.16667%;
   flex-grow: 0;
@@ -439,13 +463,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-19 {
+.ss-group-item-push-19 {
   margin-left: 79.16667%; }
 
-.group-item-pull-19 {
+.ss-group-item-pull-19 {
   margin-left: -79.16667%; }
 
-.group-size-20 > :not([class*='item-size-']) {
+.ss-group-size-20 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 83.33333%;
   flex-grow: 0;
@@ -453,7 +477,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-20 {
+.ss-group-item-size-20 {
   position: relative;
   flex-basis: 83.33333%;
   flex-grow: 0;
@@ -461,13 +485,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-20 {
+.ss-group-item-push-20 {
   margin-left: 83.33333%; }
 
-.group-item-pull-20 {
+.ss-group-item-pull-20 {
   margin-left: -83.33333%; }
 
-.group-size-21 > :not([class*='item-size-']) {
+.ss-group-size-21 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 87.5%;
   flex-grow: 0;
@@ -475,7 +499,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-21 {
+.ss-group-item-size-21 {
   position: relative;
   flex-basis: 87.5%;
   flex-grow: 0;
@@ -483,13 +507,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-21 {
+.ss-group-item-push-21 {
   margin-left: 87.5%; }
 
-.group-item-pull-21 {
+.ss-group-item-pull-21 {
   margin-left: -87.5%; }
 
-.group-size-22 > :not([class*='item-size-']) {
+.ss-group-size-22 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 91.66667%;
   flex-grow: 0;
@@ -497,7 +521,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-22 {
+.ss-group-item-size-22 {
   position: relative;
   flex-basis: 91.66667%;
   flex-grow: 0;
@@ -505,13 +529,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-22 {
+.ss-group-item-push-22 {
   margin-left: 91.66667%; }
 
-.group-item-pull-22 {
+.ss-group-item-pull-22 {
   margin-left: -91.66667%; }
 
-.group-size-23 > :not([class*='item-size-']) {
+.ss-group-size-23 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 95.83333%;
   flex-grow: 0;
@@ -519,7 +543,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-23 {
+.ss-group-item-size-23 {
   position: relative;
   flex-basis: 95.83333%;
   flex-grow: 0;
@@ -527,13 +551,13 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-23 {
+.ss-group-item-push-23 {
   margin-left: 95.83333%; }
 
-.group-item-pull-23 {
+.ss-group-item-pull-23 {
   margin-left: -95.83333%; }
 
-.group-size-24 > :not([class*='item-size-']) {
+.ss-group-size-24 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 100%;
   flex-grow: 0;
@@ -541,7 +565,7 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-size-24 {
+.ss-group-item-size-24 {
   position: relative;
   flex-basis: 100%;
   flex-grow: 0;
@@ -549,2354 +573,2444 @@
   max-width: none;
   min-width: 0; }
 
-.group-item-push-24 {
+.ss-group-item-push-24 {
   margin-left: 100%; }
 
-.group-item-pull-24 {
+.ss-group-item-pull-24 {
   margin-left: -100%; }
 
-.group-nowrap {
+.ss-group-nowrap {
   flex-wrap: nowrap; }
 
-.group-justify-around {
+.ss-group-justify-around {
   justify-content: space-around; }
 
-.group-justify-between {
+.ss-group-justify-between {
   justify-content: space-between; }
 
-.group-justify-center {
+.ss-group-justify-center {
   justify-content: center; }
 
-.group-justify-end {
+.ss-group-justify-end {
   justify-content: flex-end; }
 
-.group-align-center {
+.ss-group-align-center {
   align-items: center; }
 
-.group-align-start {
+.ss-group-align-start {
   align-items: flex-start; }
 
-.group-align-end {
+.ss-group-align-end {
   align-items: flex-end; }
 
 @media only screen and (min-width: 425px) {
-  .group-item-size-auto\@sm {
+  .ss-group-item-size-auto\@sm {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-auto\@sm > :not([class*='item-size-']) {
+  .ss-group-size-auto\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-1\@sm > :not([class*='item-size-']) {
+  .ss-group-row-break\@sm {
+    flex-basis: 100%;
+    width: unset;
+    height: 0;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-column-break\@sm {
+    flex-basis: 100%;
+    width: 0;
+    height: unset;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-disable-break\@sm {
+    display: none; }
+  .ss-group-size-1\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-1\@sm {
+  .ss-group-item-size-1\@sm {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-1\@sm {
+  .ss-group-item-push-1\@sm {
     margin-left: 4.16667%; }
-  .group-item-pull-1\@sm {
+  .ss-group-item-pull-1\@sm {
     margin-left: -4.16667%; }
-  .group-size-2\@sm > :not([class*='item-size-']) {
+  .ss-group-size-2\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-2\@sm {
+  .ss-group-item-size-2\@sm {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-2\@sm {
+  .ss-group-item-push-2\@sm {
     margin-left: 8.33333%; }
-  .group-item-pull-2\@sm {
+  .ss-group-item-pull-2\@sm {
     margin-left: -8.33333%; }
-  .group-size-3\@sm > :not([class*='item-size-']) {
+  .ss-group-size-3\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-3\@sm {
+  .ss-group-item-size-3\@sm {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-3\@sm {
+  .ss-group-item-push-3\@sm {
     margin-left: 12.5%; }
-  .group-item-pull-3\@sm {
+  .ss-group-item-pull-3\@sm {
     margin-left: -12.5%; }
-  .group-size-4\@sm > :not([class*='item-size-']) {
+  .ss-group-size-4\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-4\@sm {
+  .ss-group-item-size-4\@sm {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-4\@sm {
+  .ss-group-item-push-4\@sm {
     margin-left: 16.66667%; }
-  .group-item-pull-4\@sm {
+  .ss-group-item-pull-4\@sm {
     margin-left: -16.66667%; }
-  .group-size-5\@sm > :not([class*='item-size-']) {
+  .ss-group-size-5\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-5\@sm {
+  .ss-group-item-size-5\@sm {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-5\@sm {
+  .ss-group-item-push-5\@sm {
     margin-left: 20.83333%; }
-  .group-item-pull-5\@sm {
+  .ss-group-item-pull-5\@sm {
     margin-left: -20.83333%; }
-  .group-size-6\@sm > :not([class*='item-size-']) {
+  .ss-group-size-6\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-6\@sm {
+  .ss-group-item-size-6\@sm {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-6\@sm {
+  .ss-group-item-push-6\@sm {
     margin-left: 25%; }
-  .group-item-pull-6\@sm {
+  .ss-group-item-pull-6\@sm {
     margin-left: -25%; }
-  .group-size-7\@sm > :not([class*='item-size-']) {
+  .ss-group-size-7\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-7\@sm {
+  .ss-group-item-size-7\@sm {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-7\@sm {
+  .ss-group-item-push-7\@sm {
     margin-left: 29.16667%; }
-  .group-item-pull-7\@sm {
+  .ss-group-item-pull-7\@sm {
     margin-left: -29.16667%; }
-  .group-size-8\@sm > :not([class*='item-size-']) {
+  .ss-group-size-8\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-8\@sm {
+  .ss-group-item-size-8\@sm {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-8\@sm {
+  .ss-group-item-push-8\@sm {
     margin-left: 33.33333%; }
-  .group-item-pull-8\@sm {
+  .ss-group-item-pull-8\@sm {
     margin-left: -33.33333%; }
-  .group-size-9\@sm > :not([class*='item-size-']) {
+  .ss-group-size-9\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-9\@sm {
+  .ss-group-item-size-9\@sm {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-9\@sm {
+  .ss-group-item-push-9\@sm {
     margin-left: 37.5%; }
-  .group-item-pull-9\@sm {
+  .ss-group-item-pull-9\@sm {
     margin-left: -37.5%; }
-  .group-size-10\@sm > :not([class*='item-size-']) {
+  .ss-group-size-10\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-10\@sm {
+  .ss-group-item-size-10\@sm {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-10\@sm {
+  .ss-group-item-push-10\@sm {
     margin-left: 41.66667%; }
-  .group-item-pull-10\@sm {
+  .ss-group-item-pull-10\@sm {
     margin-left: -41.66667%; }
-  .group-size-11\@sm > :not([class*='item-size-']) {
+  .ss-group-size-11\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-11\@sm {
+  .ss-group-item-size-11\@sm {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-11\@sm {
+  .ss-group-item-push-11\@sm {
     margin-left: 45.83333%; }
-  .group-item-pull-11\@sm {
+  .ss-group-item-pull-11\@sm {
     margin-left: -45.83333%; }
-  .group-size-12\@sm > :not([class*='item-size-']) {
+  .ss-group-size-12\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-12\@sm {
+  .ss-group-item-size-12\@sm {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-12\@sm {
+  .ss-group-item-push-12\@sm {
     margin-left: 50%; }
-  .group-item-pull-12\@sm {
+  .ss-group-item-pull-12\@sm {
     margin-left: -50%; }
-  .group-size-13\@sm > :not([class*='item-size-']) {
+  .ss-group-size-13\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-13\@sm {
+  .ss-group-item-size-13\@sm {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-13\@sm {
+  .ss-group-item-push-13\@sm {
     margin-left: 54.16667%; }
-  .group-item-pull-13\@sm {
+  .ss-group-item-pull-13\@sm {
     margin-left: -54.16667%; }
-  .group-size-14\@sm > :not([class*='item-size-']) {
+  .ss-group-size-14\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-14\@sm {
+  .ss-group-item-size-14\@sm {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-14\@sm {
+  .ss-group-item-push-14\@sm {
     margin-left: 58.33333%; }
-  .group-item-pull-14\@sm {
+  .ss-group-item-pull-14\@sm {
     margin-left: -58.33333%; }
-  .group-size-15\@sm > :not([class*='item-size-']) {
+  .ss-group-size-15\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-15\@sm {
+  .ss-group-item-size-15\@sm {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-15\@sm {
+  .ss-group-item-push-15\@sm {
     margin-left: 62.5%; }
-  .group-item-pull-15\@sm {
+  .ss-group-item-pull-15\@sm {
     margin-left: -62.5%; }
-  .group-size-16\@sm > :not([class*='item-size-']) {
+  .ss-group-size-16\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-16\@sm {
+  .ss-group-item-size-16\@sm {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-16\@sm {
+  .ss-group-item-push-16\@sm {
     margin-left: 66.66667%; }
-  .group-item-pull-16\@sm {
+  .ss-group-item-pull-16\@sm {
     margin-left: -66.66667%; }
-  .group-size-17\@sm > :not([class*='item-size-']) {
+  .ss-group-size-17\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-17\@sm {
+  .ss-group-item-size-17\@sm {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-17\@sm {
+  .ss-group-item-push-17\@sm {
     margin-left: 70.83333%; }
-  .group-item-pull-17\@sm {
+  .ss-group-item-pull-17\@sm {
     margin-left: -70.83333%; }
-  .group-size-18\@sm > :not([class*='item-size-']) {
+  .ss-group-size-18\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-18\@sm {
+  .ss-group-item-size-18\@sm {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-18\@sm {
+  .ss-group-item-push-18\@sm {
     margin-left: 75%; }
-  .group-item-pull-18\@sm {
+  .ss-group-item-pull-18\@sm {
     margin-left: -75%; }
-  .group-size-19\@sm > :not([class*='item-size-']) {
+  .ss-group-size-19\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-19\@sm {
+  .ss-group-item-size-19\@sm {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-19\@sm {
+  .ss-group-item-push-19\@sm {
     margin-left: 79.16667%; }
-  .group-item-pull-19\@sm {
+  .ss-group-item-pull-19\@sm {
     margin-left: -79.16667%; }
-  .group-size-20\@sm > :not([class*='item-size-']) {
+  .ss-group-size-20\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-20\@sm {
+  .ss-group-item-size-20\@sm {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-20\@sm {
+  .ss-group-item-push-20\@sm {
     margin-left: 83.33333%; }
-  .group-item-pull-20\@sm {
+  .ss-group-item-pull-20\@sm {
     margin-left: -83.33333%; }
-  .group-size-21\@sm > :not([class*='item-size-']) {
+  .ss-group-size-21\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-21\@sm {
+  .ss-group-item-size-21\@sm {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-21\@sm {
+  .ss-group-item-push-21\@sm {
     margin-left: 87.5%; }
-  .group-item-pull-21\@sm {
+  .ss-group-item-pull-21\@sm {
     margin-left: -87.5%; }
-  .group-size-22\@sm > :not([class*='item-size-']) {
+  .ss-group-size-22\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-22\@sm {
+  .ss-group-item-size-22\@sm {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-22\@sm {
+  .ss-group-item-push-22\@sm {
     margin-left: 91.66667%; }
-  .group-item-pull-22\@sm {
+  .ss-group-item-pull-22\@sm {
     margin-left: -91.66667%; }
-  .group-size-23\@sm > :not([class*='item-size-']) {
+  .ss-group-size-23\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-23\@sm {
+  .ss-group-item-size-23\@sm {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-23\@sm {
+  .ss-group-item-push-23\@sm {
     margin-left: 95.83333%; }
-  .group-item-pull-23\@sm {
+  .ss-group-item-pull-23\@sm {
     margin-left: -95.83333%; }
-  .group-size-24\@sm > :not([class*='item-size-']) {
+  .ss-group-size-24\@sm > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-24\@sm {
+  .ss-group-item-size-24\@sm {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-24\@sm {
+  .ss-group-item-push-24\@sm {
     margin-left: 100%; }
-  .group-item-pull-24\@sm {
+  .ss-group-item-pull-24\@sm {
     margin-left: -100%; }
-  .group-nowrap\@sm {
+  .ss-group-nowrap\@sm {
     flex-wrap: nowrap; }
-  .group-justify-around\@sm {
+  .ss-group-justify-around\@sm {
     justify-content: space-around; }
-  .group-justify-between\@sm {
+  .ss-group-justify-between\@sm {
     justify-content: space-between; }
-  .group-justify-center\@sm {
+  .ss-group-justify-center\@sm {
     justify-content: center; }
-  .group-justify-end\@sm {
+  .ss-group-justify-end\@sm {
     justify-content: flex-end; }
-  .group-align-center\@sm {
+  .ss-group-align-center\@sm {
     align-items: center; }
-  .group-align-start\@sm {
+  .ss-group-align-start\@sm {
     align-items: flex-start; }
-  .group-align-end\@sm {
+  .ss-group-align-end\@sm {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 768px) {
-  .group-item-size-auto\@md {
+  .ss-group-item-size-auto\@md {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-auto\@md > :not([class*='item-size-']) {
+  .ss-group-size-auto\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-1\@md > :not([class*='item-size-']) {
+  .ss-group-row-break\@md {
+    flex-basis: 100%;
+    width: unset;
+    height: 0;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-column-break\@md {
+    flex-basis: 100%;
+    width: 0;
+    height: unset;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-disable-break\@md {
+    display: none; }
+  .ss-group-size-1\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-1\@md {
+  .ss-group-item-size-1\@md {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-1\@md {
+  .ss-group-item-push-1\@md {
     margin-left: 4.16667%; }
-  .group-item-pull-1\@md {
+  .ss-group-item-pull-1\@md {
     margin-left: -4.16667%; }
-  .group-size-2\@md > :not([class*='item-size-']) {
+  .ss-group-size-2\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-2\@md {
+  .ss-group-item-size-2\@md {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-2\@md {
+  .ss-group-item-push-2\@md {
     margin-left: 8.33333%; }
-  .group-item-pull-2\@md {
+  .ss-group-item-pull-2\@md {
     margin-left: -8.33333%; }
-  .group-size-3\@md > :not([class*='item-size-']) {
+  .ss-group-size-3\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-3\@md {
+  .ss-group-item-size-3\@md {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-3\@md {
+  .ss-group-item-push-3\@md {
     margin-left: 12.5%; }
-  .group-item-pull-3\@md {
+  .ss-group-item-pull-3\@md {
     margin-left: -12.5%; }
-  .group-size-4\@md > :not([class*='item-size-']) {
+  .ss-group-size-4\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-4\@md {
+  .ss-group-item-size-4\@md {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-4\@md {
+  .ss-group-item-push-4\@md {
     margin-left: 16.66667%; }
-  .group-item-pull-4\@md {
+  .ss-group-item-pull-4\@md {
     margin-left: -16.66667%; }
-  .group-size-5\@md > :not([class*='item-size-']) {
+  .ss-group-size-5\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-5\@md {
+  .ss-group-item-size-5\@md {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-5\@md {
+  .ss-group-item-push-5\@md {
     margin-left: 20.83333%; }
-  .group-item-pull-5\@md {
+  .ss-group-item-pull-5\@md {
     margin-left: -20.83333%; }
-  .group-size-6\@md > :not([class*='item-size-']) {
+  .ss-group-size-6\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-6\@md {
+  .ss-group-item-size-6\@md {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-6\@md {
+  .ss-group-item-push-6\@md {
     margin-left: 25%; }
-  .group-item-pull-6\@md {
+  .ss-group-item-pull-6\@md {
     margin-left: -25%; }
-  .group-size-7\@md > :not([class*='item-size-']) {
+  .ss-group-size-7\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-7\@md {
+  .ss-group-item-size-7\@md {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-7\@md {
+  .ss-group-item-push-7\@md {
     margin-left: 29.16667%; }
-  .group-item-pull-7\@md {
+  .ss-group-item-pull-7\@md {
     margin-left: -29.16667%; }
-  .group-size-8\@md > :not([class*='item-size-']) {
+  .ss-group-size-8\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-8\@md {
+  .ss-group-item-size-8\@md {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-8\@md {
+  .ss-group-item-push-8\@md {
     margin-left: 33.33333%; }
-  .group-item-pull-8\@md {
+  .ss-group-item-pull-8\@md {
     margin-left: -33.33333%; }
-  .group-size-9\@md > :not([class*='item-size-']) {
+  .ss-group-size-9\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-9\@md {
+  .ss-group-item-size-9\@md {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-9\@md {
+  .ss-group-item-push-9\@md {
     margin-left: 37.5%; }
-  .group-item-pull-9\@md {
+  .ss-group-item-pull-9\@md {
     margin-left: -37.5%; }
-  .group-size-10\@md > :not([class*='item-size-']) {
+  .ss-group-size-10\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-10\@md {
+  .ss-group-item-size-10\@md {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-10\@md {
+  .ss-group-item-push-10\@md {
     margin-left: 41.66667%; }
-  .group-item-pull-10\@md {
+  .ss-group-item-pull-10\@md {
     margin-left: -41.66667%; }
-  .group-size-11\@md > :not([class*='item-size-']) {
+  .ss-group-size-11\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-11\@md {
+  .ss-group-item-size-11\@md {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-11\@md {
+  .ss-group-item-push-11\@md {
     margin-left: 45.83333%; }
-  .group-item-pull-11\@md {
+  .ss-group-item-pull-11\@md {
     margin-left: -45.83333%; }
-  .group-size-12\@md > :not([class*='item-size-']) {
+  .ss-group-size-12\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-12\@md {
+  .ss-group-item-size-12\@md {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-12\@md {
+  .ss-group-item-push-12\@md {
     margin-left: 50%; }
-  .group-item-pull-12\@md {
+  .ss-group-item-pull-12\@md {
     margin-left: -50%; }
-  .group-size-13\@md > :not([class*='item-size-']) {
+  .ss-group-size-13\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-13\@md {
+  .ss-group-item-size-13\@md {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-13\@md {
+  .ss-group-item-push-13\@md {
     margin-left: 54.16667%; }
-  .group-item-pull-13\@md {
+  .ss-group-item-pull-13\@md {
     margin-left: -54.16667%; }
-  .group-size-14\@md > :not([class*='item-size-']) {
+  .ss-group-size-14\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-14\@md {
+  .ss-group-item-size-14\@md {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-14\@md {
+  .ss-group-item-push-14\@md {
     margin-left: 58.33333%; }
-  .group-item-pull-14\@md {
+  .ss-group-item-pull-14\@md {
     margin-left: -58.33333%; }
-  .group-size-15\@md > :not([class*='item-size-']) {
+  .ss-group-size-15\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-15\@md {
+  .ss-group-item-size-15\@md {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-15\@md {
+  .ss-group-item-push-15\@md {
     margin-left: 62.5%; }
-  .group-item-pull-15\@md {
+  .ss-group-item-pull-15\@md {
     margin-left: -62.5%; }
-  .group-size-16\@md > :not([class*='item-size-']) {
+  .ss-group-size-16\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-16\@md {
+  .ss-group-item-size-16\@md {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-16\@md {
+  .ss-group-item-push-16\@md {
     margin-left: 66.66667%; }
-  .group-item-pull-16\@md {
+  .ss-group-item-pull-16\@md {
     margin-left: -66.66667%; }
-  .group-size-17\@md > :not([class*='item-size-']) {
+  .ss-group-size-17\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-17\@md {
+  .ss-group-item-size-17\@md {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-17\@md {
+  .ss-group-item-push-17\@md {
     margin-left: 70.83333%; }
-  .group-item-pull-17\@md {
+  .ss-group-item-pull-17\@md {
     margin-left: -70.83333%; }
-  .group-size-18\@md > :not([class*='item-size-']) {
+  .ss-group-size-18\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-18\@md {
+  .ss-group-item-size-18\@md {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-18\@md {
+  .ss-group-item-push-18\@md {
     margin-left: 75%; }
-  .group-item-pull-18\@md {
+  .ss-group-item-pull-18\@md {
     margin-left: -75%; }
-  .group-size-19\@md > :not([class*='item-size-']) {
+  .ss-group-size-19\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-19\@md {
+  .ss-group-item-size-19\@md {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-19\@md {
+  .ss-group-item-push-19\@md {
     margin-left: 79.16667%; }
-  .group-item-pull-19\@md {
+  .ss-group-item-pull-19\@md {
     margin-left: -79.16667%; }
-  .group-size-20\@md > :not([class*='item-size-']) {
+  .ss-group-size-20\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-20\@md {
+  .ss-group-item-size-20\@md {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-20\@md {
+  .ss-group-item-push-20\@md {
     margin-left: 83.33333%; }
-  .group-item-pull-20\@md {
+  .ss-group-item-pull-20\@md {
     margin-left: -83.33333%; }
-  .group-size-21\@md > :not([class*='item-size-']) {
+  .ss-group-size-21\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-21\@md {
+  .ss-group-item-size-21\@md {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-21\@md {
+  .ss-group-item-push-21\@md {
     margin-left: 87.5%; }
-  .group-item-pull-21\@md {
+  .ss-group-item-pull-21\@md {
     margin-left: -87.5%; }
-  .group-size-22\@md > :not([class*='item-size-']) {
+  .ss-group-size-22\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-22\@md {
+  .ss-group-item-size-22\@md {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-22\@md {
+  .ss-group-item-push-22\@md {
     margin-left: 91.66667%; }
-  .group-item-pull-22\@md {
+  .ss-group-item-pull-22\@md {
     margin-left: -91.66667%; }
-  .group-size-23\@md > :not([class*='item-size-']) {
+  .ss-group-size-23\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-23\@md {
+  .ss-group-item-size-23\@md {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-23\@md {
+  .ss-group-item-push-23\@md {
     margin-left: 95.83333%; }
-  .group-item-pull-23\@md {
+  .ss-group-item-pull-23\@md {
     margin-left: -95.83333%; }
-  .group-size-24\@md > :not([class*='item-size-']) {
+  .ss-group-size-24\@md > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-24\@md {
+  .ss-group-item-size-24\@md {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-24\@md {
+  .ss-group-item-push-24\@md {
     margin-left: 100%; }
-  .group-item-pull-24\@md {
+  .ss-group-item-pull-24\@md {
     margin-left: -100%; }
-  .group-nowrap\@md {
+  .ss-group-nowrap\@md {
     flex-wrap: nowrap; }
-  .group-justify-around\@md {
+  .ss-group-justify-around\@md {
     justify-content: space-around; }
-  .group-justify-between\@md {
+  .ss-group-justify-between\@md {
     justify-content: space-between; }
-  .group-justify-center\@md {
+  .ss-group-justify-center\@md {
     justify-content: center; }
-  .group-justify-end\@md {
+  .ss-group-justify-end\@md {
     justify-content: flex-end; }
-  .group-align-center\@md {
+  .ss-group-align-center\@md {
     align-items: center; }
-  .group-align-start\@md {
+  .ss-group-align-start\@md {
     align-items: flex-start; }
-  .group-align-end\@md {
+  .ss-group-align-end\@md {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 992px) {
-  .group-item-size-auto\@lg {
+  .ss-group-item-size-auto\@lg {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-auto\@lg > :not([class*='item-size-']) {
+  .ss-group-size-auto\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-1\@lg > :not([class*='item-size-']) {
+  .ss-group-row-break\@lg {
+    flex-basis: 100%;
+    width: unset;
+    height: 0;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-column-break\@lg {
+    flex-basis: 100%;
+    width: 0;
+    height: unset;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-disable-break\@lg {
+    display: none; }
+  .ss-group-size-1\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-1\@lg {
+  .ss-group-item-size-1\@lg {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-1\@lg {
+  .ss-group-item-push-1\@lg {
     margin-left: 4.16667%; }
-  .group-item-pull-1\@lg {
+  .ss-group-item-pull-1\@lg {
     margin-left: -4.16667%; }
-  .group-size-2\@lg > :not([class*='item-size-']) {
+  .ss-group-size-2\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-2\@lg {
+  .ss-group-item-size-2\@lg {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-2\@lg {
+  .ss-group-item-push-2\@lg {
     margin-left: 8.33333%; }
-  .group-item-pull-2\@lg {
+  .ss-group-item-pull-2\@lg {
     margin-left: -8.33333%; }
-  .group-size-3\@lg > :not([class*='item-size-']) {
+  .ss-group-size-3\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-3\@lg {
+  .ss-group-item-size-3\@lg {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-3\@lg {
+  .ss-group-item-push-3\@lg {
     margin-left: 12.5%; }
-  .group-item-pull-3\@lg {
+  .ss-group-item-pull-3\@lg {
     margin-left: -12.5%; }
-  .group-size-4\@lg > :not([class*='item-size-']) {
+  .ss-group-size-4\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-4\@lg {
+  .ss-group-item-size-4\@lg {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-4\@lg {
+  .ss-group-item-push-4\@lg {
     margin-left: 16.66667%; }
-  .group-item-pull-4\@lg {
+  .ss-group-item-pull-4\@lg {
     margin-left: -16.66667%; }
-  .group-size-5\@lg > :not([class*='item-size-']) {
+  .ss-group-size-5\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-5\@lg {
+  .ss-group-item-size-5\@lg {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-5\@lg {
+  .ss-group-item-push-5\@lg {
     margin-left: 20.83333%; }
-  .group-item-pull-5\@lg {
+  .ss-group-item-pull-5\@lg {
     margin-left: -20.83333%; }
-  .group-size-6\@lg > :not([class*='item-size-']) {
+  .ss-group-size-6\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-6\@lg {
+  .ss-group-item-size-6\@lg {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-6\@lg {
+  .ss-group-item-push-6\@lg {
     margin-left: 25%; }
-  .group-item-pull-6\@lg {
+  .ss-group-item-pull-6\@lg {
     margin-left: -25%; }
-  .group-size-7\@lg > :not([class*='item-size-']) {
+  .ss-group-size-7\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-7\@lg {
+  .ss-group-item-size-7\@lg {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-7\@lg {
+  .ss-group-item-push-7\@lg {
     margin-left: 29.16667%; }
-  .group-item-pull-7\@lg {
+  .ss-group-item-pull-7\@lg {
     margin-left: -29.16667%; }
-  .group-size-8\@lg > :not([class*='item-size-']) {
+  .ss-group-size-8\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-8\@lg {
+  .ss-group-item-size-8\@lg {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-8\@lg {
+  .ss-group-item-push-8\@lg {
     margin-left: 33.33333%; }
-  .group-item-pull-8\@lg {
+  .ss-group-item-pull-8\@lg {
     margin-left: -33.33333%; }
-  .group-size-9\@lg > :not([class*='item-size-']) {
+  .ss-group-size-9\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-9\@lg {
+  .ss-group-item-size-9\@lg {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-9\@lg {
+  .ss-group-item-push-9\@lg {
     margin-left: 37.5%; }
-  .group-item-pull-9\@lg {
+  .ss-group-item-pull-9\@lg {
     margin-left: -37.5%; }
-  .group-size-10\@lg > :not([class*='item-size-']) {
+  .ss-group-size-10\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-10\@lg {
+  .ss-group-item-size-10\@lg {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-10\@lg {
+  .ss-group-item-push-10\@lg {
     margin-left: 41.66667%; }
-  .group-item-pull-10\@lg {
+  .ss-group-item-pull-10\@lg {
     margin-left: -41.66667%; }
-  .group-size-11\@lg > :not([class*='item-size-']) {
+  .ss-group-size-11\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-11\@lg {
+  .ss-group-item-size-11\@lg {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-11\@lg {
+  .ss-group-item-push-11\@lg {
     margin-left: 45.83333%; }
-  .group-item-pull-11\@lg {
+  .ss-group-item-pull-11\@lg {
     margin-left: -45.83333%; }
-  .group-size-12\@lg > :not([class*='item-size-']) {
+  .ss-group-size-12\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-12\@lg {
+  .ss-group-item-size-12\@lg {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-12\@lg {
+  .ss-group-item-push-12\@lg {
     margin-left: 50%; }
-  .group-item-pull-12\@lg {
+  .ss-group-item-pull-12\@lg {
     margin-left: -50%; }
-  .group-size-13\@lg > :not([class*='item-size-']) {
+  .ss-group-size-13\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-13\@lg {
+  .ss-group-item-size-13\@lg {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-13\@lg {
+  .ss-group-item-push-13\@lg {
     margin-left: 54.16667%; }
-  .group-item-pull-13\@lg {
+  .ss-group-item-pull-13\@lg {
     margin-left: -54.16667%; }
-  .group-size-14\@lg > :not([class*='item-size-']) {
+  .ss-group-size-14\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-14\@lg {
+  .ss-group-item-size-14\@lg {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-14\@lg {
+  .ss-group-item-push-14\@lg {
     margin-left: 58.33333%; }
-  .group-item-pull-14\@lg {
+  .ss-group-item-pull-14\@lg {
     margin-left: -58.33333%; }
-  .group-size-15\@lg > :not([class*='item-size-']) {
+  .ss-group-size-15\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-15\@lg {
+  .ss-group-item-size-15\@lg {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-15\@lg {
+  .ss-group-item-push-15\@lg {
     margin-left: 62.5%; }
-  .group-item-pull-15\@lg {
+  .ss-group-item-pull-15\@lg {
     margin-left: -62.5%; }
-  .group-size-16\@lg > :not([class*='item-size-']) {
+  .ss-group-size-16\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-16\@lg {
+  .ss-group-item-size-16\@lg {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-16\@lg {
+  .ss-group-item-push-16\@lg {
     margin-left: 66.66667%; }
-  .group-item-pull-16\@lg {
+  .ss-group-item-pull-16\@lg {
     margin-left: -66.66667%; }
-  .group-size-17\@lg > :not([class*='item-size-']) {
+  .ss-group-size-17\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-17\@lg {
+  .ss-group-item-size-17\@lg {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-17\@lg {
+  .ss-group-item-push-17\@lg {
     margin-left: 70.83333%; }
-  .group-item-pull-17\@lg {
+  .ss-group-item-pull-17\@lg {
     margin-left: -70.83333%; }
-  .group-size-18\@lg > :not([class*='item-size-']) {
+  .ss-group-size-18\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-18\@lg {
+  .ss-group-item-size-18\@lg {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-18\@lg {
+  .ss-group-item-push-18\@lg {
     margin-left: 75%; }
-  .group-item-pull-18\@lg {
+  .ss-group-item-pull-18\@lg {
     margin-left: -75%; }
-  .group-size-19\@lg > :not([class*='item-size-']) {
+  .ss-group-size-19\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-19\@lg {
+  .ss-group-item-size-19\@lg {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-19\@lg {
+  .ss-group-item-push-19\@lg {
     margin-left: 79.16667%; }
-  .group-item-pull-19\@lg {
+  .ss-group-item-pull-19\@lg {
     margin-left: -79.16667%; }
-  .group-size-20\@lg > :not([class*='item-size-']) {
+  .ss-group-size-20\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-20\@lg {
+  .ss-group-item-size-20\@lg {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-20\@lg {
+  .ss-group-item-push-20\@lg {
     margin-left: 83.33333%; }
-  .group-item-pull-20\@lg {
+  .ss-group-item-pull-20\@lg {
     margin-left: -83.33333%; }
-  .group-size-21\@lg > :not([class*='item-size-']) {
+  .ss-group-size-21\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-21\@lg {
+  .ss-group-item-size-21\@lg {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-21\@lg {
+  .ss-group-item-push-21\@lg {
     margin-left: 87.5%; }
-  .group-item-pull-21\@lg {
+  .ss-group-item-pull-21\@lg {
     margin-left: -87.5%; }
-  .group-size-22\@lg > :not([class*='item-size-']) {
+  .ss-group-size-22\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-22\@lg {
+  .ss-group-item-size-22\@lg {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-22\@lg {
+  .ss-group-item-push-22\@lg {
     margin-left: 91.66667%; }
-  .group-item-pull-22\@lg {
+  .ss-group-item-pull-22\@lg {
     margin-left: -91.66667%; }
-  .group-size-23\@lg > :not([class*='item-size-']) {
+  .ss-group-size-23\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-23\@lg {
+  .ss-group-item-size-23\@lg {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-23\@lg {
+  .ss-group-item-push-23\@lg {
     margin-left: 95.83333%; }
-  .group-item-pull-23\@lg {
+  .ss-group-item-pull-23\@lg {
     margin-left: -95.83333%; }
-  .group-size-24\@lg > :not([class*='item-size-']) {
+  .ss-group-size-24\@lg > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-24\@lg {
+  .ss-group-item-size-24\@lg {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-24\@lg {
+  .ss-group-item-push-24\@lg {
     margin-left: 100%; }
-  .group-item-pull-24\@lg {
+  .ss-group-item-pull-24\@lg {
     margin-left: -100%; }
-  .group-nowrap\@lg {
+  .ss-group-nowrap\@lg {
     flex-wrap: nowrap; }
-  .group-justify-around\@lg {
+  .ss-group-justify-around\@lg {
     justify-content: space-around; }
-  .group-justify-between\@lg {
+  .ss-group-justify-between\@lg {
     justify-content: space-between; }
-  .group-justify-center\@lg {
+  .ss-group-justify-center\@lg {
     justify-content: center; }
-  .group-justify-end\@lg {
+  .ss-group-justify-end\@lg {
     justify-content: flex-end; }
-  .group-align-center\@lg {
+  .ss-group-align-center\@lg {
     align-items: center; }
-  .group-align-start\@lg {
+  .ss-group-align-start\@lg {
     align-items: flex-start; }
-  .group-align-end\@lg {
+  .ss-group-align-end\@lg {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 1200px) {
-  .group-item-size-auto\@xl {
+  .ss-group-item-size-auto\@xl {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-auto\@xl > :not([class*='item-size-']) {
+  .ss-group-size-auto\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-1\@xl > :not([class*='item-size-']) {
+  .ss-group-row-break\@xl {
+    flex-basis: 100%;
+    width: unset;
+    height: 0;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-column-break\@xl {
+    flex-basis: 100%;
+    width: 0;
+    height: unset;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-disable-break\@xl {
+    display: none; }
+  .ss-group-size-1\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-1\@xl {
+  .ss-group-item-size-1\@xl {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-1\@xl {
+  .ss-group-item-push-1\@xl {
     margin-left: 4.16667%; }
-  .group-item-pull-1\@xl {
+  .ss-group-item-pull-1\@xl {
     margin-left: -4.16667%; }
-  .group-size-2\@xl > :not([class*='item-size-']) {
+  .ss-group-size-2\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-2\@xl {
+  .ss-group-item-size-2\@xl {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-2\@xl {
+  .ss-group-item-push-2\@xl {
     margin-left: 8.33333%; }
-  .group-item-pull-2\@xl {
+  .ss-group-item-pull-2\@xl {
     margin-left: -8.33333%; }
-  .group-size-3\@xl > :not([class*='item-size-']) {
+  .ss-group-size-3\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-3\@xl {
+  .ss-group-item-size-3\@xl {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-3\@xl {
+  .ss-group-item-push-3\@xl {
     margin-left: 12.5%; }
-  .group-item-pull-3\@xl {
+  .ss-group-item-pull-3\@xl {
     margin-left: -12.5%; }
-  .group-size-4\@xl > :not([class*='item-size-']) {
+  .ss-group-size-4\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-4\@xl {
+  .ss-group-item-size-4\@xl {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-4\@xl {
+  .ss-group-item-push-4\@xl {
     margin-left: 16.66667%; }
-  .group-item-pull-4\@xl {
+  .ss-group-item-pull-4\@xl {
     margin-left: -16.66667%; }
-  .group-size-5\@xl > :not([class*='item-size-']) {
+  .ss-group-size-5\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-5\@xl {
+  .ss-group-item-size-5\@xl {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-5\@xl {
+  .ss-group-item-push-5\@xl {
     margin-left: 20.83333%; }
-  .group-item-pull-5\@xl {
+  .ss-group-item-pull-5\@xl {
     margin-left: -20.83333%; }
-  .group-size-6\@xl > :not([class*='item-size-']) {
+  .ss-group-size-6\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-6\@xl {
+  .ss-group-item-size-6\@xl {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-6\@xl {
+  .ss-group-item-push-6\@xl {
     margin-left: 25%; }
-  .group-item-pull-6\@xl {
+  .ss-group-item-pull-6\@xl {
     margin-left: -25%; }
-  .group-size-7\@xl > :not([class*='item-size-']) {
+  .ss-group-size-7\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-7\@xl {
+  .ss-group-item-size-7\@xl {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-7\@xl {
+  .ss-group-item-push-7\@xl {
     margin-left: 29.16667%; }
-  .group-item-pull-7\@xl {
+  .ss-group-item-pull-7\@xl {
     margin-left: -29.16667%; }
-  .group-size-8\@xl > :not([class*='item-size-']) {
+  .ss-group-size-8\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-8\@xl {
+  .ss-group-item-size-8\@xl {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-8\@xl {
+  .ss-group-item-push-8\@xl {
     margin-left: 33.33333%; }
-  .group-item-pull-8\@xl {
+  .ss-group-item-pull-8\@xl {
     margin-left: -33.33333%; }
-  .group-size-9\@xl > :not([class*='item-size-']) {
+  .ss-group-size-9\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-9\@xl {
+  .ss-group-item-size-9\@xl {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-9\@xl {
+  .ss-group-item-push-9\@xl {
     margin-left: 37.5%; }
-  .group-item-pull-9\@xl {
+  .ss-group-item-pull-9\@xl {
     margin-left: -37.5%; }
-  .group-size-10\@xl > :not([class*='item-size-']) {
+  .ss-group-size-10\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-10\@xl {
+  .ss-group-item-size-10\@xl {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-10\@xl {
+  .ss-group-item-push-10\@xl {
     margin-left: 41.66667%; }
-  .group-item-pull-10\@xl {
+  .ss-group-item-pull-10\@xl {
     margin-left: -41.66667%; }
-  .group-size-11\@xl > :not([class*='item-size-']) {
+  .ss-group-size-11\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-11\@xl {
+  .ss-group-item-size-11\@xl {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-11\@xl {
+  .ss-group-item-push-11\@xl {
     margin-left: 45.83333%; }
-  .group-item-pull-11\@xl {
+  .ss-group-item-pull-11\@xl {
     margin-left: -45.83333%; }
-  .group-size-12\@xl > :not([class*='item-size-']) {
+  .ss-group-size-12\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-12\@xl {
+  .ss-group-item-size-12\@xl {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-12\@xl {
+  .ss-group-item-push-12\@xl {
     margin-left: 50%; }
-  .group-item-pull-12\@xl {
+  .ss-group-item-pull-12\@xl {
     margin-left: -50%; }
-  .group-size-13\@xl > :not([class*='item-size-']) {
+  .ss-group-size-13\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-13\@xl {
+  .ss-group-item-size-13\@xl {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-13\@xl {
+  .ss-group-item-push-13\@xl {
     margin-left: 54.16667%; }
-  .group-item-pull-13\@xl {
+  .ss-group-item-pull-13\@xl {
     margin-left: -54.16667%; }
-  .group-size-14\@xl > :not([class*='item-size-']) {
+  .ss-group-size-14\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-14\@xl {
+  .ss-group-item-size-14\@xl {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-14\@xl {
+  .ss-group-item-push-14\@xl {
     margin-left: 58.33333%; }
-  .group-item-pull-14\@xl {
+  .ss-group-item-pull-14\@xl {
     margin-left: -58.33333%; }
-  .group-size-15\@xl > :not([class*='item-size-']) {
+  .ss-group-size-15\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-15\@xl {
+  .ss-group-item-size-15\@xl {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-15\@xl {
+  .ss-group-item-push-15\@xl {
     margin-left: 62.5%; }
-  .group-item-pull-15\@xl {
+  .ss-group-item-pull-15\@xl {
     margin-left: -62.5%; }
-  .group-size-16\@xl > :not([class*='item-size-']) {
+  .ss-group-size-16\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-16\@xl {
+  .ss-group-item-size-16\@xl {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-16\@xl {
+  .ss-group-item-push-16\@xl {
     margin-left: 66.66667%; }
-  .group-item-pull-16\@xl {
+  .ss-group-item-pull-16\@xl {
     margin-left: -66.66667%; }
-  .group-size-17\@xl > :not([class*='item-size-']) {
+  .ss-group-size-17\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-17\@xl {
+  .ss-group-item-size-17\@xl {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-17\@xl {
+  .ss-group-item-push-17\@xl {
     margin-left: 70.83333%; }
-  .group-item-pull-17\@xl {
+  .ss-group-item-pull-17\@xl {
     margin-left: -70.83333%; }
-  .group-size-18\@xl > :not([class*='item-size-']) {
+  .ss-group-size-18\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-18\@xl {
+  .ss-group-item-size-18\@xl {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-18\@xl {
+  .ss-group-item-push-18\@xl {
     margin-left: 75%; }
-  .group-item-pull-18\@xl {
+  .ss-group-item-pull-18\@xl {
     margin-left: -75%; }
-  .group-size-19\@xl > :not([class*='item-size-']) {
+  .ss-group-size-19\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-19\@xl {
+  .ss-group-item-size-19\@xl {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-19\@xl {
+  .ss-group-item-push-19\@xl {
     margin-left: 79.16667%; }
-  .group-item-pull-19\@xl {
+  .ss-group-item-pull-19\@xl {
     margin-left: -79.16667%; }
-  .group-size-20\@xl > :not([class*='item-size-']) {
+  .ss-group-size-20\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-20\@xl {
+  .ss-group-item-size-20\@xl {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-20\@xl {
+  .ss-group-item-push-20\@xl {
     margin-left: 83.33333%; }
-  .group-item-pull-20\@xl {
+  .ss-group-item-pull-20\@xl {
     margin-left: -83.33333%; }
-  .group-size-21\@xl > :not([class*='item-size-']) {
+  .ss-group-size-21\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-21\@xl {
+  .ss-group-item-size-21\@xl {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-21\@xl {
+  .ss-group-item-push-21\@xl {
     margin-left: 87.5%; }
-  .group-item-pull-21\@xl {
+  .ss-group-item-pull-21\@xl {
     margin-left: -87.5%; }
-  .group-size-22\@xl > :not([class*='item-size-']) {
+  .ss-group-size-22\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-22\@xl {
+  .ss-group-item-size-22\@xl {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-22\@xl {
+  .ss-group-item-push-22\@xl {
     margin-left: 91.66667%; }
-  .group-item-pull-22\@xl {
+  .ss-group-item-pull-22\@xl {
     margin-left: -91.66667%; }
-  .group-size-23\@xl > :not([class*='item-size-']) {
+  .ss-group-size-23\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-23\@xl {
+  .ss-group-item-size-23\@xl {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-23\@xl {
+  .ss-group-item-push-23\@xl {
     margin-left: 95.83333%; }
-  .group-item-pull-23\@xl {
+  .ss-group-item-pull-23\@xl {
     margin-left: -95.83333%; }
-  .group-size-24\@xl > :not([class*='item-size-']) {
+  .ss-group-size-24\@xl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-24\@xl {
+  .ss-group-item-size-24\@xl {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-24\@xl {
+  .ss-group-item-push-24\@xl {
     margin-left: 100%; }
-  .group-item-pull-24\@xl {
+  .ss-group-item-pull-24\@xl {
     margin-left: -100%; }
-  .group-nowrap\@xl {
+  .ss-group-nowrap\@xl {
     flex-wrap: nowrap; }
-  .group-justify-around\@xl {
+  .ss-group-justify-around\@xl {
     justify-content: space-around; }
-  .group-justify-between\@xl {
+  .ss-group-justify-between\@xl {
     justify-content: space-between; }
-  .group-justify-center\@xl {
+  .ss-group-justify-center\@xl {
     justify-content: center; }
-  .group-justify-end\@xl {
+  .ss-group-justify-end\@xl {
     justify-content: flex-end; }
-  .group-align-center\@xl {
+  .ss-group-align-center\@xl {
     align-items: center; }
-  .group-align-start\@xl {
+  .ss-group-align-start\@xl {
     align-items: flex-start; }
-  .group-align-end\@xl {
+  .ss-group-align-end\@xl {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 1600px) {
-  .group-item-size-auto\@xxl {
+  .ss-group-item-size-auto\@xxl {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-auto\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-auto\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-size-1\@xxl > :not([class*='item-size-']) {
+  .ss-group-row-break\@xxl {
+    flex-basis: 100%;
+    width: unset;
+    height: 0;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-column-break\@xxl {
+    flex-basis: 100%;
+    width: 0;
+    height: unset;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+  .ss-group-disable-break\@xxl {
+    display: none; }
+  .ss-group-size-1\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-1\@xxl {
+  .ss-group-item-size-1\@xxl {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-1\@xxl {
+  .ss-group-item-push-1\@xxl {
     margin-left: 4.16667%; }
-  .group-item-pull-1\@xxl {
+  .ss-group-item-pull-1\@xxl {
     margin-left: -4.16667%; }
-  .group-size-2\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-2\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-2\@xxl {
+  .ss-group-item-size-2\@xxl {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-2\@xxl {
+  .ss-group-item-push-2\@xxl {
     margin-left: 8.33333%; }
-  .group-item-pull-2\@xxl {
+  .ss-group-item-pull-2\@xxl {
     margin-left: -8.33333%; }
-  .group-size-3\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-3\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-3\@xxl {
+  .ss-group-item-size-3\@xxl {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-3\@xxl {
+  .ss-group-item-push-3\@xxl {
     margin-left: 12.5%; }
-  .group-item-pull-3\@xxl {
+  .ss-group-item-pull-3\@xxl {
     margin-left: -12.5%; }
-  .group-size-4\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-4\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-4\@xxl {
+  .ss-group-item-size-4\@xxl {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-4\@xxl {
+  .ss-group-item-push-4\@xxl {
     margin-left: 16.66667%; }
-  .group-item-pull-4\@xxl {
+  .ss-group-item-pull-4\@xxl {
     margin-left: -16.66667%; }
-  .group-size-5\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-5\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-5\@xxl {
+  .ss-group-item-size-5\@xxl {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-5\@xxl {
+  .ss-group-item-push-5\@xxl {
     margin-left: 20.83333%; }
-  .group-item-pull-5\@xxl {
+  .ss-group-item-pull-5\@xxl {
     margin-left: -20.83333%; }
-  .group-size-6\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-6\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-6\@xxl {
+  .ss-group-item-size-6\@xxl {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-6\@xxl {
+  .ss-group-item-push-6\@xxl {
     margin-left: 25%; }
-  .group-item-pull-6\@xxl {
+  .ss-group-item-pull-6\@xxl {
     margin-left: -25%; }
-  .group-size-7\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-7\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-7\@xxl {
+  .ss-group-item-size-7\@xxl {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-7\@xxl {
+  .ss-group-item-push-7\@xxl {
     margin-left: 29.16667%; }
-  .group-item-pull-7\@xxl {
+  .ss-group-item-pull-7\@xxl {
     margin-left: -29.16667%; }
-  .group-size-8\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-8\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-8\@xxl {
+  .ss-group-item-size-8\@xxl {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-8\@xxl {
+  .ss-group-item-push-8\@xxl {
     margin-left: 33.33333%; }
-  .group-item-pull-8\@xxl {
+  .ss-group-item-pull-8\@xxl {
     margin-left: -33.33333%; }
-  .group-size-9\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-9\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-9\@xxl {
+  .ss-group-item-size-9\@xxl {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-9\@xxl {
+  .ss-group-item-push-9\@xxl {
     margin-left: 37.5%; }
-  .group-item-pull-9\@xxl {
+  .ss-group-item-pull-9\@xxl {
     margin-left: -37.5%; }
-  .group-size-10\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-10\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-10\@xxl {
+  .ss-group-item-size-10\@xxl {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-10\@xxl {
+  .ss-group-item-push-10\@xxl {
     margin-left: 41.66667%; }
-  .group-item-pull-10\@xxl {
+  .ss-group-item-pull-10\@xxl {
     margin-left: -41.66667%; }
-  .group-size-11\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-11\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-11\@xxl {
+  .ss-group-item-size-11\@xxl {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-11\@xxl {
+  .ss-group-item-push-11\@xxl {
     margin-left: 45.83333%; }
-  .group-item-pull-11\@xxl {
+  .ss-group-item-pull-11\@xxl {
     margin-left: -45.83333%; }
-  .group-size-12\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-12\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-12\@xxl {
+  .ss-group-item-size-12\@xxl {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-12\@xxl {
+  .ss-group-item-push-12\@xxl {
     margin-left: 50%; }
-  .group-item-pull-12\@xxl {
+  .ss-group-item-pull-12\@xxl {
     margin-left: -50%; }
-  .group-size-13\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-13\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-13\@xxl {
+  .ss-group-item-size-13\@xxl {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-13\@xxl {
+  .ss-group-item-push-13\@xxl {
     margin-left: 54.16667%; }
-  .group-item-pull-13\@xxl {
+  .ss-group-item-pull-13\@xxl {
     margin-left: -54.16667%; }
-  .group-size-14\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-14\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-14\@xxl {
+  .ss-group-item-size-14\@xxl {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-14\@xxl {
+  .ss-group-item-push-14\@xxl {
     margin-left: 58.33333%; }
-  .group-item-pull-14\@xxl {
+  .ss-group-item-pull-14\@xxl {
     margin-left: -58.33333%; }
-  .group-size-15\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-15\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-15\@xxl {
+  .ss-group-item-size-15\@xxl {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-15\@xxl {
+  .ss-group-item-push-15\@xxl {
     margin-left: 62.5%; }
-  .group-item-pull-15\@xxl {
+  .ss-group-item-pull-15\@xxl {
     margin-left: -62.5%; }
-  .group-size-16\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-16\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-16\@xxl {
+  .ss-group-item-size-16\@xxl {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-16\@xxl {
+  .ss-group-item-push-16\@xxl {
     margin-left: 66.66667%; }
-  .group-item-pull-16\@xxl {
+  .ss-group-item-pull-16\@xxl {
     margin-left: -66.66667%; }
-  .group-size-17\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-17\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-17\@xxl {
+  .ss-group-item-size-17\@xxl {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-17\@xxl {
+  .ss-group-item-push-17\@xxl {
     margin-left: 70.83333%; }
-  .group-item-pull-17\@xxl {
+  .ss-group-item-pull-17\@xxl {
     margin-left: -70.83333%; }
-  .group-size-18\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-18\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-18\@xxl {
+  .ss-group-item-size-18\@xxl {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-18\@xxl {
+  .ss-group-item-push-18\@xxl {
     margin-left: 75%; }
-  .group-item-pull-18\@xxl {
+  .ss-group-item-pull-18\@xxl {
     margin-left: -75%; }
-  .group-size-19\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-19\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-19\@xxl {
+  .ss-group-item-size-19\@xxl {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-19\@xxl {
+  .ss-group-item-push-19\@xxl {
     margin-left: 79.16667%; }
-  .group-item-pull-19\@xxl {
+  .ss-group-item-pull-19\@xxl {
     margin-left: -79.16667%; }
-  .group-size-20\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-20\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-20\@xxl {
+  .ss-group-item-size-20\@xxl {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-20\@xxl {
+  .ss-group-item-push-20\@xxl {
     margin-left: 83.33333%; }
-  .group-item-pull-20\@xxl {
+  .ss-group-item-pull-20\@xxl {
     margin-left: -83.33333%; }
-  .group-size-21\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-21\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-21\@xxl {
+  .ss-group-item-size-21\@xxl {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-21\@xxl {
+  .ss-group-item-push-21\@xxl {
     margin-left: 87.5%; }
-  .group-item-pull-21\@xxl {
+  .ss-group-item-pull-21\@xxl {
     margin-left: -87.5%; }
-  .group-size-22\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-22\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-22\@xxl {
+  .ss-group-item-size-22\@xxl {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-22\@xxl {
+  .ss-group-item-push-22\@xxl {
     margin-left: 91.66667%; }
-  .group-item-pull-22\@xxl {
+  .ss-group-item-pull-22\@xxl {
     margin-left: -91.66667%; }
-  .group-size-23\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-23\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-23\@xxl {
+  .ss-group-item-size-23\@xxl {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-23\@xxl {
+  .ss-group-item-push-23\@xxl {
     margin-left: 95.83333%; }
-  .group-item-pull-23\@xxl {
+  .ss-group-item-pull-23\@xxl {
     margin-left: -95.83333%; }
-  .group-size-24\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-24\@xxl > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-size-24\@xxl {
+  .ss-group-item-size-24\@xxl {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: none;
     min-width: 0; }
-  .group-item-push-24\@xxl {
+  .ss-group-item-push-24\@xxl {
     margin-left: 100%; }
-  .group-item-pull-24\@xxl {
+  .ss-group-item-pull-24\@xxl {
     margin-left: -100%; }
-  .group-nowrap\@xxl {
+  .ss-group-nowrap\@xxl {
     flex-wrap: nowrap; }
-  .group-justify-around\@xxl {
+  .ss-group-justify-around\@xxl {
     justify-content: space-around; }
-  .group-justify-between\@xxl {
+  .ss-group-justify-between\@xxl {
     justify-content: space-between; }
-  .group-justify-center\@xxl {
+  .ss-group-justify-center\@xxl {
     justify-content: center; }
-  .group-justify-end\@xxl {
+  .ss-group-justify-end\@xxl {
     justify-content: flex-end; }
-  .group-align-center\@xxl {
+  .ss-group-align-center\@xxl {
     align-items: center; }
-  .group-align-start\@xxl {
+  .ss-group-align-start\@xxl {
     align-items: flex-start; }
-  .group-align-end\@xxl {
+  .ss-group-align-end\@xxl {
     align-items: flex-end; } }
 
 /*# sourceMappingURL=group.css.map */

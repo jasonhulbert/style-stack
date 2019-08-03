@@ -1,625 +1,625 @@
-.color-blue {
+.ss-color-blue {
   color: #317FA3; }
 
-.color-blue-bg {
+.ss-color-blue-bg {
   background-color: #317FA3; }
 
-.color-sky {
+.ss-color-sky {
   color: #6DC8CF; }
 
-.color-sky-bg {
+.ss-color-sky-bg {
   background-color: #6DC8CF; }
 
-.color-pink {
+.ss-color-pink {
   color: #D3729C; }
 
-.color-pink-bg {
+.ss-color-pink-bg {
   background-color: #D3729C; }
 
-.color-orange {
+.ss-color-orange {
   color: #FF8F99; }
 
-.color-orange-bg {
+.ss-color-orange-bg {
   background-color: #FF8F99; }
 
-.color-purple {
+.ss-color-purple {
   color: #6B5078; }
 
-.color-purple-bg {
+.ss-color-purple-bg {
   background-color: #6B5078; }
 
-.color-grey1 {
+.ss-color-grey1 {
   color: #E6E6F0; }
 
-.color-grey1-bg {
+.ss-color-grey1-bg {
   background-color: #E6E6F0; }
 
-.color-grey2 {
+.ss-color-grey2 {
   color: #D3D3DB; }
 
-.color-grey2-bg {
+.ss-color-grey2-bg {
   background-color: #D3D3DB; }
 
-.color-grey3 {
+.ss-color-grey3 {
   color: #BFBFC7; }
 
-.color-grey3-bg {
+.ss-color-grey3-bg {
   background-color: #BFBFC7; }
 
-.color-grey4 {
+.ss-color-grey4 {
   color: #9D9DA3; }
 
-.color-grey4-bg {
+.ss-color-grey4-bg {
   background-color: #9D9DA3; }
 
-.color-grey5 {
+.ss-color-grey5 {
   color: #58585C; }
 
-.color-grey5-bg {
+.ss-color-grey5-bg {
   background-color: #58585C; }
 
-.color-white {
+.ss-color-white {
   color: #FFFFFF; }
 
-.color-white-bg {
+.ss-color-white-bg {
   background-color: #FFFFFF; }
 
-.color-black {
+.ss-color-black {
   color: #000000; }
 
-.color-black-bg {
+.ss-color-black-bg {
   background-color: #000000; }
 
-.color-light {
+.ss-color-light {
   color: #F0ECEC; }
 
-.color-light-bg {
+.ss-color-light-bg {
   background-color: #F0ECEC; }
 
-.color-dark {
+.ss-color-dark {
   color: #26262F; }
 
-.color-dark-bg {
+.ss-color-dark-bg {
   background-color: #26262F; }
 
-.color-affirm {
+.ss-color-affirm {
   color: #6EAB70; }
 
-.color-affirm-bg {
+.ss-color-affirm-bg {
   background-color: #6EAB70; }
 
-.color-warn {
+.ss-color-warn {
   color: #E4815C; }
 
-.color-warn-bg {
+.ss-color-warn-bg {
   background-color: #E4815C; }
 
-.color-deny {
+.ss-color-deny {
   color: #C24E4F; }
 
-.color-deny-bg {
+.ss-color-deny-bg {
   background-color: #C24E4F; }
 
-.color-notify {
+.ss-color-notify {
   color: #66A6EE; }
 
-.color-notify-bg {
+.ss-color-notify-bg {
   background-color: #66A6EE; }
 
-.color-select {
+.ss-color-select {
   color: #66A6EE; }
 
-.color-select-bg {
+.ss-color-select-bg {
   background-color: #66A6EE; }
 
-.color-focus {
+.ss-color-focus {
   color: #66A6EE; }
 
-.color-focus-bg {
+.ss-color-focus-bg {
   background-color: #66A6EE; }
 
-.color-blue-shade-10 {
+.ss-color-blue-shade-10 {
   color: #25607c; }
 
-.color-blue-shade-10-bg {
+.ss-color-blue-shade-10-bg {
   background-color: #25607c; }
 
-.color-blue-shade-20 {
+.ss-color-blue-shade-20 {
   color: #194255; }
 
-.color-blue-shade-20-bg {
+.ss-color-blue-shade-20-bg {
   background-color: #194255; }
 
-.color-blue-shade-30 {
+.ss-color-blue-shade-30 {
   color: #0e232d; }
 
-.color-blue-shade-30-bg {
+.ss-color-blue-shade-30-bg {
   background-color: #0e232d; }
 
-.color-blue-tint-10 {
+.ss-color-blue-tint-10 {
   color: #419cc6; }
 
-.color-blue-tint-10-bg {
+.ss-color-blue-tint-10-bg {
   background-color: #419cc6; }
 
-.color-blue-tint-20 {
+.ss-color-blue-tint-20 {
   color: #68b0d2; }
 
-.color-blue-tint-20-bg {
+.ss-color-blue-tint-20-bg {
   background-color: #68b0d2; }
 
-.color-blue-tint-30 {
+.ss-color-blue-tint-30 {
   color: #90c5dd; }
 
-.color-blue-tint-30-bg {
+.ss-color-blue-tint-30-bg {
   background-color: #90c5dd; }
 
-.color-sky-shade-10 {
+.ss-color-sky-shade-10 {
   color: #47bac2; }
 
-.color-sky-shade-10-bg {
+.ss-color-sky-shade-10-bg {
   background-color: #47bac2; }
 
-.color-sky-shade-20 {
+.ss-color-sky-shade-20 {
   color: #3599a1; }
 
-.color-sky-shade-20-bg {
+.ss-color-sky-shade-20-bg {
   background-color: #3599a1; }
 
-.color-sky-shade-30 {
+.ss-color-sky-shade-30 {
   color: #28757b; }
 
-.color-sky-shade-30-bg {
+.ss-color-sky-shade-30-bg {
   background-color: #28757b; }
 
-.color-sky-tint-10 {
+.ss-color-sky-tint-10 {
   color: #93d6dc; }
 
-.color-sky-tint-10-bg {
+.ss-color-sky-tint-10-bg {
   background-color: #93d6dc; }
 
-.color-sky-tint-20 {
+.ss-color-sky-tint-20 {
   color: #bae5e8; }
 
-.color-sky-tint-20-bg {
+.ss-color-sky-tint-20-bg {
   background-color: #bae5e8; }
 
-.color-sky-tint-30 {
+.ss-color-sky-tint-30 {
   color: #e0f3f5; }
 
-.color-sky-tint-30-bg {
+.ss-color-sky-tint-30-bg {
   background-color: #e0f3f5; }
 
-.color-pink-shade-10 {
+.ss-color-pink-shade-10 {
   color: #c74b81; }
 
-.color-pink-shade-10-bg {
+.ss-color-pink-shade-10-bg {
   background-color: #c74b81; }
 
-.color-pink-shade-20 {
+.ss-color-pink-shade-20 {
   color: #aa3568; }
 
-.color-pink-shade-20-bg {
+.ss-color-pink-shade-20-bg {
   background-color: #aa3568; }
 
-.color-pink-shade-30 {
+.ss-color-pink-shade-30 {
   color: #832950; }
 
-.color-pink-shade-30-bg {
+.ss-color-pink-shade-30-bg {
   background-color: #832950; }
 
-.color-pink-tint-10 {
+.ss-color-pink-tint-10 {
   color: #df99b7; }
 
-.color-pink-tint-10-bg {
+.ss-color-pink-tint-10-bg {
   background-color: #df99b7; }
 
-.color-pink-tint-20 {
+.ss-color-pink-tint-20 {
   color: #ebc0d3; }
 
-.color-pink-tint-20-bg {
+.ss-color-pink-tint-20-bg {
   background-color: #ebc0d3; }
 
-.color-pink-tint-30 {
+.ss-color-pink-tint-30 {
   color: #f7e7ee; }
 
-.color-pink-tint-30-bg {
+.ss-color-pink-tint-30-bg {
   background-color: #f7e7ee; }
 
-.color-orange-shade-10 {
+.ss-color-orange-shade-10 {
   color: #ff5c6b; }
 
-.color-orange-shade-10-bg {
+.ss-color-orange-shade-10-bg {
   background-color: #ff5c6b; }
 
-.color-orange-shade-20 {
+.ss-color-orange-shade-20 {
   color: #ff293c; }
 
-.color-orange-shade-20-bg {
+.ss-color-orange-shade-20-bg {
   background-color: #ff293c; }
 
-.color-orange-shade-30 {
+.ss-color-orange-shade-30 {
   color: #f50016; }
 
-.color-orange-shade-30-bg {
+.ss-color-orange-shade-30-bg {
   background-color: #f50016; }
 
-.color-orange-tint-10 {
+.ss-color-orange-tint-10 {
   color: #ffc2c7; }
 
-.color-orange-tint-10-bg {
+.ss-color-orange-tint-10-bg {
   background-color: #ffc2c7; }
 
-.color-orange-tint-20 {
+.ss-color-orange-tint-20 {
   color: #fff5f6; }
 
-.color-orange-tint-20-bg {
+.ss-color-orange-tint-20-bg {
   background-color: #fff5f6; }
 
-.color-orange-tint-30 {
+.ss-color-orange-tint-30 {
   color: white; }
 
-.color-orange-tint-30-bg {
+.ss-color-orange-tint-30-bg {
   background-color: white; }
 
-.color-purple-shade-10 {
+.ss-color-purple-shade-10 {
   color: #503c59; }
 
-.color-purple-shade-10-bg {
+.ss-color-purple-shade-10-bg {
   background-color: #503c59; }
 
-.color-purple-shade-20 {
+.ss-color-purple-shade-20 {
   color: #34273b; }
 
-.color-purple-shade-20-bg {
+.ss-color-purple-shade-20-bg {
   background-color: #34273b; }
 
-.color-purple-shade-30 {
+.ss-color-purple-shade-30 {
   color: #19131c; }
 
-.color-purple-shade-30-bg {
+.ss-color-purple-shade-30-bg {
   background-color: #19131c; }
 
-.color-purple-tint-10 {
+.ss-color-purple-tint-10 {
   color: #866497; }
 
-.color-purple-tint-10-bg {
+.ss-color-purple-tint-10-bg {
   background-color: #866497; }
 
-.color-purple-tint-20 {
+.ss-color-purple-tint-20 {
   color: #9e82ac; }
 
-.color-purple-tint-20-bg {
+.ss-color-purple-tint-20-bg {
   background-color: #9e82ac; }
 
-.color-purple-tint-30 {
+.ss-color-purple-tint-30 {
   color: #b6a1c0; }
 
-.color-purple-tint-30-bg {
+.ss-color-purple-tint-30-bg {
   background-color: #b6a1c0; }
 
-.color-grey1-shade-10 {
+.ss-color-grey1-shade-10 {
   color: #c6c6dd; }
 
-.color-grey1-shade-10-bg {
+.ss-color-grey1-shade-10-bg {
   background-color: #c6c6dd; }
 
-.color-grey1-shade-20 {
+.ss-color-grey1-shade-20 {
   color: #a6a6ca; }
 
-.color-grey1-shade-20-bg {
+.ss-color-grey1-shade-20-bg {
   background-color: #a6a6ca; }
 
-.color-grey1-shade-30 {
+.ss-color-grey1-shade-30 {
   color: #8686b7; }
 
-.color-grey1-shade-30-bg {
+.ss-color-grey1-shade-30-bg {
   background-color: #8686b7; }
 
-.color-grey1-tint-10 {
+.ss-color-grey1-tint-10 {
   color: white; }
 
-.color-grey1-tint-10-bg {
+.ss-color-grey1-tint-10-bg {
   background-color: white; }
 
-.color-grey1-tint-20 {
+.ss-color-grey1-tint-20 {
   color: white; }
 
-.color-grey1-tint-20-bg {
+.ss-color-grey1-tint-20-bg {
   background-color: white; }
 
-.color-grey1-tint-30 {
+.ss-color-grey1-tint-30 {
   color: white; }
 
-.color-grey1-tint-30-bg {
+.ss-color-grey1-tint-30-bg {
   background-color: white; }
 
-.color-grey2-shade-10 {
+.ss-color-grey2-shade-10 {
   color: #b7b7c4; }
 
-.color-grey2-shade-10-bg {
+.ss-color-grey2-shade-10-bg {
   background-color: #b7b7c4; }
 
-.color-grey2-shade-20 {
+.ss-color-grey2-shade-20 {
   color: #9b9bad; }
 
-.color-grey2-shade-20-bg {
+.ss-color-grey2-shade-20-bg {
   background-color: #9b9bad; }
 
-.color-grey2-shade-30 {
+.ss-color-grey2-shade-30 {
   color: #7f7f96; }
 
-.color-grey2-shade-30-bg {
+.ss-color-grey2-shade-30-bg {
   background-color: #7f7f96; }
 
-.color-grey2-tint-10 {
+.ss-color-grey2-tint-10 {
   color: #efeff2; }
 
-.color-grey2-tint-10-bg {
+.ss-color-grey2-tint-10-bg {
   background-color: #efeff2; }
 
-.color-grey2-tint-20 {
+.ss-color-grey2-tint-20 {
   color: white; }
 
-.color-grey2-tint-20-bg {
+.ss-color-grey2-tint-20-bg {
   background-color: white; }
 
-.color-grey2-tint-30 {
+.ss-color-grey2-tint-30 {
   color: white; }
 
-.color-grey2-tint-30-bg {
+.ss-color-grey2-tint-30-bg {
   background-color: white; }
 
-.color-grey3-shade-10 {
+.ss-color-grey3-shade-10 {
   color: #a4a4af; }
 
-.color-grey3-shade-10-bg {
+.ss-color-grey3-shade-10-bg {
   background-color: #a4a4af; }
 
-.color-grey3-shade-20 {
+.ss-color-grey3-shade-20 {
   color: #898997; }
 
-.color-grey3-shade-20-bg {
+.ss-color-grey3-shade-20-bg {
   background-color: #898997; }
 
-.color-grey3-shade-30 {
+.ss-color-grey3-shade-30 {
   color: #6f6f7e; }
 
-.color-grey3-shade-30-bg {
+.ss-color-grey3-shade-30-bg {
   background-color: #6f6f7e; }
 
-.color-grey3-tint-10 {
+.ss-color-grey3-tint-10 {
   color: #dadadf; }
 
-.color-grey3-tint-10-bg {
+.ss-color-grey3-tint-10-bg {
   background-color: #dadadf; }
 
-.color-grey3-tint-20 {
+.ss-color-grey3-tint-20 {
   color: #f5f5f7; }
 
-.color-grey3-tint-20-bg {
+.ss-color-grey3-tint-20-bg {
   background-color: #f5f5f7; }
 
-.color-grey3-tint-30 {
+.ss-color-grey3-tint-30 {
   color: white; }
 
-.color-grey3-tint-30-bg {
+.ss-color-grey3-tint-30-bg {
   background-color: white; }
 
-.color-grey4-shade-10 {
+.ss-color-grey4-shade-10 {
   color: #83838a; }
 
-.color-grey4-shade-10-bg {
+.ss-color-grey4-shade-10-bg {
   background-color: #83838a; }
 
-.color-grey4-shade-20 {
+.ss-color-grey4-shade-20 {
   color: #6a6a70; }
 
-.color-grey4-shade-20-bg {
+.ss-color-grey4-shade-20-bg {
   background-color: #6a6a70; }
 
-.color-grey4-shade-30 {
+.ss-color-grey4-shade-30 {
   color: #515156; }
 
-.color-grey4-shade-30-bg {
+.ss-color-grey4-shade-30-bg {
   background-color: #515156; }
 
-.color-grey4-tint-10 {
+.ss-color-grey4-tint-10 {
   color: #b7b7bc; }
 
-.color-grey4-tint-10-bg {
+.ss-color-grey4-tint-10-bg {
   background-color: #b7b7bc; }
 
-.color-grey4-tint-20 {
+.ss-color-grey4-tint-20 {
   color: #d2d2d4; }
 
-.color-grey4-tint-20-bg {
+.ss-color-grey4-tint-20-bg {
   background-color: #d2d2d4; }
 
-.color-grey4-tint-30 {
+.ss-color-grey4-tint-30 {
   color: #ececed; }
 
-.color-grey4-tint-30-bg {
+.ss-color-grey4-tint-30-bg {
   background-color: #ececed; }
 
-.color-grey5-shade-10 {
+.ss-color-grey5-shade-10 {
   color: #3f3f42; }
 
-.color-grey5-shade-10-bg {
+.ss-color-grey5-shade-10-bg {
   background-color: #3f3f42; }
 
-.color-grey5-shade-20 {
+.ss-color-grey5-shade-20 {
   color: #262628; }
 
-.color-grey5-shade-20-bg {
+.ss-color-grey5-shade-20-bg {
   background-color: #262628; }
 
-.color-grey5-shade-30 {
+.ss-color-grey5-shade-30 {
   color: #0d0d0e; }
 
-.color-grey5-shade-30-bg {
+.ss-color-grey5-shade-30-bg {
   background-color: #0d0d0e; }
 
-.color-grey5-tint-10 {
+.ss-color-grey5-tint-10 {
   color: #717176; }
 
-.color-grey5-tint-10-bg {
+.ss-color-grey5-tint-10-bg {
   background-color: #717176; }
 
-.color-grey5-tint-20 {
+.ss-color-grey5-tint-20 {
   color: #8a8a90; }
 
-.color-grey5-tint-20-bg {
+.ss-color-grey5-tint-20-bg {
   background-color: #8a8a90; }
 
-.color-grey5-tint-30 {
+.ss-color-grey5-tint-30 {
   color: #a5a5a8; }
 
-.color-grey5-tint-30-bg {
+.ss-color-grey5-tint-30-bg {
   background-color: #a5a5a8; }
 
-.color-white-shade-10 {
+.ss-color-white-shade-10 {
   color: #e6e6e6; }
 
-.color-white-shade-10-bg {
+.ss-color-white-shade-10-bg {
   background-color: #e6e6e6; }
 
-.color-white-shade-20 {
+.ss-color-white-shade-20 {
   color: #cccccc; }
 
-.color-white-shade-20-bg {
+.ss-color-white-shade-20-bg {
   background-color: #cccccc; }
 
-.color-white-shade-30 {
+.ss-color-white-shade-30 {
   color: #b3b3b3; }
 
-.color-white-shade-30-bg {
+.ss-color-white-shade-30-bg {
   background-color: #b3b3b3; }
 
-.color-white-tint-10 {
+.ss-color-white-tint-10 {
   color: white; }
 
-.color-white-tint-10-bg {
+.ss-color-white-tint-10-bg {
   background-color: white; }
 
-.color-white-tint-20 {
+.ss-color-white-tint-20 {
   color: white; }
 
-.color-white-tint-20-bg {
+.ss-color-white-tint-20-bg {
   background-color: white; }
 
-.color-white-tint-30 {
+.ss-color-white-tint-30 {
   color: white; }
 
-.color-white-tint-30-bg {
+.ss-color-white-tint-30-bg {
   background-color: white; }
 
-.color-black-shade-10 {
+.ss-color-black-shade-10 {
   color: black; }
 
-.color-black-shade-10-bg {
+.ss-color-black-shade-10-bg {
   background-color: black; }
 
-.color-black-shade-20 {
+.ss-color-black-shade-20 {
   color: black; }
 
-.color-black-shade-20-bg {
+.ss-color-black-shade-20-bg {
   background-color: black; }
 
-.color-black-shade-30 {
+.ss-color-black-shade-30 {
   color: black; }
 
-.color-black-shade-30-bg {
+.ss-color-black-shade-30-bg {
   background-color: black; }
 
-.color-black-tint-10 {
+.ss-color-black-tint-10 {
   color: #1a1a1a; }
 
-.color-black-tint-10-bg {
+.ss-color-black-tint-10-bg {
   background-color: #1a1a1a; }
 
-.color-black-tint-20 {
+.ss-color-black-tint-20 {
   color: #333333; }
 
-.color-black-tint-20-bg {
+.ss-color-black-tint-20-bg {
   background-color: #333333; }
 
-.color-black-tint-30 {
+.ss-color-black-tint-30 {
   color: #4d4d4d; }
 
-.color-black-tint-30-bg {
+.ss-color-black-tint-30-bg {
   background-color: #4d4d4d; }
 
-.color-light-shade-10 {
+.ss-color-light-shade-10 {
   color: #dad0d0; }
 
-.color-light-shade-10-bg {
+.ss-color-light-shade-10-bg {
   background-color: #dad0d0; }
 
-.color-light-shade-20 {
+.ss-color-light-shade-20 {
   color: #c3b3b3; }
 
-.color-light-shade-20-bg {
+.ss-color-light-shade-20-bg {
   background-color: #c3b3b3; }
 
-.color-light-shade-30 {
+.ss-color-light-shade-30 {
   color: #ad9797; }
 
-.color-light-shade-30-bg {
+.ss-color-light-shade-30-bg {
   background-color: #ad9797; }
 
-.color-light-tint-10 {
+.ss-color-light-tint-10 {
   color: white; }
 
-.color-light-tint-10-bg {
+.ss-color-light-tint-10-bg {
   background-color: white; }
 
-.color-light-tint-20 {
+.ss-color-light-tint-20 {
   color: white; }
 
-.color-light-tint-20-bg {
+.ss-color-light-tint-20-bg {
   background-color: white; }
 
-.color-light-tint-30 {
+.ss-color-light-tint-30 {
   color: white; }
 
-.color-light-tint-30-bg {
+.ss-color-light-tint-30-bg {
   background-color: white; }
 
-.color-dark-shade-10 {
+.ss-color-dark-shade-10 {
   color: #0f0f13; }
 
-.color-dark-shade-10-bg {
+.ss-color-dark-shade-10-bg {
   background-color: #0f0f13; }
 
-.color-dark-shade-20 {
+.ss-color-dark-shade-20 {
   color: black; }
 
-.color-dark-shade-20-bg {
+.ss-color-dark-shade-20-bg {
   background-color: black; }
 
-.color-dark-shade-30 {
+.ss-color-dark-shade-30 {
   color: black; }
 
-.color-dark-shade-30-bg {
+.ss-color-dark-shade-30-bg {
   background-color: black; }
 
-.color-dark-tint-10 {
+.ss-color-dark-tint-10 {
   color: #3d3d4b; }
 
-.color-dark-tint-10-bg {
+.ss-color-dark-tint-10-bg {
   background-color: #3d3d4b; }
 
-.color-dark-tint-20 {
+.ss-color-dark-tint-20 {
   color: #545467; }
 
-.color-dark-tint-20-bg {
+.ss-color-dark-tint-20-bg {
   background-color: #545467; }
 
-.color-dark-tint-30 {
+.ss-color-dark-tint-30 {
   color: #6a6a84; }
 
-.color-dark-tint-30-bg {
+.ss-color-dark-tint-30-bg {
   background-color: #6a6a84; }
 
 /*# sourceMappingURL=color.css.map */

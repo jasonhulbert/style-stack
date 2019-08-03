@@ -51,6 +51,30 @@ $group-width-default: $group-divisor !default;
     margin-left: -(group-width($width));
 }
 
+@mixin group-row-break() {
+    flex-basis: 100%;
+    width: unset;
+    height: 0;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@mixin group-column-break() {
+    flex-basis: 100%;
+    width: 0;
+    height: unset;
+    display: unset;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@mixin group-disable-break() {
+    display: none;
+}
+
 @mixin group($name: 'group') {
     $name: selector-prefix($name);
 
@@ -64,6 +88,24 @@ $group-width-default: $group-divisor !default;
 
     .#{$name}-item-size-auto {
         @include group-item('auto');
+    }
+
+    .#{$name}-row-break {
+        @include group-row-break();
+    }
+
+    .#{$name}-column-break {
+        @include group-column-break();
+    }
+
+    // Disables row 'breaks' until specified media query is met
+    [class*='#{$name}-row-break\@'] {
+        @include group-disable-break();
+    }
+
+    // Disables column 'breaks' until specified media query is met
+    [class*='#{$name}-column-break\@'] {
+        @include group-disable-break();
     }
 
     // Sets default width of all children using a parent modifier.
@@ -134,6 +176,18 @@ $group-width-default: $group-divisor !default;
             // Does not affect children with a size modifier.
             .#{$name}-size-auto\@#{$query-key} > :not([class*='item-size-']) {
                 @include group-item(auto);
+            }
+
+            .#{$name}-row-break\@#{$query-key} {
+                @include group-row-break();
+            }
+
+            .#{$name}-column-break\@#{$query-key} {
+                @include group-column-break();
+            }
+
+            .#{$name}-disable-break\@#{$query-key} {
+                @include group-disable-break();
             }
         
             @for $i from 1 through $group-divisor {

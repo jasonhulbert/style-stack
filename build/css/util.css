@@ -1,25 +1,25 @@
-.util-display-block {
+.ss-util-display-block {
   display: block; }
 
-.util-display-flex {
+.ss-util-display-flex {
   display: flex; }
 
-.util-display-inline-block {
+.ss-util-display-inline-block {
   display: inline-block; }
 
-.util-display-inline {
+.ss-util-display-inline {
   display: inline; }
 
-.util-display-none {
+.ss-util-display-none {
   display: none; }
 
-.util-align-right {
+.ss-util-align-right {
   text-align: right; }
 
-.util-align-left {
+.ss-util-align-left {
   text-align: left; }
 
-.util-align-center {
+.ss-util-align-center {
   text-align: center; }
 
 /*# sourceMappingURL=util.css.map */
