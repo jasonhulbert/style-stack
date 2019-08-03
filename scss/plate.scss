@@ -1,24 +1,25 @@
 $output-list: (
-    'element.container',
-    'element.group',
-    'element.header',
-    'element.input',
-    'element.wrap',
+    'base.global',
+    'base.font',
+    'component.container',
+    'component.group',
+    'component.header',
+    'component.input',
+    'component.wrap',
+    'modifier.box',
     'modifier.color',
-    'modifier.font',
-    'modifier.gap',
-    'modifier.global',
     'modifier.util'
 ) !default;
 
-@import './elements/container';
-@import './elements/group';
-@import './elements/header';
-@import './elements/input';
-@import './elements/wrap';
+@import 'base/font';
+@import 'base/global';
 
-@import './modifiers/color';
-@import './modifiers/font';
-@import './modifiers/gap';
-@import './modifiers/global';
-@import './modifiers/util';
+@import 'components/container';
+@import 'components/group';
+@import 'components/header';
+@import 'components/input';
+@import 'components/wrap';
+
+@import 'modifiers/box';
+@import 'modifiers/color';
+@import 'modifiers/util';

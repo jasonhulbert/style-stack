@@ -1,100 +1,112 @@
 .header {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0 0 gap-value(6);
+  margin: 0 0 1.8rem;
   line-height: 1.1; }
 
-.header-marginless {
+.header-upper {
+  text-transform: uppercase; }
+
+.header-no-margin {
   margin-top: 0;
   margin-bottom: 0; }
 
-.header-scaled-1 {
+.header-scale-1 {
   font-size: 1rem; }
 
-.header-scaled-2 {
+.header-scale-2 {
   font-size: 1.25rem; }
 
-.header-scaled-3 {
+.header-scale-3 {
   font-size: 1.5rem; }
 
-.header-scaled-4 {
+.header-scale-4 {
   font-size: 2.25rem; }
 
-.header-scaled-5 {
+.header-scale-5 {
   font-size: 2.75rem; }
 
+.header-weight-300 {
+  font-weight: 300; }
+
+.header-weight-400 {
+  font-weight: 400; }
+
+.header-weight-700 {
+  font-weight: 700; }
+
 @media only screen and (min-width: 425px) {
-  .header-marginless\@sm {
+  .header-no-margin\@sm {
     margin-top: 0;
     margin-bottom: 0; }
-  .header-scaled-1\@sm {
+  .header-scale-1\@sm {
     font-size: 1rem; }
-  .header-scaled-2\@sm {
+  .header-scale-2\@sm {
     font-size: 1.25rem; }
-  .header-scaled-3\@sm {
+  .header-scale-3\@sm {
     font-size: 1.5rem; }
-  .header-scaled-4\@sm {
+  .header-scale-4\@sm {
     font-size: 2.25rem; }
-  .header-scaled-5\@sm {
+  .header-scale-5\@sm {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 768px) {
-  .header-marginless\@md {
+  .header-no-margin\@md {
     margin-top: 0;
     margin-bottom: 0; }
-  .header-scaled-1\@md {
+  .header-scale-1\@md {
     font-size: 1rem; }
-  .header-scaled-2\@md {
+  .header-scale-2\@md {
     font-size: 1.25rem; }
-  .header-scaled-3\@md {
+  .header-scale-3\@md {
     font-size: 1.5rem; }
-  .header-scaled-4\@md {
+  .header-scale-4\@md {
     font-size: 2.25rem; }
-  .header-scaled-5\@md {
+  .header-scale-5\@md {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 992px) {
-  .header-marginless\@lg {
+  .header-no-margin\@lg {
     margin-top: 0;
     margin-bottom: 0; }
-  .header-scaled-1\@lg {
+  .header-scale-1\@lg {
     font-size: 1rem; }
-  .header-scaled-2\@lg {
+  .header-scale-2\@lg {
     font-size: 1.25rem; }
-  .header-scaled-3\@lg {
+  .header-scale-3\@lg {
     font-size: 1.5rem; }
-  .header-scaled-4\@lg {
+  .header-scale-4\@lg {
     font-size: 2.25rem; }
-  .header-scaled-5\@lg {
+  .header-scale-5\@lg {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .header-marginless\@xl {
+  .header-no-margin\@xl {
     margin-top: 0;
     margin-bottom: 0; }
-  .header-scaled-1\@xl {
+  .header-scale-1\@xl {
     font-size: 1rem; }
-  .header-scaled-2\@xl {
+  .header-scale-2\@xl {
     font-size: 1.25rem; }
-  .header-scaled-3\@xl {
+  .header-scale-3\@xl {
     font-size: 1.5rem; }
-  .header-scaled-4\@xl {
+  .header-scale-4\@xl {
     font-size: 2.25rem; }
-  .header-scaled-5\@xl {
+  .header-scale-5\@xl {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 1600px) {
-  .header-marginless\@xxl {
+  .header-no-margin\@xxl {
     margin-top: 0;
     margin-bottom: 0; }
-  .header-scaled-1\@xxl {
+  .header-scale-1\@xxl {
     font-size: 1rem; }
-  .header-scaled-2\@xxl {
+  .header-scale-2\@xxl {
     font-size: 1.25rem; }
-  .header-scaled-3\@xxl {
+  .header-scale-3\@xxl {
     font-size: 1.5rem; }
-  .header-scaled-4\@xxl {
+  .header-scale-4\@xxl {
     font-size: 2.25rem; }
-  .header-scaled-5\@xxl {
+  .header-scale-5\@xxl {
     font-size: 2.75rem; } }
 
 /*# sourceMappingURL=header.css.map */

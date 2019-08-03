@@ -1,6 +1,0 @@
-@import '../core/output.core';
-@import '../lib/elements/container.lib';
-
-@include output('element.container') {
-    @include container();
-}

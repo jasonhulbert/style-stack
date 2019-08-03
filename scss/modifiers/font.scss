@@ -1,6 +1,0 @@
-@import '../core/output.core';
-@import '../lib/modifiers/font.lib';
-
-@include output('modifier.font') {
-    @include font();
-}

@@ -71,10 +71,10 @@
   background-color: #000000; }
 
 .color-light {
-  color: #E6E4E4; }
+  color: #F0ECEC; }
 
 .color-light-bg {
-  background-color: #E6E4E4; }
+  background-color: #F0ECEC; }
 
 .color-dark {
   color: #26262F; }
@@ -551,28 +551,28 @@
   background-color: #4d4d4d; }
 
 .color-light-shade-10 {
-  color: #cdcaca; }
+  color: #dad0d0; }
 
 .color-light-shade-10-bg {
-  background-color: #cdcaca; }
+  background-color: #dad0d0; }
 
 .color-light-shade-20 {
-  color: #b5afaf; }
+  color: #c3b3b3; }
 
 .color-light-shade-20-bg {
-  background-color: #b5afaf; }
+  background-color: #c3b3b3; }
 
 .color-light-shade-30 {
-  color: #9c9595; }
+  color: #ad9797; }
 
 .color-light-shade-30-bg {
-  background-color: #9c9595; }
+  background-color: #ad9797; }
 
 .color-light-tint-10 {
-  color: #fffefe; }
+  color: white; }
 
 .color-light-tint-10-bg {
-  background-color: #fffefe; }
+  background-color: white; }
 
 .color-light-tint-20 {
   color: white; }

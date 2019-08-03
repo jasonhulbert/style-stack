@@ -6,12 +6,18 @@
 html {
   font-size: 100%;
   color: #26262F;
-  background-color: #E6E4E4; }
+  background-color: #F0ECEC; }
 
 body {
   margin: 0;
   line-height: 1.5;
   font-size: 1rem; }
+
+::-moz-selection {
+  background-color: #66A6EE; }
+
+::selection {
+  background-color: #66A6EE; }
 
 @media only screen and (min-width: 425px) {
   html {

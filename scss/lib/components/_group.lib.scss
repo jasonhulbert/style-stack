@@ -5,9 +5,11 @@ $group-divisor: 24 !default;
 $group-width-default: $group-divisor !default;
 
 @function group-width($width: auto, $divisor: $group-divisor) {
-    $group-width: auto;
+    $group-width: $width;
 
-    @if (type-of($width) == number and unitless($width) == false) or type-of($width) == string {
+    @if type-of($width) == string {
+        $group-width: unquote($width);
+    } @else if (type-of($width) == number and unitless($width) == false) {
         $group-width: $width
     } @else if type-of($width) == number and unitless($width) == true {
         $group-width: percentage($width / $divisor);
@@ -22,7 +24,7 @@ $group-width-default: $group-divisor !default;
     flex-direction: row;
 }
 
-@mixin group-item($width: auto, $grow: 0, $shrink: 0, $max-width: none, $min-width: 0) {
+@mixin group-item($width: $group-divisor, $grow: 0, $shrink: 0, $max-width: none, $min-width: 0) {
     position: relative;
     flex-basis: group-width($width);
     flex-grow: $grow;
@@ -60,129 +62,129 @@ $group-width-default: $group-divisor !default;
         @include group-item();
     }
 
-    .#{$name}-item-sized-auto {
+    .#{$name}-item-size-auto {
         @include group-item('auto');
     }
 
     // Sets default width of all children using a parent modifier.
     // Does not affect children with a size modifier.
-    .#{$name}-sized-auto > :not([class*='sized-']) {
+    .#{$name}-size-auto > :not([class*='item-size-']) {
         @include group-item(auto);
     }
 
     @for $i from 1 through $group-divisor {
         // Sets default width of all group children.
         // Does not affect children with a size modifier.
-        .#{$name}-sized-#{$i} > :not([class*='sized-']) {
+        .#{$name}-size-#{$i} > :not([class*='item-size-']) {
             @include group-item($i);
         }
 
-        .#{$name}-item-sized-#{$i} {
+        .#{$name}-item-size-#{$i} {
             @include group-item($i);
         }
 
-        .#{$name}-item-pushed-#{$i} {
+        .#{$name}-item-push-#{$i} {
             @include group-item-push($i);
         }
 
-        .#{$name}-item-pulled-#{$i} {
+        .#{$name}-item-pull-#{$i} {
             @include group-item-pull($i);
         }
     }
 
-    .#{$name}-wrapped {
-        flex-wrap: wrap;
+    .#{$name}-nowrap {
+        flex-wrap: nowrap;
     }
 
-    .#{$name}-justified-around {
+    .#{$name}-justify-around {
         justify-content: space-around;
     }
 
-    .#{$name}-justified-between {
+    .#{$name}-justify-between {
         justify-content: space-between;
     }
 
-    .#{$name}-justified-center {
+    .#{$name}-justify-center {
         justify-content: center;
     }
 
-    .#{$name}-justified-end {
+    .#{$name}-justify-end {
         justify-content: flex-end;
     }
 
-    .#{$name}-aligned-center {
+    .#{$name}-align-center {
         align-items: center;
     }
 
-    .#{$name}-aligned-start {
+    .#{$name}-align-start {
         align-items: flex-start;
     }
 
-    .#{$name}-aligned-end {
+    .#{$name}-align-end {
         align-items: flex-end;
     }
 
     @each $query-key in map-keys($query-map) {
         @include query($query-key) {
-            .#{$name}-item-sized-auto\@#{$query-key} {
+            .#{$name}-item-size-auto\@#{$query-key} {
                 @include group-item(auto);
             }
 
             // Sets default width of all group children.
             // Does not affect children with a size modifier.
-            .#{$name}-sized-auto\@#{$query-key} > :not([class*='sized-']) {
+            .#{$name}-size-auto\@#{$query-key} > :not([class*='item-size-']) {
                 @include group-item(auto);
             }
         
             @for $i from 1 through $group-divisor {
                 // Sets default width of all group children.
                 // Does not affect children with a size modifier.
-                .#{$name}-sized-#{$i}\@#{$query-key} > :not([class*='sized-']) {
+                .#{$name}-size-#{$i}\@#{$query-key} > :not([class*='item-size-']) {
                     @include group-item($i);
                 }
 
-                .#{$name}-item-sized-#{$i}\@#{$query-key} {
+                .#{$name}-item-size-#{$i}\@#{$query-key} {
                     @include group-item($i);
                 }
         
-                .#{$name}-item-pushed-#{$i}\@#{$query-key} {
+                .#{$name}-item-push-#{$i}\@#{$query-key} {
                     @include group-item-push($i);
                 }
         
-                .#{$name}-item-pulled-#{$i}\@#{$query-key} {
+                .#{$name}-item-pull-#{$i}\@#{$query-key} {
                     @include group-item-pull($i);
                 }
             }
 
-            .#{$name}-not-wrapped\@#{$query-key} {
+            .#{$name}-nowrap\@#{$query-key} {
                 flex-wrap: nowrap;
             }
         
-            .#{$name}-justified-around\@#{$query-key} {
+            .#{$name}-justify-around\@#{$query-key} {
                 justify-content: space-around;
             }
         
-            .#{$name}-justified-between\@#{$query-key} {
+            .#{$name}-justify-between\@#{$query-key} {
                 justify-content: space-between;
             }
         
-            .#{$name}-justified-center\@#{$query-key} {
+            .#{$name}-justify-center\@#{$query-key} {
                 justify-content: center;
             }
         
-            .#{$name}-justified-end\@#{$query-key} {
+            .#{$name}-justify-end\@#{$query-key} {
                 justify-content: flex-end;
             }
         
-            .#{$name}-aligned-center\@#{$query-key} {
+            .#{$name}-align-center\@#{$query-key} {
                 align-items: center;
             }
         
-            .#{$name}-aligned-start\@#{$query-key} {
+            .#{$name}-align-start\@#{$query-key} {
                 align-items: flex-start;
             }
         
-            .#{$name}-aligned-end\@#{$query-key} {
+            .#{$name}-align-end\@#{$query-key} {
                 align-items: flex-end;
             }
         }

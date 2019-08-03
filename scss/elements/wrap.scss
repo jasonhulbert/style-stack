@@ -1,6 +1,0 @@
-@import '../core/output.core';
-@import '../lib/elements/wrap.lib';
-
-@include output('element.wrap') {
-    @include wrap();
-}

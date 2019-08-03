@@ -1,0 +1,6 @@
+@import '../core/output.core';
+@import '../lib/components/icon.lib';
+
+@include output('component.icon') {
+    @include icon();
+}

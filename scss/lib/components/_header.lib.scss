@@ -1,7 +1,8 @@
 @import '../../core/query.core';
 @import '../../core/selector.core';
-@import '../modifiers/font.lib';
-@import '../modifiers/global.lib';
+@import '../base/font.lib';
+@import '../base/global.lib';
+@import '../modifiers/box.lib';
 
 $header-family: 'secondary' !default;
 $header-scales: (
@@ -11,7 +12,7 @@ $header-scales: (
     '4': 2.25,
     '5': 2.75
 ) !default;
-$header-margin: 0 0 gap-value(6) !default;
+$header-margin: 0 0 box-value(6) !default;
 $header-line-height: 1.1 !default;
 
 @mixin header-base() {
@@ -44,24 +45,34 @@ $header-line-height: 1.1 !default;
         @include header-base();
     }
 
-    .#{$name}-marginless {
+    .#{$name}-upper {
+        text-transform: uppercase;
+    }
+
+    .#{$name}-no-margin {
         @include header-no-margin();
     }
 
     @each $scale-key in map-keys($header-scales) {
-        .#{$name}-scaled-#{$scale-key} {
+        .#{$name}-scale-#{$scale-key} {
             @include header-scale($scale-key);
+        }
+    }
+
+    @each $weight in map-get($font-weights, $header-family) {
+        .#{$name}-weight-#{$weight} {
+            font-weight: $weight;
         }
     }
 
     @each $query-key in map-keys($query-map) {
         @include query($query-key) {
-            .#{$name}-marginless\@#{$query-key} {
+            .#{$name}-no-margin\@#{$query-key} {
                 @include header-no-margin();
             }
 
             @each $scale-key in map-keys($header-scales) {
-                .#{$name}-scaled-#{$scale-key}\@#{$query-key} {
+                .#{$name}-scale-#{$scale-key}\@#{$query-key} {
                     @include header-scale($scale-key);
                 }
             }

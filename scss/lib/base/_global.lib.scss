@@ -1,9 +1,9 @@
 @import '../../core/query.core';
-@import './color.lib';
+@import '../modifiers/color.lib';
 
 $global-html-font-size: 100% !default;
 $global-body-font-size: 1rem !default;
-$global-html-font-scales: (
+$global-query-font-scales: (
     'sm': 1,
     'md': 1.2,
     'lg': 1.25,
@@ -14,6 +14,7 @@ $global-body-line-height: 1.5 !default;
 $global-box-sizing: border-box !default;
 $global-background: color-value('light') !default;
 $global-foreground: color-value('dark') !default;
+$global-selection-color: color-value('select') !default;
 
 @mixin global() {
     *,
@@ -34,7 +35,11 @@ $global-foreground: color-value('dark') !default;
         font-size: $global-body-font-size;
     }
 
-    @each $query-key, $scale in $global-html-font-scales {
+    ::selection {
+        background-color: $global-selection-color;
+    }
+
+    @each $query-key, $scale in $global-query-font-scales {
         @include query($query-key) {
             html {
                 font-size: $scale * $global-html-font-size;

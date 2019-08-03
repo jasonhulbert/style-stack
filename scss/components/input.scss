@@ -1,0 +1,6 @@
+@import '../core/output.core';
+@import '../lib/components/input.lib';
+
+@include output('component.input') {
+    @include input();
+}
