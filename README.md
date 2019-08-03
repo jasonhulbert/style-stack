@@ -2,9 +2,9 @@
 
 Style Stack is a configurable style library built with ShadowDOM in mind.
 
-The methodology behind Style Stack is not unlike other sass libraries in existence and, as we all know, there's no shortage of them. However, there are a few aspects of Style Stack that I believe makes it valuable.
+The methodology within Style Stack's css is not unlike other css libraries in existence and, as we all know, there's no shortage of those. However, there are a few aspects of Style Stack that I believe makes it valuable.
 
-Firstly, Style Stack strictly subscribes to the use of relative units `rem`, `em` and `%` to easily provide adaptive behavior. A percentage-based html font-size combined with configurable media query "scales" allow the implementor to easily adjust the size of the entire layout. This provides automatic adaptations at various screen sizes without requiring a litany of media-specific styles and classes. This automatic scaling combined with query-specific modifier classes create an easy-to-use yet very flexible layout system.
+Firstly, Style Stack strictly subscribes to the use of relative units `rem`, `em` and `%` to easily provide adaptive behavior. A percentage-based html font-size combined with configurable media query "scales" allow the implementor to easily adjust the size of the entire layout. Because components also utilize relative values, they too will scale. This provides automatic adaptations at various screen sizes without requiring a litany of media-specific styles and classes. This, combined with optional, query-specific modifier classes provides an easy-to-implement yet very flexible layout system.
 
 Secondly, the component mixins are isolated in such a way that they do not generate required nested selectors or selector chains. The primary motivation of this is usage with WebComponent / ShadowDOM selectors such as `:host`, `::slotted()` and `[theme='blue']`.
 
