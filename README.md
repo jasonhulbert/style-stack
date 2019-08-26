@@ -15,7 +15,7 @@ Trivial Example:
 ```scss
 // container.scss
 
-@import 'sass-plate/lib/components/container.lib';
+@import 'style-stack/lib/components/container.lib';
 
 :host {
     @include container();
@@ -58,7 +58,7 @@ Style Stack is organized into 3 feature sets:
 
 *Base* styles are universally applied styles and defaults. This includes fonts, generic pseudo styles such as `::selection` and preferred defaults such as `box-sizing`.
 
-*Components* are characterized by the fact that they are applied to a host and typically require specific markup structure when composed of multiple elements. For example, the `group` component is used to create flex layouts like so:
+*Components* are characterized by the fact that they are applied to a host and typically require specific markup structure when composed of multiple elements. For example, the `group` component is used to create layouts like so:
 
 ```html
 <section class="group group-justify-center">

@@ -6,7 +6,7 @@
 
 @media only screen and (min-width: 425px) {
   .ss-container-inset {
-    max-width: 90vw; } }
+    max-width: 92vw; } }
 
 @media only screen and (min-width: 768px) {
   .ss-container-inset {
@@ -14,14 +14,14 @@
 
 @media only screen and (min-width: 992px) {
   .ss-container-inset {
-    max-width: 95vw; } }
+    max-width: 90vw; } }
 
 @media only screen and (min-width: 1200px) {
   .ss-container-inset {
-    max-width: 95vw; } }
+    max-width: 90vw; } }
 
 @media only screen and (min-width: 1600px) {
   .ss-container-inset {
-    max-width: 95vw; } }
+    max-width: 85vw; } }
 
 /*# sourceMappingURL=container.css.map */

@@ -1,12 +1,11 @@
 @import '../../core/query.core';
 @import '../../core/selector.core';
 
+$container-name: 'container' !default;
 $container-max-width-map: (
-    'sm': 90vw,
-    'md': 90vw,
-    'lg': 95vw,
-    'xl': 95vw,
-    'xxl': 95vw
+    'w425': 92vw,
+    'w992': 90vw,
+    'w1600': 85vw
 ) !default;
 $container-base-max-width: 90vw !default;
 
@@ -27,8 +26,8 @@ $container-base-max-width: 90vw !default;
     max-width: $max-width;
 }
 
-@mixin container($name: 'container') {
-    $name: selector-prefix($name);
+@mixin container() {
+    $name: selector-prefix($container-name);
 
     .#{$name} {
         @include container-base();

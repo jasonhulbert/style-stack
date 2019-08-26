@@ -1,21 +1,22 @@
 @import '../../core/query.core';
 @import '../../core/selector.core';
 
+$group-name: 'group' !default;
 $group-divisor: 24 !default;
-$group-width-default: $group-divisor !default;
+$group-item-width-default: $group-divisor !default;
 
-@function group-width($width: auto, $divisor: $group-divisor) {
-    $group-width: $width;
+@function group-item-width($width: auto, $divisor: $group-divisor) {
+    $group-item-width: $width;
 
     @if type-of($width) == string {
-        $group-width: unquote($width);
+        $group-item-width: unquote($width);
     } @else if (type-of($width) == number and unitless($width) == false) {
-        $group-width: $width
+        $group-item-width: $width
     } @else if type-of($width) == number and unitless($width) == true {
-        $group-width: percentage($width / $divisor);
+        $group-item-width: percentage($width / $divisor);
     }
 
-    @return $group-width;
+    @return $group-item-width;
 }
 
 @mixin group-base() {
@@ -24,47 +25,28 @@ $group-width-default: $group-divisor !default;
     flex-direction: row;
 }
 
-@mixin group-item($width: $group-divisor, $grow: 0, $shrink: 0, $max-width: none, $min-width: 0) {
+@mixin group-item($width: $group-divisor, $grow: 0, $shrink: 0) {
+    $width: group-item-width($width);
+
     position: relative;
-    flex-basis: group-width($width);
+    flex-basis: $width;
     flex-grow: $grow;
     flex-shrink: $shrink;
-
-    @if $max-width == none or unit($max-width) {
-        max-width: $max-width;
-    } @else if unitless($max-width) {
-        max-width: group-width($max-width);
-    }
-
-    @if $min-width == none or unit($min-width) {
-        min-width: $min-width;
-    } @else if unitless($min-width) {
-        min-width: group-width($min-width);
-    }
+    min-width: $width;
 }
 
 @mixin group-item-push($width) {
-    margin-left: group-width($width);
+    margin-left: group-item-width($width);
 }
 
 @mixin group-item-pull($width) {
-    margin-left: -(group-width($width));
+    margin-left: -(group-item-width($width));
 }
 
-@mixin group-row-break() {
+@mixin group-break() {
     flex-basis: 100%;
     width: unset;
     height: 0;
-    display: unset;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-@mixin group-column-break() {
-    flex-basis: 100%;
-    width: 0;
-    height: unset;
     display: unset;
     margin: 0;
     padding: 0;
@@ -75,8 +57,8 @@ $group-width-default: $group-divisor !default;
     display: none;
 }
 
-@mixin group($name: 'group') {
-    $name: selector-prefix($name);
+@mixin group() {
+    $name: selector-prefix($group-name);
 
     .#{$name} {
         @include group-base();
@@ -90,21 +72,12 @@ $group-width-default: $group-divisor !default;
         @include group-item('auto');
     }
 
-    .#{$name}-row-break {
-        @include group-row-break();
+    .#{$name}-break {
+        @include group-break();
     }
 
-    .#{$name}-column-break {
-        @include group-column-break();
-    }
-
-    // Disables row 'breaks' until specified media query is met
-    [class*='#{$name}-row-break\@'] {
-        @include group-disable-break();
-    }
-
-    // Disables column 'breaks' until specified media query is met
-    [class*='#{$name}-column-break\@'] {
+    // Disables 'breaks' until any specified media query is met
+    [class*='#{$name}-break\@'] {
         @include group-disable-break();
     }
 
@@ -178,12 +151,8 @@ $group-width-default: $group-divisor !default;
                 @include group-item(auto);
             }
 
-            .#{$name}-row-break\@#{$query-key} {
-                @include group-row-break();
-            }
-
-            .#{$name}-column-break\@#{$query-key} {
-                @include group-column-break();
+            .#{$name}-break\@#{$query-key} {
+                @include group-break();
             }
 
             .#{$name}-disable-break\@#{$query-key} {

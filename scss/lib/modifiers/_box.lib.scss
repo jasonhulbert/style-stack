@@ -1,6 +1,7 @@
 @import '../../core/query.core';
 @import '../../core/selector.core';
 
+$box-name: 'box' !default;
 $box-base-value: 0.3rem !default;
 $box-multiplier-max: 10 !default;
 $box-multiplier-default: 4 !default;
@@ -45,8 +46,8 @@ $box-sides-default: 'rl' !default;
     @include box-property('margin', $multiplier, $sides);
 }
 
-@mixin box($name: 'box') {
-    $name: selector-prefix($name);
+@mixin box() {
+    $name: selector-prefix($box-name);
 
     .#{$name}-margin {
         @include box-margin();

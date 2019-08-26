@@ -1,10 +1,10 @@
 @import '../../core/map.core';
 @import '../../core/selector.core';
 
+$color-name: 'color' !default;
 $color-theme-map: (
     'blue': #317FA3,
     'sky': #6DC8CF,
-    'pink': #D3729C,
     'orange': #FF8F99,
     'purple': #6B5078
 ) !default;
@@ -82,8 +82,8 @@ $color-tints: 10, 20, 30 !default;
     @return $color;
 }
 
-@mixin color($name: 'color') {
-    $name: selector-prefix($name);
+@mixin color() {
+    $name: selector-prefix($color-name);
 
     @each $color-key, $color-value in $color-all-map {
         .#{$name}-#{$color-key} {

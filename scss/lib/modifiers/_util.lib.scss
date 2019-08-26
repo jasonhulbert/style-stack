@@ -1,7 +1,9 @@
 @import '../../core/selector.core';
 
-@mixin util($name: 'util') {
-    $name: selector-prefix($name);
+$util-name: 'util' !default;
+
+@mixin util() {
+    $name: selector-prefix($util-name);
 
     .#{$name}-display-block {
         display: block;
@@ -36,6 +38,6 @@
     }
 
     @if mixin-exists('util-hook') {
-        @include util-hook();
+        @include util-hook($name);
     }
 }

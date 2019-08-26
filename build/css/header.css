@@ -10,19 +10,22 @@
   margin-top: 0;
   margin-bottom: 0; }
 
-.ss-header-scale-1 {
+.ss-header-scale-none {
   font-size: 1rem; }
 
-.ss-header-scale-2 {
+.ss-header-scale-sm {
+  font-size: 0.9rem; }
+
+.ss-header-scale-md {
   font-size: 1.25rem; }
 
-.ss-header-scale-3 {
+.ss-header-scale-lg {
   font-size: 1.5rem; }
 
-.ss-header-scale-4 {
+.ss-header-scale-xl {
   font-size: 2.25rem; }
 
-.ss-header-scale-5 {
+.ss-header-scale-xxl {
   font-size: 2.75rem; }
 
 .ss-header-weight-300 {
@@ -35,78 +38,88 @@
   font-weight: 700; }
 
 @media only screen and (min-width: 425px) {
-  .ss-header-no-margin\@sm {
+  .ss-header-no-margin\@w425 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@sm {
+  .ss-header-scale-none\@w425 {
     font-size: 1rem; }
-  .ss-header-scale-2\@sm {
+  .ss-header-scale-sm\@w425 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w425 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@sm {
+  .ss-header-scale-lg\@w425 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@sm {
+  .ss-header-scale-xl\@w425 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@sm {
+  .ss-header-scale-xxl\@w425 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 768px) {
-  .ss-header-no-margin\@md {
+  .ss-header-no-margin\@w768 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@md {
+  .ss-header-scale-none\@w768 {
     font-size: 1rem; }
-  .ss-header-scale-2\@md {
+  .ss-header-scale-sm\@w768 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w768 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@md {
+  .ss-header-scale-lg\@w768 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@md {
+  .ss-header-scale-xl\@w768 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@md {
+  .ss-header-scale-xxl\@w768 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 992px) {
-  .ss-header-no-margin\@lg {
+  .ss-header-no-margin\@w992 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@lg {
+  .ss-header-scale-none\@w992 {
     font-size: 1rem; }
-  .ss-header-scale-2\@lg {
+  .ss-header-scale-sm\@w992 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w992 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@lg {
+  .ss-header-scale-lg\@w992 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@lg {
+  .ss-header-scale-xl\@w992 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@lg {
+  .ss-header-scale-xxl\@w992 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .ss-header-no-margin\@xl {
+  .ss-header-no-margin\@w1200 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@xl {
+  .ss-header-scale-none\@w1200 {
     font-size: 1rem; }
-  .ss-header-scale-2\@xl {
+  .ss-header-scale-sm\@w1200 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w1200 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@xl {
+  .ss-header-scale-lg\@w1200 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@xl {
+  .ss-header-scale-xl\@w1200 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@xl {
+  .ss-header-scale-xxl\@w1200 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 1600px) {
-  .ss-header-no-margin\@xxl {
+  .ss-header-no-margin\@w1600 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@xxl {
+  .ss-header-scale-none\@w1600 {
     font-size: 1rem; }
-  .ss-header-scale-2\@xxl {
+  .ss-header-scale-sm\@w1600 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w1600 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@xxl {
+  .ss-header-scale-lg\@w1600 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@xxl {
+  .ss-header-scale-xl\@w1600 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@xxl {
+  .ss-header-scale-xxl\@w1600 {
     font-size: 2.75rem; } }
 
 /*# sourceMappingURL=header.css.map */

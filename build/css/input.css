@@ -18,9 +18,9 @@ input::-webkit-inner-spin-button {
 .ss-input {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   width: 100%;
-  height: 2.7rem;
+  height: 2.4rem;
   font-size: 0.9rem;
-  padding: 0 0.9rem;
+  padding: 0 0.6rem;
   color: #26262F;
   border: 0.1rem solid #9D9DA3;
   border-radius: 0.2rem;
@@ -51,21 +51,35 @@ input::-webkit-inner-spin-button {
     outline-offset: 0.15rem;
     outline: rgba(102, 166, 238, 0.5) solid 0.15rem; }
 
+.ss-input-scale-none {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
+
 .ss-input-scale-sm {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
 .ss-input-scale-md {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
 .ss-input-scale-lg {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
 .ss-input-scale-xl {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
+
+.ss-input-scale-xxl {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
 .ss-input-dark {
   background: #26262F;
@@ -138,28 +152,6 @@ input::-webkit-inner-spin-button {
     border-color: #266d73;
     outline-color: rgba(109, 200, 207, 0.3); }
 
-.ss-input-theme-pink {
-  border-color: #D3729C; }
-  .ss-input-theme-pink::-webkit-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-moz-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink:-ms-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-ms-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-webkit-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-moz-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-ms-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink:focus:not([tabindex='-1']) {
-    border-color: #742446;
-    outline-color: rgba(211, 114, 156, 0.3); }
-
 .ss-input-theme-orange {
   border-color: #FF8F99; }
   .ss-input-theme-orange::-webkit-input-placeholder {
@@ -204,84 +196,154 @@ input::-webkit-inner-spin-button {
     border-color: #503c59;
     outline-color: rgba(107, 80, 120, 0.3); }
 
-.ss-input-scale-sm\@sm {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-none\@w425 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-md\@sm {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-sm\@w425 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
-.ss-input-scale-lg\@sm {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-md\@w425 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
-.ss-input-scale-xl\@sm {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-lg\@w425 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
-.ss-input-scale-sm\@md {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-xl\@w425 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
 
-.ss-input-scale-md\@md {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-xxl\@w425 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
-.ss-input-scale-lg\@md {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-none\@w768 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-xl\@md {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-sm\@w768 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
-.ss-input-scale-sm\@lg {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-md\@w768 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
-.ss-input-scale-md\@lg {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-lg\@w768 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
-.ss-input-scale-lg\@lg {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-xl\@w768 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
 
-.ss-input-scale-xl\@lg {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-xxl\@w768 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
-.ss-input-scale-sm\@xl {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-none\@w992 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-md\@xl {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-sm\@w992 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
-.ss-input-scale-lg\@xl {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-md\@w992 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
-.ss-input-scale-xl\@xl {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-lg\@w992 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
-.ss-input-scale-sm\@xxl {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-xl\@w992 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
 
-.ss-input-scale-md\@xxl {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-xxl\@w992 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
-.ss-input-scale-lg\@xxl {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-none\@w1200 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-xl\@xxl {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-sm\@w1200 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
+
+.ss-input-scale-md\@w1200 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
+
+.ss-input-scale-lg\@w1200 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
+
+.ss-input-scale-xl\@w1200 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
+
+.ss-input-scale-xxl\@w1200 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
+
+.ss-input-scale-none\@w1600 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
+
+.ss-input-scale-sm\@w1600 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
+
+.ss-input-scale-md\@w1600 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
+
+.ss-input-scale-lg\@w1600 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
+
+.ss-input-scale-xl\@w1600 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
+
+.ss-input-scale-xxl\@w1600 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
 /*# sourceMappingURL=input.css.map */

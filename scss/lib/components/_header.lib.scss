@@ -4,13 +4,15 @@
 @import '../base/global.lib';
 @import '../modifiers/box.lib';
 
+$header-name: 'header' !default;
 $header-family: 'secondary' !default;
 $header-scales: (
-    '1': 1,
-    '2': 1.25,
-    '3': 1.5,
-    '4': 2.25,
-    '5': 2.75
+    'none': 1,
+    'sm': 0.9,
+    'md': 1.25,
+    'lg': 1.5,
+    'xl': 2.25,
+    'xxl': 2.75
 ) !default;
 $header-margin: 0 0 box-value(6) !default;
 $header-line-height: 1.1 !default;
@@ -38,8 +40,8 @@ $header-line-height: 1.1 !default;
     margin-bottom: 0;
 }
 
-@mixin header($name: 'header') {
-    $name: selector-prefix($name);
+@mixin header() {
+    $name: selector-prefix($header-name);
 
     .#{$name} {
         @include header-base();

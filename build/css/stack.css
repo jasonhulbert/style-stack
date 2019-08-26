@@ -60,7 +60,7 @@ body {
 
 @media only screen and (min-width: 425px) {
   .ss-container-inset {
-    max-width: 90vw; } }
+    max-width: 92vw; } }
 
 @media only screen and (min-width: 768px) {
   .ss-container-inset {
@@ -68,15 +68,15 @@ body {
 
 @media only screen and (min-width: 992px) {
   .ss-container-inset {
-    max-width: 95vw; } }
+    max-width: 90vw; } }
 
 @media only screen and (min-width: 1200px) {
   .ss-container-inset {
-    max-width: 95vw; } }
+    max-width: 90vw; } }
 
 @media only screen and (min-width: 1600px) {
   .ss-container-inset {
-    max-width: 95vw; } }
+    max-width: 85vw; } }
 
 .ss-group {
   display: flex;
@@ -88,18 +88,16 @@ body {
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 100%; }
 
 .ss-group-item-size-auto {
   position: relative;
   flex-basis: auto;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: auto; }
 
-.ss-group-row-break {
+.ss-group-break {
   flex-basis: 100%;
   width: unset;
   height: 0;
@@ -108,19 +106,7 @@ body {
   padding: 0;
   border: 0; }
 
-.ss-group-column-break {
-  flex-basis: 100%;
-  width: 0;
-  height: unset;
-  display: unset;
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-[class*='ss-group-row-break@'] {
-  display: none; }
-
-[class*='ss-group-column-break@'] {
+[class*='ss-group-break@'] {
   display: none; }
 
 .ss-group-size-auto > :not([class*='item-size-']) {
@@ -128,24 +114,21 @@ body {
   flex-basis: auto;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: auto; }
 
 .ss-group-size-1 > :not([class*='item-size-']) {
   position: relative;
   flex-basis: 4.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 4.16667%; }
 
 .ss-group-item-size-1 {
   position: relative;
   flex-basis: 4.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 4.16667%; }
 
 .ss-group-item-push-1 {
   margin-left: 4.16667%; }
@@ -158,16 +141,14 @@ body {
   flex-basis: 8.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 8.33333%; }
 
 .ss-group-item-size-2 {
   position: relative;
   flex-basis: 8.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 8.33333%; }
 
 .ss-group-item-push-2 {
   margin-left: 8.33333%; }
@@ -180,16 +161,14 @@ body {
   flex-basis: 12.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 12.5%; }
 
 .ss-group-item-size-3 {
   position: relative;
   flex-basis: 12.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 12.5%; }
 
 .ss-group-item-push-3 {
   margin-left: 12.5%; }
@@ -202,16 +181,14 @@ body {
   flex-basis: 16.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 16.66667%; }
 
 .ss-group-item-size-4 {
   position: relative;
   flex-basis: 16.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 16.66667%; }
 
 .ss-group-item-push-4 {
   margin-left: 16.66667%; }
@@ -224,16 +201,14 @@ body {
   flex-basis: 20.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 20.83333%; }
 
 .ss-group-item-size-5 {
   position: relative;
   flex-basis: 20.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 20.83333%; }
 
 .ss-group-item-push-5 {
   margin-left: 20.83333%; }
@@ -246,16 +221,14 @@ body {
   flex-basis: 25%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 25%; }
 
 .ss-group-item-size-6 {
   position: relative;
   flex-basis: 25%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 25%; }
 
 .ss-group-item-push-6 {
   margin-left: 25%; }
@@ -268,16 +241,14 @@ body {
   flex-basis: 29.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 29.16667%; }
 
 .ss-group-item-size-7 {
   position: relative;
   flex-basis: 29.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 29.16667%; }
 
 .ss-group-item-push-7 {
   margin-left: 29.16667%; }
@@ -290,16 +261,14 @@ body {
   flex-basis: 33.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 33.33333%; }
 
 .ss-group-item-size-8 {
   position: relative;
   flex-basis: 33.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 33.33333%; }
 
 .ss-group-item-push-8 {
   margin-left: 33.33333%; }
@@ -312,16 +281,14 @@ body {
   flex-basis: 37.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 37.5%; }
 
 .ss-group-item-size-9 {
   position: relative;
   flex-basis: 37.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 37.5%; }
 
 .ss-group-item-push-9 {
   margin-left: 37.5%; }
@@ -334,16 +301,14 @@ body {
   flex-basis: 41.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 41.66667%; }
 
 .ss-group-item-size-10 {
   position: relative;
   flex-basis: 41.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 41.66667%; }
 
 .ss-group-item-push-10 {
   margin-left: 41.66667%; }
@@ -356,16 +321,14 @@ body {
   flex-basis: 45.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 45.83333%; }
 
 .ss-group-item-size-11 {
   position: relative;
   flex-basis: 45.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 45.83333%; }
 
 .ss-group-item-push-11 {
   margin-left: 45.83333%; }
@@ -378,16 +341,14 @@ body {
   flex-basis: 50%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 50%; }
 
 .ss-group-item-size-12 {
   position: relative;
   flex-basis: 50%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 50%; }
 
 .ss-group-item-push-12 {
   margin-left: 50%; }
@@ -400,16 +361,14 @@ body {
   flex-basis: 54.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 54.16667%; }
 
 .ss-group-item-size-13 {
   position: relative;
   flex-basis: 54.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 54.16667%; }
 
 .ss-group-item-push-13 {
   margin-left: 54.16667%; }
@@ -422,16 +381,14 @@ body {
   flex-basis: 58.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 58.33333%; }
 
 .ss-group-item-size-14 {
   position: relative;
   flex-basis: 58.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 58.33333%; }
 
 .ss-group-item-push-14 {
   margin-left: 58.33333%; }
@@ -444,16 +401,14 @@ body {
   flex-basis: 62.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 62.5%; }
 
 .ss-group-item-size-15 {
   position: relative;
   flex-basis: 62.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 62.5%; }
 
 .ss-group-item-push-15 {
   margin-left: 62.5%; }
@@ -466,16 +421,14 @@ body {
   flex-basis: 66.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 66.66667%; }
 
 .ss-group-item-size-16 {
   position: relative;
   flex-basis: 66.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 66.66667%; }
 
 .ss-group-item-push-16 {
   margin-left: 66.66667%; }
@@ -488,16 +441,14 @@ body {
   flex-basis: 70.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 70.83333%; }
 
 .ss-group-item-size-17 {
   position: relative;
   flex-basis: 70.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 70.83333%; }
 
 .ss-group-item-push-17 {
   margin-left: 70.83333%; }
@@ -510,16 +461,14 @@ body {
   flex-basis: 75%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 75%; }
 
 .ss-group-item-size-18 {
   position: relative;
   flex-basis: 75%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 75%; }
 
 .ss-group-item-push-18 {
   margin-left: 75%; }
@@ -532,16 +481,14 @@ body {
   flex-basis: 79.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 79.16667%; }
 
 .ss-group-item-size-19 {
   position: relative;
   flex-basis: 79.16667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 79.16667%; }
 
 .ss-group-item-push-19 {
   margin-left: 79.16667%; }
@@ -554,16 +501,14 @@ body {
   flex-basis: 83.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 83.33333%; }
 
 .ss-group-item-size-20 {
   position: relative;
   flex-basis: 83.33333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 83.33333%; }
 
 .ss-group-item-push-20 {
   margin-left: 83.33333%; }
@@ -576,16 +521,14 @@ body {
   flex-basis: 87.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 87.5%; }
 
 .ss-group-item-size-21 {
   position: relative;
   flex-basis: 87.5%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 87.5%; }
 
 .ss-group-item-push-21 {
   margin-left: 87.5%; }
@@ -598,16 +541,14 @@ body {
   flex-basis: 91.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 91.66667%; }
 
 .ss-group-item-size-22 {
   position: relative;
   flex-basis: 91.66667%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 91.66667%; }
 
 .ss-group-item-push-22 {
   margin-left: 91.66667%; }
@@ -620,16 +561,14 @@ body {
   flex-basis: 95.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 95.83333%; }
 
 .ss-group-item-size-23 {
   position: relative;
   flex-basis: 95.83333%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 95.83333%; }
 
 .ss-group-item-push-23 {
   margin-left: 95.83333%; }
@@ -642,16 +581,14 @@ body {
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 100%; }
 
 .ss-group-item-size-24 {
   position: relative;
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  max-width: none;
-  min-width: 0; }
+  min-width: 100%; }
 
 .ss-group-item-push-24 {
   margin-left: 100%; }
@@ -684,21 +621,19 @@ body {
   align-items: flex-end; }
 
 @media only screen and (min-width: 425px) {
-  .ss-group-item-size-auto\@sm {
+  .ss-group-item-size-auto\@w425 {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-size-auto\@sm > :not([class*='item-size-']) {
+    min-width: auto; }
+  .ss-group-size-auto\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-row-break\@sm {
+    min-width: auto; }
+  .ss-group-break\@w425 {
     flex-basis: 100%;
     width: unset;
     height: 0;
@@ -706,481 +641,423 @@ body {
     margin: 0;
     padding: 0;
     border: 0; }
-  .ss-group-column-break\@sm {
-    flex-basis: 100%;
-    width: 0;
-    height: unset;
-    display: unset;
-    margin: 0;
-    padding: 0;
-    border: 0; }
-  .ss-group-disable-break\@sm {
+  .ss-group-disable-break\@w425 {
     display: none; }
-  .ss-group-size-1\@sm > :not([class*='item-size-']) {
+  .ss-group-size-1\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-1\@sm {
+    min-width: 4.16667%; }
+  .ss-group-item-size-1\@w425 {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-1\@sm {
+    min-width: 4.16667%; }
+  .ss-group-item-push-1\@w425 {
     margin-left: 4.16667%; }
-  .ss-group-item-pull-1\@sm {
+  .ss-group-item-pull-1\@w425 {
     margin-left: -4.16667%; }
-  .ss-group-size-2\@sm > :not([class*='item-size-']) {
+  .ss-group-size-2\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-2\@sm {
+    min-width: 8.33333%; }
+  .ss-group-item-size-2\@w425 {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-2\@sm {
+    min-width: 8.33333%; }
+  .ss-group-item-push-2\@w425 {
     margin-left: 8.33333%; }
-  .ss-group-item-pull-2\@sm {
+  .ss-group-item-pull-2\@w425 {
     margin-left: -8.33333%; }
-  .ss-group-size-3\@sm > :not([class*='item-size-']) {
+  .ss-group-size-3\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-3\@sm {
+    min-width: 12.5%; }
+  .ss-group-item-size-3\@w425 {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-3\@sm {
+    min-width: 12.5%; }
+  .ss-group-item-push-3\@w425 {
     margin-left: 12.5%; }
-  .ss-group-item-pull-3\@sm {
+  .ss-group-item-pull-3\@w425 {
     margin-left: -12.5%; }
-  .ss-group-size-4\@sm > :not([class*='item-size-']) {
+  .ss-group-size-4\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-4\@sm {
+    min-width: 16.66667%; }
+  .ss-group-item-size-4\@w425 {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-4\@sm {
+    min-width: 16.66667%; }
+  .ss-group-item-push-4\@w425 {
     margin-left: 16.66667%; }
-  .ss-group-item-pull-4\@sm {
+  .ss-group-item-pull-4\@w425 {
     margin-left: -16.66667%; }
-  .ss-group-size-5\@sm > :not([class*='item-size-']) {
+  .ss-group-size-5\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-5\@sm {
+    min-width: 20.83333%; }
+  .ss-group-item-size-5\@w425 {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-5\@sm {
+    min-width: 20.83333%; }
+  .ss-group-item-push-5\@w425 {
     margin-left: 20.83333%; }
-  .ss-group-item-pull-5\@sm {
+  .ss-group-item-pull-5\@w425 {
     margin-left: -20.83333%; }
-  .ss-group-size-6\@sm > :not([class*='item-size-']) {
+  .ss-group-size-6\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-6\@sm {
+    min-width: 25%; }
+  .ss-group-item-size-6\@w425 {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-6\@sm {
+    min-width: 25%; }
+  .ss-group-item-push-6\@w425 {
     margin-left: 25%; }
-  .ss-group-item-pull-6\@sm {
+  .ss-group-item-pull-6\@w425 {
     margin-left: -25%; }
-  .ss-group-size-7\@sm > :not([class*='item-size-']) {
+  .ss-group-size-7\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-7\@sm {
+    min-width: 29.16667%; }
+  .ss-group-item-size-7\@w425 {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-7\@sm {
+    min-width: 29.16667%; }
+  .ss-group-item-push-7\@w425 {
     margin-left: 29.16667%; }
-  .ss-group-item-pull-7\@sm {
+  .ss-group-item-pull-7\@w425 {
     margin-left: -29.16667%; }
-  .ss-group-size-8\@sm > :not([class*='item-size-']) {
+  .ss-group-size-8\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-8\@sm {
+    min-width: 33.33333%; }
+  .ss-group-item-size-8\@w425 {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-8\@sm {
+    min-width: 33.33333%; }
+  .ss-group-item-push-8\@w425 {
     margin-left: 33.33333%; }
-  .ss-group-item-pull-8\@sm {
+  .ss-group-item-pull-8\@w425 {
     margin-left: -33.33333%; }
-  .ss-group-size-9\@sm > :not([class*='item-size-']) {
+  .ss-group-size-9\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-9\@sm {
+    min-width: 37.5%; }
+  .ss-group-item-size-9\@w425 {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-9\@sm {
+    min-width: 37.5%; }
+  .ss-group-item-push-9\@w425 {
     margin-left: 37.5%; }
-  .ss-group-item-pull-9\@sm {
+  .ss-group-item-pull-9\@w425 {
     margin-left: -37.5%; }
-  .ss-group-size-10\@sm > :not([class*='item-size-']) {
+  .ss-group-size-10\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-10\@sm {
+    min-width: 41.66667%; }
+  .ss-group-item-size-10\@w425 {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-10\@sm {
+    min-width: 41.66667%; }
+  .ss-group-item-push-10\@w425 {
     margin-left: 41.66667%; }
-  .ss-group-item-pull-10\@sm {
+  .ss-group-item-pull-10\@w425 {
     margin-left: -41.66667%; }
-  .ss-group-size-11\@sm > :not([class*='item-size-']) {
+  .ss-group-size-11\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-11\@sm {
+    min-width: 45.83333%; }
+  .ss-group-item-size-11\@w425 {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-11\@sm {
+    min-width: 45.83333%; }
+  .ss-group-item-push-11\@w425 {
     margin-left: 45.83333%; }
-  .ss-group-item-pull-11\@sm {
+  .ss-group-item-pull-11\@w425 {
     margin-left: -45.83333%; }
-  .ss-group-size-12\@sm > :not([class*='item-size-']) {
+  .ss-group-size-12\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-12\@sm {
+    min-width: 50%; }
+  .ss-group-item-size-12\@w425 {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-12\@sm {
+    min-width: 50%; }
+  .ss-group-item-push-12\@w425 {
     margin-left: 50%; }
-  .ss-group-item-pull-12\@sm {
+  .ss-group-item-pull-12\@w425 {
     margin-left: -50%; }
-  .ss-group-size-13\@sm > :not([class*='item-size-']) {
+  .ss-group-size-13\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-13\@sm {
+    min-width: 54.16667%; }
+  .ss-group-item-size-13\@w425 {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-13\@sm {
+    min-width: 54.16667%; }
+  .ss-group-item-push-13\@w425 {
     margin-left: 54.16667%; }
-  .ss-group-item-pull-13\@sm {
+  .ss-group-item-pull-13\@w425 {
     margin-left: -54.16667%; }
-  .ss-group-size-14\@sm > :not([class*='item-size-']) {
+  .ss-group-size-14\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-14\@sm {
+    min-width: 58.33333%; }
+  .ss-group-item-size-14\@w425 {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-14\@sm {
+    min-width: 58.33333%; }
+  .ss-group-item-push-14\@w425 {
     margin-left: 58.33333%; }
-  .ss-group-item-pull-14\@sm {
+  .ss-group-item-pull-14\@w425 {
     margin-left: -58.33333%; }
-  .ss-group-size-15\@sm > :not([class*='item-size-']) {
+  .ss-group-size-15\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-15\@sm {
+    min-width: 62.5%; }
+  .ss-group-item-size-15\@w425 {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-15\@sm {
+    min-width: 62.5%; }
+  .ss-group-item-push-15\@w425 {
     margin-left: 62.5%; }
-  .ss-group-item-pull-15\@sm {
+  .ss-group-item-pull-15\@w425 {
     margin-left: -62.5%; }
-  .ss-group-size-16\@sm > :not([class*='item-size-']) {
+  .ss-group-size-16\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-16\@sm {
+    min-width: 66.66667%; }
+  .ss-group-item-size-16\@w425 {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-16\@sm {
+    min-width: 66.66667%; }
+  .ss-group-item-push-16\@w425 {
     margin-left: 66.66667%; }
-  .ss-group-item-pull-16\@sm {
+  .ss-group-item-pull-16\@w425 {
     margin-left: -66.66667%; }
-  .ss-group-size-17\@sm > :not([class*='item-size-']) {
+  .ss-group-size-17\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-17\@sm {
+    min-width: 70.83333%; }
+  .ss-group-item-size-17\@w425 {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-17\@sm {
+    min-width: 70.83333%; }
+  .ss-group-item-push-17\@w425 {
     margin-left: 70.83333%; }
-  .ss-group-item-pull-17\@sm {
+  .ss-group-item-pull-17\@w425 {
     margin-left: -70.83333%; }
-  .ss-group-size-18\@sm > :not([class*='item-size-']) {
+  .ss-group-size-18\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-18\@sm {
+    min-width: 75%; }
+  .ss-group-item-size-18\@w425 {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-18\@sm {
+    min-width: 75%; }
+  .ss-group-item-push-18\@w425 {
     margin-left: 75%; }
-  .ss-group-item-pull-18\@sm {
+  .ss-group-item-pull-18\@w425 {
     margin-left: -75%; }
-  .ss-group-size-19\@sm > :not([class*='item-size-']) {
+  .ss-group-size-19\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-19\@sm {
+    min-width: 79.16667%; }
+  .ss-group-item-size-19\@w425 {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-19\@sm {
+    min-width: 79.16667%; }
+  .ss-group-item-push-19\@w425 {
     margin-left: 79.16667%; }
-  .ss-group-item-pull-19\@sm {
+  .ss-group-item-pull-19\@w425 {
     margin-left: -79.16667%; }
-  .ss-group-size-20\@sm > :not([class*='item-size-']) {
+  .ss-group-size-20\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-20\@sm {
+    min-width: 83.33333%; }
+  .ss-group-item-size-20\@w425 {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-20\@sm {
+    min-width: 83.33333%; }
+  .ss-group-item-push-20\@w425 {
     margin-left: 83.33333%; }
-  .ss-group-item-pull-20\@sm {
+  .ss-group-item-pull-20\@w425 {
     margin-left: -83.33333%; }
-  .ss-group-size-21\@sm > :not([class*='item-size-']) {
+  .ss-group-size-21\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-21\@sm {
+    min-width: 87.5%; }
+  .ss-group-item-size-21\@w425 {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-21\@sm {
+    min-width: 87.5%; }
+  .ss-group-item-push-21\@w425 {
     margin-left: 87.5%; }
-  .ss-group-item-pull-21\@sm {
+  .ss-group-item-pull-21\@w425 {
     margin-left: -87.5%; }
-  .ss-group-size-22\@sm > :not([class*='item-size-']) {
+  .ss-group-size-22\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-22\@sm {
+    min-width: 91.66667%; }
+  .ss-group-item-size-22\@w425 {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-22\@sm {
+    min-width: 91.66667%; }
+  .ss-group-item-push-22\@w425 {
     margin-left: 91.66667%; }
-  .ss-group-item-pull-22\@sm {
+  .ss-group-item-pull-22\@w425 {
     margin-left: -91.66667%; }
-  .ss-group-size-23\@sm > :not([class*='item-size-']) {
+  .ss-group-size-23\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-23\@sm {
+    min-width: 95.83333%; }
+  .ss-group-item-size-23\@w425 {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-23\@sm {
+    min-width: 95.83333%; }
+  .ss-group-item-push-23\@w425 {
     margin-left: 95.83333%; }
-  .ss-group-item-pull-23\@sm {
+  .ss-group-item-pull-23\@w425 {
     margin-left: -95.83333%; }
-  .ss-group-size-24\@sm > :not([class*='item-size-']) {
+  .ss-group-size-24\@w425 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-24\@sm {
+    min-width: 100%; }
+  .ss-group-item-size-24\@w425 {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-24\@sm {
+    min-width: 100%; }
+  .ss-group-item-push-24\@w425 {
     margin-left: 100%; }
-  .ss-group-item-pull-24\@sm {
+  .ss-group-item-pull-24\@w425 {
     margin-left: -100%; }
-  .ss-group-nowrap\@sm {
+  .ss-group-nowrap\@w425 {
     flex-wrap: nowrap; }
-  .ss-group-justify-around\@sm {
+  .ss-group-justify-around\@w425 {
     justify-content: space-around; }
-  .ss-group-justify-between\@sm {
+  .ss-group-justify-between\@w425 {
     justify-content: space-between; }
-  .ss-group-justify-center\@sm {
+  .ss-group-justify-center\@w425 {
     justify-content: center; }
-  .ss-group-justify-end\@sm {
+  .ss-group-justify-end\@w425 {
     justify-content: flex-end; }
-  .ss-group-align-center\@sm {
+  .ss-group-align-center\@w425 {
     align-items: center; }
-  .ss-group-align-start\@sm {
+  .ss-group-align-start\@w425 {
     align-items: flex-start; }
-  .ss-group-align-end\@sm {
+  .ss-group-align-end\@w425 {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 768px) {
-  .ss-group-item-size-auto\@md {
+  .ss-group-item-size-auto\@w768 {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-size-auto\@md > :not([class*='item-size-']) {
+    min-width: auto; }
+  .ss-group-size-auto\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-row-break\@md {
+    min-width: auto; }
+  .ss-group-break\@w768 {
     flex-basis: 100%;
     width: unset;
     height: 0;
@@ -1188,481 +1065,423 @@ body {
     margin: 0;
     padding: 0;
     border: 0; }
-  .ss-group-column-break\@md {
-    flex-basis: 100%;
-    width: 0;
-    height: unset;
-    display: unset;
-    margin: 0;
-    padding: 0;
-    border: 0; }
-  .ss-group-disable-break\@md {
+  .ss-group-disable-break\@w768 {
     display: none; }
-  .ss-group-size-1\@md > :not([class*='item-size-']) {
+  .ss-group-size-1\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-1\@md {
+    min-width: 4.16667%; }
+  .ss-group-item-size-1\@w768 {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-1\@md {
+    min-width: 4.16667%; }
+  .ss-group-item-push-1\@w768 {
     margin-left: 4.16667%; }
-  .ss-group-item-pull-1\@md {
+  .ss-group-item-pull-1\@w768 {
     margin-left: -4.16667%; }
-  .ss-group-size-2\@md > :not([class*='item-size-']) {
+  .ss-group-size-2\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-2\@md {
+    min-width: 8.33333%; }
+  .ss-group-item-size-2\@w768 {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-2\@md {
+    min-width: 8.33333%; }
+  .ss-group-item-push-2\@w768 {
     margin-left: 8.33333%; }
-  .ss-group-item-pull-2\@md {
+  .ss-group-item-pull-2\@w768 {
     margin-left: -8.33333%; }
-  .ss-group-size-3\@md > :not([class*='item-size-']) {
+  .ss-group-size-3\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-3\@md {
+    min-width: 12.5%; }
+  .ss-group-item-size-3\@w768 {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-3\@md {
+    min-width: 12.5%; }
+  .ss-group-item-push-3\@w768 {
     margin-left: 12.5%; }
-  .ss-group-item-pull-3\@md {
+  .ss-group-item-pull-3\@w768 {
     margin-left: -12.5%; }
-  .ss-group-size-4\@md > :not([class*='item-size-']) {
+  .ss-group-size-4\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-4\@md {
+    min-width: 16.66667%; }
+  .ss-group-item-size-4\@w768 {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-4\@md {
+    min-width: 16.66667%; }
+  .ss-group-item-push-4\@w768 {
     margin-left: 16.66667%; }
-  .ss-group-item-pull-4\@md {
+  .ss-group-item-pull-4\@w768 {
     margin-left: -16.66667%; }
-  .ss-group-size-5\@md > :not([class*='item-size-']) {
+  .ss-group-size-5\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-5\@md {
+    min-width: 20.83333%; }
+  .ss-group-item-size-5\@w768 {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-5\@md {
+    min-width: 20.83333%; }
+  .ss-group-item-push-5\@w768 {
     margin-left: 20.83333%; }
-  .ss-group-item-pull-5\@md {
+  .ss-group-item-pull-5\@w768 {
     margin-left: -20.83333%; }
-  .ss-group-size-6\@md > :not([class*='item-size-']) {
+  .ss-group-size-6\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-6\@md {
+    min-width: 25%; }
+  .ss-group-item-size-6\@w768 {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-6\@md {
+    min-width: 25%; }
+  .ss-group-item-push-6\@w768 {
     margin-left: 25%; }
-  .ss-group-item-pull-6\@md {
+  .ss-group-item-pull-6\@w768 {
     margin-left: -25%; }
-  .ss-group-size-7\@md > :not([class*='item-size-']) {
+  .ss-group-size-7\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-7\@md {
+    min-width: 29.16667%; }
+  .ss-group-item-size-7\@w768 {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-7\@md {
+    min-width: 29.16667%; }
+  .ss-group-item-push-7\@w768 {
     margin-left: 29.16667%; }
-  .ss-group-item-pull-7\@md {
+  .ss-group-item-pull-7\@w768 {
     margin-left: -29.16667%; }
-  .ss-group-size-8\@md > :not([class*='item-size-']) {
+  .ss-group-size-8\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-8\@md {
+    min-width: 33.33333%; }
+  .ss-group-item-size-8\@w768 {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-8\@md {
+    min-width: 33.33333%; }
+  .ss-group-item-push-8\@w768 {
     margin-left: 33.33333%; }
-  .ss-group-item-pull-8\@md {
+  .ss-group-item-pull-8\@w768 {
     margin-left: -33.33333%; }
-  .ss-group-size-9\@md > :not([class*='item-size-']) {
+  .ss-group-size-9\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-9\@md {
+    min-width: 37.5%; }
+  .ss-group-item-size-9\@w768 {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-9\@md {
+    min-width: 37.5%; }
+  .ss-group-item-push-9\@w768 {
     margin-left: 37.5%; }
-  .ss-group-item-pull-9\@md {
+  .ss-group-item-pull-9\@w768 {
     margin-left: -37.5%; }
-  .ss-group-size-10\@md > :not([class*='item-size-']) {
+  .ss-group-size-10\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-10\@md {
+    min-width: 41.66667%; }
+  .ss-group-item-size-10\@w768 {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-10\@md {
+    min-width: 41.66667%; }
+  .ss-group-item-push-10\@w768 {
     margin-left: 41.66667%; }
-  .ss-group-item-pull-10\@md {
+  .ss-group-item-pull-10\@w768 {
     margin-left: -41.66667%; }
-  .ss-group-size-11\@md > :not([class*='item-size-']) {
+  .ss-group-size-11\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-11\@md {
+    min-width: 45.83333%; }
+  .ss-group-item-size-11\@w768 {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-11\@md {
+    min-width: 45.83333%; }
+  .ss-group-item-push-11\@w768 {
     margin-left: 45.83333%; }
-  .ss-group-item-pull-11\@md {
+  .ss-group-item-pull-11\@w768 {
     margin-left: -45.83333%; }
-  .ss-group-size-12\@md > :not([class*='item-size-']) {
+  .ss-group-size-12\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-12\@md {
+    min-width: 50%; }
+  .ss-group-item-size-12\@w768 {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-12\@md {
+    min-width: 50%; }
+  .ss-group-item-push-12\@w768 {
     margin-left: 50%; }
-  .ss-group-item-pull-12\@md {
+  .ss-group-item-pull-12\@w768 {
     margin-left: -50%; }
-  .ss-group-size-13\@md > :not([class*='item-size-']) {
+  .ss-group-size-13\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-13\@md {
+    min-width: 54.16667%; }
+  .ss-group-item-size-13\@w768 {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-13\@md {
+    min-width: 54.16667%; }
+  .ss-group-item-push-13\@w768 {
     margin-left: 54.16667%; }
-  .ss-group-item-pull-13\@md {
+  .ss-group-item-pull-13\@w768 {
     margin-left: -54.16667%; }
-  .ss-group-size-14\@md > :not([class*='item-size-']) {
+  .ss-group-size-14\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-14\@md {
+    min-width: 58.33333%; }
+  .ss-group-item-size-14\@w768 {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-14\@md {
+    min-width: 58.33333%; }
+  .ss-group-item-push-14\@w768 {
     margin-left: 58.33333%; }
-  .ss-group-item-pull-14\@md {
+  .ss-group-item-pull-14\@w768 {
     margin-left: -58.33333%; }
-  .ss-group-size-15\@md > :not([class*='item-size-']) {
+  .ss-group-size-15\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-15\@md {
+    min-width: 62.5%; }
+  .ss-group-item-size-15\@w768 {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-15\@md {
+    min-width: 62.5%; }
+  .ss-group-item-push-15\@w768 {
     margin-left: 62.5%; }
-  .ss-group-item-pull-15\@md {
+  .ss-group-item-pull-15\@w768 {
     margin-left: -62.5%; }
-  .ss-group-size-16\@md > :not([class*='item-size-']) {
+  .ss-group-size-16\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-16\@md {
+    min-width: 66.66667%; }
+  .ss-group-item-size-16\@w768 {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-16\@md {
+    min-width: 66.66667%; }
+  .ss-group-item-push-16\@w768 {
     margin-left: 66.66667%; }
-  .ss-group-item-pull-16\@md {
+  .ss-group-item-pull-16\@w768 {
     margin-left: -66.66667%; }
-  .ss-group-size-17\@md > :not([class*='item-size-']) {
+  .ss-group-size-17\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-17\@md {
+    min-width: 70.83333%; }
+  .ss-group-item-size-17\@w768 {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-17\@md {
+    min-width: 70.83333%; }
+  .ss-group-item-push-17\@w768 {
     margin-left: 70.83333%; }
-  .ss-group-item-pull-17\@md {
+  .ss-group-item-pull-17\@w768 {
     margin-left: -70.83333%; }
-  .ss-group-size-18\@md > :not([class*='item-size-']) {
+  .ss-group-size-18\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-18\@md {
+    min-width: 75%; }
+  .ss-group-item-size-18\@w768 {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-18\@md {
+    min-width: 75%; }
+  .ss-group-item-push-18\@w768 {
     margin-left: 75%; }
-  .ss-group-item-pull-18\@md {
+  .ss-group-item-pull-18\@w768 {
     margin-left: -75%; }
-  .ss-group-size-19\@md > :not([class*='item-size-']) {
+  .ss-group-size-19\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-19\@md {
+    min-width: 79.16667%; }
+  .ss-group-item-size-19\@w768 {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-19\@md {
+    min-width: 79.16667%; }
+  .ss-group-item-push-19\@w768 {
     margin-left: 79.16667%; }
-  .ss-group-item-pull-19\@md {
+  .ss-group-item-pull-19\@w768 {
     margin-left: -79.16667%; }
-  .ss-group-size-20\@md > :not([class*='item-size-']) {
+  .ss-group-size-20\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-20\@md {
+    min-width: 83.33333%; }
+  .ss-group-item-size-20\@w768 {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-20\@md {
+    min-width: 83.33333%; }
+  .ss-group-item-push-20\@w768 {
     margin-left: 83.33333%; }
-  .ss-group-item-pull-20\@md {
+  .ss-group-item-pull-20\@w768 {
     margin-left: -83.33333%; }
-  .ss-group-size-21\@md > :not([class*='item-size-']) {
+  .ss-group-size-21\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-21\@md {
+    min-width: 87.5%; }
+  .ss-group-item-size-21\@w768 {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-21\@md {
+    min-width: 87.5%; }
+  .ss-group-item-push-21\@w768 {
     margin-left: 87.5%; }
-  .ss-group-item-pull-21\@md {
+  .ss-group-item-pull-21\@w768 {
     margin-left: -87.5%; }
-  .ss-group-size-22\@md > :not([class*='item-size-']) {
+  .ss-group-size-22\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-22\@md {
+    min-width: 91.66667%; }
+  .ss-group-item-size-22\@w768 {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-22\@md {
+    min-width: 91.66667%; }
+  .ss-group-item-push-22\@w768 {
     margin-left: 91.66667%; }
-  .ss-group-item-pull-22\@md {
+  .ss-group-item-pull-22\@w768 {
     margin-left: -91.66667%; }
-  .ss-group-size-23\@md > :not([class*='item-size-']) {
+  .ss-group-size-23\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-23\@md {
+    min-width: 95.83333%; }
+  .ss-group-item-size-23\@w768 {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-23\@md {
+    min-width: 95.83333%; }
+  .ss-group-item-push-23\@w768 {
     margin-left: 95.83333%; }
-  .ss-group-item-pull-23\@md {
+  .ss-group-item-pull-23\@w768 {
     margin-left: -95.83333%; }
-  .ss-group-size-24\@md > :not([class*='item-size-']) {
+  .ss-group-size-24\@w768 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-24\@md {
+    min-width: 100%; }
+  .ss-group-item-size-24\@w768 {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-24\@md {
+    min-width: 100%; }
+  .ss-group-item-push-24\@w768 {
     margin-left: 100%; }
-  .ss-group-item-pull-24\@md {
+  .ss-group-item-pull-24\@w768 {
     margin-left: -100%; }
-  .ss-group-nowrap\@md {
+  .ss-group-nowrap\@w768 {
     flex-wrap: nowrap; }
-  .ss-group-justify-around\@md {
+  .ss-group-justify-around\@w768 {
     justify-content: space-around; }
-  .ss-group-justify-between\@md {
+  .ss-group-justify-between\@w768 {
     justify-content: space-between; }
-  .ss-group-justify-center\@md {
+  .ss-group-justify-center\@w768 {
     justify-content: center; }
-  .ss-group-justify-end\@md {
+  .ss-group-justify-end\@w768 {
     justify-content: flex-end; }
-  .ss-group-align-center\@md {
+  .ss-group-align-center\@w768 {
     align-items: center; }
-  .ss-group-align-start\@md {
+  .ss-group-align-start\@w768 {
     align-items: flex-start; }
-  .ss-group-align-end\@md {
+  .ss-group-align-end\@w768 {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 992px) {
-  .ss-group-item-size-auto\@lg {
+  .ss-group-item-size-auto\@w992 {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-size-auto\@lg > :not([class*='item-size-']) {
+    min-width: auto; }
+  .ss-group-size-auto\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-row-break\@lg {
+    min-width: auto; }
+  .ss-group-break\@w992 {
     flex-basis: 100%;
     width: unset;
     height: 0;
@@ -1670,481 +1489,423 @@ body {
     margin: 0;
     padding: 0;
     border: 0; }
-  .ss-group-column-break\@lg {
-    flex-basis: 100%;
-    width: 0;
-    height: unset;
-    display: unset;
-    margin: 0;
-    padding: 0;
-    border: 0; }
-  .ss-group-disable-break\@lg {
+  .ss-group-disable-break\@w992 {
     display: none; }
-  .ss-group-size-1\@lg > :not([class*='item-size-']) {
+  .ss-group-size-1\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-1\@lg {
+    min-width: 4.16667%; }
+  .ss-group-item-size-1\@w992 {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-1\@lg {
+    min-width: 4.16667%; }
+  .ss-group-item-push-1\@w992 {
     margin-left: 4.16667%; }
-  .ss-group-item-pull-1\@lg {
+  .ss-group-item-pull-1\@w992 {
     margin-left: -4.16667%; }
-  .ss-group-size-2\@lg > :not([class*='item-size-']) {
+  .ss-group-size-2\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-2\@lg {
+    min-width: 8.33333%; }
+  .ss-group-item-size-2\@w992 {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-2\@lg {
+    min-width: 8.33333%; }
+  .ss-group-item-push-2\@w992 {
     margin-left: 8.33333%; }
-  .ss-group-item-pull-2\@lg {
+  .ss-group-item-pull-2\@w992 {
     margin-left: -8.33333%; }
-  .ss-group-size-3\@lg > :not([class*='item-size-']) {
+  .ss-group-size-3\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-3\@lg {
+    min-width: 12.5%; }
+  .ss-group-item-size-3\@w992 {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-3\@lg {
+    min-width: 12.5%; }
+  .ss-group-item-push-3\@w992 {
     margin-left: 12.5%; }
-  .ss-group-item-pull-3\@lg {
+  .ss-group-item-pull-3\@w992 {
     margin-left: -12.5%; }
-  .ss-group-size-4\@lg > :not([class*='item-size-']) {
+  .ss-group-size-4\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-4\@lg {
+    min-width: 16.66667%; }
+  .ss-group-item-size-4\@w992 {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-4\@lg {
+    min-width: 16.66667%; }
+  .ss-group-item-push-4\@w992 {
     margin-left: 16.66667%; }
-  .ss-group-item-pull-4\@lg {
+  .ss-group-item-pull-4\@w992 {
     margin-left: -16.66667%; }
-  .ss-group-size-5\@lg > :not([class*='item-size-']) {
+  .ss-group-size-5\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-5\@lg {
+    min-width: 20.83333%; }
+  .ss-group-item-size-5\@w992 {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-5\@lg {
+    min-width: 20.83333%; }
+  .ss-group-item-push-5\@w992 {
     margin-left: 20.83333%; }
-  .ss-group-item-pull-5\@lg {
+  .ss-group-item-pull-5\@w992 {
     margin-left: -20.83333%; }
-  .ss-group-size-6\@lg > :not([class*='item-size-']) {
+  .ss-group-size-6\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-6\@lg {
+    min-width: 25%; }
+  .ss-group-item-size-6\@w992 {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-6\@lg {
+    min-width: 25%; }
+  .ss-group-item-push-6\@w992 {
     margin-left: 25%; }
-  .ss-group-item-pull-6\@lg {
+  .ss-group-item-pull-6\@w992 {
     margin-left: -25%; }
-  .ss-group-size-7\@lg > :not([class*='item-size-']) {
+  .ss-group-size-7\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-7\@lg {
+    min-width: 29.16667%; }
+  .ss-group-item-size-7\@w992 {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-7\@lg {
+    min-width: 29.16667%; }
+  .ss-group-item-push-7\@w992 {
     margin-left: 29.16667%; }
-  .ss-group-item-pull-7\@lg {
+  .ss-group-item-pull-7\@w992 {
     margin-left: -29.16667%; }
-  .ss-group-size-8\@lg > :not([class*='item-size-']) {
+  .ss-group-size-8\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-8\@lg {
+    min-width: 33.33333%; }
+  .ss-group-item-size-8\@w992 {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-8\@lg {
+    min-width: 33.33333%; }
+  .ss-group-item-push-8\@w992 {
     margin-left: 33.33333%; }
-  .ss-group-item-pull-8\@lg {
+  .ss-group-item-pull-8\@w992 {
     margin-left: -33.33333%; }
-  .ss-group-size-9\@lg > :not([class*='item-size-']) {
+  .ss-group-size-9\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-9\@lg {
+    min-width: 37.5%; }
+  .ss-group-item-size-9\@w992 {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-9\@lg {
+    min-width: 37.5%; }
+  .ss-group-item-push-9\@w992 {
     margin-left: 37.5%; }
-  .ss-group-item-pull-9\@lg {
+  .ss-group-item-pull-9\@w992 {
     margin-left: -37.5%; }
-  .ss-group-size-10\@lg > :not([class*='item-size-']) {
+  .ss-group-size-10\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-10\@lg {
+    min-width: 41.66667%; }
+  .ss-group-item-size-10\@w992 {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-10\@lg {
+    min-width: 41.66667%; }
+  .ss-group-item-push-10\@w992 {
     margin-left: 41.66667%; }
-  .ss-group-item-pull-10\@lg {
+  .ss-group-item-pull-10\@w992 {
     margin-left: -41.66667%; }
-  .ss-group-size-11\@lg > :not([class*='item-size-']) {
+  .ss-group-size-11\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-11\@lg {
+    min-width: 45.83333%; }
+  .ss-group-item-size-11\@w992 {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-11\@lg {
+    min-width: 45.83333%; }
+  .ss-group-item-push-11\@w992 {
     margin-left: 45.83333%; }
-  .ss-group-item-pull-11\@lg {
+  .ss-group-item-pull-11\@w992 {
     margin-left: -45.83333%; }
-  .ss-group-size-12\@lg > :not([class*='item-size-']) {
+  .ss-group-size-12\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-12\@lg {
+    min-width: 50%; }
+  .ss-group-item-size-12\@w992 {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-12\@lg {
+    min-width: 50%; }
+  .ss-group-item-push-12\@w992 {
     margin-left: 50%; }
-  .ss-group-item-pull-12\@lg {
+  .ss-group-item-pull-12\@w992 {
     margin-left: -50%; }
-  .ss-group-size-13\@lg > :not([class*='item-size-']) {
+  .ss-group-size-13\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-13\@lg {
+    min-width: 54.16667%; }
+  .ss-group-item-size-13\@w992 {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-13\@lg {
+    min-width: 54.16667%; }
+  .ss-group-item-push-13\@w992 {
     margin-left: 54.16667%; }
-  .ss-group-item-pull-13\@lg {
+  .ss-group-item-pull-13\@w992 {
     margin-left: -54.16667%; }
-  .ss-group-size-14\@lg > :not([class*='item-size-']) {
+  .ss-group-size-14\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-14\@lg {
+    min-width: 58.33333%; }
+  .ss-group-item-size-14\@w992 {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-14\@lg {
+    min-width: 58.33333%; }
+  .ss-group-item-push-14\@w992 {
     margin-left: 58.33333%; }
-  .ss-group-item-pull-14\@lg {
+  .ss-group-item-pull-14\@w992 {
     margin-left: -58.33333%; }
-  .ss-group-size-15\@lg > :not([class*='item-size-']) {
+  .ss-group-size-15\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-15\@lg {
+    min-width: 62.5%; }
+  .ss-group-item-size-15\@w992 {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-15\@lg {
+    min-width: 62.5%; }
+  .ss-group-item-push-15\@w992 {
     margin-left: 62.5%; }
-  .ss-group-item-pull-15\@lg {
+  .ss-group-item-pull-15\@w992 {
     margin-left: -62.5%; }
-  .ss-group-size-16\@lg > :not([class*='item-size-']) {
+  .ss-group-size-16\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-16\@lg {
+    min-width: 66.66667%; }
+  .ss-group-item-size-16\@w992 {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-16\@lg {
+    min-width: 66.66667%; }
+  .ss-group-item-push-16\@w992 {
     margin-left: 66.66667%; }
-  .ss-group-item-pull-16\@lg {
+  .ss-group-item-pull-16\@w992 {
     margin-left: -66.66667%; }
-  .ss-group-size-17\@lg > :not([class*='item-size-']) {
+  .ss-group-size-17\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-17\@lg {
+    min-width: 70.83333%; }
+  .ss-group-item-size-17\@w992 {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-17\@lg {
+    min-width: 70.83333%; }
+  .ss-group-item-push-17\@w992 {
     margin-left: 70.83333%; }
-  .ss-group-item-pull-17\@lg {
+  .ss-group-item-pull-17\@w992 {
     margin-left: -70.83333%; }
-  .ss-group-size-18\@lg > :not([class*='item-size-']) {
+  .ss-group-size-18\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-18\@lg {
+    min-width: 75%; }
+  .ss-group-item-size-18\@w992 {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-18\@lg {
+    min-width: 75%; }
+  .ss-group-item-push-18\@w992 {
     margin-left: 75%; }
-  .ss-group-item-pull-18\@lg {
+  .ss-group-item-pull-18\@w992 {
     margin-left: -75%; }
-  .ss-group-size-19\@lg > :not([class*='item-size-']) {
+  .ss-group-size-19\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-19\@lg {
+    min-width: 79.16667%; }
+  .ss-group-item-size-19\@w992 {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-19\@lg {
+    min-width: 79.16667%; }
+  .ss-group-item-push-19\@w992 {
     margin-left: 79.16667%; }
-  .ss-group-item-pull-19\@lg {
+  .ss-group-item-pull-19\@w992 {
     margin-left: -79.16667%; }
-  .ss-group-size-20\@lg > :not([class*='item-size-']) {
+  .ss-group-size-20\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-20\@lg {
+    min-width: 83.33333%; }
+  .ss-group-item-size-20\@w992 {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-20\@lg {
+    min-width: 83.33333%; }
+  .ss-group-item-push-20\@w992 {
     margin-left: 83.33333%; }
-  .ss-group-item-pull-20\@lg {
+  .ss-group-item-pull-20\@w992 {
     margin-left: -83.33333%; }
-  .ss-group-size-21\@lg > :not([class*='item-size-']) {
+  .ss-group-size-21\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-21\@lg {
+    min-width: 87.5%; }
+  .ss-group-item-size-21\@w992 {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-21\@lg {
+    min-width: 87.5%; }
+  .ss-group-item-push-21\@w992 {
     margin-left: 87.5%; }
-  .ss-group-item-pull-21\@lg {
+  .ss-group-item-pull-21\@w992 {
     margin-left: -87.5%; }
-  .ss-group-size-22\@lg > :not([class*='item-size-']) {
+  .ss-group-size-22\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-22\@lg {
+    min-width: 91.66667%; }
+  .ss-group-item-size-22\@w992 {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-22\@lg {
+    min-width: 91.66667%; }
+  .ss-group-item-push-22\@w992 {
     margin-left: 91.66667%; }
-  .ss-group-item-pull-22\@lg {
+  .ss-group-item-pull-22\@w992 {
     margin-left: -91.66667%; }
-  .ss-group-size-23\@lg > :not([class*='item-size-']) {
+  .ss-group-size-23\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-23\@lg {
+    min-width: 95.83333%; }
+  .ss-group-item-size-23\@w992 {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-23\@lg {
+    min-width: 95.83333%; }
+  .ss-group-item-push-23\@w992 {
     margin-left: 95.83333%; }
-  .ss-group-item-pull-23\@lg {
+  .ss-group-item-pull-23\@w992 {
     margin-left: -95.83333%; }
-  .ss-group-size-24\@lg > :not([class*='item-size-']) {
+  .ss-group-size-24\@w992 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-24\@lg {
+    min-width: 100%; }
+  .ss-group-item-size-24\@w992 {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-24\@lg {
+    min-width: 100%; }
+  .ss-group-item-push-24\@w992 {
     margin-left: 100%; }
-  .ss-group-item-pull-24\@lg {
+  .ss-group-item-pull-24\@w992 {
     margin-left: -100%; }
-  .ss-group-nowrap\@lg {
+  .ss-group-nowrap\@w992 {
     flex-wrap: nowrap; }
-  .ss-group-justify-around\@lg {
+  .ss-group-justify-around\@w992 {
     justify-content: space-around; }
-  .ss-group-justify-between\@lg {
+  .ss-group-justify-between\@w992 {
     justify-content: space-between; }
-  .ss-group-justify-center\@lg {
+  .ss-group-justify-center\@w992 {
     justify-content: center; }
-  .ss-group-justify-end\@lg {
+  .ss-group-justify-end\@w992 {
     justify-content: flex-end; }
-  .ss-group-align-center\@lg {
+  .ss-group-align-center\@w992 {
     align-items: center; }
-  .ss-group-align-start\@lg {
+  .ss-group-align-start\@w992 {
     align-items: flex-start; }
-  .ss-group-align-end\@lg {
+  .ss-group-align-end\@w992 {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 1200px) {
-  .ss-group-item-size-auto\@xl {
+  .ss-group-item-size-auto\@w1200 {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-size-auto\@xl > :not([class*='item-size-']) {
+    min-width: auto; }
+  .ss-group-size-auto\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-row-break\@xl {
+    min-width: auto; }
+  .ss-group-break\@w1200 {
     flex-basis: 100%;
     width: unset;
     height: 0;
@@ -2152,481 +1913,423 @@ body {
     margin: 0;
     padding: 0;
     border: 0; }
-  .ss-group-column-break\@xl {
-    flex-basis: 100%;
-    width: 0;
-    height: unset;
-    display: unset;
-    margin: 0;
-    padding: 0;
-    border: 0; }
-  .ss-group-disable-break\@xl {
+  .ss-group-disable-break\@w1200 {
     display: none; }
-  .ss-group-size-1\@xl > :not([class*='item-size-']) {
+  .ss-group-size-1\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-1\@xl {
+    min-width: 4.16667%; }
+  .ss-group-item-size-1\@w1200 {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-1\@xl {
+    min-width: 4.16667%; }
+  .ss-group-item-push-1\@w1200 {
     margin-left: 4.16667%; }
-  .ss-group-item-pull-1\@xl {
+  .ss-group-item-pull-1\@w1200 {
     margin-left: -4.16667%; }
-  .ss-group-size-2\@xl > :not([class*='item-size-']) {
+  .ss-group-size-2\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-2\@xl {
+    min-width: 8.33333%; }
+  .ss-group-item-size-2\@w1200 {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-2\@xl {
+    min-width: 8.33333%; }
+  .ss-group-item-push-2\@w1200 {
     margin-left: 8.33333%; }
-  .ss-group-item-pull-2\@xl {
+  .ss-group-item-pull-2\@w1200 {
     margin-left: -8.33333%; }
-  .ss-group-size-3\@xl > :not([class*='item-size-']) {
+  .ss-group-size-3\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-3\@xl {
+    min-width: 12.5%; }
+  .ss-group-item-size-3\@w1200 {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-3\@xl {
+    min-width: 12.5%; }
+  .ss-group-item-push-3\@w1200 {
     margin-left: 12.5%; }
-  .ss-group-item-pull-3\@xl {
+  .ss-group-item-pull-3\@w1200 {
     margin-left: -12.5%; }
-  .ss-group-size-4\@xl > :not([class*='item-size-']) {
+  .ss-group-size-4\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-4\@xl {
+    min-width: 16.66667%; }
+  .ss-group-item-size-4\@w1200 {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-4\@xl {
+    min-width: 16.66667%; }
+  .ss-group-item-push-4\@w1200 {
     margin-left: 16.66667%; }
-  .ss-group-item-pull-4\@xl {
+  .ss-group-item-pull-4\@w1200 {
     margin-left: -16.66667%; }
-  .ss-group-size-5\@xl > :not([class*='item-size-']) {
+  .ss-group-size-5\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-5\@xl {
+    min-width: 20.83333%; }
+  .ss-group-item-size-5\@w1200 {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-5\@xl {
+    min-width: 20.83333%; }
+  .ss-group-item-push-5\@w1200 {
     margin-left: 20.83333%; }
-  .ss-group-item-pull-5\@xl {
+  .ss-group-item-pull-5\@w1200 {
     margin-left: -20.83333%; }
-  .ss-group-size-6\@xl > :not([class*='item-size-']) {
+  .ss-group-size-6\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-6\@xl {
+    min-width: 25%; }
+  .ss-group-item-size-6\@w1200 {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-6\@xl {
+    min-width: 25%; }
+  .ss-group-item-push-6\@w1200 {
     margin-left: 25%; }
-  .ss-group-item-pull-6\@xl {
+  .ss-group-item-pull-6\@w1200 {
     margin-left: -25%; }
-  .ss-group-size-7\@xl > :not([class*='item-size-']) {
+  .ss-group-size-7\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-7\@xl {
+    min-width: 29.16667%; }
+  .ss-group-item-size-7\@w1200 {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-7\@xl {
+    min-width: 29.16667%; }
+  .ss-group-item-push-7\@w1200 {
     margin-left: 29.16667%; }
-  .ss-group-item-pull-7\@xl {
+  .ss-group-item-pull-7\@w1200 {
     margin-left: -29.16667%; }
-  .ss-group-size-8\@xl > :not([class*='item-size-']) {
+  .ss-group-size-8\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-8\@xl {
+    min-width: 33.33333%; }
+  .ss-group-item-size-8\@w1200 {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-8\@xl {
+    min-width: 33.33333%; }
+  .ss-group-item-push-8\@w1200 {
     margin-left: 33.33333%; }
-  .ss-group-item-pull-8\@xl {
+  .ss-group-item-pull-8\@w1200 {
     margin-left: -33.33333%; }
-  .ss-group-size-9\@xl > :not([class*='item-size-']) {
+  .ss-group-size-9\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-9\@xl {
+    min-width: 37.5%; }
+  .ss-group-item-size-9\@w1200 {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-9\@xl {
+    min-width: 37.5%; }
+  .ss-group-item-push-9\@w1200 {
     margin-left: 37.5%; }
-  .ss-group-item-pull-9\@xl {
+  .ss-group-item-pull-9\@w1200 {
     margin-left: -37.5%; }
-  .ss-group-size-10\@xl > :not([class*='item-size-']) {
+  .ss-group-size-10\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-10\@xl {
+    min-width: 41.66667%; }
+  .ss-group-item-size-10\@w1200 {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-10\@xl {
+    min-width: 41.66667%; }
+  .ss-group-item-push-10\@w1200 {
     margin-left: 41.66667%; }
-  .ss-group-item-pull-10\@xl {
+  .ss-group-item-pull-10\@w1200 {
     margin-left: -41.66667%; }
-  .ss-group-size-11\@xl > :not([class*='item-size-']) {
+  .ss-group-size-11\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-11\@xl {
+    min-width: 45.83333%; }
+  .ss-group-item-size-11\@w1200 {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-11\@xl {
+    min-width: 45.83333%; }
+  .ss-group-item-push-11\@w1200 {
     margin-left: 45.83333%; }
-  .ss-group-item-pull-11\@xl {
+  .ss-group-item-pull-11\@w1200 {
     margin-left: -45.83333%; }
-  .ss-group-size-12\@xl > :not([class*='item-size-']) {
+  .ss-group-size-12\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-12\@xl {
+    min-width: 50%; }
+  .ss-group-item-size-12\@w1200 {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-12\@xl {
+    min-width: 50%; }
+  .ss-group-item-push-12\@w1200 {
     margin-left: 50%; }
-  .ss-group-item-pull-12\@xl {
+  .ss-group-item-pull-12\@w1200 {
     margin-left: -50%; }
-  .ss-group-size-13\@xl > :not([class*='item-size-']) {
+  .ss-group-size-13\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-13\@xl {
+    min-width: 54.16667%; }
+  .ss-group-item-size-13\@w1200 {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-13\@xl {
+    min-width: 54.16667%; }
+  .ss-group-item-push-13\@w1200 {
     margin-left: 54.16667%; }
-  .ss-group-item-pull-13\@xl {
+  .ss-group-item-pull-13\@w1200 {
     margin-left: -54.16667%; }
-  .ss-group-size-14\@xl > :not([class*='item-size-']) {
+  .ss-group-size-14\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-14\@xl {
+    min-width: 58.33333%; }
+  .ss-group-item-size-14\@w1200 {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-14\@xl {
+    min-width: 58.33333%; }
+  .ss-group-item-push-14\@w1200 {
     margin-left: 58.33333%; }
-  .ss-group-item-pull-14\@xl {
+  .ss-group-item-pull-14\@w1200 {
     margin-left: -58.33333%; }
-  .ss-group-size-15\@xl > :not([class*='item-size-']) {
+  .ss-group-size-15\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-15\@xl {
+    min-width: 62.5%; }
+  .ss-group-item-size-15\@w1200 {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-15\@xl {
+    min-width: 62.5%; }
+  .ss-group-item-push-15\@w1200 {
     margin-left: 62.5%; }
-  .ss-group-item-pull-15\@xl {
+  .ss-group-item-pull-15\@w1200 {
     margin-left: -62.5%; }
-  .ss-group-size-16\@xl > :not([class*='item-size-']) {
+  .ss-group-size-16\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-16\@xl {
+    min-width: 66.66667%; }
+  .ss-group-item-size-16\@w1200 {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-16\@xl {
+    min-width: 66.66667%; }
+  .ss-group-item-push-16\@w1200 {
     margin-left: 66.66667%; }
-  .ss-group-item-pull-16\@xl {
+  .ss-group-item-pull-16\@w1200 {
     margin-left: -66.66667%; }
-  .ss-group-size-17\@xl > :not([class*='item-size-']) {
+  .ss-group-size-17\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-17\@xl {
+    min-width: 70.83333%; }
+  .ss-group-item-size-17\@w1200 {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-17\@xl {
+    min-width: 70.83333%; }
+  .ss-group-item-push-17\@w1200 {
     margin-left: 70.83333%; }
-  .ss-group-item-pull-17\@xl {
+  .ss-group-item-pull-17\@w1200 {
     margin-left: -70.83333%; }
-  .ss-group-size-18\@xl > :not([class*='item-size-']) {
+  .ss-group-size-18\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-18\@xl {
+    min-width: 75%; }
+  .ss-group-item-size-18\@w1200 {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-18\@xl {
+    min-width: 75%; }
+  .ss-group-item-push-18\@w1200 {
     margin-left: 75%; }
-  .ss-group-item-pull-18\@xl {
+  .ss-group-item-pull-18\@w1200 {
     margin-left: -75%; }
-  .ss-group-size-19\@xl > :not([class*='item-size-']) {
+  .ss-group-size-19\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-19\@xl {
+    min-width: 79.16667%; }
+  .ss-group-item-size-19\@w1200 {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-19\@xl {
+    min-width: 79.16667%; }
+  .ss-group-item-push-19\@w1200 {
     margin-left: 79.16667%; }
-  .ss-group-item-pull-19\@xl {
+  .ss-group-item-pull-19\@w1200 {
     margin-left: -79.16667%; }
-  .ss-group-size-20\@xl > :not([class*='item-size-']) {
+  .ss-group-size-20\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-20\@xl {
+    min-width: 83.33333%; }
+  .ss-group-item-size-20\@w1200 {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-20\@xl {
+    min-width: 83.33333%; }
+  .ss-group-item-push-20\@w1200 {
     margin-left: 83.33333%; }
-  .ss-group-item-pull-20\@xl {
+  .ss-group-item-pull-20\@w1200 {
     margin-left: -83.33333%; }
-  .ss-group-size-21\@xl > :not([class*='item-size-']) {
+  .ss-group-size-21\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-21\@xl {
+    min-width: 87.5%; }
+  .ss-group-item-size-21\@w1200 {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-21\@xl {
+    min-width: 87.5%; }
+  .ss-group-item-push-21\@w1200 {
     margin-left: 87.5%; }
-  .ss-group-item-pull-21\@xl {
+  .ss-group-item-pull-21\@w1200 {
     margin-left: -87.5%; }
-  .ss-group-size-22\@xl > :not([class*='item-size-']) {
+  .ss-group-size-22\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-22\@xl {
+    min-width: 91.66667%; }
+  .ss-group-item-size-22\@w1200 {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-22\@xl {
+    min-width: 91.66667%; }
+  .ss-group-item-push-22\@w1200 {
     margin-left: 91.66667%; }
-  .ss-group-item-pull-22\@xl {
+  .ss-group-item-pull-22\@w1200 {
     margin-left: -91.66667%; }
-  .ss-group-size-23\@xl > :not([class*='item-size-']) {
+  .ss-group-size-23\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-23\@xl {
+    min-width: 95.83333%; }
+  .ss-group-item-size-23\@w1200 {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-23\@xl {
+    min-width: 95.83333%; }
+  .ss-group-item-push-23\@w1200 {
     margin-left: 95.83333%; }
-  .ss-group-item-pull-23\@xl {
+  .ss-group-item-pull-23\@w1200 {
     margin-left: -95.83333%; }
-  .ss-group-size-24\@xl > :not([class*='item-size-']) {
+  .ss-group-size-24\@w1200 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-24\@xl {
+    min-width: 100%; }
+  .ss-group-item-size-24\@w1200 {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-24\@xl {
+    min-width: 100%; }
+  .ss-group-item-push-24\@w1200 {
     margin-left: 100%; }
-  .ss-group-item-pull-24\@xl {
+  .ss-group-item-pull-24\@w1200 {
     margin-left: -100%; }
-  .ss-group-nowrap\@xl {
+  .ss-group-nowrap\@w1200 {
     flex-wrap: nowrap; }
-  .ss-group-justify-around\@xl {
+  .ss-group-justify-around\@w1200 {
     justify-content: space-around; }
-  .ss-group-justify-between\@xl {
+  .ss-group-justify-between\@w1200 {
     justify-content: space-between; }
-  .ss-group-justify-center\@xl {
+  .ss-group-justify-center\@w1200 {
     justify-content: center; }
-  .ss-group-justify-end\@xl {
+  .ss-group-justify-end\@w1200 {
     justify-content: flex-end; }
-  .ss-group-align-center\@xl {
+  .ss-group-align-center\@w1200 {
     align-items: center; }
-  .ss-group-align-start\@xl {
+  .ss-group-align-start\@w1200 {
     align-items: flex-start; }
-  .ss-group-align-end\@xl {
+  .ss-group-align-end\@w1200 {
     align-items: flex-end; } }
 
 @media only screen and (min-width: 1600px) {
-  .ss-group-item-size-auto\@xxl {
+  .ss-group-item-size-auto\@w1600 {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-size-auto\@xxl > :not([class*='item-size-']) {
+    min-width: auto; }
+  .ss-group-size-auto\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-row-break\@xxl {
+    min-width: auto; }
+  .ss-group-break\@w1600 {
     flex-basis: 100%;
     width: unset;
     height: 0;
@@ -2634,463 +2337,407 @@ body {
     margin: 0;
     padding: 0;
     border: 0; }
-  .ss-group-column-break\@xxl {
-    flex-basis: 100%;
-    width: 0;
-    height: unset;
-    display: unset;
-    margin: 0;
-    padding: 0;
-    border: 0; }
-  .ss-group-disable-break\@xxl {
+  .ss-group-disable-break\@w1600 {
     display: none; }
-  .ss-group-size-1\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-1\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-1\@xxl {
+    min-width: 4.16667%; }
+  .ss-group-item-size-1\@w1600 {
     position: relative;
     flex-basis: 4.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-1\@xxl {
+    min-width: 4.16667%; }
+  .ss-group-item-push-1\@w1600 {
     margin-left: 4.16667%; }
-  .ss-group-item-pull-1\@xxl {
+  .ss-group-item-pull-1\@w1600 {
     margin-left: -4.16667%; }
-  .ss-group-size-2\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-2\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-2\@xxl {
+    min-width: 8.33333%; }
+  .ss-group-item-size-2\@w1600 {
     position: relative;
     flex-basis: 8.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-2\@xxl {
+    min-width: 8.33333%; }
+  .ss-group-item-push-2\@w1600 {
     margin-left: 8.33333%; }
-  .ss-group-item-pull-2\@xxl {
+  .ss-group-item-pull-2\@w1600 {
     margin-left: -8.33333%; }
-  .ss-group-size-3\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-3\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-3\@xxl {
+    min-width: 12.5%; }
+  .ss-group-item-size-3\@w1600 {
     position: relative;
     flex-basis: 12.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-3\@xxl {
+    min-width: 12.5%; }
+  .ss-group-item-push-3\@w1600 {
     margin-left: 12.5%; }
-  .ss-group-item-pull-3\@xxl {
+  .ss-group-item-pull-3\@w1600 {
     margin-left: -12.5%; }
-  .ss-group-size-4\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-4\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-4\@xxl {
+    min-width: 16.66667%; }
+  .ss-group-item-size-4\@w1600 {
     position: relative;
     flex-basis: 16.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-4\@xxl {
+    min-width: 16.66667%; }
+  .ss-group-item-push-4\@w1600 {
     margin-left: 16.66667%; }
-  .ss-group-item-pull-4\@xxl {
+  .ss-group-item-pull-4\@w1600 {
     margin-left: -16.66667%; }
-  .ss-group-size-5\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-5\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-5\@xxl {
+    min-width: 20.83333%; }
+  .ss-group-item-size-5\@w1600 {
     position: relative;
     flex-basis: 20.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-5\@xxl {
+    min-width: 20.83333%; }
+  .ss-group-item-push-5\@w1600 {
     margin-left: 20.83333%; }
-  .ss-group-item-pull-5\@xxl {
+  .ss-group-item-pull-5\@w1600 {
     margin-left: -20.83333%; }
-  .ss-group-size-6\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-6\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-6\@xxl {
+    min-width: 25%; }
+  .ss-group-item-size-6\@w1600 {
     position: relative;
     flex-basis: 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-6\@xxl {
+    min-width: 25%; }
+  .ss-group-item-push-6\@w1600 {
     margin-left: 25%; }
-  .ss-group-item-pull-6\@xxl {
+  .ss-group-item-pull-6\@w1600 {
     margin-left: -25%; }
-  .ss-group-size-7\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-7\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-7\@xxl {
+    min-width: 29.16667%; }
+  .ss-group-item-size-7\@w1600 {
     position: relative;
     flex-basis: 29.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-7\@xxl {
+    min-width: 29.16667%; }
+  .ss-group-item-push-7\@w1600 {
     margin-left: 29.16667%; }
-  .ss-group-item-pull-7\@xxl {
+  .ss-group-item-pull-7\@w1600 {
     margin-left: -29.16667%; }
-  .ss-group-size-8\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-8\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-8\@xxl {
+    min-width: 33.33333%; }
+  .ss-group-item-size-8\@w1600 {
     position: relative;
     flex-basis: 33.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-8\@xxl {
+    min-width: 33.33333%; }
+  .ss-group-item-push-8\@w1600 {
     margin-left: 33.33333%; }
-  .ss-group-item-pull-8\@xxl {
+  .ss-group-item-pull-8\@w1600 {
     margin-left: -33.33333%; }
-  .ss-group-size-9\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-9\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-9\@xxl {
+    min-width: 37.5%; }
+  .ss-group-item-size-9\@w1600 {
     position: relative;
     flex-basis: 37.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-9\@xxl {
+    min-width: 37.5%; }
+  .ss-group-item-push-9\@w1600 {
     margin-left: 37.5%; }
-  .ss-group-item-pull-9\@xxl {
+  .ss-group-item-pull-9\@w1600 {
     margin-left: -37.5%; }
-  .ss-group-size-10\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-10\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-10\@xxl {
+    min-width: 41.66667%; }
+  .ss-group-item-size-10\@w1600 {
     position: relative;
     flex-basis: 41.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-10\@xxl {
+    min-width: 41.66667%; }
+  .ss-group-item-push-10\@w1600 {
     margin-left: 41.66667%; }
-  .ss-group-item-pull-10\@xxl {
+  .ss-group-item-pull-10\@w1600 {
     margin-left: -41.66667%; }
-  .ss-group-size-11\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-11\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-11\@xxl {
+    min-width: 45.83333%; }
+  .ss-group-item-size-11\@w1600 {
     position: relative;
     flex-basis: 45.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-11\@xxl {
+    min-width: 45.83333%; }
+  .ss-group-item-push-11\@w1600 {
     margin-left: 45.83333%; }
-  .ss-group-item-pull-11\@xxl {
+  .ss-group-item-pull-11\@w1600 {
     margin-left: -45.83333%; }
-  .ss-group-size-12\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-12\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-12\@xxl {
+    min-width: 50%; }
+  .ss-group-item-size-12\@w1600 {
     position: relative;
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-12\@xxl {
+    min-width: 50%; }
+  .ss-group-item-push-12\@w1600 {
     margin-left: 50%; }
-  .ss-group-item-pull-12\@xxl {
+  .ss-group-item-pull-12\@w1600 {
     margin-left: -50%; }
-  .ss-group-size-13\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-13\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-13\@xxl {
+    min-width: 54.16667%; }
+  .ss-group-item-size-13\@w1600 {
     position: relative;
     flex-basis: 54.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-13\@xxl {
+    min-width: 54.16667%; }
+  .ss-group-item-push-13\@w1600 {
     margin-left: 54.16667%; }
-  .ss-group-item-pull-13\@xxl {
+  .ss-group-item-pull-13\@w1600 {
     margin-left: -54.16667%; }
-  .ss-group-size-14\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-14\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-14\@xxl {
+    min-width: 58.33333%; }
+  .ss-group-item-size-14\@w1600 {
     position: relative;
     flex-basis: 58.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-14\@xxl {
+    min-width: 58.33333%; }
+  .ss-group-item-push-14\@w1600 {
     margin-left: 58.33333%; }
-  .ss-group-item-pull-14\@xxl {
+  .ss-group-item-pull-14\@w1600 {
     margin-left: -58.33333%; }
-  .ss-group-size-15\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-15\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-15\@xxl {
+    min-width: 62.5%; }
+  .ss-group-item-size-15\@w1600 {
     position: relative;
     flex-basis: 62.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-15\@xxl {
+    min-width: 62.5%; }
+  .ss-group-item-push-15\@w1600 {
     margin-left: 62.5%; }
-  .ss-group-item-pull-15\@xxl {
+  .ss-group-item-pull-15\@w1600 {
     margin-left: -62.5%; }
-  .ss-group-size-16\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-16\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-16\@xxl {
+    min-width: 66.66667%; }
+  .ss-group-item-size-16\@w1600 {
     position: relative;
     flex-basis: 66.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-16\@xxl {
+    min-width: 66.66667%; }
+  .ss-group-item-push-16\@w1600 {
     margin-left: 66.66667%; }
-  .ss-group-item-pull-16\@xxl {
+  .ss-group-item-pull-16\@w1600 {
     margin-left: -66.66667%; }
-  .ss-group-size-17\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-17\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-17\@xxl {
+    min-width: 70.83333%; }
+  .ss-group-item-size-17\@w1600 {
     position: relative;
     flex-basis: 70.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-17\@xxl {
+    min-width: 70.83333%; }
+  .ss-group-item-push-17\@w1600 {
     margin-left: 70.83333%; }
-  .ss-group-item-pull-17\@xxl {
+  .ss-group-item-pull-17\@w1600 {
     margin-left: -70.83333%; }
-  .ss-group-size-18\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-18\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-18\@xxl {
+    min-width: 75%; }
+  .ss-group-item-size-18\@w1600 {
     position: relative;
     flex-basis: 75%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-18\@xxl {
+    min-width: 75%; }
+  .ss-group-item-push-18\@w1600 {
     margin-left: 75%; }
-  .ss-group-item-pull-18\@xxl {
+  .ss-group-item-pull-18\@w1600 {
     margin-left: -75%; }
-  .ss-group-size-19\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-19\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-19\@xxl {
+    min-width: 79.16667%; }
+  .ss-group-item-size-19\@w1600 {
     position: relative;
     flex-basis: 79.16667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-19\@xxl {
+    min-width: 79.16667%; }
+  .ss-group-item-push-19\@w1600 {
     margin-left: 79.16667%; }
-  .ss-group-item-pull-19\@xxl {
+  .ss-group-item-pull-19\@w1600 {
     margin-left: -79.16667%; }
-  .ss-group-size-20\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-20\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-20\@xxl {
+    min-width: 83.33333%; }
+  .ss-group-item-size-20\@w1600 {
     position: relative;
     flex-basis: 83.33333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-20\@xxl {
+    min-width: 83.33333%; }
+  .ss-group-item-push-20\@w1600 {
     margin-left: 83.33333%; }
-  .ss-group-item-pull-20\@xxl {
+  .ss-group-item-pull-20\@w1600 {
     margin-left: -83.33333%; }
-  .ss-group-size-21\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-21\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-21\@xxl {
+    min-width: 87.5%; }
+  .ss-group-item-size-21\@w1600 {
     position: relative;
     flex-basis: 87.5%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-21\@xxl {
+    min-width: 87.5%; }
+  .ss-group-item-push-21\@w1600 {
     margin-left: 87.5%; }
-  .ss-group-item-pull-21\@xxl {
+  .ss-group-item-pull-21\@w1600 {
     margin-left: -87.5%; }
-  .ss-group-size-22\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-22\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-22\@xxl {
+    min-width: 91.66667%; }
+  .ss-group-item-size-22\@w1600 {
     position: relative;
     flex-basis: 91.66667%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-22\@xxl {
+    min-width: 91.66667%; }
+  .ss-group-item-push-22\@w1600 {
     margin-left: 91.66667%; }
-  .ss-group-item-pull-22\@xxl {
+  .ss-group-item-pull-22\@w1600 {
     margin-left: -91.66667%; }
-  .ss-group-size-23\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-23\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-23\@xxl {
+    min-width: 95.83333%; }
+  .ss-group-item-size-23\@w1600 {
     position: relative;
     flex-basis: 95.83333%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-23\@xxl {
+    min-width: 95.83333%; }
+  .ss-group-item-push-23\@w1600 {
     margin-left: 95.83333%; }
-  .ss-group-item-pull-23\@xxl {
+  .ss-group-item-pull-23\@w1600 {
     margin-left: -95.83333%; }
-  .ss-group-size-24\@xxl > :not([class*='item-size-']) {
+  .ss-group-size-24\@w1600 > :not([class*='item-size-']) {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-size-24\@xxl {
+    min-width: 100%; }
+  .ss-group-item-size-24\@w1600 {
     position: relative;
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    max-width: none;
-    min-width: 0; }
-  .ss-group-item-push-24\@xxl {
+    min-width: 100%; }
+  .ss-group-item-push-24\@w1600 {
     margin-left: 100%; }
-  .ss-group-item-pull-24\@xxl {
+  .ss-group-item-pull-24\@w1600 {
     margin-left: -100%; }
-  .ss-group-nowrap\@xxl {
+  .ss-group-nowrap\@w1600 {
     flex-wrap: nowrap; }
-  .ss-group-justify-around\@xxl {
+  .ss-group-justify-around\@w1600 {
     justify-content: space-around; }
-  .ss-group-justify-between\@xxl {
+  .ss-group-justify-between\@w1600 {
     justify-content: space-between; }
-  .ss-group-justify-center\@xxl {
+  .ss-group-justify-center\@w1600 {
     justify-content: center; }
-  .ss-group-justify-end\@xxl {
+  .ss-group-justify-end\@w1600 {
     justify-content: flex-end; }
-  .ss-group-align-center\@xxl {
+  .ss-group-align-center\@w1600 {
     align-items: center; }
-  .ss-group-align-start\@xxl {
+  .ss-group-align-start\@w1600 {
     align-items: flex-start; }
-  .ss-group-align-end\@xxl {
+  .ss-group-align-end\@w1600 {
     align-items: flex-end; } }
 
 .ss-header {
@@ -3105,19 +2752,22 @@ body {
   margin-top: 0;
   margin-bottom: 0; }
 
-.ss-header-scale-1 {
+.ss-header-scale-none {
   font-size: 1rem; }
 
-.ss-header-scale-2 {
+.ss-header-scale-sm {
+  font-size: 0.9rem; }
+
+.ss-header-scale-md {
   font-size: 1.25rem; }
 
-.ss-header-scale-3 {
+.ss-header-scale-lg {
   font-size: 1.5rem; }
 
-.ss-header-scale-4 {
+.ss-header-scale-xl {
   font-size: 2.25rem; }
 
-.ss-header-scale-5 {
+.ss-header-scale-xxl {
   font-size: 2.75rem; }
 
 .ss-header-weight-300 {
@@ -3130,78 +2780,88 @@ body {
   font-weight: 700; }
 
 @media only screen and (min-width: 425px) {
-  .ss-header-no-margin\@sm {
+  .ss-header-no-margin\@w425 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@sm {
+  .ss-header-scale-none\@w425 {
     font-size: 1rem; }
-  .ss-header-scale-2\@sm {
+  .ss-header-scale-sm\@w425 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w425 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@sm {
+  .ss-header-scale-lg\@w425 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@sm {
+  .ss-header-scale-xl\@w425 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@sm {
+  .ss-header-scale-xxl\@w425 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 768px) {
-  .ss-header-no-margin\@md {
+  .ss-header-no-margin\@w768 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@md {
+  .ss-header-scale-none\@w768 {
     font-size: 1rem; }
-  .ss-header-scale-2\@md {
+  .ss-header-scale-sm\@w768 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w768 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@md {
+  .ss-header-scale-lg\@w768 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@md {
+  .ss-header-scale-xl\@w768 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@md {
+  .ss-header-scale-xxl\@w768 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 992px) {
-  .ss-header-no-margin\@lg {
+  .ss-header-no-margin\@w992 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@lg {
+  .ss-header-scale-none\@w992 {
     font-size: 1rem; }
-  .ss-header-scale-2\@lg {
+  .ss-header-scale-sm\@w992 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w992 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@lg {
+  .ss-header-scale-lg\@w992 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@lg {
+  .ss-header-scale-xl\@w992 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@lg {
+  .ss-header-scale-xxl\@w992 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .ss-header-no-margin\@xl {
+  .ss-header-no-margin\@w1200 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@xl {
+  .ss-header-scale-none\@w1200 {
     font-size: 1rem; }
-  .ss-header-scale-2\@xl {
+  .ss-header-scale-sm\@w1200 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w1200 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@xl {
+  .ss-header-scale-lg\@w1200 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@xl {
+  .ss-header-scale-xl\@w1200 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@xl {
+  .ss-header-scale-xxl\@w1200 {
     font-size: 2.75rem; } }
 
 @media only screen and (min-width: 1600px) {
-  .ss-header-no-margin\@xxl {
+  .ss-header-no-margin\@w1600 {
     margin-top: 0;
     margin-bottom: 0; }
-  .ss-header-scale-1\@xxl {
+  .ss-header-scale-none\@w1600 {
     font-size: 1rem; }
-  .ss-header-scale-2\@xxl {
+  .ss-header-scale-sm\@w1600 {
+    font-size: 0.9rem; }
+  .ss-header-scale-md\@w1600 {
     font-size: 1.25rem; }
-  .ss-header-scale-3\@xxl {
+  .ss-header-scale-lg\@w1600 {
     font-size: 1.5rem; }
-  .ss-header-scale-4\@xxl {
+  .ss-header-scale-xl\@w1600 {
     font-size: 2.25rem; }
-  .ss-header-scale-5\@xxl {
+  .ss-header-scale-xxl\@w1600 {
     font-size: 2.75rem; } }
 
 ::-ms-clear {
@@ -3224,9 +2884,9 @@ input::-webkit-inner-spin-button {
 .ss-input {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   width: 100%;
-  height: 2.7rem;
+  height: 2.4rem;
   font-size: 0.9rem;
-  padding: 0 0.9rem;
+  padding: 0 0.6rem;
   color: #26262F;
   border: 0.1rem solid #9D9DA3;
   border-radius: 0.2rem;
@@ -3257,21 +2917,35 @@ input::-webkit-inner-spin-button {
     outline-offset: 0.15rem;
     outline: rgba(102, 166, 238, 0.5) solid 0.15rem; }
 
+.ss-input-scale-none {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
+
 .ss-input-scale-sm {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
 .ss-input-scale-md {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
 .ss-input-scale-lg {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
 .ss-input-scale-xl {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
+
+.ss-input-scale-xxl {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
 .ss-input-dark {
   background: #26262F;
@@ -3344,28 +3018,6 @@ input::-webkit-inner-spin-button {
     border-color: #266d73;
     outline-color: rgba(109, 200, 207, 0.3); }
 
-.ss-input-theme-pink {
-  border-color: #D3729C; }
-  .ss-input-theme-pink::-webkit-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-moz-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink:-ms-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-ms-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-webkit-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-moz-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink::-ms-input-placeholder {
-    color: rgba(211, 114, 156, 0.5); }
-  .ss-input-theme-pink:focus:not([tabindex='-1']) {
-    border-color: #742446;
-    outline-color: rgba(211, 114, 156, 0.3); }
-
 .ss-input-theme-orange {
   border-color: #FF8F99; }
   .ss-input-theme-orange::-webkit-input-placeholder {
@@ -3410,87 +3062,157 @@ input::-webkit-inner-spin-button {
     border-color: #503c59;
     outline-color: rgba(107, 80, 120, 0.3); }
 
-.ss-input-scale-sm\@sm {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-none\@w425 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-md\@sm {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-sm\@w425 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
-.ss-input-scale-lg\@sm {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-md\@w425 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
-.ss-input-scale-xl\@sm {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-lg\@w425 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
-.ss-input-scale-sm\@md {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-xl\@w425 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
 
-.ss-input-scale-md\@md {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-xxl\@w425 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
-.ss-input-scale-lg\@md {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-none\@w768 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-xl\@md {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-sm\@w768 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
-.ss-input-scale-sm\@lg {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-md\@w768 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
-.ss-input-scale-md\@lg {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-lg\@w768 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
-.ss-input-scale-lg\@lg {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-xl\@w768 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
 
-.ss-input-scale-xl\@lg {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-xxl\@w768 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
-.ss-input-scale-sm\@xl {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-none\@w992 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-md\@xl {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-sm\@w992 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
-.ss-input-scale-lg\@xl {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-md\@w992 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
 
-.ss-input-scale-xl\@xl {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-lg\@w992 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
 
-.ss-input-scale-sm\@xxl {
-  height: 2.295rem;
-  font-size: 0.765rem; }
+.ss-input-scale-xl\@w992 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
 
-.ss-input-scale-md\@xxl {
-  height: 2.7rem;
-  font-size: 0.9rem; }
+.ss-input-scale-xxl\@w992 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
 
-.ss-input-scale-lg\@xxl {
-  height: 3.105rem;
-  font-size: 1.035rem; }
+.ss-input-scale-none\@w1200 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
 
-.ss-input-scale-xl\@xxl {
-  height: 3.51rem;
-  font-size: 1.17rem; }
+.ss-input-scale-sm\@w1200 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
 
-.wrap {
+.ss-input-scale-md\@w1200 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
+
+.ss-input-scale-lg\@w1200 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
+
+.ss-input-scale-xl\@w1200 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
+
+.ss-input-scale-xxl\@w1200 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
+
+.ss-input-scale-none\@w1600 {
+  height: 2.4rem;
+  font-size: 0.9rem;
+  padding: 0 0.6rem; }
+
+.ss-input-scale-sm\@w1600 {
+  height: 2.16rem;
+  font-size: 0.81rem;
+  padding: 0 0.54rem; }
+
+.ss-input-scale-md\@w1600 {
+  height: 2.64rem;
+  font-size: 0.99rem;
+  padding: 0 0.66rem; }
+
+.ss-input-scale-lg\@w1600 {
+  height: 2.88rem;
+  font-size: 1.08rem;
+  padding: 0 0.72rem; }
+
+.ss-input-scale-xl\@w1600 {
+  height: 3.24rem;
+  font-size: 1.215rem;
+  padding: 0 0.81rem; }
+
+.ss-input-scale-xxl\@w1600 {
+  height: 3.6rem;
+  font-size: 1.35rem;
+  padding: 0 0.9rem; }
+
+.ss-wrap {
   width: 100%;
   position: relative; }
 
@@ -4012,1813 +3734,1813 @@ input::-webkit-inner-spin-button {
   padding: 3rem; }
 
 @media only screen and (min-width: 425px) {
-  .ss-box-margin\@sm {
+  .ss-box-margin\@w425 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding\@sm {
+  .ss-box-padding\@w425 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-auto\@sm {
+  .ss-box-margin-auto\@w425 {
     margin: 0 auto; }
-  .ss-box-margin-t\@sm {
+  .ss-box-margin-t\@w425 {
     margin-top: 1.2rem; }
-  .ss-box-padding-t\@sm {
+  .ss-box-padding-t\@w425 {
     padding-top: 1.2rem; }
-  .ss-box-margin-1-t\@sm {
+  .ss-box-margin-1-t\@w425 {
     margin-top: 0.3rem; }
-  .ss-box-padding-1-t\@sm {
+  .ss-box-padding-1-t\@w425 {
     padding-top: 0.3rem; }
-  .ss-box-margin-2-t\@sm {
+  .ss-box-margin-2-t\@w425 {
     margin-top: 0.6rem; }
-  .ss-box-padding-2-t\@sm {
+  .ss-box-padding-2-t\@w425 {
     padding-top: 0.6rem; }
-  .ss-box-margin-3-t\@sm {
+  .ss-box-margin-3-t\@w425 {
     margin-top: 0.9rem; }
-  .ss-box-padding-3-t\@sm {
+  .ss-box-padding-3-t\@w425 {
     padding-top: 0.9rem; }
-  .ss-box-margin-4-t\@sm {
+  .ss-box-margin-4-t\@w425 {
     margin-top: 1.2rem; }
-  .ss-box-padding-4-t\@sm {
+  .ss-box-padding-4-t\@w425 {
     padding-top: 1.2rem; }
-  .ss-box-margin-5-t\@sm {
+  .ss-box-margin-5-t\@w425 {
     margin-top: 1.5rem; }
-  .ss-box-padding-5-t\@sm {
+  .ss-box-padding-5-t\@w425 {
     padding-top: 1.5rem; }
-  .ss-box-margin-6-t\@sm {
+  .ss-box-margin-6-t\@w425 {
     margin-top: 1.8rem; }
-  .ss-box-padding-6-t\@sm {
+  .ss-box-padding-6-t\@w425 {
     padding-top: 1.8rem; }
-  .ss-box-margin-7-t\@sm {
+  .ss-box-margin-7-t\@w425 {
     margin-top: 2.1rem; }
-  .ss-box-padding-7-t\@sm {
+  .ss-box-padding-7-t\@w425 {
     padding-top: 2.1rem; }
-  .ss-box-margin-8-t\@sm {
+  .ss-box-margin-8-t\@w425 {
     margin-top: 2.4rem; }
-  .ss-box-padding-8-t\@sm {
+  .ss-box-padding-8-t\@w425 {
     padding-top: 2.4rem; }
-  .ss-box-margin-9-t\@sm {
+  .ss-box-margin-9-t\@w425 {
     margin-top: 2.7rem; }
-  .ss-box-padding-9-t\@sm {
+  .ss-box-padding-9-t\@w425 {
     padding-top: 2.7rem; }
-  .ss-box-margin-10-t\@sm {
+  .ss-box-margin-10-t\@w425 {
     margin-top: 3rem; }
-  .ss-box-padding-10-t\@sm {
+  .ss-box-padding-10-t\@w425 {
     padding-top: 3rem; }
-  .ss-box-margin-r\@sm {
+  .ss-box-margin-r\@w425 {
     margin-right: 1.2rem; }
-  .ss-box-padding-r\@sm {
+  .ss-box-padding-r\@w425 {
     padding-right: 1.2rem; }
-  .ss-box-margin-1-r\@sm {
+  .ss-box-margin-1-r\@w425 {
     margin-right: 0.3rem; }
-  .ss-box-padding-1-r\@sm {
+  .ss-box-padding-1-r\@w425 {
     padding-right: 0.3rem; }
-  .ss-box-margin-2-r\@sm {
+  .ss-box-margin-2-r\@w425 {
     margin-right: 0.6rem; }
-  .ss-box-padding-2-r\@sm {
+  .ss-box-padding-2-r\@w425 {
     padding-right: 0.6rem; }
-  .ss-box-margin-3-r\@sm {
+  .ss-box-margin-3-r\@w425 {
     margin-right: 0.9rem; }
-  .ss-box-padding-3-r\@sm {
+  .ss-box-padding-3-r\@w425 {
     padding-right: 0.9rem; }
-  .ss-box-margin-4-r\@sm {
+  .ss-box-margin-4-r\@w425 {
     margin-right: 1.2rem; }
-  .ss-box-padding-4-r\@sm {
+  .ss-box-padding-4-r\@w425 {
     padding-right: 1.2rem; }
-  .ss-box-margin-5-r\@sm {
+  .ss-box-margin-5-r\@w425 {
     margin-right: 1.5rem; }
-  .ss-box-padding-5-r\@sm {
+  .ss-box-padding-5-r\@w425 {
     padding-right: 1.5rem; }
-  .ss-box-margin-6-r\@sm {
+  .ss-box-margin-6-r\@w425 {
     margin-right: 1.8rem; }
-  .ss-box-padding-6-r\@sm {
+  .ss-box-padding-6-r\@w425 {
     padding-right: 1.8rem; }
-  .ss-box-margin-7-r\@sm {
+  .ss-box-margin-7-r\@w425 {
     margin-right: 2.1rem; }
-  .ss-box-padding-7-r\@sm {
+  .ss-box-padding-7-r\@w425 {
     padding-right: 2.1rem; }
-  .ss-box-margin-8-r\@sm {
+  .ss-box-margin-8-r\@w425 {
     margin-right: 2.4rem; }
-  .ss-box-padding-8-r\@sm {
+  .ss-box-padding-8-r\@w425 {
     padding-right: 2.4rem; }
-  .ss-box-margin-9-r\@sm {
+  .ss-box-margin-9-r\@w425 {
     margin-right: 2.7rem; }
-  .ss-box-padding-9-r\@sm {
+  .ss-box-padding-9-r\@w425 {
     padding-right: 2.7rem; }
-  .ss-box-margin-10-r\@sm {
+  .ss-box-margin-10-r\@w425 {
     margin-right: 3rem; }
-  .ss-box-padding-10-r\@sm {
+  .ss-box-padding-10-r\@w425 {
     padding-right: 3rem; }
-  .ss-box-margin-b\@sm {
+  .ss-box-margin-b\@w425 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-b\@sm {
+  .ss-box-padding-b\@w425 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-b\@sm {
+  .ss-box-margin-1-b\@w425 {
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-b\@sm {
+  .ss-box-padding-1-b\@w425 {
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-b\@sm {
+  .ss-box-margin-2-b\@w425 {
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-b\@sm {
+  .ss-box-padding-2-b\@w425 {
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-b\@sm {
+  .ss-box-margin-3-b\@w425 {
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-b\@sm {
+  .ss-box-padding-3-b\@w425 {
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-b\@sm {
+  .ss-box-margin-4-b\@w425 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-b\@sm {
+  .ss-box-padding-4-b\@w425 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-b\@sm {
+  .ss-box-margin-5-b\@w425 {
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-b\@sm {
+  .ss-box-padding-5-b\@w425 {
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-b\@sm {
+  .ss-box-margin-6-b\@w425 {
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-b\@sm {
+  .ss-box-padding-6-b\@w425 {
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-b\@sm {
+  .ss-box-margin-7-b\@w425 {
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-b\@sm {
+  .ss-box-padding-7-b\@w425 {
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-b\@sm {
+  .ss-box-margin-8-b\@w425 {
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-b\@sm {
+  .ss-box-padding-8-b\@w425 {
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-b\@sm {
+  .ss-box-margin-9-b\@w425 {
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-b\@sm {
+  .ss-box-padding-9-b\@w425 {
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-b\@sm {
+  .ss-box-margin-10-b\@w425 {
     margin-bottom: 3rem; }
-  .ss-box-padding-10-b\@sm {
+  .ss-box-padding-10-b\@w425 {
     padding-bottom: 3rem; }
-  .ss-box-margin-l\@sm {
+  .ss-box-margin-l\@w425 {
     margin-left: 1.2rem; }
-  .ss-box-padding-l\@sm {
+  .ss-box-padding-l\@w425 {
     padding-left: 1.2rem; }
-  .ss-box-margin-1-l\@sm {
+  .ss-box-margin-1-l\@w425 {
     margin-left: 0.3rem; }
-  .ss-box-padding-1-l\@sm {
+  .ss-box-padding-1-l\@w425 {
     padding-left: 0.3rem; }
-  .ss-box-margin-2-l\@sm {
+  .ss-box-margin-2-l\@w425 {
     margin-left: 0.6rem; }
-  .ss-box-padding-2-l\@sm {
+  .ss-box-padding-2-l\@w425 {
     padding-left: 0.6rem; }
-  .ss-box-margin-3-l\@sm {
+  .ss-box-margin-3-l\@w425 {
     margin-left: 0.9rem; }
-  .ss-box-padding-3-l\@sm {
+  .ss-box-padding-3-l\@w425 {
     padding-left: 0.9rem; }
-  .ss-box-margin-4-l\@sm {
+  .ss-box-margin-4-l\@w425 {
     margin-left: 1.2rem; }
-  .ss-box-padding-4-l\@sm {
+  .ss-box-padding-4-l\@w425 {
     padding-left: 1.2rem; }
-  .ss-box-margin-5-l\@sm {
+  .ss-box-margin-5-l\@w425 {
     margin-left: 1.5rem; }
-  .ss-box-padding-5-l\@sm {
+  .ss-box-padding-5-l\@w425 {
     padding-left: 1.5rem; }
-  .ss-box-margin-6-l\@sm {
+  .ss-box-margin-6-l\@w425 {
     margin-left: 1.8rem; }
-  .ss-box-padding-6-l\@sm {
+  .ss-box-padding-6-l\@w425 {
     padding-left: 1.8rem; }
-  .ss-box-margin-7-l\@sm {
+  .ss-box-margin-7-l\@w425 {
     margin-left: 2.1rem; }
-  .ss-box-padding-7-l\@sm {
+  .ss-box-padding-7-l\@w425 {
     padding-left: 2.1rem; }
-  .ss-box-margin-8-l\@sm {
+  .ss-box-margin-8-l\@w425 {
     margin-left: 2.4rem; }
-  .ss-box-padding-8-l\@sm {
+  .ss-box-padding-8-l\@w425 {
     padding-left: 2.4rem; }
-  .ss-box-margin-9-l\@sm {
+  .ss-box-margin-9-l\@w425 {
     margin-left: 2.7rem; }
-  .ss-box-padding-9-l\@sm {
+  .ss-box-padding-9-l\@w425 {
     padding-left: 2.7rem; }
-  .ss-box-margin-10-l\@sm {
+  .ss-box-margin-10-l\@w425 {
     margin-left: 3rem; }
-  .ss-box-padding-10-l\@sm {
+  .ss-box-padding-10-l\@w425 {
     padding-left: 3rem; }
-  .ss-box-margin-tb\@sm {
+  .ss-box-margin-tb\@w425 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-tb\@sm {
+  .ss-box-padding-tb\@w425 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-tb\@sm {
+  .ss-box-margin-1-tb\@w425 {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-tb\@sm {
+  .ss-box-padding-1-tb\@w425 {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-tb\@sm {
+  .ss-box-margin-2-tb\@w425 {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-tb\@sm {
+  .ss-box-padding-2-tb\@w425 {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-tb\@sm {
+  .ss-box-margin-3-tb\@w425 {
     margin-top: 0.9rem;
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-tb\@sm {
+  .ss-box-padding-3-tb\@w425 {
     padding-top: 0.9rem;
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-tb\@sm {
+  .ss-box-margin-4-tb\@w425 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-tb\@sm {
+  .ss-box-padding-4-tb\@w425 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-tb\@sm {
+  .ss-box-margin-5-tb\@w425 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-tb\@sm {
+  .ss-box-padding-5-tb\@w425 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-tb\@sm {
+  .ss-box-margin-6-tb\@w425 {
     margin-top: 1.8rem;
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-tb\@sm {
+  .ss-box-padding-6-tb\@w425 {
     padding-top: 1.8rem;
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-tb\@sm {
+  .ss-box-margin-7-tb\@w425 {
     margin-top: 2.1rem;
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-tb\@sm {
+  .ss-box-padding-7-tb\@w425 {
     padding-top: 2.1rem;
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-tb\@sm {
+  .ss-box-margin-8-tb\@w425 {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-tb\@sm {
+  .ss-box-padding-8-tb\@w425 {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-tb\@sm {
+  .ss-box-margin-9-tb\@w425 {
     margin-top: 2.7rem;
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-tb\@sm {
+  .ss-box-padding-9-tb\@w425 {
     padding-top: 2.7rem;
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-tb\@sm {
+  .ss-box-margin-10-tb\@w425 {
     margin-top: 3rem;
     margin-bottom: 3rem; }
-  .ss-box-padding-10-tb\@sm {
+  .ss-box-padding-10-tb\@w425 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
-  .ss-box-margin-rl\@sm {
+  .ss-box-margin-rl\@w425 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-rl\@sm {
+  .ss-box-padding-rl\@w425 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-1-rl\@sm {
+  .ss-box-margin-1-rl\@w425 {
     margin-left: 0.3rem;
     margin-right: 0.3rem; }
-  .ss-box-padding-1-rl\@sm {
+  .ss-box-padding-1-rl\@w425 {
     padding-left: 0.3rem;
     padding-right: 0.3rem; }
-  .ss-box-margin-2-rl\@sm {
+  .ss-box-margin-2-rl\@w425 {
     margin-left: 0.6rem;
     margin-right: 0.6rem; }
-  .ss-box-padding-2-rl\@sm {
+  .ss-box-padding-2-rl\@w425 {
     padding-left: 0.6rem;
     padding-right: 0.6rem; }
-  .ss-box-margin-3-rl\@sm {
+  .ss-box-margin-3-rl\@w425 {
     margin-left: 0.9rem;
     margin-right: 0.9rem; }
-  .ss-box-padding-3-rl\@sm {
+  .ss-box-padding-3-rl\@w425 {
     padding-left: 0.9rem;
     padding-right: 0.9rem; }
-  .ss-box-margin-4-rl\@sm {
+  .ss-box-margin-4-rl\@w425 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-4-rl\@sm {
+  .ss-box-padding-4-rl\@w425 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-5-rl\@sm {
+  .ss-box-margin-5-rl\@w425 {
     margin-left: 1.5rem;
     margin-right: 1.5rem; }
-  .ss-box-padding-5-rl\@sm {
+  .ss-box-padding-5-rl\@w425 {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
-  .ss-box-margin-6-rl\@sm {
+  .ss-box-margin-6-rl\@w425 {
     margin-left: 1.8rem;
     margin-right: 1.8rem; }
-  .ss-box-padding-6-rl\@sm {
+  .ss-box-padding-6-rl\@w425 {
     padding-left: 1.8rem;
     padding-right: 1.8rem; }
-  .ss-box-margin-7-rl\@sm {
+  .ss-box-margin-7-rl\@w425 {
     margin-left: 2.1rem;
     margin-right: 2.1rem; }
-  .ss-box-padding-7-rl\@sm {
+  .ss-box-padding-7-rl\@w425 {
     padding-left: 2.1rem;
     padding-right: 2.1rem; }
-  .ss-box-margin-8-rl\@sm {
+  .ss-box-margin-8-rl\@w425 {
     margin-left: 2.4rem;
     margin-right: 2.4rem; }
-  .ss-box-padding-8-rl\@sm {
+  .ss-box-padding-8-rl\@w425 {
     padding-left: 2.4rem;
     padding-right: 2.4rem; }
-  .ss-box-margin-9-rl\@sm {
+  .ss-box-margin-9-rl\@w425 {
     margin-left: 2.7rem;
     margin-right: 2.7rem; }
-  .ss-box-padding-9-rl\@sm {
+  .ss-box-padding-9-rl\@w425 {
     padding-left: 2.7rem;
     padding-right: 2.7rem; }
-  .ss-box-margin-10-rl\@sm {
+  .ss-box-margin-10-rl\@w425 {
     margin-left: 3rem;
     margin-right: 3rem; }
-  .ss-box-padding-10-rl\@sm {
+  .ss-box-padding-10-rl\@w425 {
     padding-left: 3rem;
     padding-right: 3rem; }
-  .ss-box-margin-trbl\@sm {
+  .ss-box-margin-trbl\@w425 {
     margin: 1.2rem; }
-  .ss-box-padding-trbl\@sm {
+  .ss-box-padding-trbl\@w425 {
     padding: 1.2rem; }
-  .ss-box-margin-1-trbl\@sm {
+  .ss-box-margin-1-trbl\@w425 {
     margin: 0.3rem; }
-  .ss-box-padding-1-trbl\@sm {
+  .ss-box-padding-1-trbl\@w425 {
     padding: 0.3rem; }
-  .ss-box-margin-2-trbl\@sm {
+  .ss-box-margin-2-trbl\@w425 {
     margin: 0.6rem; }
-  .ss-box-padding-2-trbl\@sm {
+  .ss-box-padding-2-trbl\@w425 {
     padding: 0.6rem; }
-  .ss-box-margin-3-trbl\@sm {
+  .ss-box-margin-3-trbl\@w425 {
     margin: 0.9rem; }
-  .ss-box-padding-3-trbl\@sm {
+  .ss-box-padding-3-trbl\@w425 {
     padding: 0.9rem; }
-  .ss-box-margin-4-trbl\@sm {
+  .ss-box-margin-4-trbl\@w425 {
     margin: 1.2rem; }
-  .ss-box-padding-4-trbl\@sm {
+  .ss-box-padding-4-trbl\@w425 {
     padding: 1.2rem; }
-  .ss-box-margin-5-trbl\@sm {
+  .ss-box-margin-5-trbl\@w425 {
     margin: 1.5rem; }
-  .ss-box-padding-5-trbl\@sm {
+  .ss-box-padding-5-trbl\@w425 {
     padding: 1.5rem; }
-  .ss-box-margin-6-trbl\@sm {
+  .ss-box-margin-6-trbl\@w425 {
     margin: 1.8rem; }
-  .ss-box-padding-6-trbl\@sm {
+  .ss-box-padding-6-trbl\@w425 {
     padding: 1.8rem; }
-  .ss-box-margin-7-trbl\@sm {
+  .ss-box-margin-7-trbl\@w425 {
     margin: 2.1rem; }
-  .ss-box-padding-7-trbl\@sm {
+  .ss-box-padding-7-trbl\@w425 {
     padding: 2.1rem; }
-  .ss-box-margin-8-trbl\@sm {
+  .ss-box-margin-8-trbl\@w425 {
     margin: 2.4rem; }
-  .ss-box-padding-8-trbl\@sm {
+  .ss-box-padding-8-trbl\@w425 {
     padding: 2.4rem; }
-  .ss-box-margin-9-trbl\@sm {
+  .ss-box-margin-9-trbl\@w425 {
     margin: 2.7rem; }
-  .ss-box-padding-9-trbl\@sm {
+  .ss-box-padding-9-trbl\@w425 {
     padding: 2.7rem; }
-  .ss-box-margin-10-trbl\@sm {
+  .ss-box-margin-10-trbl\@w425 {
     margin: 3rem; }
-  .ss-box-padding-10-trbl\@sm {
+  .ss-box-padding-10-trbl\@w425 {
     padding: 3rem; } }
 
 @media only screen and (min-width: 768px) {
-  .ss-box-margin\@md {
+  .ss-box-margin\@w768 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding\@md {
+  .ss-box-padding\@w768 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-auto\@md {
+  .ss-box-margin-auto\@w768 {
     margin: 0 auto; }
-  .ss-box-margin-t\@md {
+  .ss-box-margin-t\@w768 {
     margin-top: 1.2rem; }
-  .ss-box-padding-t\@md {
+  .ss-box-padding-t\@w768 {
     padding-top: 1.2rem; }
-  .ss-box-margin-1-t\@md {
+  .ss-box-margin-1-t\@w768 {
     margin-top: 0.3rem; }
-  .ss-box-padding-1-t\@md {
+  .ss-box-padding-1-t\@w768 {
     padding-top: 0.3rem; }
-  .ss-box-margin-2-t\@md {
+  .ss-box-margin-2-t\@w768 {
     margin-top: 0.6rem; }
-  .ss-box-padding-2-t\@md {
+  .ss-box-padding-2-t\@w768 {
     padding-top: 0.6rem; }
-  .ss-box-margin-3-t\@md {
+  .ss-box-margin-3-t\@w768 {
     margin-top: 0.9rem; }
-  .ss-box-padding-3-t\@md {
+  .ss-box-padding-3-t\@w768 {
     padding-top: 0.9rem; }
-  .ss-box-margin-4-t\@md {
+  .ss-box-margin-4-t\@w768 {
     margin-top: 1.2rem; }
-  .ss-box-padding-4-t\@md {
+  .ss-box-padding-4-t\@w768 {
     padding-top: 1.2rem; }
-  .ss-box-margin-5-t\@md {
+  .ss-box-margin-5-t\@w768 {
     margin-top: 1.5rem; }
-  .ss-box-padding-5-t\@md {
+  .ss-box-padding-5-t\@w768 {
     padding-top: 1.5rem; }
-  .ss-box-margin-6-t\@md {
+  .ss-box-margin-6-t\@w768 {
     margin-top: 1.8rem; }
-  .ss-box-padding-6-t\@md {
+  .ss-box-padding-6-t\@w768 {
     padding-top: 1.8rem; }
-  .ss-box-margin-7-t\@md {
+  .ss-box-margin-7-t\@w768 {
     margin-top: 2.1rem; }
-  .ss-box-padding-7-t\@md {
+  .ss-box-padding-7-t\@w768 {
     padding-top: 2.1rem; }
-  .ss-box-margin-8-t\@md {
+  .ss-box-margin-8-t\@w768 {
     margin-top: 2.4rem; }
-  .ss-box-padding-8-t\@md {
+  .ss-box-padding-8-t\@w768 {
     padding-top: 2.4rem; }
-  .ss-box-margin-9-t\@md {
+  .ss-box-margin-9-t\@w768 {
     margin-top: 2.7rem; }
-  .ss-box-padding-9-t\@md {
+  .ss-box-padding-9-t\@w768 {
     padding-top: 2.7rem; }
-  .ss-box-margin-10-t\@md {
+  .ss-box-margin-10-t\@w768 {
     margin-top: 3rem; }
-  .ss-box-padding-10-t\@md {
+  .ss-box-padding-10-t\@w768 {
     padding-top: 3rem; }
-  .ss-box-margin-r\@md {
+  .ss-box-margin-r\@w768 {
     margin-right: 1.2rem; }
-  .ss-box-padding-r\@md {
+  .ss-box-padding-r\@w768 {
     padding-right: 1.2rem; }
-  .ss-box-margin-1-r\@md {
+  .ss-box-margin-1-r\@w768 {
     margin-right: 0.3rem; }
-  .ss-box-padding-1-r\@md {
+  .ss-box-padding-1-r\@w768 {
     padding-right: 0.3rem; }
-  .ss-box-margin-2-r\@md {
+  .ss-box-margin-2-r\@w768 {
     margin-right: 0.6rem; }
-  .ss-box-padding-2-r\@md {
+  .ss-box-padding-2-r\@w768 {
     padding-right: 0.6rem; }
-  .ss-box-margin-3-r\@md {
+  .ss-box-margin-3-r\@w768 {
     margin-right: 0.9rem; }
-  .ss-box-padding-3-r\@md {
+  .ss-box-padding-3-r\@w768 {
     padding-right: 0.9rem; }
-  .ss-box-margin-4-r\@md {
+  .ss-box-margin-4-r\@w768 {
     margin-right: 1.2rem; }
-  .ss-box-padding-4-r\@md {
+  .ss-box-padding-4-r\@w768 {
     padding-right: 1.2rem; }
-  .ss-box-margin-5-r\@md {
+  .ss-box-margin-5-r\@w768 {
     margin-right: 1.5rem; }
-  .ss-box-padding-5-r\@md {
+  .ss-box-padding-5-r\@w768 {
     padding-right: 1.5rem; }
-  .ss-box-margin-6-r\@md {
+  .ss-box-margin-6-r\@w768 {
     margin-right: 1.8rem; }
-  .ss-box-padding-6-r\@md {
+  .ss-box-padding-6-r\@w768 {
     padding-right: 1.8rem; }
-  .ss-box-margin-7-r\@md {
+  .ss-box-margin-7-r\@w768 {
     margin-right: 2.1rem; }
-  .ss-box-padding-7-r\@md {
+  .ss-box-padding-7-r\@w768 {
     padding-right: 2.1rem; }
-  .ss-box-margin-8-r\@md {
+  .ss-box-margin-8-r\@w768 {
     margin-right: 2.4rem; }
-  .ss-box-padding-8-r\@md {
+  .ss-box-padding-8-r\@w768 {
     padding-right: 2.4rem; }
-  .ss-box-margin-9-r\@md {
+  .ss-box-margin-9-r\@w768 {
     margin-right: 2.7rem; }
-  .ss-box-padding-9-r\@md {
+  .ss-box-padding-9-r\@w768 {
     padding-right: 2.7rem; }
-  .ss-box-margin-10-r\@md {
+  .ss-box-margin-10-r\@w768 {
     margin-right: 3rem; }
-  .ss-box-padding-10-r\@md {
+  .ss-box-padding-10-r\@w768 {
     padding-right: 3rem; }
-  .ss-box-margin-b\@md {
+  .ss-box-margin-b\@w768 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-b\@md {
+  .ss-box-padding-b\@w768 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-b\@md {
+  .ss-box-margin-1-b\@w768 {
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-b\@md {
+  .ss-box-padding-1-b\@w768 {
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-b\@md {
+  .ss-box-margin-2-b\@w768 {
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-b\@md {
+  .ss-box-padding-2-b\@w768 {
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-b\@md {
+  .ss-box-margin-3-b\@w768 {
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-b\@md {
+  .ss-box-padding-3-b\@w768 {
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-b\@md {
+  .ss-box-margin-4-b\@w768 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-b\@md {
+  .ss-box-padding-4-b\@w768 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-b\@md {
+  .ss-box-margin-5-b\@w768 {
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-b\@md {
+  .ss-box-padding-5-b\@w768 {
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-b\@md {
+  .ss-box-margin-6-b\@w768 {
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-b\@md {
+  .ss-box-padding-6-b\@w768 {
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-b\@md {
+  .ss-box-margin-7-b\@w768 {
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-b\@md {
+  .ss-box-padding-7-b\@w768 {
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-b\@md {
+  .ss-box-margin-8-b\@w768 {
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-b\@md {
+  .ss-box-padding-8-b\@w768 {
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-b\@md {
+  .ss-box-margin-9-b\@w768 {
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-b\@md {
+  .ss-box-padding-9-b\@w768 {
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-b\@md {
+  .ss-box-margin-10-b\@w768 {
     margin-bottom: 3rem; }
-  .ss-box-padding-10-b\@md {
+  .ss-box-padding-10-b\@w768 {
     padding-bottom: 3rem; }
-  .ss-box-margin-l\@md {
+  .ss-box-margin-l\@w768 {
     margin-left: 1.2rem; }
-  .ss-box-padding-l\@md {
+  .ss-box-padding-l\@w768 {
     padding-left: 1.2rem; }
-  .ss-box-margin-1-l\@md {
+  .ss-box-margin-1-l\@w768 {
     margin-left: 0.3rem; }
-  .ss-box-padding-1-l\@md {
+  .ss-box-padding-1-l\@w768 {
     padding-left: 0.3rem; }
-  .ss-box-margin-2-l\@md {
+  .ss-box-margin-2-l\@w768 {
     margin-left: 0.6rem; }
-  .ss-box-padding-2-l\@md {
+  .ss-box-padding-2-l\@w768 {
     padding-left: 0.6rem; }
-  .ss-box-margin-3-l\@md {
+  .ss-box-margin-3-l\@w768 {
     margin-left: 0.9rem; }
-  .ss-box-padding-3-l\@md {
+  .ss-box-padding-3-l\@w768 {
     padding-left: 0.9rem; }
-  .ss-box-margin-4-l\@md {
+  .ss-box-margin-4-l\@w768 {
     margin-left: 1.2rem; }
-  .ss-box-padding-4-l\@md {
+  .ss-box-padding-4-l\@w768 {
     padding-left: 1.2rem; }
-  .ss-box-margin-5-l\@md {
+  .ss-box-margin-5-l\@w768 {
     margin-left: 1.5rem; }
-  .ss-box-padding-5-l\@md {
+  .ss-box-padding-5-l\@w768 {
     padding-left: 1.5rem; }
-  .ss-box-margin-6-l\@md {
+  .ss-box-margin-6-l\@w768 {
     margin-left: 1.8rem; }
-  .ss-box-padding-6-l\@md {
+  .ss-box-padding-6-l\@w768 {
     padding-left: 1.8rem; }
-  .ss-box-margin-7-l\@md {
+  .ss-box-margin-7-l\@w768 {
     margin-left: 2.1rem; }
-  .ss-box-padding-7-l\@md {
+  .ss-box-padding-7-l\@w768 {
     padding-left: 2.1rem; }
-  .ss-box-margin-8-l\@md {
+  .ss-box-margin-8-l\@w768 {
     margin-left: 2.4rem; }
-  .ss-box-padding-8-l\@md {
+  .ss-box-padding-8-l\@w768 {
     padding-left: 2.4rem; }
-  .ss-box-margin-9-l\@md {
+  .ss-box-margin-9-l\@w768 {
     margin-left: 2.7rem; }
-  .ss-box-padding-9-l\@md {
+  .ss-box-padding-9-l\@w768 {
     padding-left: 2.7rem; }
-  .ss-box-margin-10-l\@md {
+  .ss-box-margin-10-l\@w768 {
     margin-left: 3rem; }
-  .ss-box-padding-10-l\@md {
+  .ss-box-padding-10-l\@w768 {
     padding-left: 3rem; }
-  .ss-box-margin-tb\@md {
+  .ss-box-margin-tb\@w768 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-tb\@md {
+  .ss-box-padding-tb\@w768 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-tb\@md {
+  .ss-box-margin-1-tb\@w768 {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-tb\@md {
+  .ss-box-padding-1-tb\@w768 {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-tb\@md {
+  .ss-box-margin-2-tb\@w768 {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-tb\@md {
+  .ss-box-padding-2-tb\@w768 {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-tb\@md {
+  .ss-box-margin-3-tb\@w768 {
     margin-top: 0.9rem;
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-tb\@md {
+  .ss-box-padding-3-tb\@w768 {
     padding-top: 0.9rem;
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-tb\@md {
+  .ss-box-margin-4-tb\@w768 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-tb\@md {
+  .ss-box-padding-4-tb\@w768 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-tb\@md {
+  .ss-box-margin-5-tb\@w768 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-tb\@md {
+  .ss-box-padding-5-tb\@w768 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-tb\@md {
+  .ss-box-margin-6-tb\@w768 {
     margin-top: 1.8rem;
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-tb\@md {
+  .ss-box-padding-6-tb\@w768 {
     padding-top: 1.8rem;
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-tb\@md {
+  .ss-box-margin-7-tb\@w768 {
     margin-top: 2.1rem;
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-tb\@md {
+  .ss-box-padding-7-tb\@w768 {
     padding-top: 2.1rem;
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-tb\@md {
+  .ss-box-margin-8-tb\@w768 {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-tb\@md {
+  .ss-box-padding-8-tb\@w768 {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-tb\@md {
+  .ss-box-margin-9-tb\@w768 {
     margin-top: 2.7rem;
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-tb\@md {
+  .ss-box-padding-9-tb\@w768 {
     padding-top: 2.7rem;
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-tb\@md {
+  .ss-box-margin-10-tb\@w768 {
     margin-top: 3rem;
     margin-bottom: 3rem; }
-  .ss-box-padding-10-tb\@md {
+  .ss-box-padding-10-tb\@w768 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
-  .ss-box-margin-rl\@md {
+  .ss-box-margin-rl\@w768 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-rl\@md {
+  .ss-box-padding-rl\@w768 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-1-rl\@md {
+  .ss-box-margin-1-rl\@w768 {
     margin-left: 0.3rem;
     margin-right: 0.3rem; }
-  .ss-box-padding-1-rl\@md {
+  .ss-box-padding-1-rl\@w768 {
     padding-left: 0.3rem;
     padding-right: 0.3rem; }
-  .ss-box-margin-2-rl\@md {
+  .ss-box-margin-2-rl\@w768 {
     margin-left: 0.6rem;
     margin-right: 0.6rem; }
-  .ss-box-padding-2-rl\@md {
+  .ss-box-padding-2-rl\@w768 {
     padding-left: 0.6rem;
     padding-right: 0.6rem; }
-  .ss-box-margin-3-rl\@md {
+  .ss-box-margin-3-rl\@w768 {
     margin-left: 0.9rem;
     margin-right: 0.9rem; }
-  .ss-box-padding-3-rl\@md {
+  .ss-box-padding-3-rl\@w768 {
     padding-left: 0.9rem;
     padding-right: 0.9rem; }
-  .ss-box-margin-4-rl\@md {
+  .ss-box-margin-4-rl\@w768 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-4-rl\@md {
+  .ss-box-padding-4-rl\@w768 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-5-rl\@md {
+  .ss-box-margin-5-rl\@w768 {
     margin-left: 1.5rem;
     margin-right: 1.5rem; }
-  .ss-box-padding-5-rl\@md {
+  .ss-box-padding-5-rl\@w768 {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
-  .ss-box-margin-6-rl\@md {
+  .ss-box-margin-6-rl\@w768 {
     margin-left: 1.8rem;
     margin-right: 1.8rem; }
-  .ss-box-padding-6-rl\@md {
+  .ss-box-padding-6-rl\@w768 {
     padding-left: 1.8rem;
     padding-right: 1.8rem; }
-  .ss-box-margin-7-rl\@md {
+  .ss-box-margin-7-rl\@w768 {
     margin-left: 2.1rem;
     margin-right: 2.1rem; }
-  .ss-box-padding-7-rl\@md {
+  .ss-box-padding-7-rl\@w768 {
     padding-left: 2.1rem;
     padding-right: 2.1rem; }
-  .ss-box-margin-8-rl\@md {
+  .ss-box-margin-8-rl\@w768 {
     margin-left: 2.4rem;
     margin-right: 2.4rem; }
-  .ss-box-padding-8-rl\@md {
+  .ss-box-padding-8-rl\@w768 {
     padding-left: 2.4rem;
     padding-right: 2.4rem; }
-  .ss-box-margin-9-rl\@md {
+  .ss-box-margin-9-rl\@w768 {
     margin-left: 2.7rem;
     margin-right: 2.7rem; }
-  .ss-box-padding-9-rl\@md {
+  .ss-box-padding-9-rl\@w768 {
     padding-left: 2.7rem;
     padding-right: 2.7rem; }
-  .ss-box-margin-10-rl\@md {
+  .ss-box-margin-10-rl\@w768 {
     margin-left: 3rem;
     margin-right: 3rem; }
-  .ss-box-padding-10-rl\@md {
+  .ss-box-padding-10-rl\@w768 {
     padding-left: 3rem;
     padding-right: 3rem; }
-  .ss-box-margin-trbl\@md {
+  .ss-box-margin-trbl\@w768 {
     margin: 1.2rem; }
-  .ss-box-padding-trbl\@md {
+  .ss-box-padding-trbl\@w768 {
     padding: 1.2rem; }
-  .ss-box-margin-1-trbl\@md {
+  .ss-box-margin-1-trbl\@w768 {
     margin: 0.3rem; }
-  .ss-box-padding-1-trbl\@md {
+  .ss-box-padding-1-trbl\@w768 {
     padding: 0.3rem; }
-  .ss-box-margin-2-trbl\@md {
+  .ss-box-margin-2-trbl\@w768 {
     margin: 0.6rem; }
-  .ss-box-padding-2-trbl\@md {
+  .ss-box-padding-2-trbl\@w768 {
     padding: 0.6rem; }
-  .ss-box-margin-3-trbl\@md {
+  .ss-box-margin-3-trbl\@w768 {
     margin: 0.9rem; }
-  .ss-box-padding-3-trbl\@md {
+  .ss-box-padding-3-trbl\@w768 {
     padding: 0.9rem; }
-  .ss-box-margin-4-trbl\@md {
+  .ss-box-margin-4-trbl\@w768 {
     margin: 1.2rem; }
-  .ss-box-padding-4-trbl\@md {
+  .ss-box-padding-4-trbl\@w768 {
     padding: 1.2rem; }
-  .ss-box-margin-5-trbl\@md {
+  .ss-box-margin-5-trbl\@w768 {
     margin: 1.5rem; }
-  .ss-box-padding-5-trbl\@md {
+  .ss-box-padding-5-trbl\@w768 {
     padding: 1.5rem; }
-  .ss-box-margin-6-trbl\@md {
+  .ss-box-margin-6-trbl\@w768 {
     margin: 1.8rem; }
-  .ss-box-padding-6-trbl\@md {
+  .ss-box-padding-6-trbl\@w768 {
     padding: 1.8rem; }
-  .ss-box-margin-7-trbl\@md {
+  .ss-box-margin-7-trbl\@w768 {
     margin: 2.1rem; }
-  .ss-box-padding-7-trbl\@md {
+  .ss-box-padding-7-trbl\@w768 {
     padding: 2.1rem; }
-  .ss-box-margin-8-trbl\@md {
+  .ss-box-margin-8-trbl\@w768 {
     margin: 2.4rem; }
-  .ss-box-padding-8-trbl\@md {
+  .ss-box-padding-8-trbl\@w768 {
     padding: 2.4rem; }
-  .ss-box-margin-9-trbl\@md {
+  .ss-box-margin-9-trbl\@w768 {
     margin: 2.7rem; }
-  .ss-box-padding-9-trbl\@md {
+  .ss-box-padding-9-trbl\@w768 {
     padding: 2.7rem; }
-  .ss-box-margin-10-trbl\@md {
+  .ss-box-margin-10-trbl\@w768 {
     margin: 3rem; }
-  .ss-box-padding-10-trbl\@md {
+  .ss-box-padding-10-trbl\@w768 {
     padding: 3rem; } }
 
 @media only screen and (min-width: 992px) {
-  .ss-box-margin\@lg {
+  .ss-box-margin\@w992 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding\@lg {
+  .ss-box-padding\@w992 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-auto\@lg {
+  .ss-box-margin-auto\@w992 {
     margin: 0 auto; }
-  .ss-box-margin-t\@lg {
+  .ss-box-margin-t\@w992 {
     margin-top: 1.2rem; }
-  .ss-box-padding-t\@lg {
+  .ss-box-padding-t\@w992 {
     padding-top: 1.2rem; }
-  .ss-box-margin-1-t\@lg {
+  .ss-box-margin-1-t\@w992 {
     margin-top: 0.3rem; }
-  .ss-box-padding-1-t\@lg {
+  .ss-box-padding-1-t\@w992 {
     padding-top: 0.3rem; }
-  .ss-box-margin-2-t\@lg {
+  .ss-box-margin-2-t\@w992 {
     margin-top: 0.6rem; }
-  .ss-box-padding-2-t\@lg {
+  .ss-box-padding-2-t\@w992 {
     padding-top: 0.6rem; }
-  .ss-box-margin-3-t\@lg {
+  .ss-box-margin-3-t\@w992 {
     margin-top: 0.9rem; }
-  .ss-box-padding-3-t\@lg {
+  .ss-box-padding-3-t\@w992 {
     padding-top: 0.9rem; }
-  .ss-box-margin-4-t\@lg {
+  .ss-box-margin-4-t\@w992 {
     margin-top: 1.2rem; }
-  .ss-box-padding-4-t\@lg {
+  .ss-box-padding-4-t\@w992 {
     padding-top: 1.2rem; }
-  .ss-box-margin-5-t\@lg {
+  .ss-box-margin-5-t\@w992 {
     margin-top: 1.5rem; }
-  .ss-box-padding-5-t\@lg {
+  .ss-box-padding-5-t\@w992 {
     padding-top: 1.5rem; }
-  .ss-box-margin-6-t\@lg {
+  .ss-box-margin-6-t\@w992 {
     margin-top: 1.8rem; }
-  .ss-box-padding-6-t\@lg {
+  .ss-box-padding-6-t\@w992 {
     padding-top: 1.8rem; }
-  .ss-box-margin-7-t\@lg {
+  .ss-box-margin-7-t\@w992 {
     margin-top: 2.1rem; }
-  .ss-box-padding-7-t\@lg {
+  .ss-box-padding-7-t\@w992 {
     padding-top: 2.1rem; }
-  .ss-box-margin-8-t\@lg {
+  .ss-box-margin-8-t\@w992 {
     margin-top: 2.4rem; }
-  .ss-box-padding-8-t\@lg {
+  .ss-box-padding-8-t\@w992 {
     padding-top: 2.4rem; }
-  .ss-box-margin-9-t\@lg {
+  .ss-box-margin-9-t\@w992 {
     margin-top: 2.7rem; }
-  .ss-box-padding-9-t\@lg {
+  .ss-box-padding-9-t\@w992 {
     padding-top: 2.7rem; }
-  .ss-box-margin-10-t\@lg {
+  .ss-box-margin-10-t\@w992 {
     margin-top: 3rem; }
-  .ss-box-padding-10-t\@lg {
+  .ss-box-padding-10-t\@w992 {
     padding-top: 3rem; }
-  .ss-box-margin-r\@lg {
+  .ss-box-margin-r\@w992 {
     margin-right: 1.2rem; }
-  .ss-box-padding-r\@lg {
+  .ss-box-padding-r\@w992 {
     padding-right: 1.2rem; }
-  .ss-box-margin-1-r\@lg {
+  .ss-box-margin-1-r\@w992 {
     margin-right: 0.3rem; }
-  .ss-box-padding-1-r\@lg {
+  .ss-box-padding-1-r\@w992 {
     padding-right: 0.3rem; }
-  .ss-box-margin-2-r\@lg {
+  .ss-box-margin-2-r\@w992 {
     margin-right: 0.6rem; }
-  .ss-box-padding-2-r\@lg {
+  .ss-box-padding-2-r\@w992 {
     padding-right: 0.6rem; }
-  .ss-box-margin-3-r\@lg {
+  .ss-box-margin-3-r\@w992 {
     margin-right: 0.9rem; }
-  .ss-box-padding-3-r\@lg {
+  .ss-box-padding-3-r\@w992 {
     padding-right: 0.9rem; }
-  .ss-box-margin-4-r\@lg {
+  .ss-box-margin-4-r\@w992 {
     margin-right: 1.2rem; }
-  .ss-box-padding-4-r\@lg {
+  .ss-box-padding-4-r\@w992 {
     padding-right: 1.2rem; }
-  .ss-box-margin-5-r\@lg {
+  .ss-box-margin-5-r\@w992 {
     margin-right: 1.5rem; }
-  .ss-box-padding-5-r\@lg {
+  .ss-box-padding-5-r\@w992 {
     padding-right: 1.5rem; }
-  .ss-box-margin-6-r\@lg {
+  .ss-box-margin-6-r\@w992 {
     margin-right: 1.8rem; }
-  .ss-box-padding-6-r\@lg {
+  .ss-box-padding-6-r\@w992 {
     padding-right: 1.8rem; }
-  .ss-box-margin-7-r\@lg {
+  .ss-box-margin-7-r\@w992 {
     margin-right: 2.1rem; }
-  .ss-box-padding-7-r\@lg {
+  .ss-box-padding-7-r\@w992 {
     padding-right: 2.1rem; }
-  .ss-box-margin-8-r\@lg {
+  .ss-box-margin-8-r\@w992 {
     margin-right: 2.4rem; }
-  .ss-box-padding-8-r\@lg {
+  .ss-box-padding-8-r\@w992 {
     padding-right: 2.4rem; }
-  .ss-box-margin-9-r\@lg {
+  .ss-box-margin-9-r\@w992 {
     margin-right: 2.7rem; }
-  .ss-box-padding-9-r\@lg {
+  .ss-box-padding-9-r\@w992 {
     padding-right: 2.7rem; }
-  .ss-box-margin-10-r\@lg {
+  .ss-box-margin-10-r\@w992 {
     margin-right: 3rem; }
-  .ss-box-padding-10-r\@lg {
+  .ss-box-padding-10-r\@w992 {
     padding-right: 3rem; }
-  .ss-box-margin-b\@lg {
+  .ss-box-margin-b\@w992 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-b\@lg {
+  .ss-box-padding-b\@w992 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-b\@lg {
+  .ss-box-margin-1-b\@w992 {
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-b\@lg {
+  .ss-box-padding-1-b\@w992 {
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-b\@lg {
+  .ss-box-margin-2-b\@w992 {
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-b\@lg {
+  .ss-box-padding-2-b\@w992 {
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-b\@lg {
+  .ss-box-margin-3-b\@w992 {
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-b\@lg {
+  .ss-box-padding-3-b\@w992 {
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-b\@lg {
+  .ss-box-margin-4-b\@w992 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-b\@lg {
+  .ss-box-padding-4-b\@w992 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-b\@lg {
+  .ss-box-margin-5-b\@w992 {
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-b\@lg {
+  .ss-box-padding-5-b\@w992 {
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-b\@lg {
+  .ss-box-margin-6-b\@w992 {
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-b\@lg {
+  .ss-box-padding-6-b\@w992 {
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-b\@lg {
+  .ss-box-margin-7-b\@w992 {
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-b\@lg {
+  .ss-box-padding-7-b\@w992 {
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-b\@lg {
+  .ss-box-margin-8-b\@w992 {
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-b\@lg {
+  .ss-box-padding-8-b\@w992 {
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-b\@lg {
+  .ss-box-margin-9-b\@w992 {
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-b\@lg {
+  .ss-box-padding-9-b\@w992 {
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-b\@lg {
+  .ss-box-margin-10-b\@w992 {
     margin-bottom: 3rem; }
-  .ss-box-padding-10-b\@lg {
+  .ss-box-padding-10-b\@w992 {
     padding-bottom: 3rem; }
-  .ss-box-margin-l\@lg {
+  .ss-box-margin-l\@w992 {
     margin-left: 1.2rem; }
-  .ss-box-padding-l\@lg {
+  .ss-box-padding-l\@w992 {
     padding-left: 1.2rem; }
-  .ss-box-margin-1-l\@lg {
+  .ss-box-margin-1-l\@w992 {
     margin-left: 0.3rem; }
-  .ss-box-padding-1-l\@lg {
+  .ss-box-padding-1-l\@w992 {
     padding-left: 0.3rem; }
-  .ss-box-margin-2-l\@lg {
+  .ss-box-margin-2-l\@w992 {
     margin-left: 0.6rem; }
-  .ss-box-padding-2-l\@lg {
+  .ss-box-padding-2-l\@w992 {
     padding-left: 0.6rem; }
-  .ss-box-margin-3-l\@lg {
+  .ss-box-margin-3-l\@w992 {
     margin-left: 0.9rem; }
-  .ss-box-padding-3-l\@lg {
+  .ss-box-padding-3-l\@w992 {
     padding-left: 0.9rem; }
-  .ss-box-margin-4-l\@lg {
+  .ss-box-margin-4-l\@w992 {
     margin-left: 1.2rem; }
-  .ss-box-padding-4-l\@lg {
+  .ss-box-padding-4-l\@w992 {
     padding-left: 1.2rem; }
-  .ss-box-margin-5-l\@lg {
+  .ss-box-margin-5-l\@w992 {
     margin-left: 1.5rem; }
-  .ss-box-padding-5-l\@lg {
+  .ss-box-padding-5-l\@w992 {
     padding-left: 1.5rem; }
-  .ss-box-margin-6-l\@lg {
+  .ss-box-margin-6-l\@w992 {
     margin-left: 1.8rem; }
-  .ss-box-padding-6-l\@lg {
+  .ss-box-padding-6-l\@w992 {
     padding-left: 1.8rem; }
-  .ss-box-margin-7-l\@lg {
+  .ss-box-margin-7-l\@w992 {
     margin-left: 2.1rem; }
-  .ss-box-padding-7-l\@lg {
+  .ss-box-padding-7-l\@w992 {
     padding-left: 2.1rem; }
-  .ss-box-margin-8-l\@lg {
+  .ss-box-margin-8-l\@w992 {
     margin-left: 2.4rem; }
-  .ss-box-padding-8-l\@lg {
+  .ss-box-padding-8-l\@w992 {
     padding-left: 2.4rem; }
-  .ss-box-margin-9-l\@lg {
+  .ss-box-margin-9-l\@w992 {
     margin-left: 2.7rem; }
-  .ss-box-padding-9-l\@lg {
+  .ss-box-padding-9-l\@w992 {
     padding-left: 2.7rem; }
-  .ss-box-margin-10-l\@lg {
+  .ss-box-margin-10-l\@w992 {
     margin-left: 3rem; }
-  .ss-box-padding-10-l\@lg {
+  .ss-box-padding-10-l\@w992 {
     padding-left: 3rem; }
-  .ss-box-margin-tb\@lg {
+  .ss-box-margin-tb\@w992 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-tb\@lg {
+  .ss-box-padding-tb\@w992 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-tb\@lg {
+  .ss-box-margin-1-tb\@w992 {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-tb\@lg {
+  .ss-box-padding-1-tb\@w992 {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-tb\@lg {
+  .ss-box-margin-2-tb\@w992 {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-tb\@lg {
+  .ss-box-padding-2-tb\@w992 {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-tb\@lg {
+  .ss-box-margin-3-tb\@w992 {
     margin-top: 0.9rem;
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-tb\@lg {
+  .ss-box-padding-3-tb\@w992 {
     padding-top: 0.9rem;
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-tb\@lg {
+  .ss-box-margin-4-tb\@w992 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-tb\@lg {
+  .ss-box-padding-4-tb\@w992 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-tb\@lg {
+  .ss-box-margin-5-tb\@w992 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-tb\@lg {
+  .ss-box-padding-5-tb\@w992 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-tb\@lg {
+  .ss-box-margin-6-tb\@w992 {
     margin-top: 1.8rem;
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-tb\@lg {
+  .ss-box-padding-6-tb\@w992 {
     padding-top: 1.8rem;
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-tb\@lg {
+  .ss-box-margin-7-tb\@w992 {
     margin-top: 2.1rem;
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-tb\@lg {
+  .ss-box-padding-7-tb\@w992 {
     padding-top: 2.1rem;
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-tb\@lg {
+  .ss-box-margin-8-tb\@w992 {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-tb\@lg {
+  .ss-box-padding-8-tb\@w992 {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-tb\@lg {
+  .ss-box-margin-9-tb\@w992 {
     margin-top: 2.7rem;
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-tb\@lg {
+  .ss-box-padding-9-tb\@w992 {
     padding-top: 2.7rem;
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-tb\@lg {
+  .ss-box-margin-10-tb\@w992 {
     margin-top: 3rem;
     margin-bottom: 3rem; }
-  .ss-box-padding-10-tb\@lg {
+  .ss-box-padding-10-tb\@w992 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
-  .ss-box-margin-rl\@lg {
+  .ss-box-margin-rl\@w992 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-rl\@lg {
+  .ss-box-padding-rl\@w992 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-1-rl\@lg {
+  .ss-box-margin-1-rl\@w992 {
     margin-left: 0.3rem;
     margin-right: 0.3rem; }
-  .ss-box-padding-1-rl\@lg {
+  .ss-box-padding-1-rl\@w992 {
     padding-left: 0.3rem;
     padding-right: 0.3rem; }
-  .ss-box-margin-2-rl\@lg {
+  .ss-box-margin-2-rl\@w992 {
     margin-left: 0.6rem;
     margin-right: 0.6rem; }
-  .ss-box-padding-2-rl\@lg {
+  .ss-box-padding-2-rl\@w992 {
     padding-left: 0.6rem;
     padding-right: 0.6rem; }
-  .ss-box-margin-3-rl\@lg {
+  .ss-box-margin-3-rl\@w992 {
     margin-left: 0.9rem;
     margin-right: 0.9rem; }
-  .ss-box-padding-3-rl\@lg {
+  .ss-box-padding-3-rl\@w992 {
     padding-left: 0.9rem;
     padding-right: 0.9rem; }
-  .ss-box-margin-4-rl\@lg {
+  .ss-box-margin-4-rl\@w992 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-4-rl\@lg {
+  .ss-box-padding-4-rl\@w992 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-5-rl\@lg {
+  .ss-box-margin-5-rl\@w992 {
     margin-left: 1.5rem;
     margin-right: 1.5rem; }
-  .ss-box-padding-5-rl\@lg {
+  .ss-box-padding-5-rl\@w992 {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
-  .ss-box-margin-6-rl\@lg {
+  .ss-box-margin-6-rl\@w992 {
     margin-left: 1.8rem;
     margin-right: 1.8rem; }
-  .ss-box-padding-6-rl\@lg {
+  .ss-box-padding-6-rl\@w992 {
     padding-left: 1.8rem;
     padding-right: 1.8rem; }
-  .ss-box-margin-7-rl\@lg {
+  .ss-box-margin-7-rl\@w992 {
     margin-left: 2.1rem;
     margin-right: 2.1rem; }
-  .ss-box-padding-7-rl\@lg {
+  .ss-box-padding-7-rl\@w992 {
     padding-left: 2.1rem;
     padding-right: 2.1rem; }
-  .ss-box-margin-8-rl\@lg {
+  .ss-box-margin-8-rl\@w992 {
     margin-left: 2.4rem;
     margin-right: 2.4rem; }
-  .ss-box-padding-8-rl\@lg {
+  .ss-box-padding-8-rl\@w992 {
     padding-left: 2.4rem;
     padding-right: 2.4rem; }
-  .ss-box-margin-9-rl\@lg {
+  .ss-box-margin-9-rl\@w992 {
     margin-left: 2.7rem;
     margin-right: 2.7rem; }
-  .ss-box-padding-9-rl\@lg {
+  .ss-box-padding-9-rl\@w992 {
     padding-left: 2.7rem;
     padding-right: 2.7rem; }
-  .ss-box-margin-10-rl\@lg {
+  .ss-box-margin-10-rl\@w992 {
     margin-left: 3rem;
     margin-right: 3rem; }
-  .ss-box-padding-10-rl\@lg {
+  .ss-box-padding-10-rl\@w992 {
     padding-left: 3rem;
     padding-right: 3rem; }
-  .ss-box-margin-trbl\@lg {
+  .ss-box-margin-trbl\@w992 {
     margin: 1.2rem; }
-  .ss-box-padding-trbl\@lg {
+  .ss-box-padding-trbl\@w992 {
     padding: 1.2rem; }
-  .ss-box-margin-1-trbl\@lg {
+  .ss-box-margin-1-trbl\@w992 {
     margin: 0.3rem; }
-  .ss-box-padding-1-trbl\@lg {
+  .ss-box-padding-1-trbl\@w992 {
     padding: 0.3rem; }
-  .ss-box-margin-2-trbl\@lg {
+  .ss-box-margin-2-trbl\@w992 {
     margin: 0.6rem; }
-  .ss-box-padding-2-trbl\@lg {
+  .ss-box-padding-2-trbl\@w992 {
     padding: 0.6rem; }
-  .ss-box-margin-3-trbl\@lg {
+  .ss-box-margin-3-trbl\@w992 {
     margin: 0.9rem; }
-  .ss-box-padding-3-trbl\@lg {
+  .ss-box-padding-3-trbl\@w992 {
     padding: 0.9rem; }
-  .ss-box-margin-4-trbl\@lg {
+  .ss-box-margin-4-trbl\@w992 {
     margin: 1.2rem; }
-  .ss-box-padding-4-trbl\@lg {
+  .ss-box-padding-4-trbl\@w992 {
     padding: 1.2rem; }
-  .ss-box-margin-5-trbl\@lg {
+  .ss-box-margin-5-trbl\@w992 {
     margin: 1.5rem; }
-  .ss-box-padding-5-trbl\@lg {
+  .ss-box-padding-5-trbl\@w992 {
     padding: 1.5rem; }
-  .ss-box-margin-6-trbl\@lg {
+  .ss-box-margin-6-trbl\@w992 {
     margin: 1.8rem; }
-  .ss-box-padding-6-trbl\@lg {
+  .ss-box-padding-6-trbl\@w992 {
     padding: 1.8rem; }
-  .ss-box-margin-7-trbl\@lg {
+  .ss-box-margin-7-trbl\@w992 {
     margin: 2.1rem; }
-  .ss-box-padding-7-trbl\@lg {
+  .ss-box-padding-7-trbl\@w992 {
     padding: 2.1rem; }
-  .ss-box-margin-8-trbl\@lg {
+  .ss-box-margin-8-trbl\@w992 {
     margin: 2.4rem; }
-  .ss-box-padding-8-trbl\@lg {
+  .ss-box-padding-8-trbl\@w992 {
     padding: 2.4rem; }
-  .ss-box-margin-9-trbl\@lg {
+  .ss-box-margin-9-trbl\@w992 {
     margin: 2.7rem; }
-  .ss-box-padding-9-trbl\@lg {
+  .ss-box-padding-9-trbl\@w992 {
     padding: 2.7rem; }
-  .ss-box-margin-10-trbl\@lg {
+  .ss-box-margin-10-trbl\@w992 {
     margin: 3rem; }
-  .ss-box-padding-10-trbl\@lg {
+  .ss-box-padding-10-trbl\@w992 {
     padding: 3rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .ss-box-margin\@xl {
+  .ss-box-margin\@w1200 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding\@xl {
+  .ss-box-padding\@w1200 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-auto\@xl {
+  .ss-box-margin-auto\@w1200 {
     margin: 0 auto; }
-  .ss-box-margin-t\@xl {
+  .ss-box-margin-t\@w1200 {
     margin-top: 1.2rem; }
-  .ss-box-padding-t\@xl {
+  .ss-box-padding-t\@w1200 {
     padding-top: 1.2rem; }
-  .ss-box-margin-1-t\@xl {
+  .ss-box-margin-1-t\@w1200 {
     margin-top: 0.3rem; }
-  .ss-box-padding-1-t\@xl {
+  .ss-box-padding-1-t\@w1200 {
     padding-top: 0.3rem; }
-  .ss-box-margin-2-t\@xl {
+  .ss-box-margin-2-t\@w1200 {
     margin-top: 0.6rem; }
-  .ss-box-padding-2-t\@xl {
+  .ss-box-padding-2-t\@w1200 {
     padding-top: 0.6rem; }
-  .ss-box-margin-3-t\@xl {
+  .ss-box-margin-3-t\@w1200 {
     margin-top: 0.9rem; }
-  .ss-box-padding-3-t\@xl {
+  .ss-box-padding-3-t\@w1200 {
     padding-top: 0.9rem; }
-  .ss-box-margin-4-t\@xl {
+  .ss-box-margin-4-t\@w1200 {
     margin-top: 1.2rem; }
-  .ss-box-padding-4-t\@xl {
+  .ss-box-padding-4-t\@w1200 {
     padding-top: 1.2rem; }
-  .ss-box-margin-5-t\@xl {
+  .ss-box-margin-5-t\@w1200 {
     margin-top: 1.5rem; }
-  .ss-box-padding-5-t\@xl {
+  .ss-box-padding-5-t\@w1200 {
     padding-top: 1.5rem; }
-  .ss-box-margin-6-t\@xl {
+  .ss-box-margin-6-t\@w1200 {
     margin-top: 1.8rem; }
-  .ss-box-padding-6-t\@xl {
+  .ss-box-padding-6-t\@w1200 {
     padding-top: 1.8rem; }
-  .ss-box-margin-7-t\@xl {
+  .ss-box-margin-7-t\@w1200 {
     margin-top: 2.1rem; }
-  .ss-box-padding-7-t\@xl {
+  .ss-box-padding-7-t\@w1200 {
     padding-top: 2.1rem; }
-  .ss-box-margin-8-t\@xl {
+  .ss-box-margin-8-t\@w1200 {
     margin-top: 2.4rem; }
-  .ss-box-padding-8-t\@xl {
+  .ss-box-padding-8-t\@w1200 {
     padding-top: 2.4rem; }
-  .ss-box-margin-9-t\@xl {
+  .ss-box-margin-9-t\@w1200 {
     margin-top: 2.7rem; }
-  .ss-box-padding-9-t\@xl {
+  .ss-box-padding-9-t\@w1200 {
     padding-top: 2.7rem; }
-  .ss-box-margin-10-t\@xl {
+  .ss-box-margin-10-t\@w1200 {
     margin-top: 3rem; }
-  .ss-box-padding-10-t\@xl {
+  .ss-box-padding-10-t\@w1200 {
     padding-top: 3rem; }
-  .ss-box-margin-r\@xl {
+  .ss-box-margin-r\@w1200 {
     margin-right: 1.2rem; }
-  .ss-box-padding-r\@xl {
+  .ss-box-padding-r\@w1200 {
     padding-right: 1.2rem; }
-  .ss-box-margin-1-r\@xl {
+  .ss-box-margin-1-r\@w1200 {
     margin-right: 0.3rem; }
-  .ss-box-padding-1-r\@xl {
+  .ss-box-padding-1-r\@w1200 {
     padding-right: 0.3rem; }
-  .ss-box-margin-2-r\@xl {
+  .ss-box-margin-2-r\@w1200 {
     margin-right: 0.6rem; }
-  .ss-box-padding-2-r\@xl {
+  .ss-box-padding-2-r\@w1200 {
     padding-right: 0.6rem; }
-  .ss-box-margin-3-r\@xl {
+  .ss-box-margin-3-r\@w1200 {
     margin-right: 0.9rem; }
-  .ss-box-padding-3-r\@xl {
+  .ss-box-padding-3-r\@w1200 {
     padding-right: 0.9rem; }
-  .ss-box-margin-4-r\@xl {
+  .ss-box-margin-4-r\@w1200 {
     margin-right: 1.2rem; }
-  .ss-box-padding-4-r\@xl {
+  .ss-box-padding-4-r\@w1200 {
     padding-right: 1.2rem; }
-  .ss-box-margin-5-r\@xl {
+  .ss-box-margin-5-r\@w1200 {
     margin-right: 1.5rem; }
-  .ss-box-padding-5-r\@xl {
+  .ss-box-padding-5-r\@w1200 {
     padding-right: 1.5rem; }
-  .ss-box-margin-6-r\@xl {
+  .ss-box-margin-6-r\@w1200 {
     margin-right: 1.8rem; }
-  .ss-box-padding-6-r\@xl {
+  .ss-box-padding-6-r\@w1200 {
     padding-right: 1.8rem; }
-  .ss-box-margin-7-r\@xl {
+  .ss-box-margin-7-r\@w1200 {
     margin-right: 2.1rem; }
-  .ss-box-padding-7-r\@xl {
+  .ss-box-padding-7-r\@w1200 {
     padding-right: 2.1rem; }
-  .ss-box-margin-8-r\@xl {
+  .ss-box-margin-8-r\@w1200 {
     margin-right: 2.4rem; }
-  .ss-box-padding-8-r\@xl {
+  .ss-box-padding-8-r\@w1200 {
     padding-right: 2.4rem; }
-  .ss-box-margin-9-r\@xl {
+  .ss-box-margin-9-r\@w1200 {
     margin-right: 2.7rem; }
-  .ss-box-padding-9-r\@xl {
+  .ss-box-padding-9-r\@w1200 {
     padding-right: 2.7rem; }
-  .ss-box-margin-10-r\@xl {
+  .ss-box-margin-10-r\@w1200 {
     margin-right: 3rem; }
-  .ss-box-padding-10-r\@xl {
+  .ss-box-padding-10-r\@w1200 {
     padding-right: 3rem; }
-  .ss-box-margin-b\@xl {
+  .ss-box-margin-b\@w1200 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-b\@xl {
+  .ss-box-padding-b\@w1200 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-b\@xl {
+  .ss-box-margin-1-b\@w1200 {
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-b\@xl {
+  .ss-box-padding-1-b\@w1200 {
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-b\@xl {
+  .ss-box-margin-2-b\@w1200 {
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-b\@xl {
+  .ss-box-padding-2-b\@w1200 {
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-b\@xl {
+  .ss-box-margin-3-b\@w1200 {
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-b\@xl {
+  .ss-box-padding-3-b\@w1200 {
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-b\@xl {
+  .ss-box-margin-4-b\@w1200 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-b\@xl {
+  .ss-box-padding-4-b\@w1200 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-b\@xl {
+  .ss-box-margin-5-b\@w1200 {
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-b\@xl {
+  .ss-box-padding-5-b\@w1200 {
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-b\@xl {
+  .ss-box-margin-6-b\@w1200 {
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-b\@xl {
+  .ss-box-padding-6-b\@w1200 {
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-b\@xl {
+  .ss-box-margin-7-b\@w1200 {
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-b\@xl {
+  .ss-box-padding-7-b\@w1200 {
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-b\@xl {
+  .ss-box-margin-8-b\@w1200 {
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-b\@xl {
+  .ss-box-padding-8-b\@w1200 {
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-b\@xl {
+  .ss-box-margin-9-b\@w1200 {
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-b\@xl {
+  .ss-box-padding-9-b\@w1200 {
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-b\@xl {
+  .ss-box-margin-10-b\@w1200 {
     margin-bottom: 3rem; }
-  .ss-box-padding-10-b\@xl {
+  .ss-box-padding-10-b\@w1200 {
     padding-bottom: 3rem; }
-  .ss-box-margin-l\@xl {
+  .ss-box-margin-l\@w1200 {
     margin-left: 1.2rem; }
-  .ss-box-padding-l\@xl {
+  .ss-box-padding-l\@w1200 {
     padding-left: 1.2rem; }
-  .ss-box-margin-1-l\@xl {
+  .ss-box-margin-1-l\@w1200 {
     margin-left: 0.3rem; }
-  .ss-box-padding-1-l\@xl {
+  .ss-box-padding-1-l\@w1200 {
     padding-left: 0.3rem; }
-  .ss-box-margin-2-l\@xl {
+  .ss-box-margin-2-l\@w1200 {
     margin-left: 0.6rem; }
-  .ss-box-padding-2-l\@xl {
+  .ss-box-padding-2-l\@w1200 {
     padding-left: 0.6rem; }
-  .ss-box-margin-3-l\@xl {
+  .ss-box-margin-3-l\@w1200 {
     margin-left: 0.9rem; }
-  .ss-box-padding-3-l\@xl {
+  .ss-box-padding-3-l\@w1200 {
     padding-left: 0.9rem; }
-  .ss-box-margin-4-l\@xl {
+  .ss-box-margin-4-l\@w1200 {
     margin-left: 1.2rem; }
-  .ss-box-padding-4-l\@xl {
+  .ss-box-padding-4-l\@w1200 {
     padding-left: 1.2rem; }
-  .ss-box-margin-5-l\@xl {
+  .ss-box-margin-5-l\@w1200 {
     margin-left: 1.5rem; }
-  .ss-box-padding-5-l\@xl {
+  .ss-box-padding-5-l\@w1200 {
     padding-left: 1.5rem; }
-  .ss-box-margin-6-l\@xl {
+  .ss-box-margin-6-l\@w1200 {
     margin-left: 1.8rem; }
-  .ss-box-padding-6-l\@xl {
+  .ss-box-padding-6-l\@w1200 {
     padding-left: 1.8rem; }
-  .ss-box-margin-7-l\@xl {
+  .ss-box-margin-7-l\@w1200 {
     margin-left: 2.1rem; }
-  .ss-box-padding-7-l\@xl {
+  .ss-box-padding-7-l\@w1200 {
     padding-left: 2.1rem; }
-  .ss-box-margin-8-l\@xl {
+  .ss-box-margin-8-l\@w1200 {
     margin-left: 2.4rem; }
-  .ss-box-padding-8-l\@xl {
+  .ss-box-padding-8-l\@w1200 {
     padding-left: 2.4rem; }
-  .ss-box-margin-9-l\@xl {
+  .ss-box-margin-9-l\@w1200 {
     margin-left: 2.7rem; }
-  .ss-box-padding-9-l\@xl {
+  .ss-box-padding-9-l\@w1200 {
     padding-left: 2.7rem; }
-  .ss-box-margin-10-l\@xl {
+  .ss-box-margin-10-l\@w1200 {
     margin-left: 3rem; }
-  .ss-box-padding-10-l\@xl {
+  .ss-box-padding-10-l\@w1200 {
     padding-left: 3rem; }
-  .ss-box-margin-tb\@xl {
+  .ss-box-margin-tb\@w1200 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-tb\@xl {
+  .ss-box-padding-tb\@w1200 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-tb\@xl {
+  .ss-box-margin-1-tb\@w1200 {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-tb\@xl {
+  .ss-box-padding-1-tb\@w1200 {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-tb\@xl {
+  .ss-box-margin-2-tb\@w1200 {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-tb\@xl {
+  .ss-box-padding-2-tb\@w1200 {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-tb\@xl {
+  .ss-box-margin-3-tb\@w1200 {
     margin-top: 0.9rem;
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-tb\@xl {
+  .ss-box-padding-3-tb\@w1200 {
     padding-top: 0.9rem;
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-tb\@xl {
+  .ss-box-margin-4-tb\@w1200 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-tb\@xl {
+  .ss-box-padding-4-tb\@w1200 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-tb\@xl {
+  .ss-box-margin-5-tb\@w1200 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-tb\@xl {
+  .ss-box-padding-5-tb\@w1200 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-tb\@xl {
+  .ss-box-margin-6-tb\@w1200 {
     margin-top: 1.8rem;
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-tb\@xl {
+  .ss-box-padding-6-tb\@w1200 {
     padding-top: 1.8rem;
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-tb\@xl {
+  .ss-box-margin-7-tb\@w1200 {
     margin-top: 2.1rem;
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-tb\@xl {
+  .ss-box-padding-7-tb\@w1200 {
     padding-top: 2.1rem;
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-tb\@xl {
+  .ss-box-margin-8-tb\@w1200 {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-tb\@xl {
+  .ss-box-padding-8-tb\@w1200 {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-tb\@xl {
+  .ss-box-margin-9-tb\@w1200 {
     margin-top: 2.7rem;
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-tb\@xl {
+  .ss-box-padding-9-tb\@w1200 {
     padding-top: 2.7rem;
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-tb\@xl {
+  .ss-box-margin-10-tb\@w1200 {
     margin-top: 3rem;
     margin-bottom: 3rem; }
-  .ss-box-padding-10-tb\@xl {
+  .ss-box-padding-10-tb\@w1200 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
-  .ss-box-margin-rl\@xl {
+  .ss-box-margin-rl\@w1200 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-rl\@xl {
+  .ss-box-padding-rl\@w1200 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-1-rl\@xl {
+  .ss-box-margin-1-rl\@w1200 {
     margin-left: 0.3rem;
     margin-right: 0.3rem; }
-  .ss-box-padding-1-rl\@xl {
+  .ss-box-padding-1-rl\@w1200 {
     padding-left: 0.3rem;
     padding-right: 0.3rem; }
-  .ss-box-margin-2-rl\@xl {
+  .ss-box-margin-2-rl\@w1200 {
     margin-left: 0.6rem;
     margin-right: 0.6rem; }
-  .ss-box-padding-2-rl\@xl {
+  .ss-box-padding-2-rl\@w1200 {
     padding-left: 0.6rem;
     padding-right: 0.6rem; }
-  .ss-box-margin-3-rl\@xl {
+  .ss-box-margin-3-rl\@w1200 {
     margin-left: 0.9rem;
     margin-right: 0.9rem; }
-  .ss-box-padding-3-rl\@xl {
+  .ss-box-padding-3-rl\@w1200 {
     padding-left: 0.9rem;
     padding-right: 0.9rem; }
-  .ss-box-margin-4-rl\@xl {
+  .ss-box-margin-4-rl\@w1200 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-4-rl\@xl {
+  .ss-box-padding-4-rl\@w1200 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-5-rl\@xl {
+  .ss-box-margin-5-rl\@w1200 {
     margin-left: 1.5rem;
     margin-right: 1.5rem; }
-  .ss-box-padding-5-rl\@xl {
+  .ss-box-padding-5-rl\@w1200 {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
-  .ss-box-margin-6-rl\@xl {
+  .ss-box-margin-6-rl\@w1200 {
     margin-left: 1.8rem;
     margin-right: 1.8rem; }
-  .ss-box-padding-6-rl\@xl {
+  .ss-box-padding-6-rl\@w1200 {
     padding-left: 1.8rem;
     padding-right: 1.8rem; }
-  .ss-box-margin-7-rl\@xl {
+  .ss-box-margin-7-rl\@w1200 {
     margin-left: 2.1rem;
     margin-right: 2.1rem; }
-  .ss-box-padding-7-rl\@xl {
+  .ss-box-padding-7-rl\@w1200 {
     padding-left: 2.1rem;
     padding-right: 2.1rem; }
-  .ss-box-margin-8-rl\@xl {
+  .ss-box-margin-8-rl\@w1200 {
     margin-left: 2.4rem;
     margin-right: 2.4rem; }
-  .ss-box-padding-8-rl\@xl {
+  .ss-box-padding-8-rl\@w1200 {
     padding-left: 2.4rem;
     padding-right: 2.4rem; }
-  .ss-box-margin-9-rl\@xl {
+  .ss-box-margin-9-rl\@w1200 {
     margin-left: 2.7rem;
     margin-right: 2.7rem; }
-  .ss-box-padding-9-rl\@xl {
+  .ss-box-padding-9-rl\@w1200 {
     padding-left: 2.7rem;
     padding-right: 2.7rem; }
-  .ss-box-margin-10-rl\@xl {
+  .ss-box-margin-10-rl\@w1200 {
     margin-left: 3rem;
     margin-right: 3rem; }
-  .ss-box-padding-10-rl\@xl {
+  .ss-box-padding-10-rl\@w1200 {
     padding-left: 3rem;
     padding-right: 3rem; }
-  .ss-box-margin-trbl\@xl {
+  .ss-box-margin-trbl\@w1200 {
     margin: 1.2rem; }
-  .ss-box-padding-trbl\@xl {
+  .ss-box-padding-trbl\@w1200 {
     padding: 1.2rem; }
-  .ss-box-margin-1-trbl\@xl {
+  .ss-box-margin-1-trbl\@w1200 {
     margin: 0.3rem; }
-  .ss-box-padding-1-trbl\@xl {
+  .ss-box-padding-1-trbl\@w1200 {
     padding: 0.3rem; }
-  .ss-box-margin-2-trbl\@xl {
+  .ss-box-margin-2-trbl\@w1200 {
     margin: 0.6rem; }
-  .ss-box-padding-2-trbl\@xl {
+  .ss-box-padding-2-trbl\@w1200 {
     padding: 0.6rem; }
-  .ss-box-margin-3-trbl\@xl {
+  .ss-box-margin-3-trbl\@w1200 {
     margin: 0.9rem; }
-  .ss-box-padding-3-trbl\@xl {
+  .ss-box-padding-3-trbl\@w1200 {
     padding: 0.9rem; }
-  .ss-box-margin-4-trbl\@xl {
+  .ss-box-margin-4-trbl\@w1200 {
     margin: 1.2rem; }
-  .ss-box-padding-4-trbl\@xl {
+  .ss-box-padding-4-trbl\@w1200 {
     padding: 1.2rem; }
-  .ss-box-margin-5-trbl\@xl {
+  .ss-box-margin-5-trbl\@w1200 {
     margin: 1.5rem; }
-  .ss-box-padding-5-trbl\@xl {
+  .ss-box-padding-5-trbl\@w1200 {
     padding: 1.5rem; }
-  .ss-box-margin-6-trbl\@xl {
+  .ss-box-margin-6-trbl\@w1200 {
     margin: 1.8rem; }
-  .ss-box-padding-6-trbl\@xl {
+  .ss-box-padding-6-trbl\@w1200 {
     padding: 1.8rem; }
-  .ss-box-margin-7-trbl\@xl {
+  .ss-box-margin-7-trbl\@w1200 {
     margin: 2.1rem; }
-  .ss-box-padding-7-trbl\@xl {
+  .ss-box-padding-7-trbl\@w1200 {
     padding: 2.1rem; }
-  .ss-box-margin-8-trbl\@xl {
+  .ss-box-margin-8-trbl\@w1200 {
     margin: 2.4rem; }
-  .ss-box-padding-8-trbl\@xl {
+  .ss-box-padding-8-trbl\@w1200 {
     padding: 2.4rem; }
-  .ss-box-margin-9-trbl\@xl {
+  .ss-box-margin-9-trbl\@w1200 {
     margin: 2.7rem; }
-  .ss-box-padding-9-trbl\@xl {
+  .ss-box-padding-9-trbl\@w1200 {
     padding: 2.7rem; }
-  .ss-box-margin-10-trbl\@xl {
+  .ss-box-margin-10-trbl\@w1200 {
     margin: 3rem; }
-  .ss-box-padding-10-trbl\@xl {
+  .ss-box-padding-10-trbl\@w1200 {
     padding: 3rem; } }
 
 @media only screen and (min-width: 1600px) {
-  .ss-box-margin\@xxl {
+  .ss-box-margin\@w1600 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding\@xxl {
+  .ss-box-padding\@w1600 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-auto\@xxl {
+  .ss-box-margin-auto\@w1600 {
     margin: 0 auto; }
-  .ss-box-margin-t\@xxl {
+  .ss-box-margin-t\@w1600 {
     margin-top: 1.2rem; }
-  .ss-box-padding-t\@xxl {
+  .ss-box-padding-t\@w1600 {
     padding-top: 1.2rem; }
-  .ss-box-margin-1-t\@xxl {
+  .ss-box-margin-1-t\@w1600 {
     margin-top: 0.3rem; }
-  .ss-box-padding-1-t\@xxl {
+  .ss-box-padding-1-t\@w1600 {
     padding-top: 0.3rem; }
-  .ss-box-margin-2-t\@xxl {
+  .ss-box-margin-2-t\@w1600 {
     margin-top: 0.6rem; }
-  .ss-box-padding-2-t\@xxl {
+  .ss-box-padding-2-t\@w1600 {
     padding-top: 0.6rem; }
-  .ss-box-margin-3-t\@xxl {
+  .ss-box-margin-3-t\@w1600 {
     margin-top: 0.9rem; }
-  .ss-box-padding-3-t\@xxl {
+  .ss-box-padding-3-t\@w1600 {
     padding-top: 0.9rem; }
-  .ss-box-margin-4-t\@xxl {
+  .ss-box-margin-4-t\@w1600 {
     margin-top: 1.2rem; }
-  .ss-box-padding-4-t\@xxl {
+  .ss-box-padding-4-t\@w1600 {
     padding-top: 1.2rem; }
-  .ss-box-margin-5-t\@xxl {
+  .ss-box-margin-5-t\@w1600 {
     margin-top: 1.5rem; }
-  .ss-box-padding-5-t\@xxl {
+  .ss-box-padding-5-t\@w1600 {
     padding-top: 1.5rem; }
-  .ss-box-margin-6-t\@xxl {
+  .ss-box-margin-6-t\@w1600 {
     margin-top: 1.8rem; }
-  .ss-box-padding-6-t\@xxl {
+  .ss-box-padding-6-t\@w1600 {
     padding-top: 1.8rem; }
-  .ss-box-margin-7-t\@xxl {
+  .ss-box-margin-7-t\@w1600 {
     margin-top: 2.1rem; }
-  .ss-box-padding-7-t\@xxl {
+  .ss-box-padding-7-t\@w1600 {
     padding-top: 2.1rem; }
-  .ss-box-margin-8-t\@xxl {
+  .ss-box-margin-8-t\@w1600 {
     margin-top: 2.4rem; }
-  .ss-box-padding-8-t\@xxl {
+  .ss-box-padding-8-t\@w1600 {
     padding-top: 2.4rem; }
-  .ss-box-margin-9-t\@xxl {
+  .ss-box-margin-9-t\@w1600 {
     margin-top: 2.7rem; }
-  .ss-box-padding-9-t\@xxl {
+  .ss-box-padding-9-t\@w1600 {
     padding-top: 2.7rem; }
-  .ss-box-margin-10-t\@xxl {
+  .ss-box-margin-10-t\@w1600 {
     margin-top: 3rem; }
-  .ss-box-padding-10-t\@xxl {
+  .ss-box-padding-10-t\@w1600 {
     padding-top: 3rem; }
-  .ss-box-margin-r\@xxl {
+  .ss-box-margin-r\@w1600 {
     margin-right: 1.2rem; }
-  .ss-box-padding-r\@xxl {
+  .ss-box-padding-r\@w1600 {
     padding-right: 1.2rem; }
-  .ss-box-margin-1-r\@xxl {
+  .ss-box-margin-1-r\@w1600 {
     margin-right: 0.3rem; }
-  .ss-box-padding-1-r\@xxl {
+  .ss-box-padding-1-r\@w1600 {
     padding-right: 0.3rem; }
-  .ss-box-margin-2-r\@xxl {
+  .ss-box-margin-2-r\@w1600 {
     margin-right: 0.6rem; }
-  .ss-box-padding-2-r\@xxl {
+  .ss-box-padding-2-r\@w1600 {
     padding-right: 0.6rem; }
-  .ss-box-margin-3-r\@xxl {
+  .ss-box-margin-3-r\@w1600 {
     margin-right: 0.9rem; }
-  .ss-box-padding-3-r\@xxl {
+  .ss-box-padding-3-r\@w1600 {
     padding-right: 0.9rem; }
-  .ss-box-margin-4-r\@xxl {
+  .ss-box-margin-4-r\@w1600 {
     margin-right: 1.2rem; }
-  .ss-box-padding-4-r\@xxl {
+  .ss-box-padding-4-r\@w1600 {
     padding-right: 1.2rem; }
-  .ss-box-margin-5-r\@xxl {
+  .ss-box-margin-5-r\@w1600 {
     margin-right: 1.5rem; }
-  .ss-box-padding-5-r\@xxl {
+  .ss-box-padding-5-r\@w1600 {
     padding-right: 1.5rem; }
-  .ss-box-margin-6-r\@xxl {
+  .ss-box-margin-6-r\@w1600 {
     margin-right: 1.8rem; }
-  .ss-box-padding-6-r\@xxl {
+  .ss-box-padding-6-r\@w1600 {
     padding-right: 1.8rem; }
-  .ss-box-margin-7-r\@xxl {
+  .ss-box-margin-7-r\@w1600 {
     margin-right: 2.1rem; }
-  .ss-box-padding-7-r\@xxl {
+  .ss-box-padding-7-r\@w1600 {
     padding-right: 2.1rem; }
-  .ss-box-margin-8-r\@xxl {
+  .ss-box-margin-8-r\@w1600 {
     margin-right: 2.4rem; }
-  .ss-box-padding-8-r\@xxl {
+  .ss-box-padding-8-r\@w1600 {
     padding-right: 2.4rem; }
-  .ss-box-margin-9-r\@xxl {
+  .ss-box-margin-9-r\@w1600 {
     margin-right: 2.7rem; }
-  .ss-box-padding-9-r\@xxl {
+  .ss-box-padding-9-r\@w1600 {
     padding-right: 2.7rem; }
-  .ss-box-margin-10-r\@xxl {
+  .ss-box-margin-10-r\@w1600 {
     margin-right: 3rem; }
-  .ss-box-padding-10-r\@xxl {
+  .ss-box-padding-10-r\@w1600 {
     padding-right: 3rem; }
-  .ss-box-margin-b\@xxl {
+  .ss-box-margin-b\@w1600 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-b\@xxl {
+  .ss-box-padding-b\@w1600 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-b\@xxl {
+  .ss-box-margin-1-b\@w1600 {
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-b\@xxl {
+  .ss-box-padding-1-b\@w1600 {
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-b\@xxl {
+  .ss-box-margin-2-b\@w1600 {
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-b\@xxl {
+  .ss-box-padding-2-b\@w1600 {
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-b\@xxl {
+  .ss-box-margin-3-b\@w1600 {
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-b\@xxl {
+  .ss-box-padding-3-b\@w1600 {
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-b\@xxl {
+  .ss-box-margin-4-b\@w1600 {
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-b\@xxl {
+  .ss-box-padding-4-b\@w1600 {
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-b\@xxl {
+  .ss-box-margin-5-b\@w1600 {
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-b\@xxl {
+  .ss-box-padding-5-b\@w1600 {
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-b\@xxl {
+  .ss-box-margin-6-b\@w1600 {
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-b\@xxl {
+  .ss-box-padding-6-b\@w1600 {
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-b\@xxl {
+  .ss-box-margin-7-b\@w1600 {
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-b\@xxl {
+  .ss-box-padding-7-b\@w1600 {
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-b\@xxl {
+  .ss-box-margin-8-b\@w1600 {
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-b\@xxl {
+  .ss-box-padding-8-b\@w1600 {
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-b\@xxl {
+  .ss-box-margin-9-b\@w1600 {
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-b\@xxl {
+  .ss-box-padding-9-b\@w1600 {
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-b\@xxl {
+  .ss-box-margin-10-b\@w1600 {
     margin-bottom: 3rem; }
-  .ss-box-padding-10-b\@xxl {
+  .ss-box-padding-10-b\@w1600 {
     padding-bottom: 3rem; }
-  .ss-box-margin-l\@xxl {
+  .ss-box-margin-l\@w1600 {
     margin-left: 1.2rem; }
-  .ss-box-padding-l\@xxl {
+  .ss-box-padding-l\@w1600 {
     padding-left: 1.2rem; }
-  .ss-box-margin-1-l\@xxl {
+  .ss-box-margin-1-l\@w1600 {
     margin-left: 0.3rem; }
-  .ss-box-padding-1-l\@xxl {
+  .ss-box-padding-1-l\@w1600 {
     padding-left: 0.3rem; }
-  .ss-box-margin-2-l\@xxl {
+  .ss-box-margin-2-l\@w1600 {
     margin-left: 0.6rem; }
-  .ss-box-padding-2-l\@xxl {
+  .ss-box-padding-2-l\@w1600 {
     padding-left: 0.6rem; }
-  .ss-box-margin-3-l\@xxl {
+  .ss-box-margin-3-l\@w1600 {
     margin-left: 0.9rem; }
-  .ss-box-padding-3-l\@xxl {
+  .ss-box-padding-3-l\@w1600 {
     padding-left: 0.9rem; }
-  .ss-box-margin-4-l\@xxl {
+  .ss-box-margin-4-l\@w1600 {
     margin-left: 1.2rem; }
-  .ss-box-padding-4-l\@xxl {
+  .ss-box-padding-4-l\@w1600 {
     padding-left: 1.2rem; }
-  .ss-box-margin-5-l\@xxl {
+  .ss-box-margin-5-l\@w1600 {
     margin-left: 1.5rem; }
-  .ss-box-padding-5-l\@xxl {
+  .ss-box-padding-5-l\@w1600 {
     padding-left: 1.5rem; }
-  .ss-box-margin-6-l\@xxl {
+  .ss-box-margin-6-l\@w1600 {
     margin-left: 1.8rem; }
-  .ss-box-padding-6-l\@xxl {
+  .ss-box-padding-6-l\@w1600 {
     padding-left: 1.8rem; }
-  .ss-box-margin-7-l\@xxl {
+  .ss-box-margin-7-l\@w1600 {
     margin-left: 2.1rem; }
-  .ss-box-padding-7-l\@xxl {
+  .ss-box-padding-7-l\@w1600 {
     padding-left: 2.1rem; }
-  .ss-box-margin-8-l\@xxl {
+  .ss-box-margin-8-l\@w1600 {
     margin-left: 2.4rem; }
-  .ss-box-padding-8-l\@xxl {
+  .ss-box-padding-8-l\@w1600 {
     padding-left: 2.4rem; }
-  .ss-box-margin-9-l\@xxl {
+  .ss-box-margin-9-l\@w1600 {
     margin-left: 2.7rem; }
-  .ss-box-padding-9-l\@xxl {
+  .ss-box-padding-9-l\@w1600 {
     padding-left: 2.7rem; }
-  .ss-box-margin-10-l\@xxl {
+  .ss-box-margin-10-l\@w1600 {
     margin-left: 3rem; }
-  .ss-box-padding-10-l\@xxl {
+  .ss-box-padding-10-l\@w1600 {
     padding-left: 3rem; }
-  .ss-box-margin-tb\@xxl {
+  .ss-box-margin-tb\@w1600 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-tb\@xxl {
+  .ss-box-padding-tb\@w1600 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-1-tb\@xxl {
+  .ss-box-margin-1-tb\@w1600 {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem; }
-  .ss-box-padding-1-tb\@xxl {
+  .ss-box-padding-1-tb\@w1600 {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem; }
-  .ss-box-margin-2-tb\@xxl {
+  .ss-box-margin-2-tb\@w1600 {
     margin-top: 0.6rem;
     margin-bottom: 0.6rem; }
-  .ss-box-padding-2-tb\@xxl {
+  .ss-box-padding-2-tb\@w1600 {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem; }
-  .ss-box-margin-3-tb\@xxl {
+  .ss-box-margin-3-tb\@w1600 {
     margin-top: 0.9rem;
     margin-bottom: 0.9rem; }
-  .ss-box-padding-3-tb\@xxl {
+  .ss-box-padding-3-tb\@w1600 {
     padding-top: 0.9rem;
     padding-bottom: 0.9rem; }
-  .ss-box-margin-4-tb\@xxl {
+  .ss-box-margin-4-tb\@w1600 {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem; }
-  .ss-box-padding-4-tb\@xxl {
+  .ss-box-padding-4-tb\@w1600 {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem; }
-  .ss-box-margin-5-tb\@xxl {
+  .ss-box-margin-5-tb\@w1600 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem; }
-  .ss-box-padding-5-tb\@xxl {
+  .ss-box-padding-5-tb\@w1600 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
-  .ss-box-margin-6-tb\@xxl {
+  .ss-box-margin-6-tb\@w1600 {
     margin-top: 1.8rem;
     margin-bottom: 1.8rem; }
-  .ss-box-padding-6-tb\@xxl {
+  .ss-box-padding-6-tb\@w1600 {
     padding-top: 1.8rem;
     padding-bottom: 1.8rem; }
-  .ss-box-margin-7-tb\@xxl {
+  .ss-box-margin-7-tb\@w1600 {
     margin-top: 2.1rem;
     margin-bottom: 2.1rem; }
-  .ss-box-padding-7-tb\@xxl {
+  .ss-box-padding-7-tb\@w1600 {
     padding-top: 2.1rem;
     padding-bottom: 2.1rem; }
-  .ss-box-margin-8-tb\@xxl {
+  .ss-box-margin-8-tb\@w1600 {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem; }
-  .ss-box-padding-8-tb\@xxl {
+  .ss-box-padding-8-tb\@w1600 {
     padding-top: 2.4rem;
     padding-bottom: 2.4rem; }
-  .ss-box-margin-9-tb\@xxl {
+  .ss-box-margin-9-tb\@w1600 {
     margin-top: 2.7rem;
     margin-bottom: 2.7rem; }
-  .ss-box-padding-9-tb\@xxl {
+  .ss-box-padding-9-tb\@w1600 {
     padding-top: 2.7rem;
     padding-bottom: 2.7rem; }
-  .ss-box-margin-10-tb\@xxl {
+  .ss-box-margin-10-tb\@w1600 {
     margin-top: 3rem;
     margin-bottom: 3rem; }
-  .ss-box-padding-10-tb\@xxl {
+  .ss-box-padding-10-tb\@w1600 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
-  .ss-box-margin-rl\@xxl {
+  .ss-box-margin-rl\@w1600 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-rl\@xxl {
+  .ss-box-padding-rl\@w1600 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-1-rl\@xxl {
+  .ss-box-margin-1-rl\@w1600 {
     margin-left: 0.3rem;
     margin-right: 0.3rem; }
-  .ss-box-padding-1-rl\@xxl {
+  .ss-box-padding-1-rl\@w1600 {
     padding-left: 0.3rem;
     padding-right: 0.3rem; }
-  .ss-box-margin-2-rl\@xxl {
+  .ss-box-margin-2-rl\@w1600 {
     margin-left: 0.6rem;
     margin-right: 0.6rem; }
-  .ss-box-padding-2-rl\@xxl {
+  .ss-box-padding-2-rl\@w1600 {
     padding-left: 0.6rem;
     padding-right: 0.6rem; }
-  .ss-box-margin-3-rl\@xxl {
+  .ss-box-margin-3-rl\@w1600 {
     margin-left: 0.9rem;
     margin-right: 0.9rem; }
-  .ss-box-padding-3-rl\@xxl {
+  .ss-box-padding-3-rl\@w1600 {
     padding-left: 0.9rem;
     padding-right: 0.9rem; }
-  .ss-box-margin-4-rl\@xxl {
+  .ss-box-margin-4-rl\@w1600 {
     margin-left: 1.2rem;
     margin-right: 1.2rem; }
-  .ss-box-padding-4-rl\@xxl {
+  .ss-box-padding-4-rl\@w1600 {
     padding-left: 1.2rem;
     padding-right: 1.2rem; }
-  .ss-box-margin-5-rl\@xxl {
+  .ss-box-margin-5-rl\@w1600 {
     margin-left: 1.5rem;
     margin-right: 1.5rem; }
-  .ss-box-padding-5-rl\@xxl {
+  .ss-box-padding-5-rl\@w1600 {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
-  .ss-box-margin-6-rl\@xxl {
+  .ss-box-margin-6-rl\@w1600 {
     margin-left: 1.8rem;
     margin-right: 1.8rem; }
-  .ss-box-padding-6-rl\@xxl {
+  .ss-box-padding-6-rl\@w1600 {
     padding-left: 1.8rem;
     padding-right: 1.8rem; }
-  .ss-box-margin-7-rl\@xxl {
+  .ss-box-margin-7-rl\@w1600 {
     margin-left: 2.1rem;
     margin-right: 2.1rem; }
-  .ss-box-padding-7-rl\@xxl {
+  .ss-box-padding-7-rl\@w1600 {
     padding-left: 2.1rem;
     padding-right: 2.1rem; }
-  .ss-box-margin-8-rl\@xxl {
+  .ss-box-margin-8-rl\@w1600 {
     margin-left: 2.4rem;
     margin-right: 2.4rem; }
-  .ss-box-padding-8-rl\@xxl {
+  .ss-box-padding-8-rl\@w1600 {
     padding-left: 2.4rem;
     padding-right: 2.4rem; }
-  .ss-box-margin-9-rl\@xxl {
+  .ss-box-margin-9-rl\@w1600 {
     margin-left: 2.7rem;
     margin-right: 2.7rem; }
-  .ss-box-padding-9-rl\@xxl {
+  .ss-box-padding-9-rl\@w1600 {
     padding-left: 2.7rem;
     padding-right: 2.7rem; }
-  .ss-box-margin-10-rl\@xxl {
+  .ss-box-margin-10-rl\@w1600 {
     margin-left: 3rem;
     margin-right: 3rem; }
-  .ss-box-padding-10-rl\@xxl {
+  .ss-box-padding-10-rl\@w1600 {
     padding-left: 3rem;
     padding-right: 3rem; }
-  .ss-box-margin-trbl\@xxl {
+  .ss-box-margin-trbl\@w1600 {
     margin: 1.2rem; }
-  .ss-box-padding-trbl\@xxl {
+  .ss-box-padding-trbl\@w1600 {
     padding: 1.2rem; }
-  .ss-box-margin-1-trbl\@xxl {
+  .ss-box-margin-1-trbl\@w1600 {
     margin: 0.3rem; }
-  .ss-box-padding-1-trbl\@xxl {
+  .ss-box-padding-1-trbl\@w1600 {
     padding: 0.3rem; }
-  .ss-box-margin-2-trbl\@xxl {
+  .ss-box-margin-2-trbl\@w1600 {
     margin: 0.6rem; }
-  .ss-box-padding-2-trbl\@xxl {
+  .ss-box-padding-2-trbl\@w1600 {
     padding: 0.6rem; }
-  .ss-box-margin-3-trbl\@xxl {
+  .ss-box-margin-3-trbl\@w1600 {
     margin: 0.9rem; }
-  .ss-box-padding-3-trbl\@xxl {
+  .ss-box-padding-3-trbl\@w1600 {
     padding: 0.9rem; }
-  .ss-box-margin-4-trbl\@xxl {
+  .ss-box-margin-4-trbl\@w1600 {
     margin: 1.2rem; }
-  .ss-box-padding-4-trbl\@xxl {
+  .ss-box-padding-4-trbl\@w1600 {
     padding: 1.2rem; }
-  .ss-box-margin-5-trbl\@xxl {
+  .ss-box-margin-5-trbl\@w1600 {
     margin: 1.5rem; }
-  .ss-box-padding-5-trbl\@xxl {
+  .ss-box-padding-5-trbl\@w1600 {
     padding: 1.5rem; }
-  .ss-box-margin-6-trbl\@xxl {
+  .ss-box-margin-6-trbl\@w1600 {
     margin: 1.8rem; }
-  .ss-box-padding-6-trbl\@xxl {
+  .ss-box-padding-6-trbl\@w1600 {
     padding: 1.8rem; }
-  .ss-box-margin-7-trbl\@xxl {
+  .ss-box-margin-7-trbl\@w1600 {
     margin: 2.1rem; }
-  .ss-box-padding-7-trbl\@xxl {
+  .ss-box-padding-7-trbl\@w1600 {
     padding: 2.1rem; }
-  .ss-box-margin-8-trbl\@xxl {
+  .ss-box-margin-8-trbl\@w1600 {
     margin: 2.4rem; }
-  .ss-box-padding-8-trbl\@xxl {
+  .ss-box-padding-8-trbl\@w1600 {
     padding: 2.4rem; }
-  .ss-box-margin-9-trbl\@xxl {
+  .ss-box-margin-9-trbl\@w1600 {
     margin: 2.7rem; }
-  .ss-box-padding-9-trbl\@xxl {
+  .ss-box-padding-9-trbl\@w1600 {
     padding: 2.7rem; }
-  .ss-box-margin-10-trbl\@xxl {
+  .ss-box-margin-10-trbl\@w1600 {
     margin: 3rem; }
-  .ss-box-padding-10-trbl\@xxl {
+  .ss-box-padding-10-trbl\@w1600 {
     padding: 3rem; } }
 
 .ss-color-blue {
@@ -5832,12 +5554,6 @@ input::-webkit-inner-spin-button {
 
 .ss-color-sky-bg {
   background-color: #6DC8CF; }
-
-.ss-color-pink {
-  color: #D3729C; }
-
-.ss-color-pink-bg {
-  background-color: #D3729C; }
 
 .ss-color-orange {
   color: #FF8F99; }
@@ -6012,42 +5728,6 @@ input::-webkit-inner-spin-button {
 
 .ss-color-sky-tint-30-bg {
   background-color: #e0f3f5; }
-
-.ss-color-pink-shade-10 {
-  color: #c74b81; }
-
-.ss-color-pink-shade-10-bg {
-  background-color: #c74b81; }
-
-.ss-color-pink-shade-20 {
-  color: #aa3568; }
-
-.ss-color-pink-shade-20-bg {
-  background-color: #aa3568; }
-
-.ss-color-pink-shade-30 {
-  color: #832950; }
-
-.ss-color-pink-shade-30-bg {
-  background-color: #832950; }
-
-.ss-color-pink-tint-10 {
-  color: #df99b7; }
-
-.ss-color-pink-tint-10-bg {
-  background-color: #df99b7; }
-
-.ss-color-pink-tint-20 {
-  color: #ebc0d3; }
-
-.ss-color-pink-tint-20-bg {
-  background-color: #ebc0d3; }
-
-.ss-color-pink-tint-30 {
-  color: #f7e7ee; }
-
-.ss-color-pink-tint-30-bg {
-  background-color: #f7e7ee; }
 
 .ss-color-orange-shade-10 {
   color: #ff5c6b; }

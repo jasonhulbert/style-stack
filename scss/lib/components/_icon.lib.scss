@@ -1,7 +1,8 @@
 @import '../../core/selector.core';
 
+$icon-name: 'icon' !default;
 $icon-family: 'feather' !default;
 
-@mixin icon($name: 'icon') {
-    $name: selector-prefix($name);
+@mixin icon() {
+    $name: selector-prefix($icon-name);
 }
