@@ -1,0 +1,6 @@
+@import '../../core/output.core';
+@import '../../lib/components/wrap.lib';
+
+@include output('component.wrap') {
+    @include wrap-styles();
+}

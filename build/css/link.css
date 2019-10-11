@@ -1,0 +1,23 @@
+a,
+.ss-link {
+  color: #3673C5;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus, a:visited:hover, a:visited:active, a:visited:focus,
+.ss-link:hover,
+.ss-link:active,
+.ss-link:focus,
+.ss-link:visited:hover,
+.ss-link:visited:active,
+.ss-link:visited:focus {
+  color: #2b5c9d;
+  text-decoration: underline;
+}
+
+a:visited,
+.ss-link:visited {
+  color: #5c8ed2;
+}
+
+/*# sourceMappingURL=link.css.map */

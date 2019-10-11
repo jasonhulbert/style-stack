@@ -1,6 +1,0 @@
-@import '../core/output.core';
-@import '../lib/modifiers/color.lib';
-
-@include output('modifier.color') {
-    @include color();
-}

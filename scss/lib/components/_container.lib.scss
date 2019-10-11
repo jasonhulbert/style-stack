@@ -3,16 +3,16 @@
 
 $container-name: 'container' !default;
 $container-max-width-map: (
+    'w0': 100vw,
     'w425': 92vw,
     'w992': 90vw,
     'w1600': 85vw
 ) !default;
 $container-base-max-width: 90vw !default;
 
-@mixin container-base() {
+@mixin container() {
     display: block;
     width: 100%;
-    max-width: $container-base-max-width;
     margin: 0 auto;
 }
 
@@ -26,11 +26,11 @@ $container-base-max-width: 90vw !default;
     max-width: $max-width;
 }
 
-@mixin container() {
+@mixin container-styles() {
     $name: selector-prefix($container-name);
 
     .#{$name} {
-        @include container-base();
+        @include container();
     }
 
     @each $query-key in map-keys($query-map) {

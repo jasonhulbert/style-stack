@@ -1,6 +1,0 @@
-@import '../core/output.core';
-@import '../lib/components/header.lib';
-
-@include output('component.header') {
-    @include header();
-}

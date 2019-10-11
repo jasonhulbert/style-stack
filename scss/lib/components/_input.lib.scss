@@ -10,7 +10,7 @@ $input-padding: box-value(2) !default;
 $input-font-size: 0.9rem !default;
 $input-line-height: 1.5 !default;
 $input-font-family: 'primary' !default;
-$input-font-weight: $font-body-weight-default !default;
+$input-font-weight: $font-text-weight-default !default;
 $input-color: color-value('dark') !default;
 $input-placeholder-color: color-value('dark', $alpha: 0.3) !default;
 $input-border-width: 0.1rem !default;
@@ -39,7 +39,7 @@ $input-scale-map: (
     'xxl': 1.5
 ) !default;
 
-@mixin input-base() {
+@mixin input() {
     @include font-family($input-font-family);
     width: 100%;
     height: $input-height;
@@ -144,13 +144,13 @@ $input-scale-map: (
     text-align: center;
 }
 
-@mixin input() {
+@mixin input-styles() {
     $name: selector-prefix($input-name);
 
     @include input-resets();
 
     .#{$name} {
-        @include input-base();
+        @include input();
         @include input-placeholder();
 
         &:focus:not([tabindex='-1']) {

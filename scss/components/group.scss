@@ -1,6 +1,0 @@
-@import '../core/output.core';
-@import '../lib/components/group.lib';
-
-@include output('component.group') {
-    @include group();
-}

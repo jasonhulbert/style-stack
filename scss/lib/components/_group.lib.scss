@@ -11,7 +11,7 @@ $group-item-width-default: $group-divisor !default;
     @if type-of($width) == string {
         $group-item-width: unquote($width);
     } @else if (type-of($width) == number and unitless($width) == false) {
-        $group-item-width: $width
+        $group-item-width: $width;
     } @else if type-of($width) == number and unitless($width) == true {
         $group-item-width: percentage($width / $divisor);
     }
@@ -19,7 +19,7 @@ $group-item-width-default: $group-divisor !default;
     @return $group-item-width;
 }
 
-@mixin group-base() {
+@mixin group() {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -32,6 +32,13 @@ $group-item-width-default: $group-divisor !default;
     flex-basis: $width;
     flex-grow: $grow;
     flex-shrink: $shrink;
+    min-width: $width;
+}
+
+@mixin group-item-width($width: $group-divisor) {
+    $width: group-item-width($width);
+
+    flex-basis: $width;
     min-width: $width;
 }
 
@@ -57,14 +64,15 @@ $group-item-width-default: $group-divisor !default;
     display: none;
 }
 
-@mixin group() {
+@mixin group-styles() {
     $name: selector-prefix($group-name);
 
     .#{$name} {
-        @include group-base();
+        @include group();
     }
 
-    .#{$name}-item {
+    .#{$name}-item,
+    [class*='#{$name}-item-'] {
         @include group-item();
     }
 
@@ -158,7 +166,7 @@ $group-item-width-default: $group-divisor !default;
             .#{$name}-disable-break\@#{$query-key} {
                 @include group-disable-break();
             }
-        
+
             @for $i from 1 through $group-divisor {
                 // Sets default width of all group children.
                 // Does not affect children with a size modifier.
@@ -169,11 +177,11 @@ $group-item-width-default: $group-divisor !default;
                 .#{$name}-item-size-#{$i}\@#{$query-key} {
                     @include group-item($i);
                 }
-        
+
                 .#{$name}-item-push-#{$i}\@#{$query-key} {
                     @include group-item-push($i);
                 }
-        
+
                 .#{$name}-item-pull-#{$i}\@#{$query-key} {
                     @include group-item-pull($i);
                 }
@@ -182,31 +190,31 @@ $group-item-width-default: $group-divisor !default;
             .#{$name}-nowrap\@#{$query-key} {
                 flex-wrap: nowrap;
             }
-        
+
             .#{$name}-justify-around\@#{$query-key} {
                 justify-content: space-around;
             }
-        
+
             .#{$name}-justify-between\@#{$query-key} {
                 justify-content: space-between;
             }
-        
+
             .#{$name}-justify-center\@#{$query-key} {
                 justify-content: center;
             }
-        
+
             .#{$name}-justify-end\@#{$query-key} {
                 justify-content: flex-end;
             }
-        
+
             .#{$name}-align-center\@#{$query-key} {
                 align-items: center;
             }
-        
+
             .#{$name}-align-start\@#{$query-key} {
                 align-items: flex-start;
             }
-        
+
             .#{$name}-align-end\@#{$query-key} {
                 align-items: flex-end;
             }

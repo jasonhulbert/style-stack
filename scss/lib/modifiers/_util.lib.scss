@@ -2,7 +2,15 @@
 
 $util-name: 'util' !default;
 
-@mixin util() {
+@mixin util-position($position: relative, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: unquote($position);
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin util-styles() {
     $name: selector-prefix($util-name);
 
     .#{$name}-display-block {

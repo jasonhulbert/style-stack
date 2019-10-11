@@ -1,0 +1,6 @@
+@import '../../core/output.core';
+@import '../../lib/components/text.lib';
+
+@include output('component.text') {
+    @include text-styles();
+}

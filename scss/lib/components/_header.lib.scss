@@ -8,19 +8,29 @@ $header-name: 'header' !default;
 $header-family: 'secondary' !default;
 $header-scales: (
     'none': 1,
+    'xs': 0.8,
     'sm': 0.9,
     'md': 1.25,
-    'lg': 1.5,
+    'lg': 1.75,
     'xl': 2.25,
-    'xxl': 2.75
+    'xxl': 3
 ) !default;
 $header-margin: 0 0 box-value(6) !default;
 $header-line-height: 1.1 !default;
 
-@mixin header-base() {
+@mixin header($scale-key: false, $weight: $font-header-weight-default) {
     @include font-family($header-family);
+    @include header-weight($weight);
     margin: $header-margin;
     line-height: $header-line-height;
+
+    @if ($scale-key) {
+        @include header-scale($scale-key);
+    }
+}
+
+@mixin header-weight($weight: $font-header-weight-default) {
+    @include font-weight($font-header-family, $weight);
 }
 
 @mixin header-scale($scale-key) {
@@ -40,11 +50,11 @@ $header-line-height: 1.1 !default;
     margin-bottom: 0;
 }
 
-@mixin header() {
+@mixin header-styles() {
     $name: selector-prefix($header-name);
 
     .#{$name} {
-        @include header-base();
+        @include header();
     }
 
     .#{$name}-upper {

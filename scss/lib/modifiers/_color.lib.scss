@@ -16,18 +16,28 @@ $color-neutral-map: (
     'grey5': #58585C,
     'white': #FFFFFF,
     'black': #000000,
-    'light': #F0ECEC,
+    'light': #F0F0FA,
     'dark': #26262F
 ) !default;
 $color-util-map: (
-    'affirm': #6EAB70,
+    'confirm': #6EAB70,
     'warn': #E4815C,
     'deny': #C24E4F,
     'notify': #66A6EE,
     'select': #66A6EE,
     'focus': #66A6EE
 ) !default;
-$color-all-map: map-multi-merge($color-theme-map, $color-neutral-map, $color-util-map) !default;
+$color-link-map: (
+    'link': #3673C5,
+    'link-hover': darken(#3673C5, 10),
+    'link-visited': lighten(#3673C5, 10)
+) !default;
+$color-all-map: map-multi-merge(
+    $color-theme-map,
+    $color-neutral-map,
+    $color-util-map,
+    $color-link-map
+) !default;
 $color-variant-map: map-multi-merge($color-theme-map, $color-neutral-map) !default;
 $color-shades: 10, 20, 30 !default;
 $color-tints: 10, 20, 30 !default;
@@ -82,7 +92,7 @@ $color-tints: 10, 20, 30 !default;
     @return $color;
 }
 
-@mixin color() {
+@mixin color-styles() {
     $name: selector-prefix($color-name);
 
     @each $color-key, $color-value in $color-all-map {

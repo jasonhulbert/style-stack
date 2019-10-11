@@ -2,7 +2,7 @@
 
 $wrap-name: 'wrap' !default;
 
-@mixin wrap() {
+@mixin wrap-styles() {
     $name: selector-prefix($wrap-name);
 
     .#{$name} {

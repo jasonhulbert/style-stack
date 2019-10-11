@@ -4,19 +4,20 @@
 $global-html-font-size: 100% !default;
 $global-body-font-size: 1rem !default;
 $global-query-font-scales: (
-    'w425': 1,
-    'w768': 1.2,
-    'w992': 1.25,
-    'w1200': 1.3,
-    'w1600': 1.4
+    'w0': 0,
+    'w425': 0.9,
+    'w768': 1,
+    'w992': 1,
+    'w1200': 1.15,
+    'w1600': 1.2
 ) !default;
 $global-body-line-height: 1.5 !default;
 $global-box-sizing: border-box !default;
 $global-background: color-value('light') !default;
 $global-foreground: color-value('dark') !default;
-$global-selection-color: color-value('select') !default;
+$global-selection-color: color-value('select', $alpha: 0.35) !default;
 
-@mixin global() {
+@mixin global-styles() {
     *,
     *::before,
     *::after {
@@ -28,7 +29,7 @@ $global-selection-color: color-value('select') !default;
         color: $global-foreground;
         background-color: $global-background;
     }
-    
+
     body {
         margin: 0;
         line-height: $global-body-line-height;

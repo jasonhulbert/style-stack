@@ -1,9 +1,10 @@
 $query-map: (
-    'w425': (min-width: 425px),
-    'w768': (min-width: 768px),
-    'w992': (min-width: 992px),
-    'w1200': (min-width: 1200px),
-    'w1600': (min-width: 1600px)
+    'w0': '(min-width: 0px)',
+    'w425': '(min-width: 425px)',
+    'w768': '(min-width: 768px)',
+    'w992': '(min-width: 992px)',
+    'w1200': '(min-width: 1200px)',
+    'w1600': '(min-width: 1600px)'
 ) !default;
 $query-media-type-default: 'only screen' !default;
 
@@ -11,13 +12,13 @@ $query-media-type-default: 'only screen' !default;
     $media-query: '';
 
     @if $media-type != '' and type-of($media-type) == string {
-        $media-query: '#{$media-type} and ';
+        $media-query: '#{$media-type}';
     }
 
-    @if $query-key && map-has-key($query-map, $query-key) {
-        $media-query: '#{$media-query}#{map-get($query-map, $query-key)}';
+    @if $query-key and map-has-key($query-map, $query-key) {
+        $media-query: '#{$media-query} and #{map-get($query-map, $query-key)}';
     } @else if ($custom != '') {
-        $media-query: '#{$media-query}#{$custom}';
+        $media-query: '#{$media-query} and #{$custom}';
     }
 
     @media #{$media-query} {

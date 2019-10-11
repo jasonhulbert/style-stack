@@ -6,17 +6,18 @@
   "scripts": {
     "prebuild": "npm run clean && npm run lint",
     "build": "npm run sass && npm run css",
-    "lint": "stylelint './scss/**/*.scss' --syntax scss --fix",
-    "clean": "rimraf ./build && mkdir ./build",
+    "lint": "stylelint 'scss/**/*.scss' --syntax scss --fix",
+    "clean": "rimraf build && mkdir build",
     "sass": "npm run sass:stack && npm run sass:base && npm run sass:components && npm run sass:modifiers",
     "sass:stack": "npm run sass:compile -- scss/stack.scss",
-    "sass:base": "npm run sass:compile -- ./scss/base",
-    "sass:components": "npm run sass:compile -- ./scss/components",
-    "sass:modifiers": "npm run sass:compile -- ./scss/modifiers",
-    "sass:compile": "node-sass --source-map-embded -o ./build/css",
+    "sass:base": "npm run sass:compile -- scss/output/base",
+    "sass:components": "npm run sass:compile -- scss/output/components",
+    "sass:modifiers": "npm run sass:compile -- scss/output/modifiers",
+    "sass:patterns": "npm run sass:compile -- scss/output/patterns",
+    "sass:compile": "node-sass --source-map-embded --output-style=expanded -o build/css",
     "css": "npm run css:autoprefix && npm run css:cssnano",
-    "css:autoprefix": "postcss ./build/css/**/*.css --dir ./build/css --use autoprefixer --map",
-    "css:cssnano": "postcss ./build/css/**/*.css --dir ./build/css --use cssnano --map --ext .min.css"
+    "css:autoprefix": "postcss build/css/**/*.css --dir build/css --use autoprefixer --map",
+    "css:cssnano": "postcss build/css/**/*.css --dir build/css --use cssnano --map --ext .min.css"
   },
   "husky": {
     "hooks": {

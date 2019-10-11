@@ -3,6 +3,10 @@
 $icon-name: 'icon' !default;
 $icon-family: 'feather' !default;
 
-@mixin icon() {
+@mixin icon-styles() {
     $name: selector-prefix($icon-name);
+
+    @if mixin-exists('icon-hook') {
+        @include icon-hook($name);
+    }
 }

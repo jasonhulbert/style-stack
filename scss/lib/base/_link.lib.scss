@@ -1,0 +1,38 @@
+@import '../../core/selector.core';
+@import '../modifiers/color.lib';
+
+$link-name : 'link' !default;
+$link-decoration: none !default;
+$link-decoration-hover: underline !default;
+
+@mixin link() {
+    color: color-value('link');
+    text-decoration: $link-decoration;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited:hover,
+    &:visited:active,
+    &:visited:focus {
+        color: color-value('link-hover');
+        text-decoration: $link-decoration-hover;
+    }
+
+    &:visited {
+        color: color-value('link-visited');
+    }
+}
+
+@mixin link-styles() {
+    $name: selector-prefix($link-name);
+
+    a,
+    .#{$name} {
+        @include link();
+    }
+
+    @if mixin-exists('link-hook') {
+        @include link-hook();
+    }
+}

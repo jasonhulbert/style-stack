@@ -46,7 +46,7 @@ $box-sides-default: 'rl' !default;
     @include box-property('margin', $multiplier, $sides);
 }
 
-@mixin box() {
+@mixin box-styles() {
     $name: selector-prefix($box-name);
 
     .#{$name}-margin {
@@ -65,7 +65,7 @@ $box-sides-default: 'rl' !default;
         .#{$name}-margin-#{$sides-key} {
             @include box-margin($sides: $sides-key);
         }
-    
+
         .#{$name}-padding-#{$sides-key} {
             @include box-padding($sides: $sides-key);
         }
@@ -99,7 +99,7 @@ $box-sides-default: 'rl' !default;
                 .#{$name}-margin-#{$sides-key}\@#{$query-key} {
                     @include box-margin($sides: $sides-key);
                 }
-            
+
                 .#{$name}-padding-#{$sides-key}\@#{$query-key} {
                     @include box-padding($sides: $sides-key);
                 }
@@ -108,7 +108,7 @@ $box-sides-default: 'rl' !default;
                     .#{$name}-margin-#{$i}-#{$sides-key}\@#{$query-key} {
                         @include box-margin($i, $sides-key);
                     }
-        
+
                     .#{$name}-padding-#{$i}-#{$sides-key}\@#{$query-key} {
                         @include box-padding($i, $sides-key);
                     }
