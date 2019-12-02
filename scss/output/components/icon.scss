@@ -1,6 +1,6 @@
 @import '../../core/output.core';
 @import '../../lib/components/icon.lib';
 
-@include output('component.icon') {
+@include output('components.icon') {
     @include icon-styles();
 }

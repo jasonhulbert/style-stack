@@ -1,47 +1,66 @@
-$font-family-map: (
-    'primary': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'),
-    'secondary': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol')
-) !default;
-$font-weights: (
-    'primary': (300, 400, 600, 700),
-    'secondary': (300, 400, 600, 700)
-) !default;
-$font-text-family: 'primary' !default;
-$font-text-weight-default: 400 !default;
-$font-header-family: 'secondary' !default;
-$font-header-weight-default: 600 !default;
+@import '../../core/selector.core';
 
-@mixin font-family($font-key) {
-    font-family: map-get($font-family-map, $font-key);
+$font-name: 'font' !default;
+$font-stacks: (
+    'body': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'),
+    'title': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol')
+) !default;
+$font-default-stack-key: 'body' !default;
+$font-weights: (
+    'body': (300, 400, 600, 700),
+    'title': (300, 400, 600, 700)
+) !default;
+$font-default-weights: (
+    'body': 400,
+    'title': 600
+) !default;
+
+@mixin font($font-stack-key: $font-default-stack-key, $font-weight: default) {
+    @include font-stack($font-stack-key);
+    @include font-weight($font-stack-key, $font-weight);
 }
 
-@mixin font-weight($font-key, $weight) {
-    $weights: map-get($font-weights, $font-key);
+@mixin font-stack($font-stack: $font-default-stack-key) {
+    font-family: map-get($font-stacks, $font-stack);
+}
 
-    @if index($weights, $weight) != null {
-        font-weight: $weight;
+@mixin font-weight($font-stack: $font-default-stack-key, $font-weight: default) {
+    $weights: map-get($font-weights, $font-stack);
+    $default: map-get($font-default-weights, $font-stack);
+
+    @if ($font-weight == default) {
+        font-weight: $default;
     } @else {
-        @warn 'Font "#{$font-key}" does not have weight "#{$weight}"';
+        @if (index($weights, $font-weight)) {
+            font-weight: $font-weight;
+        } @else {
+            @warn 'Font #{$font-stack} does not have weight #{$font-weight}';
+        }
     }
 }
 
 @mixin font-styles() {
+    $name : selector-prefix($font-name);
+
     body {
-        @include font-family($font-text-family);
-        @include font-weight($font-text-family, $font-text-weight-default);
+        @include font();
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @include font-family($font-header-family);
-        @include font-weight($font-header-family, $font-header-weight-default);
+    @each $font-stack-key in $font-stacks {
+        .#{$name}-#{$font-stack-key} {
+            @include font($font-stack-key);
+        }
+    }
+
+    @each $font-stack-key, $weights in $font-weights {
+        @each $weight in $weights {
+            .#{$name}-#{$font-stack-key}-#{$weight} {
+                @include font-weight($font-stack-key, $weight);
+            }
+        }
     }
 
     @if mixin-exists('font-hook') {
-        @include font-hook();
+        @include font-hook($name);
     }
 }

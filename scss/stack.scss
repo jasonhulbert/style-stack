@@ -1,32 +1,34 @@
 $output-list: (
     'base.font',
     'base.global',
+    'base.header',
     'base.link',
-    'component.container',
-    'component.group',
-    'component.header',
-    'component.input',
-    'component.text',
-    'component.wrap',
-    'modifier.box',
-    'modifier.color',
-    'modifier.util'
+    'base.text',
+    'components.group',
+    'components.input',
+    'utils.box',
+    'utils.color',
+    'utils.display',
+    'patterns.container',
+    'patterns.wrap'
 ) !default;
 
 // Base
 @import 'output/base/font';
 @import 'output/base/global';
+@import 'output/base/header';
 @import 'output/base/link';
+@import 'output/base/text';
+
+// Utilities
+@import 'output/utils/box';
+@import 'output/utils/color';
+@import 'output/utils/display';
 
 // Components
-@import 'output/components/container';
 @import 'output/components/group';
-@import 'output/components/header';
 @import 'output/components/input';
-@import 'output/components/text';
-@import 'output/components/wrap';
 
-// Modifiers
-@import 'output/modifiers/box';
-@import 'output/modifiers/color';
-@import 'output/modifiers/util';
+// Patterns
+@import 'output/patterns/container';
+@import 'output/patterns/wrap';

@@ -1,10 +1,11 @@
 @import '../../core/query.core';
-@import '../modifiers/color.lib';
+@import '../utils/box.lib';
+@import '../utils/color.lib';
 
 $global-html-font-size: 100% !default;
 $global-body-font-size: 1rem !default;
 $global-query-font-scales: (
-    'w0': 0,
+    'w0': 0.9,
     'w425': 0.9,
     'w768': 1,
     'w992': 1,
@@ -13,7 +14,7 @@ $global-query-font-scales: (
 ) !default;
 $global-body-line-height: 1.5 !default;
 $global-box-sizing: border-box !default;
-$global-background: color-value('light') !default;
+$global-background: color-value('white') !default;
 $global-foreground: color-value('dark') !default;
 $global-selection-color: color-value('select', $alpha: 0.35) !default;
 

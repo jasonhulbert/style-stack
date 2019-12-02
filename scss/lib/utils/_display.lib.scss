@@ -1,0 +1,64 @@
+@import '../../core/query.core';
+@import '../../core/selector.core';
+
+$util-name: 'display' !default;
+
+@mixin display-styles() {
+    $name: selector-prefix($util-name);
+
+    .#{$name}-block {
+        display: block;
+    }
+
+    .#{$name}-flex {
+        display: flex;
+    }
+
+    .#{$name}-inline-block {
+        display: inline-block;
+    }
+
+    .#{$name}-inline {
+        display: inline;
+    }
+
+    .#{$name}-none {
+        display: none;
+    }
+
+    .#{$name}-unset {
+        display: unset;
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @include query($query-key) {
+            .#{$name}-block\@#{$query-key} {
+                display: block;
+            }
+
+            .#{$name}-flex\@#{$query-key} {
+                display: flex;
+            }
+
+            .#{$name}-inline-block\@#{$query-key} {
+                display: inline-block;
+            }
+
+            .#{$name}-inline\@#{$query-key} {
+                display: inline;
+            }
+
+            .#{$name}-none\@#{$query-key} {
+                display: none;
+            }
+
+            .#{$name}-unset\@#{$query-key} {
+                display: unset;
+            }
+        }
+    }
+
+    @if mixin-exists('display-hook') {
+        @include display-hook($name);
+    }
+}

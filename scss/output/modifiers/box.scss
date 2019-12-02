@@ -1,6 +1,0 @@
-@import '../../core/output.core';
-@import '../../lib/modifiers/box.lib';
-
-@include output('modifier.box') {
-    @include box-styles();
-}

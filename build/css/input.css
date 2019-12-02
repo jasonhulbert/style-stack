@@ -241,43 +241,43 @@ input::-webkit-inner-spin-button {
   outline-color: rgba(109, 200, 207, 0.3);
 }
 
-.ss-input-theme-orange {
+.ss-input-theme-pink {
   border-color: #FF8F99;
 }
 
-.ss-input-theme-orange::-webkit-input-placeholder {
+.ss-input-theme-pink::-webkit-input-placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange::-moz-placeholder {
+.ss-input-theme-pink::-moz-placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange:-ms-input-placeholder {
+.ss-input-theme-pink:-ms-input-placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange::-ms-input-placeholder {
+.ss-input-theme-pink::-ms-input-placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange::placeholder {
+.ss-input-theme-pink::placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange::-webkit-input-placeholder {
+.ss-input-theme-pink::-webkit-input-placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange::-moz-placeholder {
+.ss-input-theme-pink::-moz-placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange::-ms-input-placeholder {
+.ss-input-theme-pink::-ms-input-placeholder {
   color: rgba(255, 143, 153, 0.5);
 }
 
-.ss-input-theme-orange:focus:not([tabindex='-1']) {
+.ss-input-theme-pink:focus:not([tabindex='-1']) {
   border-color: #94000d;
   outline-color: rgba(255, 143, 153, 0.3);
 }

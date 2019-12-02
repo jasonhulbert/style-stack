@@ -1,7 +1,8 @@
+body,
 .ss-text {
-  font-weight: 400;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0 0 1.2rem;
-  line-height: 1.3;
+  line-height: 1.65;
 }
 
 .ss-text-upper {
@@ -11,6 +12,18 @@
 .ss-text-no-margin {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.ss-text-align-right {
+  text-align: right;
+}
+
+.ss-text-align-left {
+  text-align: left;
+}
+
+.ss-text-align-center {
+  text-align: center;
 }
 
 .ss-text-scale-none {
@@ -41,26 +54,19 @@
   font-size: 3rem;
 }
 
-.ss-text-weight-300 {
-  font-weight: 300;
-}
-
-.ss-text-weight-400 {
-  font-weight: 400;
-}
-
-.ss-text-weight-600 {
-  font-weight: 600;
-}
-
-.ss-text-weight-700 {
-  font-weight: 700;
-}
-
 @media only screen and (min-width: 0px) {
   .ss-text-no-margin\@w0 {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .ss-text-align-right\@w0 {
+    text-align: right;
+  }
+  .ss-text-align-left\@w0 {
+    text-align: left;
+  }
+  .ss-text-align-center\@w0 {
+    text-align: center;
   }
   .ss-text-scale-none\@w0 {
     font-size: 1rem;
@@ -90,6 +96,15 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  .ss-text-align-right\@w425 {
+    text-align: right;
+  }
+  .ss-text-align-left\@w425 {
+    text-align: left;
+  }
+  .ss-text-align-center\@w425 {
+    text-align: center;
+  }
   .ss-text-scale-none\@w425 {
     font-size: 1rem;
   }
@@ -117,6 +132,15 @@
   .ss-text-no-margin\@w768 {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .ss-text-align-right\@w768 {
+    text-align: right;
+  }
+  .ss-text-align-left\@w768 {
+    text-align: left;
+  }
+  .ss-text-align-center\@w768 {
+    text-align: center;
   }
   .ss-text-scale-none\@w768 {
     font-size: 1rem;
@@ -146,6 +170,15 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  .ss-text-align-right\@w992 {
+    text-align: right;
+  }
+  .ss-text-align-left\@w992 {
+    text-align: left;
+  }
+  .ss-text-align-center\@w992 {
+    text-align: center;
+  }
   .ss-text-scale-none\@w992 {
     font-size: 1rem;
   }
@@ -174,6 +207,15 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  .ss-text-align-right\@w1200 {
+    text-align: right;
+  }
+  .ss-text-align-left\@w1200 {
+    text-align: left;
+  }
+  .ss-text-align-center\@w1200 {
+    text-align: center;
+  }
   .ss-text-scale-none\@w1200 {
     font-size: 1rem;
   }
@@ -201,6 +243,15 @@
   .ss-text-no-margin\@w1600 {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .ss-text-align-right\@w1600 {
+    text-align: right;
+  }
+  .ss-text-align-left\@w1600 {
+    text-align: left;
+  }
+  .ss-text-align-center\@w1600 {
+    text-align: center;
   }
   .ss-text-scale-none\@w1600 {
     font-size: 1rem;

@@ -1,0 +1,78 @@
+@import '../../core/query.core';
+@import '../../core/selector.core';
+@import '../utils/box.lib';
+@import './font.lib';
+@import './global.lib';
+
+$header-name: 'header' !default;
+$header-font-stack-key: 'title' !default;
+$header-font-weight: 'default' !default;
+$header-scales: (
+    'none': 1,
+    'xs': 0.8,
+    'sm': 0.9,
+    'md': 1.3,
+    'lg': 2,
+    'xl': 2.75,
+    'xxl': 3
+) !default;
+$header-margin: 0 0 box-value(6) !default;
+$header-line-height: 1.1 !default;
+
+@mixin header($scale-key: false, $font-weight: $header-font-weight) {
+    @include font($header-font-stack-key, $font-weight);
+
+    @if ($scale-key) {
+        @include header-scale($scale-key);
+    }
+
+    margin: $header-margin;
+    line-height: $header-line-height;
+}
+
+@mixin header-scale($scale-key) {
+    $scale-value: map-get($header-scales, $scale-key);
+
+    @if $scale-value {
+        font-size: $global-body-font-size * $scale-value;
+    } @else if type-of($scale-key) == number {
+        font-size: $global-body-font-size * $scale-key;
+    }
+}
+
+@mixin header-weight($weight) {
+    @include font-weight($header-font-stack-key, $weight);
+}
+
+@mixin header-styles() {
+    $name: selector-prefix($header-name);
+
+    h1, h2, h3, h4, h5, h6,
+    .#{$name} {
+        @include header();
+    }
+
+    .#{$name}-upper {
+        text-transform: uppercase;
+    }
+
+    @each $scale-key in map-keys($header-scales) {
+        .#{$name}-scale-#{$scale-key} {
+            @include header-scale($scale-key);
+        }
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @include query($query-key) {
+            @each $scale-key in map-keys($header-scales) {
+                .#{$name}-scale-#{$scale-key}\@#{$query-key} {
+                    @include header-scale($scale-key);
+                }
+            }
+        }
+    }
+
+    @if mixin-exists('header-hook') {
+        @include header-hook($name);
+    }
+}

@@ -1,16 +1,16 @@
 @import '../../core/query.core';
 @import '../../core/selector.core';
 @import '../base/font.lib';
-@import '../modifiers/color.lib';
-@import '../modifiers/box.lib';
+@import '../utils/color.lib';
+@import '../utils/box.lib';
 
 $input-name: 'input' !default;
 $input-height: box-value(8) !default;
 $input-padding: box-value(2) !default;
 $input-font-size: 0.9rem !default;
 $input-line-height: 1.5 !default;
-$input-font-family: 'primary' !default;
-$input-font-weight: $font-text-weight-default !default;
+$input-font-stack: 'primary' !default;
+$input-font-weight: 'default' !default;
 $input-color: color-value('dark') !default;
 $input-placeholder-color: color-value('dark', $alpha: 0.3) !default;
 $input-border-width: 0.1rem !default;
@@ -29,18 +29,19 @@ $input-dark-bg: color-value('dark') !default;
 $input-dark-border-color: color-value('grey5') !default;
 $input-dark-focus-bg: color-value('dark') !default;
 $input-dark-focus-border-color: color-value('light') !default;
-$input-transition: border-color 200ms ease, background 200ms ease !default;
+$input-transition: border-color 200ms ease, background-color 200ms ease !default;
 $input-scale-map: (
     'none': 1,
+    'xs': 0.7,
     'sm': 0.9,
     'md': 1.1,
-    'lg': 1.2,
-    'xl': 1.35,
-    'xxl': 1.5
+    'lg': 1.3,
+    'xl': 1.5,
+    'xxl': 1.7
 ) !default;
 
 @mixin input() {
-    @include font-family($input-font-family);
+    @include font($input-font-stack);
     width: 100%;
     height: $input-height;
     font-size: $input-font-size;
