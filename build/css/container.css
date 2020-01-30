@@ -1,42 +1,36 @@
-.ss-container {
+.container {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 0px) {
-  .ss-container-inset {
-    max-width: 100vw;
+  .container-inset {
+    max-width: 96vw;
   }
 }
 
 @media only screen and (min-width: 425px) {
-  .ss-container-inset {
+  .container-inset {
     max-width: 92vw;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .ss-container-inset {
+  .container-inset {
     max-width: 90vw;
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .ss-container-inset {
+@media only screen and (min-width: 1024px) {
+  .container-inset {
     max-width: 90vw;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .ss-container-inset {
+@media only screen and (min-width: 1280px) {
+  .container-inset {
     max-width: 90vw;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .ss-container-inset {
-    max-width: 85vw;
   }
 }
 

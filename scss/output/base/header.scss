@@ -1,6 +1,0 @@
-@import '../../core/output.core';
-@import '../../lib/base/header.lib';
-
-@include output('base.header') {
-    @include header-styles();
-}

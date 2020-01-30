@@ -1,6 +1,3 @@
-@import '../../core/output.core';
 @import '../../lib/base/text.lib';
 
-@include output('base.text') {
-    @include text-styles();
-}
+@include text-styles();

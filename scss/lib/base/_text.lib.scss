@@ -1,33 +1,26 @@
 @import '../../core/query.core';
-@import '../../core/selector.core';
-@import '../utils/box.lib';
+@import '../utils/spacing.lib';
 @import './font.lib';
 @import './global.lib';
 
-$text-name: 'text' !default;
-$text-font-stack-key: 'body' !default;
-$text-font-weight: 'default' !default;
 $text-scales: (
     'none': 1,
     'xs': 0.8,
     'sm': 0.9,
     'md': 1.25,
     'lg': 1.75,
-    'xl': 2.25,
-    'xxl': 3
+    'xl': 2.25
 ) !default;
-$text-margin: 0 0 box-value(4) !default;
-$text-line-height: 1.65 !default;
+$text-margin: 0 0 size-value(4) !default;
+$text-line-height: 1.4 !default;
+$text-font-weight: 200 !default;
+$text-letter-spacing: 0.03em !default;
 
-@mixin text($scale-key: false, $font-weight: $text-font-weight) {
-    @include font($text-font-stack-key, $font-weight);
-
-    @if ($scale-key) {
-        @include text-scale($scale-key);
-    }
-
+@mixin text() {
+    @include font-weight($font-weight: $text-font-weight);
     margin: $text-margin;
     line-height: $text-line-height;
+    letter-spacing: $text-letter-spacing;
 }
 
 @mixin text-scale($scale-key) {
@@ -40,66 +33,49 @@ $text-line-height: 1.65 !default;
     }
 }
 
-@mixin text-weight($font-weight: $text-font-weight) {
-    @include font-weight($text-font-stack-key, $font-weight);
-}
-
 @mixin text-styles() {
-    $name: selector-prefix($text-name);
-
-    p, ul, ol, dl
-    .#{$name} {
+    .text {
         @include text();
     }
 
-    .#{$name}-upper {
+    .text-upper {
         text-transform: uppercase;
     }
 
-    .#{$name}-no-margin {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .#{$name}-align-right {
+    .text-right {
         text-align: right;
     }
 
-    .#{$name}-align-left {
+    .text-left {
         text-align: left;
     }
 
-    .#{$name}-align-center {
+    .text-center {
         text-align: center;
     }
 
     @each $scale-key in map-keys($text-scales) {
-        .#{$name}-scale-#{$scale-key} {
+        .text-#{$scale-key} {
             @include text-scale($scale-key);
         }
     }
 
     @each $query-key in map-keys($query-map) {
         @include query($query-key) {
-            .#{$name}-no-margin\@#{$query-key} {
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-
-            .#{$name}-align-right\@#{$query-key} {
+            .text-right\@#{$query-key} {
                 text-align: right;
             }
 
-            .#{$name}-align-left\@#{$query-key} {
+            .text-left\@#{$query-key} {
                 text-align: left;
             }
 
-            .#{$name}-align-center\@#{$query-key} {
+            .text-center\@#{$query-key} {
                 text-align: center;
             }
 
             @each $scale-key in map-keys($text-scales) {
-                .#{$name}-scale-#{$scale-key}\@#{$query-key} {
+                .text-#{$scale-key}\@#{$query-key} {
                     @include text-scale($scale-key);
                 }
             }
@@ -107,6 +83,6 @@ $text-line-height: 1.65 !default;
     }
 
     @if mixin-exists('text-hook') {
-        @include text-hook($name);
+        @include text-hook();
     }
 }

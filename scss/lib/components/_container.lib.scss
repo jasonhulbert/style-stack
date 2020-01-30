@@ -1,11 +1,9 @@
 @import '../../core/query.core';
-@import '../../core/selector.core';
 
-$container-name: 'container' !default;
 $container-max-width-map: (
-    'w0': 100vw,
+    'w0': 96vw,
     'w425': 92vw,
-    'w992': 90vw,
+    'w1024': 90vw,
     'w1600': 85vw
 ) !default;
 $container-base-max-width: 90vw !default;
@@ -27,22 +25,20 @@ $container-base-max-width: 90vw !default;
 }
 
 @mixin container-styles() {
-    $name: selector-prefix($container-name);
-
-    .#{$name} {
+    .container {
         @include container();
     }
 
     @each $query-key in map-keys($query-map) {
         @include query($query-key) {
-            .#{$name}-inset {
+            .container-inset {
                 @include container-max-width($query-key);
             }
         }
     }
 
     @if mixin-exists('container-hook') {
-        @include container-hook($name);
+        @include container-hook();
     }
 }
 

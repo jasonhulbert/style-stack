@@ -1,6 +1,0 @@
-$selector-prefix: 'ss-' !default;
-$selector-scope: '' !default;
-
-@function selector-prefix($selector) {
-    @return '#{$selector-prefix}#{$selector}';
-}

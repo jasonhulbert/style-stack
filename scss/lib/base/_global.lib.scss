@@ -1,22 +1,20 @@
 @import '../../core/query.core';
-@import '../utils/box.lib';
 @import '../utils/color.lib';
 
 $global-html-font-size: 100% !default;
 $global-body-font-size: 1rem !default;
 $global-query-font-scales: (
-    'w0': 0.9,
-    'w425': 0.9,
-    'w768': 1,
-    'w992': 1,
-    'w1200': 1.15,
-    'w1600': 1.2
+    'w0': 0.75,
+    'w425': 0.75,
+    'w768': 0.75,
+    'w1024': 0.9,
+    'w1280': 1.05
 ) !default;
 $global-body-line-height: 1.5 !default;
 $global-box-sizing: border-box !default;
 $global-background: color-value('white') !default;
-$global-foreground: color-value('dark') !default;
-$global-selection-color: color-value('select', $alpha: 0.35) !default;
+$global-foreground: color-value('grey4') !default;
+$global-selection-color: color-value('select') !default;
 
 @mixin global-styles() {
     *,
@@ -39,6 +37,14 @@ $global-selection-color: color-value('select', $alpha: 0.35) !default;
 
     ::selection {
         background-color: $global-selection-color;
+    }
+
+    hr {
+        width: 100%;
+        height: 1px;
+        border: 0;
+        outline: 0;
+        background: color-value('grey3');
     }
 
     @each $query-key, $scale in $global-query-font-scales {

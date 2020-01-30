@@ -1,6 +1,3 @@
-@import '../../core/output.core';
 @import '../../lib/patterns/wrap.lib';
 
-@include output('patterns.wrap') {
-    @include wrap-styles();
-}
+@include wrap-styles();

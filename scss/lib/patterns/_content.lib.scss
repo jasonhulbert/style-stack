@@ -1,0 +1,24 @@
+@import '../../core/query.core';
+@import '../base/title.lib';
+@import '../base/text.lib';
+
+$content-text-tags: p, ul, ol, dl !default;
+$content-title-tags: h1, h2, h3, h4, h5, h6 !default;
+
+@mixin content-styles() {
+    .content {
+        #{$content-text-tags} {
+            @include text();
+        }
+
+        #{$content-title-tags} {
+            @include title();
+        }
+
+        @each $tag in $content-title-tags {
+            #{$tag} {
+                @include title-scale($tag);
+            }
+        }
+    }
+}

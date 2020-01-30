@@ -1,278 +1,197 @@
-body,
-.ss-text {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0 0 1.2rem;
-  line-height: 1.65;
+.text {
+  font-weight: 200;
+  margin: 0 0 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
 }
 
-.ss-text-upper {
+.text-upper {
   text-transform: uppercase;
 }
 
-.ss-text-no-margin {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.ss-text-align-right {
+.text-right {
   text-align: right;
 }
 
-.ss-text-align-left {
+.text-left {
   text-align: left;
 }
 
-.ss-text-align-center {
+.text-center {
   text-align: center;
 }
 
-.ss-text-scale-none {
+.text-none {
   font-size: 1rem;
 }
 
-.ss-text-scale-xs {
+.text-xs {
   font-size: 0.8rem;
 }
 
-.ss-text-scale-sm {
+.text-sm {
   font-size: 0.9rem;
 }
 
-.ss-text-scale-md {
+.text-md {
   font-size: 1.25rem;
 }
 
-.ss-text-scale-lg {
+.text-lg {
   font-size: 1.75rem;
 }
 
-.ss-text-scale-xl {
+.text-xl {
   font-size: 2.25rem;
 }
 
-.ss-text-scale-xxl {
-  font-size: 3rem;
-}
-
 @media only screen and (min-width: 0px) {
-  .ss-text-no-margin\@w0 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .ss-text-align-right\@w0 {
+  .text-right\@w0 {
     text-align: right;
   }
-  .ss-text-align-left\@w0 {
+  .text-left\@w0 {
     text-align: left;
   }
-  .ss-text-align-center\@w0 {
+  .text-center\@w0 {
     text-align: center;
   }
-  .ss-text-scale-none\@w0 {
+  .text-none\@w0 {
     font-size: 1rem;
   }
-  .ss-text-scale-xs\@w0 {
+  .text-xs\@w0 {
     font-size: 0.8rem;
   }
-  .ss-text-scale-sm\@w0 {
+  .text-sm\@w0 {
     font-size: 0.9rem;
   }
-  .ss-text-scale-md\@w0 {
+  .text-md\@w0 {
     font-size: 1.25rem;
   }
-  .ss-text-scale-lg\@w0 {
+  .text-lg\@w0 {
     font-size: 1.75rem;
   }
-  .ss-text-scale-xl\@w0 {
+  .text-xl\@w0 {
     font-size: 2.25rem;
-  }
-  .ss-text-scale-xxl\@w0 {
-    font-size: 3rem;
   }
 }
 
 @media only screen and (min-width: 425px) {
-  .ss-text-no-margin\@w425 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .ss-text-align-right\@w425 {
+  .text-right\@w425 {
     text-align: right;
   }
-  .ss-text-align-left\@w425 {
+  .text-left\@w425 {
     text-align: left;
   }
-  .ss-text-align-center\@w425 {
+  .text-center\@w425 {
     text-align: center;
   }
-  .ss-text-scale-none\@w425 {
+  .text-none\@w425 {
     font-size: 1rem;
   }
-  .ss-text-scale-xs\@w425 {
+  .text-xs\@w425 {
     font-size: 0.8rem;
   }
-  .ss-text-scale-sm\@w425 {
+  .text-sm\@w425 {
     font-size: 0.9rem;
   }
-  .ss-text-scale-md\@w425 {
+  .text-md\@w425 {
     font-size: 1.25rem;
   }
-  .ss-text-scale-lg\@w425 {
+  .text-lg\@w425 {
     font-size: 1.75rem;
   }
-  .ss-text-scale-xl\@w425 {
+  .text-xl\@w425 {
     font-size: 2.25rem;
-  }
-  .ss-text-scale-xxl\@w425 {
-    font-size: 3rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .ss-text-no-margin\@w768 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .ss-text-align-right\@w768 {
+  .text-right\@w768 {
     text-align: right;
   }
-  .ss-text-align-left\@w768 {
+  .text-left\@w768 {
     text-align: left;
   }
-  .ss-text-align-center\@w768 {
+  .text-center\@w768 {
     text-align: center;
   }
-  .ss-text-scale-none\@w768 {
+  .text-none\@w768 {
     font-size: 1rem;
   }
-  .ss-text-scale-xs\@w768 {
+  .text-xs\@w768 {
     font-size: 0.8rem;
   }
-  .ss-text-scale-sm\@w768 {
+  .text-sm\@w768 {
     font-size: 0.9rem;
   }
-  .ss-text-scale-md\@w768 {
+  .text-md\@w768 {
     font-size: 1.25rem;
   }
-  .ss-text-scale-lg\@w768 {
+  .text-lg\@w768 {
     font-size: 1.75rem;
   }
-  .ss-text-scale-xl\@w768 {
+  .text-xl\@w768 {
     font-size: 2.25rem;
-  }
-  .ss-text-scale-xxl\@w768 {
-    font-size: 3rem;
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .ss-text-no-margin\@w992 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .ss-text-align-right\@w992 {
+@media only screen and (min-width: 1024px) {
+  .text-right\@w1024 {
     text-align: right;
   }
-  .ss-text-align-left\@w992 {
+  .text-left\@w1024 {
     text-align: left;
   }
-  .ss-text-align-center\@w992 {
+  .text-center\@w1024 {
     text-align: center;
   }
-  .ss-text-scale-none\@w992 {
+  .text-none\@w1024 {
     font-size: 1rem;
   }
-  .ss-text-scale-xs\@w992 {
+  .text-xs\@w1024 {
     font-size: 0.8rem;
   }
-  .ss-text-scale-sm\@w992 {
+  .text-sm\@w1024 {
     font-size: 0.9rem;
   }
-  .ss-text-scale-md\@w992 {
+  .text-md\@w1024 {
     font-size: 1.25rem;
   }
-  .ss-text-scale-lg\@w992 {
+  .text-lg\@w1024 {
     font-size: 1.75rem;
   }
-  .ss-text-scale-xl\@w992 {
+  .text-xl\@w1024 {
     font-size: 2.25rem;
-  }
-  .ss-text-scale-xxl\@w992 {
-    font-size: 3rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .ss-text-no-margin\@w1200 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .ss-text-align-right\@w1200 {
+@media only screen and (min-width: 1280px) {
+  .text-right\@w1280 {
     text-align: right;
   }
-  .ss-text-align-left\@w1200 {
+  .text-left\@w1280 {
     text-align: left;
   }
-  .ss-text-align-center\@w1200 {
+  .text-center\@w1280 {
     text-align: center;
   }
-  .ss-text-scale-none\@w1200 {
+  .text-none\@w1280 {
     font-size: 1rem;
   }
-  .ss-text-scale-xs\@w1200 {
+  .text-xs\@w1280 {
     font-size: 0.8rem;
   }
-  .ss-text-scale-sm\@w1200 {
+  .text-sm\@w1280 {
     font-size: 0.9rem;
   }
-  .ss-text-scale-md\@w1200 {
+  .text-md\@w1280 {
     font-size: 1.25rem;
   }
-  .ss-text-scale-lg\@w1200 {
+  .text-lg\@w1280 {
     font-size: 1.75rem;
   }
-  .ss-text-scale-xl\@w1200 {
+  .text-xl\@w1280 {
     font-size: 2.25rem;
-  }
-  .ss-text-scale-xxl\@w1200 {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .ss-text-no-margin\@w1600 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .ss-text-align-right\@w1600 {
-    text-align: right;
-  }
-  .ss-text-align-left\@w1600 {
-    text-align: left;
-  }
-  .ss-text-align-center\@w1600 {
-    text-align: center;
-  }
-  .ss-text-scale-none\@w1600 {
-    font-size: 1rem;
-  }
-  .ss-text-scale-xs\@w1600 {
-    font-size: 0.8rem;
-  }
-  .ss-text-scale-sm\@w1600 {
-    font-size: 0.9rem;
-  }
-  .ss-text-scale-md\@w1600 {
-    font-size: 1.25rem;
-  }
-  .ss-text-scale-lg\@w1600 {
-    font-size: 1.75rem;
-  }
-  .ss-text-scale-xl\@w1600 {
-    font-size: 2.25rem;
-  }
-  .ss-text-scale-xxl\@w1600 {
-    font-size: 3rem;
   }
 }
 

@@ -1,0 +1,166 @@
+@import '../../core/query.core';
+@import '../../core/size.core';
+
+$spacing-sizes: (1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20) !default;
+
+@mixin spacing($property: padding, $size: 1, $sides: ()) {
+    @if (length($sides) == 4) {
+        #{$property}: size-value($size);
+    } @else if (length($sides) == 2) {
+        @if (
+            index($sides, left) != null
+            and index($sides, right) != null
+        ) {
+            #{$property}: 0 size-value($size);
+        }
+
+        @if (
+            index($sides, top) != null
+            and index($sides, bottom) != null
+        ) {
+            #{$property}: size-value($size) 0;
+        }
+    } @else {
+        @each $side in $sides {
+            #{$property}-#{$side}: size-value($size);
+        }
+    }
+}
+
+@mixin spacing-margin($size: 1, $sides: ()) {
+    @include spacing(margin, $size, $sides);
+}
+
+@mixin spacing-padding($size: 1, $sides: ()) {
+    @include spacing(padding, $size, $sides);
+}
+
+@mixin spacing-styles() {
+    @each $size in $spacing-sizes {
+        .margin-all-#{$size} {
+            @include spacing-margin($size, top right bottom left);
+        }
+
+        .margin-x-#{$size} {
+            @include spacing-margin($size, right left);
+        }
+
+        .margin-y-#{$size} {
+            @include spacing-margin($size, top bottom);
+        }
+
+        .margin-top-#{$size} {
+            @include spacing-margin($size, top);
+        }
+
+        .margin-right-#{$size} {
+            @include spacing-margin($size, right);
+        }
+
+        .margin-bottom-#{$size} {
+            @include spacing-margin($size, bottom);
+        }
+
+        .margin-left-#{$size} {
+            @include spacing-margin($size, left);
+        }
+
+        .padding-all-#{$size} {
+            @include spacing-padding($size, top right bottom left);
+        }
+
+        .padding-x-#{$size} {
+            @include spacing-padding($size, right left);
+        }
+
+        .padding-y-#{$size} {
+            @include spacing-padding($size, top bottom);
+        }
+
+        .padding-top-#{$size} {
+            @include spacing-padding($size, top);
+        }
+
+        .padding-right-#{$size} {
+            @include spacing-padding($size, right);
+        }
+
+        .padding-bottom-#{$size} {
+            @include spacing-padding($size, bottom);
+        }
+
+        .padding-left-#{$size} {
+            @include spacing-padding($size, left);
+        }
+    }
+
+    @each $query-key in map-keys($query-map) {
+        @include query($query-key) {
+            @each $size in $spacing-sizes {
+                .margin-none\@#{$query-key} {
+                    margin: 0;
+                }
+
+                .margin-all-#{$size}\@#{$query-key} {
+                    @include spacing-margin($size, top right bottom left);
+                }
+        
+                .margin-x-#{$size}\@#{$query-key} {
+                    @include spacing-margin($size, right left);
+                }
+        
+                .margin-y-#{$size}\@#{$query-key} {
+                    @include spacing-margin($size, top bottom);
+                }
+        
+                .margin-top-#{$size}\@#{$query-key} {
+                    @include spacing-margin($size, top);
+                }
+        
+                .margin-right-#{$size}\@#{$query-key} {
+                    @include spacing-margin($size, right);
+                }
+        
+                .margin-bottom-#{$size}\@#{$query-key} {
+                    @include spacing-margin($size, bottom);
+                }
+        
+                .margin-left-#{$size}\@#{$query-key} {
+                    @include spacing-margin($size, left);
+                }
+
+                .padding-none\@#{$query-key} {
+                    padding: 0;
+                }
+        
+                .padding-all-#{$size}\@#{$query-key} {
+                    @include spacing-padding($size, top right bottom left);
+                }
+        
+                .padding-x-#{$size}\@#{$query-key} {
+                    @include spacing-padding($size, right left);
+                }
+        
+                .padding-y-#{$size}\@#{$query-key} {
+                    @include spacing-padding($size, top bottom);
+                }
+        
+                .padding-top-#{$size}\@#{$query-key} {
+                    @include spacing-padding($size, top);
+                }
+        
+                .padding-right-#{$size}\@#{$query-key} {
+                    @include spacing-padding($size, right);
+                }
+        
+                .padding-bottom-#{$size}\@#{$query-key} {
+                    @include spacing-padding($size, bottom);
+                }
+        
+                .padding-left-#{$size}\@#{$query-key} {
+                    @include spacing-padding($size, left);
+                }
+            }
+        }
+    }
+}

@@ -1,18 +1,100 @@
-@import '../../core/selector.core';
+@import '../../core/path.core';
 
-$font-name: 'font' !default;
-$font-stacks: (
-    'body': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'),
-    'title': ('Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol')
+$font-faces: (
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 700,
+        'font-style': normal,
+        'src': url('#{$font-path}/blsw-bd.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 700,
+        'font-style': italic,
+        'src': url('#{$font-path}/blsw-bdit.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 900,
+        'font-style': normal,
+        'src': url('#{$font-path}/blsw-hv.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 900,
+        'font-style': italic,
+        'src': url('#{$font-path}/blsw-hvit.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 400,
+        'font-style': normal,
+        'src': url('#{$font-path}/blsw-rg.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 400,
+        'font-style': italic,
+        'src': url('#{$font-path}/blsw-it.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 300,
+        'font-style': normal,
+        'src': url('#{$font-path}/blsw-lt.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 300,
+        'font-style': italic,
+        'src': url('#{$font-path}/blsw-ltit.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 500,
+        'font-style': normal,
+        'src': url('#{$font-path}/blsw-md.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 500,
+        'font-style': italic,
+        'src': url('#{$font-path}/blsw-mdit.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 800,
+        'font-style': normal,
+        'src': url('#{$font-path}/blsw-xbd.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 800,
+        'font-style': italic,
+        'src': url('#{$font-path}/blsw-xbdit.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 200,
+        'font-style': normal,
+        'src': url('#{$font-path}/blsw-xlt.woff') format('woff')
+    ),
+    (
+        'font-family': 'BlissPro',
+        'font-weight': 200,
+        'font-style': italic,
+        'src': url('#{$font-path}/blsw-xltit.woff') format('woff')
+    )
 ) !default;
-$font-default-stack-key: 'body' !default;
+$font-stacks: (
+    'default': ('BlissPro', Helvetica, Arial, sans-serif)
+) !default;
+$font-default-stack-key: 'default' !default;
 $font-weights: (
-    'body': (300, 400, 600, 700),
-    'title': (300, 400, 600, 700)
+    'default': (200, 300, 400, 500, 700, 800, 900)
 ) !default;
 $font-default-weights: (
-    'body': 400,
-    'title': 600
+    'default': 200
 ) !default;
 
 @mixin font($font-stack-key: $font-default-stack-key, $font-weight: default) {
@@ -24,11 +106,11 @@ $font-default-weights: (
     font-family: map-get($font-stacks, $font-stack);
 }
 
-@mixin font-weight($font-stack: $font-default-stack-key, $font-weight: default) {
+@mixin font-weight($font-stack: $font-default-stack-key, $font-weight: 'default') {
     $weights: map-get($font-weights, $font-stack);
     $default: map-get($font-default-weights, $font-stack);
 
-    @if ($font-weight == default) {
+    @if ($font-weight == 'default') {
         font-weight: $default;
     } @else {
         @if (index($weights, $font-weight)) {
@@ -39,28 +121,39 @@ $font-default-weights: (
     }
 }
 
-@mixin font-styles() {
-    $name : selector-prefix($font-name);
+@mixin font-faces() {
+    @each $face in $font-faces {
+        @font-face {
+            font-family: map-get($face, 'font-family');
+            font-weight: map-get($face, 'font-weight');
+            font-style: map-get($face, 'font-style');
+            src: map-get($face, 'src');
+        }
+    }
+}
 
-    body {
+@mixin font-styles() {
+    @include font-faces();
+
+    html {
         @include font();
     }
 
-    @each $font-stack-key in $font-stacks {
-        .#{$name}-#{$font-stack-key} {
+    @each $font-stack-key, $font-stack in $font-stacks {
+        .font-#{$font-stack-key} {
             @include font($font-stack-key);
         }
     }
 
     @each $font-stack-key, $weights in $font-weights {
         @each $weight in $weights {
-            .#{$name}-#{$font-stack-key}-#{$weight} {
+            .font-weight-#{$weight} {
                 @include font-weight($font-stack-key, $weight);
             }
         }
     }
 
     @if mixin-exists('font-hook') {
-        @include font-hook($name);
+        @include font-hook();
     }
 }

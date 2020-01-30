@@ -1,6 +1,0 @@
-@import '../../core/output.core';
-@import '../../lib/patterns/container.lib';
-
-@include output('patterns.container') {
-    @include container-styles();
-}

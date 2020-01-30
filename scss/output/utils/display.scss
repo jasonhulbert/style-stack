@@ -1,6 +1,3 @@
-@import '../../core/output.core';
 @import '../../lib/utils/display.lib';
 
-@include output('utils.display') {
-    @include display-styles();
-}
+@include display-styles();

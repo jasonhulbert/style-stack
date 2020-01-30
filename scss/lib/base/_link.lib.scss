@@ -1,7 +1,5 @@
-@import '../../core/selector.core';
 @import '../utils/color.lib';
 
-$link-name : 'link' !default;
 $link-decoration: none !default;
 $link-decoration-hover: underline !default;
 
@@ -25,10 +23,8 @@ $link-decoration-hover: underline !default;
 }
 
 @mixin link-styles() {
-    $name: selector-prefix($link-name);
-
     a,
-    .#{$name} {
+    .link {
         @include link();
     }
 

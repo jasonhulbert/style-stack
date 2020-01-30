@@ -2,9 +2,8 @@ $query-map: (
     'w0': '(min-width: 0px)',
     'w425': '(min-width: 425px)',
     'w768': '(min-width: 768px)',
-    'w992': '(min-width: 992px)',
-    'w1200': '(min-width: 1200px)',
-    'w1600': '(min-width: 1600px)'
+    'w1024': '(min-width: 1024px)',
+    'w1280': '(min-width: 1280px)'
 ) !default;
 $query-media-type-default: 'only screen' !default;
 

@@ -1,0 +1,5 @@
+$sizing-unit: 0.25rem !default;
+
+@function size-value($units: 1) {
+    @return $units * $sizing-unit;
+}

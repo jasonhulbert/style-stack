@@ -1,18 +1,16 @@
 @import '../../core/query.core';
-@import '../../core/selector.core';
 @import '../base/font.lib';
 @import '../utils/color.lib';
-@import '../utils/box.lib';
+@import '../utils/spacing.lib';
 
-$input-name: 'input' !default;
-$input-height: box-value(8) !default;
-$input-padding: box-value(2) !default;
+$input-height: size-value(8) !default;
+$input-padding: size-value(2) !default;
 $input-font-size: 0.9rem !default;
 $input-line-height: 1.5 !default;
 $input-font-stack: 'primary' !default;
 $input-font-weight: 'default' !default;
-$input-color: color-value('dark') !default;
-$input-placeholder-color: color-value('dark', $alpha: 0.3) !default;
+$input-color: color-value('black') !default;
+$input-placeholder-color: color-value('black', $alpha: 0.3) !default;
 $input-border-width: 0.1rem !default;
 $input-border-radius: 0.2rem !default;
 $input-border-color: color-value('grey4') !default;
@@ -21,14 +19,8 @@ $input-focus-border-color: color-value('dark') !default;
 $input-focus-bg: color-value('white') !default;
 $input-focus-outline-style: solid !default;
 $input-focus-outline-color: color-value('focus', $alpha: 0.5) !default;
-$input-focus-outline-offset: box-value(0.5) !default;
-$input-focus-outline-width: box-value(0.5) !default;
-$input-dark-color: color-value('light') !default;
-$input-dark-placeholder-color: color-value('light', $alpha: 0.5) !default;
-$input-dark-bg: color-value('dark') !default;
-$input-dark-border-color: color-value('grey5') !default;
-$input-dark-focus-bg: color-value('dark') !default;
-$input-dark-focus-border-color: color-value('light') !default;
+$input-focus-outline-offset: size-value(0.5) !default;
+$input-focus-outline-width: size-value(0.5) !default;
 $input-transition: border-color 200ms ease, background-color 200ms ease !default;
 $input-scale-map: (
     'none': 1,
@@ -129,28 +121,14 @@ $input-scale-map: (
     outline-color: color-value($theme-key, $alpha: 0.3);
 }
 
-@mixin input-dark() {
-    @include input-placeholder($input-dark-placeholder-color);
-    background: $input-dark-bg;
-    color: $input-dark-color;
-    border-color: $input-dark-border-color;
-}
-
-@mixin input-focus-dark() {
-    border-color: $input-dark-focus-border-color;
-    background: $input-dark-focus-bg;
-}
-
 @mixin input-center() {
     text-align: center;
 }
 
 @mixin input-styles() {
-    $name: selector-prefix($input-name);
-
     @include input-resets();
 
-    .#{$name} {
+    .input {
         @include input();
         @include input-placeholder();
 
@@ -160,25 +138,17 @@ $input-scale-map: (
     }
 
     @each $scale-key in map-keys($input-scale-map) {
-        .#{$name}-scale-#{$scale-key} {
+        .input-scale-#{$scale-key} {
             @include input-scale($scale-key);
         }
     }
 
-    .#{$name}-dark {
-        @include input-dark();
-
-        &:focus:not([tabindex='-1']) {
-            @include input-focus-dark();
-        }
-    }
-
-    .#{$name}-center {
+    .input-center {
         @include input-center();
     }
 
     @each $theme-key in map-keys($color-theme-map) {
-        .#{$name}-theme-#{$theme-key} {
+        .input-theme-#{$theme-key} {
             @include input-theme($theme-key);
 
             &:focus:not([tabindex='-1']) {
@@ -189,13 +159,13 @@ $input-scale-map: (
 
     @each $query-key in map-keys($query-map) {
         @each $scale-key in map-keys($input-scale-map) {
-            .#{$name}-scale-#{$scale-key}\@#{$query-key} {
+            .input-scale-#{$scale-key}\@#{$query-key} {
                 @include input-scale($scale-key);
             }
         }
     }
 
     @if mixin-exists('input-hook') {
-        @include input-hook($name);
+        @include input-hook();
     }
 }

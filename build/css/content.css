@@ -1,0 +1,39 @@
+.content p, .content ul, .content ol, .content dl {
+  font-weight: 200;
+  margin: 0 0 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+}
+
+.content h2 {
+  font-size: 2.25rem;
+}
+
+.content h3 {
+  font-size: 2rem;
+}
+
+.content h4 {
+  font-size: 1.625rem;
+}
+
+.content h5 {
+  font-size: 1.25rem;
+}
+
+.content h6 {
+  font-size: 1.125rem;
+}
+
+/*# sourceMappingURL=content.css.map */

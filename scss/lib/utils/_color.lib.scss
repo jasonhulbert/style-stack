@@ -1,36 +1,40 @@
 @import '../../core/map.core';
-@import '../../core/selector.core';
 
-$color-name: 'color' !default;
 $color-theme-map: (
-    'blue': #317FA3,
-    'sky': #6DC8CF,
-    'pink': #FF8F99,
-    'purple': #6B5078
+    'brand': #0028A0,
+    'primary-blue': #009FDF,
+    'primary-green': #009775,
+    'primary-sky': #41b6e6,
+    'secondary-navy': #002e5d,
+    'secondary-lime': #78be20,
+    'secondary-green': #008c95,
+    'secondary-yellow': #fdd824,
+    'secondary-purple': #5c068c,
+    'secondary-magenta': #d9017a,
+    'secondary-ruby': #ba0c2f,
+    'secondary-orange': #e35205
 ) !default;
 $color-neutral-map: (
-    'grey1': #E6E6F0,
-    'grey2': #D3D3DB,
-    'grey3': #BFBFC7,
-    'grey4': #9D9DA3,
-    'grey5': #58585C,
+    'light': #e5e9f5,
     'white': #FFFFFF,
-    'black': #000000,
-    'light': #F0F0FA,
-    'dark': #26262F
+    'grey1': #f0f0f1,
+    'grey2': #cac9c7,
+    'grey3': #75787b,
+    'grey4': #55565a,
+    'black': #000000
 ) !default;
 $color-util-map: (
-    'confirm': #6EAB70,
-    'warn': #E4815C,
-    'deny': #C24E4F,
-    'notify': #66A6EE,
-    'select': #66A6EE,
-    'focus': #66A6EE
+    'confirm': #78BE20,
+    'warn': #E35205,
+    'deny': #BA0C2F,
+    'notify': #0028A0,
+    'select': #fdd824,
+    'focus': #0028A0
 ) !default;
 $color-link-map: (
-    'link': #3673C5,
-    'link-hover': darken(#3673C5, 10),
-    'link-visited': lighten(#3673C5, 10)
+    'link': #0028A0,
+    'link-hover': darken(#0028A0, 10),
+    'link-visited': lighten(#0028A0, 10)
 ) !default;
 $color-all-map: map-multi-merge(
     $color-theme-map,
@@ -93,14 +97,12 @@ $color-tints: 10, 20, 30 !default;
 }
 
 @mixin color-styles() {
-    $name: selector-prefix($color-name);
-
     @each $color-key, $color-value in $color-all-map {
-        .#{$name}-#{$color-key} {
+        .color-#{$color-key} {
             color: color-value($color-key);
         }
 
-        .#{$name}-#{$color-key}-bg {
+        .color-#{$color-key}-bg {
             background-color: color-value($color-key);
         }
     }
@@ -108,27 +110,27 @@ $color-tints: 10, 20, 30 !default;
     @each $color-key, $color-value in $color-variant-map {
         // Adds tints and shades for 'variant' colors only.
         @each $shade in $color-shades {
-            .#{$name}-#{$color-key}-shade-#{$shade} {
+            .color-#{$color-key}-shade-#{$shade} {
                 color: color-value($color-key, $shade: $shade);
             }
 
-            .#{$name}-#{$color-key}-shade-#{$shade}-bg {
+            .color-#{$color-key}-shade-#{$shade}-bg {
                 background-color: color-value($color-key, $shade: $shade);
             }
         }
 
         @each $tint in $color-tints {
-            .#{$name}-#{$color-key}-tint-#{$tint} {
+            .color-#{$color-key}-tint-#{$tint} {
                 color: color-value($color-key, $tint: $tint);
             }
 
-            .#{$name}-#{$color-key}-tint-#{$tint}-bg {
+            .color-#{$color-key}-tint-#{$tint}-bg {
                 background-color: color-value($color-key, $tint: $tint);
             }
         }
     }
 
     @if mixin-exists('color-hook') {
-        @include color-hook($name);
+        @include color-hook();
     }
 }
